@@ -40,7 +40,7 @@ jobs:
         id: deployment
         uses: JamesIves/github-pages-deploy-action@3.7.1
         with:
-          github_token: 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
+          github_token: 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
           folder: Documentation/html
           branch: main
 
