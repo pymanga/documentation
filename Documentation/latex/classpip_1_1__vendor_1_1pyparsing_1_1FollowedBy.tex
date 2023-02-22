@@ -1,0 +1,53 @@
+\hypertarget{classpip_1_1__vendor_1_1pyparsing_1_1FollowedBy}{}\doxysection{pip.\+\_\+vendor.\+pyparsing.\+Followed\+By Class Reference}
+\label{classpip_1_1__vendor_1_1pyparsing_1_1FollowedBy}\index{pip.\_vendor.pyparsing.FollowedBy@{pip.\_vendor.pyparsing.FollowedBy}}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Lookahead matching of the given parse expression.
+``FollowedBy`` does *not* advance the parsing position within
+the input string, it only verifies that the specified parse
+expression matches at the current position.  ``FollowedBy``
+always returns a null token list. If any results names are defined
+in the lookahead expression, those *will* be returned for access by
+name.
+
+Example::
+
+    # use FollowedBy to match a label only if it is followed by a ':'
+    data_word = Word(alphas)
+    label = data_word + FollowedBy(':')
+    attr_expr = Group(label + Suppress(':') + OneOrMore(data_word, stopOn=label).setParseAction(' '.join))
+
+    OneOrMore(attr_expr).parseString("shape: SQUARE color: BLACK posn: upper left").pprint()
+
+prints::
+
+    [['shape', 'SQUARE'], ['color', 'BLACK'], ['posn', 'upper left']]
+\end{DoxyVerb}
+ Inheritance diagram for pip.\+\_\+vendor.\+pyparsing.\+Followed\+By\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{classpip_1_1__vendor_1_1pyparsing_1_1FollowedBy}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpip_1_1__vendor_1_1pyparsing_1_1FollowedBy_a688b488206de4531072833e452cf5ca1}\label{classpip_1_1__vendor_1_1pyparsing_1_1FollowedBy_a688b488206de4531072833e452cf5ca1}} 
+def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, expr)
+\item 
+\mbox{\Hypertarget{classpip_1_1__vendor_1_1pyparsing_1_1FollowedBy_ad084867c0f85f4251113d4151e83503c}\label{classpip_1_1__vendor_1_1pyparsing_1_1FollowedBy_ad084867c0f85f4251113d4151e83503c}} 
+def {\bfseries parse\+Impl} (self, instring, loc, do\+Actions=True)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpip_1_1__vendor_1_1pyparsing_1_1FollowedBy_a202b4cdaafda86bb1046f1d317aa7e0a}\label{classpip_1_1__vendor_1_1pyparsing_1_1FollowedBy_a202b4cdaafda86bb1046f1d317aa7e0a}} 
+{\bfseries may\+Return\+Empty}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/\+Lib/site-\/packages/pip/\+\_\+vendor/pyparsing.\+py\end{DoxyCompactItemize}

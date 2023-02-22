@@ -1,0 +1,128 @@
+\hypertarget{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1reporter_1_1PipDebuggingReporter}{}\doxysection{pip.\+\_\+internal.\+resolution.\+resolvelib.\+reporter.\+Pip\+Debugging\+Reporter Class Reference}
+\label{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1reporter_1_1PipDebuggingReporter}\index{pip.\_internal.resolution.resolvelib.reporter.PipDebuggingReporter@{pip.\_internal.resolution.resolvelib.reporter.PipDebuggingReporter}}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}A reporter that does an info log for every event it sees.\end{DoxyVerb}
+ Inheritance diagram for pip.\+\_\+internal.\+resolution.\+resolvelib.\+reporter.\+Pip\+Debugging\+Reporter\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1reporter_1_1PipDebuggingReporter}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1reporter_1_1PipDebuggingReporter_a58949cfaab3502ae42bc34399e4225a1}{starting}} (self)
+\item 
+def \mbox{\hyperlink{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1reporter_1_1PipDebuggingReporter_adf332a07edc2014a33d8df232a5341f3}{starting\+\_\+round}} (self, index)
+\item 
+def \mbox{\hyperlink{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1reporter_1_1PipDebuggingReporter_a62c30f84645b1945d5fda0754a869bd3}{ending\+\_\+round}} (self, index, state)
+\item 
+def \mbox{\hyperlink{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1reporter_1_1PipDebuggingReporter_a9e8f9032653a8dc5adaabb2290766de2}{ending}} (self, state)
+\item 
+def \mbox{\hyperlink{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1reporter_1_1PipDebuggingReporter_a0cd076079fda9fcebf0b295ff61d2ece}{adding\+\_\+requirement}} (self, requirement, parent)
+\item 
+def \mbox{\hyperlink{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1reporter_1_1PipDebuggingReporter_a4a55a02a3185d7ea26d92dcae89fc427}{backtracking}} (self, candidate)
+\item 
+def \mbox{\hyperlink{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1reporter_1_1PipDebuggingReporter_a69527ce395a4a7169f9f417763166dc3}{pinning}} (self, candidate)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1reporter_1_1PipDebuggingReporter_a0cd076079fda9fcebf0b295ff61d2ece}\label{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1reporter_1_1PipDebuggingReporter_a0cd076079fda9fcebf0b295ff61d2ece}} 
+\index{pip.\_internal.resolution.resolvelib.reporter.PipDebuggingReporter@{pip.\_internal.resolution.resolvelib.reporter.PipDebuggingReporter}!adding\_requirement@{adding\_requirement}}
+\index{adding\_requirement@{adding\_requirement}!pip.\_internal.resolution.resolvelib.reporter.PipDebuggingReporter@{pip.\_internal.resolution.resolvelib.reporter.PipDebuggingReporter}}
+\doxysubsubsection{\texorpdfstring{adding\_requirement()}{adding\_requirement()}}
+{\footnotesize\ttfamily def pip.\+\_\+internal.\+resolution.\+resolvelib.\+reporter.\+Pip\+Debugging\+Reporter.\+adding\+\_\+requirement (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{requirement,  }\item[{}]{parent }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Called when adding a new requirement into the resolve criteria.
+
+:param requirement: The additional requirement to be applied to filter
+    the available candidaites.
+:param parent: The candidate that requires ``requirement`` as a
+    dependency, or None if ``requirement`` is one of the root
+    requirements passed in from ``Resolver.resolve()``.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classpip_1_1__vendor_1_1resolvelib_1_1reporters_1_1BaseReporter_a1d2ce8f9d6078b26cc8492c805107680}{pip.\+\_\+vendor.\+resolvelib.\+reporters.\+Base\+Reporter}}.
+
+\mbox{\Hypertarget{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1reporter_1_1PipDebuggingReporter_a4a55a02a3185d7ea26d92dcae89fc427}\label{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1reporter_1_1PipDebuggingReporter_a4a55a02a3185d7ea26d92dcae89fc427}} 
+\index{pip.\_internal.resolution.resolvelib.reporter.PipDebuggingReporter@{pip.\_internal.resolution.resolvelib.reporter.PipDebuggingReporter}!backtracking@{backtracking}}
+\index{backtracking@{backtracking}!pip.\_internal.resolution.resolvelib.reporter.PipDebuggingReporter@{pip.\_internal.resolution.resolvelib.reporter.PipDebuggingReporter}}
+\doxysubsubsection{\texorpdfstring{backtracking()}{backtracking()}}
+{\footnotesize\ttfamily def pip.\+\_\+internal.\+resolution.\+resolvelib.\+reporter.\+Pip\+Debugging\+Reporter.\+backtracking (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{candidate }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Called when rejecting a candidate during backtracking.\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classpip_1_1__vendor_1_1resolvelib_1_1reporters_1_1BaseReporter_a3e424690ece597e4b5b16126f61715d7}{pip.\+\_\+vendor.\+resolvelib.\+reporters.\+Base\+Reporter}}.
+
+\mbox{\Hypertarget{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1reporter_1_1PipDebuggingReporter_a9e8f9032653a8dc5adaabb2290766de2}\label{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1reporter_1_1PipDebuggingReporter_a9e8f9032653a8dc5adaabb2290766de2}} 
+\index{pip.\_internal.resolution.resolvelib.reporter.PipDebuggingReporter@{pip.\_internal.resolution.resolvelib.reporter.PipDebuggingReporter}!ending@{ending}}
+\index{ending@{ending}!pip.\_internal.resolution.resolvelib.reporter.PipDebuggingReporter@{pip.\_internal.resolution.resolvelib.reporter.PipDebuggingReporter}}
+\doxysubsubsection{\texorpdfstring{ending()}{ending()}}
+{\footnotesize\ttfamily def pip.\+\_\+internal.\+resolution.\+resolvelib.\+reporter.\+Pip\+Debugging\+Reporter.\+ending (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{state }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Called before the resolution ends successfully.\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classpip_1_1__vendor_1_1resolvelib_1_1reporters_1_1BaseReporter_aebc4b7ba39644a91d34430020cf50801}{pip.\+\_\+vendor.\+resolvelib.\+reporters.\+Base\+Reporter}}.
+
+\mbox{\Hypertarget{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1reporter_1_1PipDebuggingReporter_a62c30f84645b1945d5fda0754a869bd3}\label{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1reporter_1_1PipDebuggingReporter_a62c30f84645b1945d5fda0754a869bd3}} 
+\index{pip.\_internal.resolution.resolvelib.reporter.PipDebuggingReporter@{pip.\_internal.resolution.resolvelib.reporter.PipDebuggingReporter}!ending\_round@{ending\_round}}
+\index{ending\_round@{ending\_round}!pip.\_internal.resolution.resolvelib.reporter.PipDebuggingReporter@{pip.\_internal.resolution.resolvelib.reporter.PipDebuggingReporter}}
+\doxysubsubsection{\texorpdfstring{ending\_round()}{ending\_round()}}
+{\footnotesize\ttfamily def pip.\+\_\+internal.\+resolution.\+resolvelib.\+reporter.\+Pip\+Debugging\+Reporter.\+ending\+\_\+round (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{index,  }\item[{}]{state }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Called before each round of resolution ends.
+
+This is NOT called if the resolution ends at this round. Use `ending`
+if you want to report finalization. The index is zero-based.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classpip_1_1__vendor_1_1resolvelib_1_1reporters_1_1BaseReporter_ace5fc81fcfe24f59a263119f7c01ee31}{pip.\+\_\+vendor.\+resolvelib.\+reporters.\+Base\+Reporter}}.
+
+\mbox{\Hypertarget{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1reporter_1_1PipDebuggingReporter_a69527ce395a4a7169f9f417763166dc3}\label{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1reporter_1_1PipDebuggingReporter_a69527ce395a4a7169f9f417763166dc3}} 
+\index{pip.\_internal.resolution.resolvelib.reporter.PipDebuggingReporter@{pip.\_internal.resolution.resolvelib.reporter.PipDebuggingReporter}!pinning@{pinning}}
+\index{pinning@{pinning}!pip.\_internal.resolution.resolvelib.reporter.PipDebuggingReporter@{pip.\_internal.resolution.resolvelib.reporter.PipDebuggingReporter}}
+\doxysubsubsection{\texorpdfstring{pinning()}{pinning()}}
+{\footnotesize\ttfamily def pip.\+\_\+internal.\+resolution.\+resolvelib.\+reporter.\+Pip\+Debugging\+Reporter.\+pinning (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{candidate }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Called when adding a candidate to the potential solution.\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classpip_1_1__vendor_1_1resolvelib_1_1reporters_1_1BaseReporter_a480f8b135ae0ed36a7439538110ee34c}{pip.\+\_\+vendor.\+resolvelib.\+reporters.\+Base\+Reporter}}.
+
+\mbox{\Hypertarget{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1reporter_1_1PipDebuggingReporter_a58949cfaab3502ae42bc34399e4225a1}\label{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1reporter_1_1PipDebuggingReporter_a58949cfaab3502ae42bc34399e4225a1}} 
+\index{pip.\_internal.resolution.resolvelib.reporter.PipDebuggingReporter@{pip.\_internal.resolution.resolvelib.reporter.PipDebuggingReporter}!starting@{starting}}
+\index{starting@{starting}!pip.\_internal.resolution.resolvelib.reporter.PipDebuggingReporter@{pip.\_internal.resolution.resolvelib.reporter.PipDebuggingReporter}}
+\doxysubsubsection{\texorpdfstring{starting()}{starting()}}
+{\footnotesize\ttfamily def pip.\+\_\+internal.\+resolution.\+resolvelib.\+reporter.\+Pip\+Debugging\+Reporter.\+starting (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Called before the resolution actually starts.\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classpip_1_1__vendor_1_1resolvelib_1_1reporters_1_1BaseReporter_ad0e0aaaa590395ee4ca1710cc4cba913}{pip.\+\_\+vendor.\+resolvelib.\+reporters.\+Base\+Reporter}}.
+
+\mbox{\Hypertarget{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1reporter_1_1PipDebuggingReporter_adf332a07edc2014a33d8df232a5341f3}\label{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1reporter_1_1PipDebuggingReporter_adf332a07edc2014a33d8df232a5341f3}} 
+\index{pip.\_internal.resolution.resolvelib.reporter.PipDebuggingReporter@{pip.\_internal.resolution.resolvelib.reporter.PipDebuggingReporter}!starting\_round@{starting\_round}}
+\index{starting\_round@{starting\_round}!pip.\_internal.resolution.resolvelib.reporter.PipDebuggingReporter@{pip.\_internal.resolution.resolvelib.reporter.PipDebuggingReporter}}
+\doxysubsubsection{\texorpdfstring{starting\_round()}{starting\_round()}}
+{\footnotesize\ttfamily def pip.\+\_\+internal.\+resolution.\+resolvelib.\+reporter.\+Pip\+Debugging\+Reporter.\+starting\+\_\+round (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{index }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Called before each round of resolution starts.
+
+The index is zero-based.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classpip_1_1__vendor_1_1resolvelib_1_1reporters_1_1BaseReporter_a0ef5f2201ff5bed41f57ebbdba7caec5}{pip.\+\_\+vendor.\+resolvelib.\+reporters.\+Base\+Reporter}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/\+Lib/site-\/packages/pip/\+\_\+internal/resolution/resolvelib/reporter.\+py\end{DoxyCompactItemize}

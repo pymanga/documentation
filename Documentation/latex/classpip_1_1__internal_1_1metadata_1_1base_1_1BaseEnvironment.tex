@@ -1,0 +1,70 @@
+\hypertarget{classpip_1_1__internal_1_1metadata_1_1base_1_1BaseEnvironment}{}\doxysection{pip.\+\_\+internal.\+metadata.\+base.\+Base\+Environment Class Reference}
+\label{classpip_1_1__internal_1_1metadata_1_1base_1_1BaseEnvironment}\index{pip.\_internal.metadata.base.BaseEnvironment@{pip.\_internal.metadata.base.BaseEnvironment}}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}An environment containing distributions to introspect.\end{DoxyVerb}
+ Inheritance diagram for pip.\+\_\+internal.\+metadata.\+base.\+Base\+Environment\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classpip_1_1__internal_1_1metadata_1_1base_1_1BaseEnvironment}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpip_1_1__internal_1_1metadata_1_1base_1_1BaseEnvironment_aec5710e94df4692b51364a3f4f8c1132}\label{classpip_1_1__internal_1_1metadata_1_1base_1_1BaseEnvironment_aec5710e94df4692b51364a3f4f8c1132}} 
+def {\bfseries default} (cls)
+\item 
+\mbox{\Hypertarget{classpip_1_1__internal_1_1metadata_1_1base_1_1BaseEnvironment_ae787326045c18118eb43489c642d3063}\label{classpip_1_1__internal_1_1metadata_1_1base_1_1BaseEnvironment_ae787326045c18118eb43489c642d3063}} 
+def {\bfseries from\+\_\+paths} (cls, paths)
+\item 
+def \mbox{\hyperlink{classpip_1_1__internal_1_1metadata_1_1base_1_1BaseEnvironment_aa279815988f36424024d893d9bda3645}{get\+\_\+distribution}} (self, name)
+\item 
+def \mbox{\hyperlink{classpip_1_1__internal_1_1metadata_1_1base_1_1BaseEnvironment_ad5f751d04b7876fcb22477852aa1c683}{iter\+\_\+distributions}} (self)
+\item 
+def \mbox{\hyperlink{classpip_1_1__internal_1_1metadata_1_1base_1_1BaseEnvironment_a616b7c0fde0a4b8d177a45d9628fb10f}{iter\+\_\+installed\+\_\+distributions}} (self, local\+\_\+only=True, skip=stdlib\+\_\+pkgs, include\+\_\+editables=True, editables\+\_\+only=False, user\+\_\+only=False)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classpip_1_1__internal_1_1metadata_1_1base_1_1BaseEnvironment_aa279815988f36424024d893d9bda3645}\label{classpip_1_1__internal_1_1metadata_1_1base_1_1BaseEnvironment_aa279815988f36424024d893d9bda3645}} 
+\index{pip.\_internal.metadata.base.BaseEnvironment@{pip.\_internal.metadata.base.BaseEnvironment}!get\_distribution@{get\_distribution}}
+\index{get\_distribution@{get\_distribution}!pip.\_internal.metadata.base.BaseEnvironment@{pip.\_internal.metadata.base.BaseEnvironment}}
+\doxysubsubsection{\texorpdfstring{get\_distribution()}{get\_distribution()}}
+{\footnotesize\ttfamily def pip.\+\_\+internal.\+metadata.\+base.\+Base\+Environment.\+get\+\_\+distribution (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{name }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Given a requirement name, return the installed distributions.\end{DoxyVerb}
+ 
+
+Reimplemented in \mbox{\hyperlink{classpip_1_1__internal_1_1metadata_1_1pkg__resources_1_1Environment_a9e95c1c94127bcd8c726dd6692aedcbe}{pip.\+\_\+internal.\+metadata.\+pkg\+\_\+resources.\+Environment}}.
+
+\mbox{\Hypertarget{classpip_1_1__internal_1_1metadata_1_1base_1_1BaseEnvironment_ad5f751d04b7876fcb22477852aa1c683}\label{classpip_1_1__internal_1_1metadata_1_1base_1_1BaseEnvironment_ad5f751d04b7876fcb22477852aa1c683}} 
+\index{pip.\_internal.metadata.base.BaseEnvironment@{pip.\_internal.metadata.base.BaseEnvironment}!iter\_distributions@{iter\_distributions}}
+\index{iter\_distributions@{iter\_distributions}!pip.\_internal.metadata.base.BaseEnvironment@{pip.\_internal.metadata.base.BaseEnvironment}}
+\doxysubsubsection{\texorpdfstring{iter\_distributions()}{iter\_distributions()}}
+{\footnotesize\ttfamily def pip.\+\_\+internal.\+metadata.\+base.\+Base\+Environment.\+iter\+\_\+distributions (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Iterate through installed distributions.\end{DoxyVerb}
+ \mbox{\Hypertarget{classpip_1_1__internal_1_1metadata_1_1base_1_1BaseEnvironment_a616b7c0fde0a4b8d177a45d9628fb10f}\label{classpip_1_1__internal_1_1metadata_1_1base_1_1BaseEnvironment_a616b7c0fde0a4b8d177a45d9628fb10f}} 
+\index{pip.\_internal.metadata.base.BaseEnvironment@{pip.\_internal.metadata.base.BaseEnvironment}!iter\_installed\_distributions@{iter\_installed\_distributions}}
+\index{iter\_installed\_distributions@{iter\_installed\_distributions}!pip.\_internal.metadata.base.BaseEnvironment@{pip.\_internal.metadata.base.BaseEnvironment}}
+\doxysubsubsection{\texorpdfstring{iter\_installed\_distributions()}{iter\_installed\_distributions()}}
+{\footnotesize\ttfamily def pip.\+\_\+internal.\+metadata.\+base.\+Base\+Environment.\+iter\+\_\+installed\+\_\+distributions (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{local\+\_\+only = {\ttfamily True},  }\item[{}]{skip = {\ttfamily stdlib\+\_\+pkgs},  }\item[{}]{include\+\_\+editables = {\ttfamily True},  }\item[{}]{editables\+\_\+only = {\ttfamily False},  }\item[{}]{user\+\_\+only = {\ttfamily False} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return a list of installed distributions.
+
+:param local_only: If True (default), only return installations
+local to the current virtualenv, if in a virtualenv.
+:param skip: An iterable of canonicalized project names to ignore;
+    defaults to ``stdlib_pkgs``.
+:param include_editables: If False, don't report editables.
+:param editables_only: If True, only report editables.
+:param user_only: If True, only report installations in the user
+site directory.
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/\+Lib/site-\/packages/pip/\+\_\+internal/metadata/base.\+py\end{DoxyCompactItemize}

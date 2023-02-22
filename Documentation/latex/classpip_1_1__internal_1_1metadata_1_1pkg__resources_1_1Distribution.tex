@@ -1,0 +1,74 @@
+\hypertarget{classpip_1_1__internal_1_1metadata_1_1pkg__resources_1_1Distribution}{}\doxysection{pip.\+\_\+internal.\+metadata.\+pkg\+\_\+resources.\+Distribution Class Reference}
+\label{classpip_1_1__internal_1_1metadata_1_1pkg__resources_1_1Distribution}\index{pip.\_internal.metadata.pkg\_resources.Distribution@{pip.\_internal.metadata.pkg\_resources.Distribution}}
+Inheritance diagram for pip.\+\_\+internal.\+metadata.\+pkg\+\_\+resources.\+Distribution\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classpip_1_1__internal_1_1metadata_1_1pkg__resources_1_1Distribution}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpip_1_1__internal_1_1metadata_1_1pkg__resources_1_1Distribution_a1cfa5bd64da57238e3657b03ddbbde6c}\label{classpip_1_1__internal_1_1metadata_1_1pkg__resources_1_1Distribution_a1cfa5bd64da57238e3657b03ddbbde6c}} 
+def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, dist)
+\item 
+\mbox{\Hypertarget{classpip_1_1__internal_1_1metadata_1_1pkg__resources_1_1Distribution_a6a1dc86f6deef72f99f89301d3087fa2}\label{classpip_1_1__internal_1_1metadata_1_1pkg__resources_1_1Distribution_a6a1dc86f6deef72f99f89301d3087fa2}} 
+def {\bfseries from\+\_\+wheel} (cls, path, name)
+\item 
+def \mbox{\hyperlink{classpip_1_1__internal_1_1metadata_1_1pkg__resources_1_1Distribution_a2dd92f506a6369efa019d5a6781a9fb3}{location}} (self)
+\item 
+def \mbox{\hyperlink{classpip_1_1__internal_1_1metadata_1_1pkg__resources_1_1Distribution_a675b25ee007e981bae25ce299f18e28e}{metadata\+\_\+version}} (self)
+\item 
+\mbox{\Hypertarget{classpip_1_1__internal_1_1metadata_1_1pkg__resources_1_1Distribution_ae1c6c6f1cc431da73e29f5d3546ebbf8}\label{classpip_1_1__internal_1_1metadata_1_1pkg__resources_1_1Distribution_ae1c6c6f1cc431da73e29f5d3546ebbf8}} 
+def {\bfseries canonical\+\_\+name} (self)
+\item 
+\mbox{\Hypertarget{classpip_1_1__internal_1_1metadata_1_1pkg__resources_1_1Distribution_ad7d6932f0816a9a93952a741a9d69526}\label{classpip_1_1__internal_1_1metadata_1_1pkg__resources_1_1Distribution_ad7d6932f0816a9a93952a741a9d69526}} 
+def {\bfseries version} (self)
+\item 
+\mbox{\Hypertarget{classpip_1_1__internal_1_1metadata_1_1pkg__resources_1_1Distribution_a3db5dfbd7e844d0d40448c9f4cc3078f}\label{classpip_1_1__internal_1_1metadata_1_1pkg__resources_1_1Distribution_a3db5dfbd7e844d0d40448c9f4cc3078f}} 
+def {\bfseries installer} (self)
+\item 
+\mbox{\Hypertarget{classpip_1_1__internal_1_1metadata_1_1pkg__resources_1_1Distribution_af6fb41da9bab2b76f7a2ae12e927d48a}\label{classpip_1_1__internal_1_1metadata_1_1pkg__resources_1_1Distribution_af6fb41da9bab2b76f7a2ae12e927d48a}} 
+def {\bfseries editable} (self)
+\item 
+\mbox{\Hypertarget{classpip_1_1__internal_1_1metadata_1_1pkg__resources_1_1Distribution_a6ac2d31903d223641c2f615187cdfb43}\label{classpip_1_1__internal_1_1metadata_1_1pkg__resources_1_1Distribution_a6ac2d31903d223641c2f615187cdfb43}} 
+def {\bfseries local} (self)
+\item 
+\mbox{\Hypertarget{classpip_1_1__internal_1_1metadata_1_1pkg__resources_1_1Distribution_a496e59a1529e6b320b8fb0c255c511af}\label{classpip_1_1__internal_1_1metadata_1_1pkg__resources_1_1Distribution_a496e59a1529e6b320b8fb0c255c511af}} 
+def {\bfseries in\+\_\+usersite} (self)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classpip_1_1__internal_1_1metadata_1_1pkg__resources_1_1Distribution_a2dd92f506a6369efa019d5a6781a9fb3}\label{classpip_1_1__internal_1_1metadata_1_1pkg__resources_1_1Distribution_a2dd92f506a6369efa019d5a6781a9fb3}} 
+\index{pip.\_internal.metadata.pkg\_resources.Distribution@{pip.\_internal.metadata.pkg\_resources.Distribution}!location@{location}}
+\index{location@{location}!pip.\_internal.metadata.pkg\_resources.Distribution@{pip.\_internal.metadata.pkg\_resources.Distribution}}
+\doxysubsubsection{\texorpdfstring{location()}{location()}}
+{\footnotesize\ttfamily def pip.\+\_\+internal.\+metadata.\+pkg\+\_\+resources.\+Distribution.\+location (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Where the distribution is loaded from.
+
+A string value is not necessarily a filesystem path, since distributions
+can be loaded from other sources, e.g. arbitrary zip archives. ``None``
+means the distribution is created in-memory.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classpip_1_1__internal_1_1metadata_1_1base_1_1BaseDistribution_abb1963545a57b9183e6e71a61e44a967}{pip.\+\_\+internal.\+metadata.\+base.\+Base\+Distribution}}.
+
+\mbox{\Hypertarget{classpip_1_1__internal_1_1metadata_1_1pkg__resources_1_1Distribution_a675b25ee007e981bae25ce299f18e28e}\label{classpip_1_1__internal_1_1metadata_1_1pkg__resources_1_1Distribution_a675b25ee007e981bae25ce299f18e28e}} 
+\index{pip.\_internal.metadata.pkg\_resources.Distribution@{pip.\_internal.metadata.pkg\_resources.Distribution}!metadata\_version@{metadata\_version}}
+\index{metadata\_version@{metadata\_version}!pip.\_internal.metadata.pkg\_resources.Distribution@{pip.\_internal.metadata.pkg\_resources.Distribution}}
+\doxysubsubsection{\texorpdfstring{metadata\_version()}{metadata\_version()}}
+{\footnotesize\ttfamily def pip.\+\_\+internal.\+metadata.\+pkg\+\_\+resources.\+Distribution.\+metadata\+\_\+version (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Value of "Metadata-Version:" in the distribution, if available.\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classpip_1_1__internal_1_1metadata_1_1base_1_1BaseDistribution_aed3daf5e06155d6bbd467c3130bacaaf}{pip.\+\_\+internal.\+metadata.\+base.\+Base\+Distribution}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/\+Lib/site-\/packages/pip/\+\_\+internal/metadata/pkg\+\_\+resources.\+py\end{DoxyCompactItemize}

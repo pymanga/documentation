@@ -1,0 +1,46 @@
+\hypertarget{classnumpy_1_1core_1_1__internal_1_1recursive}{}\doxysection{numpy.\+core.\+\_\+internal.\+recursive Class Reference}
+\label{classnumpy_1_1core_1_1__internal_1_1recursive}\index{numpy.core.\_internal.recursive@{numpy.core.\_internal.recursive}}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}A decorator class for recursive nested functions.
+Naive recursive nested functions hold a reference to themselves:
+
+def outer(*args):
+    def stringify_leaky(arg0, *arg1):
+        if len(arg1) > 0:
+            return stringify_leaky(*arg1)  # <- HERE
+        return str(arg0)
+    stringify_leaky(*args)
+
+This design pattern creates a reference cycle that is difficult for a
+garbage collector to resolve. The decorator class prevents the
+cycle by passing the nested function in as an argument `self`:
+
+def outer(*args):
+    @recursive
+    def stringify(self, arg0, *arg1):
+        if len(arg1) > 0:
+            return self(*arg1)
+        return str(arg0)
+    stringify(*args)\end{DoxyVerb}
+ \doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classnumpy_1_1core_1_1__internal_1_1recursive_a84ef575adb57f38c8a5d5e56b2feea35}\label{classnumpy_1_1core_1_1__internal_1_1recursive_a84ef575adb57f38c8a5d5e56b2feea35}} 
+def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, func)
+\item 
+\mbox{\Hypertarget{classnumpy_1_1core_1_1__internal_1_1recursive_a331953e390e7ff120913ac16d225eafe}\label{classnumpy_1_1core_1_1__internal_1_1recursive_a331953e390e7ff120913ac16d225eafe}} 
+def {\bfseries \+\_\+\+\_\+call\+\_\+\+\_\+} (self, $\ast$args, $\ast$$\ast$kwargs)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classnumpy_1_1core_1_1__internal_1_1recursive_a54dcb8bc12265c15f94bbc3daa29cf21}\label{classnumpy_1_1core_1_1__internal_1_1recursive_a54dcb8bc12265c15f94bbc3daa29cf21}} 
+{\bfseries func}
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/\+Lib/site-\/packages/numpy/core/\+\_\+internal.\+py\end{DoxyCompactItemize}

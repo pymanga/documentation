@@ -1,0 +1,63 @@
+\hypertarget{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1base_1_1Requirement}{}\doxysection{pip.\+\_\+internal.\+resolution.\+resolvelib.\+base.\+Requirement Class Reference}
+\label{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1base_1_1Requirement}\index{pip.\_internal.resolution.resolvelib.base.Requirement@{pip.\_internal.resolution.resolvelib.base.Requirement}}
+Inheritance diagram for pip.\+\_\+internal.\+resolution.\+resolvelib.\+base.\+Requirement\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=0.629214cm]{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1base_1_1Requirement}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1base_1_1Requirement_aded87c50aa984abf5a73e7868becb448}{project\+\_\+name}} (self)
+\item 
+def \mbox{\hyperlink{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1base_1_1Requirement_a21e4edd1c8aa5ce147a3399bf3c8d7b0}{name}} (self)
+\item 
+\mbox{\Hypertarget{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1base_1_1Requirement_a30ac2a97a70c6967e0ead1da8e803edd}\label{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1base_1_1Requirement_a30ac2a97a70c6967e0ead1da8e803edd}} 
+def {\bfseries is\+\_\+satisfied\+\_\+by} (self, candidate)
+\item 
+\mbox{\Hypertarget{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1base_1_1Requirement_ac2a1beb885bee0964c29dbd932286ae2}\label{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1base_1_1Requirement_ac2a1beb885bee0964c29dbd932286ae2}} 
+def {\bfseries get\+\_\+candidate\+\_\+lookup} (self)
+\item 
+\mbox{\Hypertarget{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1base_1_1Requirement_aef7457c06bbdb40b406875b1ddc9bd11}\label{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1base_1_1Requirement_aef7457c06bbdb40b406875b1ddc9bd11}} 
+def {\bfseries format\+\_\+for\+\_\+error} (self)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1base_1_1Requirement_a21e4edd1c8aa5ce147a3399bf3c8d7b0}\label{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1base_1_1Requirement_a21e4edd1c8aa5ce147a3399bf3c8d7b0}} 
+\index{pip.\_internal.resolution.resolvelib.base.Requirement@{pip.\_internal.resolution.resolvelib.base.Requirement}!name@{name}}
+\index{name@{name}!pip.\_internal.resolution.resolvelib.base.Requirement@{pip.\_internal.resolution.resolvelib.base.Requirement}}
+\doxysubsubsection{\texorpdfstring{name()}{name()}}
+{\footnotesize\ttfamily def pip.\+\_\+internal.\+resolution.\+resolvelib.\+base.\+Requirement.\+name (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}The name identifying this requirement in the resolver.
+
+This is different from ``project_name`` if this requirement contains
+extras, where ``project_name`` would not contain the ``[...]`` part.
+\end{DoxyVerb}
+ 
+
+Reimplemented in \mbox{\hyperlink{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1requirements_1_1UnsatisfiableRequirement_a77f31caeee540862d1b31aa4ba6b0b2b}{pip.\+\_\+internal.\+resolution.\+resolvelib.\+requirements.\+Unsatisfiable\+Requirement}}, \mbox{\hyperlink{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1requirements_1_1RequiresPythonRequirement_ae36a1400c3104266be475185164c30e2}{pip.\+\_\+internal.\+resolution.\+resolvelib.\+requirements.\+Requires\+Python\+Requirement}}, \mbox{\hyperlink{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1requirements_1_1SpecifierRequirement_aaaa3c28411b40380615948c7514a571f}{pip.\+\_\+internal.\+resolution.\+resolvelib.\+requirements.\+Specifier\+Requirement}}, and \mbox{\hyperlink{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1requirements_1_1ExplicitRequirement_a7250c5e2ac7d7b9c99a42010a3dd1672}{pip.\+\_\+internal.\+resolution.\+resolvelib.\+requirements.\+Explicit\+Requirement}}.
+
+\mbox{\Hypertarget{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1base_1_1Requirement_aded87c50aa984abf5a73e7868becb448}\label{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1base_1_1Requirement_aded87c50aa984abf5a73e7868becb448}} 
+\index{pip.\_internal.resolution.resolvelib.base.Requirement@{pip.\_internal.resolution.resolvelib.base.Requirement}!project\_name@{project\_name}}
+\index{project\_name@{project\_name}!pip.\_internal.resolution.resolvelib.base.Requirement@{pip.\_internal.resolution.resolvelib.base.Requirement}}
+\doxysubsubsection{\texorpdfstring{project\_name()}{project\_name()}}
+{\footnotesize\ttfamily def pip.\+\_\+internal.\+resolution.\+resolvelib.\+base.\+Requirement.\+project\+\_\+name (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}The "project name" of a requirement.
+
+This is different from ``name`` if this requirement contains extras,
+in which case ``name`` would contain the ``[...]`` part, while this
+refers to the name of the project.
+\end{DoxyVerb}
+ 
+
+Reimplemented in \mbox{\hyperlink{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1requirements_1_1UnsatisfiableRequirement_a9985e734d8ed70efb4876b171d028d04}{pip.\+\_\+internal.\+resolution.\+resolvelib.\+requirements.\+Unsatisfiable\+Requirement}}, \mbox{\hyperlink{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1requirements_1_1RequiresPythonRequirement_a73833ac9af6812b6b2714426ee4e67a2}{pip.\+\_\+internal.\+resolution.\+resolvelib.\+requirements.\+Requires\+Python\+Requirement}}, \mbox{\hyperlink{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1requirements_1_1SpecifierRequirement_a88acd8039ad23152b5a5c17016a2ebdf}{pip.\+\_\+internal.\+resolution.\+resolvelib.\+requirements.\+Specifier\+Requirement}}, and \mbox{\hyperlink{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1requirements_1_1ExplicitRequirement_a69d8322d1bb88250df6b7da112fcb30f}{pip.\+\_\+internal.\+resolution.\+resolvelib.\+requirements.\+Explicit\+Requirement}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/\+Lib/site-\/packages/pip/\+\_\+internal/resolution/resolvelib/base.\+py\end{DoxyCompactItemize}

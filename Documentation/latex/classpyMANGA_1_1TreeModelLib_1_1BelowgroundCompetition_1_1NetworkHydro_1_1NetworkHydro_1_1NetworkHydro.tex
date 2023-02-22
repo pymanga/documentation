@@ -1,0 +1,114 @@
+\hypertarget{classpyMANGA_1_1TreeModelLib_1_1BelowgroundCompetition_1_1NetworkHydro_1_1NetworkHydro_1_1NetworkHydro}{}\doxysection{py\+MANGA.\+Tree\+Model\+Lib.\+Belowground\+Competition.\+Network\+Hydro.\+Network\+Hydro.\+Network\+Hydro Class Reference}
+\label{classpyMANGA_1_1TreeModelLib_1_1BelowgroundCompetition_1_1NetworkHydro_1_1NetworkHydro_1_1NetworkHydro}\index{pyMANGA.TreeModelLib.BelowgroundCompetition.NetworkHydro.NetworkHydro.NetworkHydro@{pyMANGA.TreeModelLib.BelowgroundCompetition.NetworkHydro.NetworkHydro.NetworkHydro}}
+Inheritance diagram for py\+MANGA.\+Tree\+Model\+Lib.\+Belowground\+Competition.\+Network\+Hydro.\+Network\+Hydro.\+Network\+Hydro\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=0.998218cm]{classpyMANGA_1_1TreeModelLib_1_1BelowgroundCompetition_1_1NetworkHydro_1_1NetworkHydro_1_1NetworkHydro}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classpyMANGA_1_1TreeModelLib_1_1BelowgroundCompetition_1_1NetworkHydro_1_1NetworkHydro_1_1NetworkHydro_aca0c0c640b6808da7df67dba8c16f7b2}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, args)
+\begin{DoxyCompactList}\small\item\em Simple approach to reduce water availability due to osmotic potential. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classpyMANGA_1_1TreeModelLib_1_1BelowgroundCompetition_1_1NetworkHydro_1_1NetworkHydro_1_1NetworkHydro_a083d611a504836105ae9f9b6ca9df7b5}{prepare\+Next\+Time\+Step}} (self, t\+\_\+ini, t\+\_\+end)
+\begin{DoxyCompactList}\small\item\em This functions prepares the computation of water uptake by porewater salinity. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classpyMANGA_1_1TreeModelLib_1_1BelowgroundCompetition_1_1NetworkHydro_1_1NetworkHydro_1_1NetworkHydro_ae6d42fd79913595315cdfdc2348d8d70}{add\+Tree}} (self, tree)
+\begin{DoxyCompactList}\small\item\em Before being able to calculate the resources, all tree entities need to be added with their relevant allometric measures for the next timestep. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classpyMANGA_1_1TreeModelLib_1_1BelowgroundCompetition_1_1NetworkHydro_1_1NetworkHydro_1_1NetworkHydro_a709cca38045415b07f61b1f5c31ecb10}{calculate\+Belowground\+Resources}} (self)
+\begin{DoxyCompactList}\small\item\em This function returns a list of the growth reduction factors of all trees. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classpyMANGA_1_1TreeModelLib_1_1BelowgroundCompetition_1_1NetworkHydro_1_1NetworkHydro_1_1NetworkHydro_a499e72e148986fb832d1e32e34120c79}\label{classpyMANGA_1_1TreeModelLib_1_1BelowgroundCompetition_1_1NetworkHydro_1_1NetworkHydro_1_1NetworkHydro_a499e72e148986fb832d1e32e34120c79}} 
+def {\bfseries calculate\+Psi\+Osmo} (self)
+\item 
+def \mbox{\hyperlink{classpyMANGA_1_1TreeModelLib_1_1BelowgroundCompetition_1_1NetworkHydro_1_1NetworkHydro_1_1NetworkHydro_ad370e6395e8ea3c5245c4c5eb1a9e99d}{get\+Input\+Parameters}} (self, args)
+\begin{DoxyCompactList}\small\item\em This function reads the input parameters and initialises the mesh. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classpyMANGA_1_1TreeModelLib_1_1BelowgroundCompetition_1_1NetworkHydro_1_1NetworkHydro_1_1NetworkHydro_aca0c0c640b6808da7df67dba8c16f7b2}\label{classpyMANGA_1_1TreeModelLib_1_1BelowgroundCompetition_1_1NetworkHydro_1_1NetworkHydro_1_1NetworkHydro_aca0c0c640b6808da7df67dba8c16f7b2}} 
+\index{pyMANGA.TreeModelLib.BelowgroundCompetition.NetworkHydro.NetworkHydro.NetworkHydro@{pyMANGA.TreeModelLib.BelowgroundCompetition.NetworkHydro.NetworkHydro.NetworkHydro}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!pyMANGA.TreeModelLib.BelowgroundCompetition.NetworkHydro.NetworkHydro.NetworkHydro@{pyMANGA.TreeModelLib.BelowgroundCompetition.NetworkHydro.NetworkHydro.NetworkHydro}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def py\+MANGA.\+Tree\+Model\+Lib.\+Belowground\+Competition.\+Network\+Hydro.\+Network\+Hydro.\+Network\+Hydro.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{args }\end{DoxyParamCaption})}
+
+
+
+Simple approach to reduce water availability due to osmotic potential. 
+
+Processes are gradient flow, salinisation by plant transpiration, dilution by tides and horizontal mixing (diffusion).~\newline
+
+\begin{DoxyParams}{Parameters}
+{\em } & Tags to define Simple\+Hydro, see tag documentation ~\newline
+ \\
+\hline
+\end{DoxyParams}
+\begin{DoxyDate}{Date}
+\+: 2019 -\/ Today 
+\end{DoxyDate}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classpyMANGA_1_1TreeModelLib_1_1BelowgroundCompetition_1_1NetworkHydro_1_1NetworkHydro_1_1NetworkHydro_ae6d42fd79913595315cdfdc2348d8d70}\label{classpyMANGA_1_1TreeModelLib_1_1BelowgroundCompetition_1_1NetworkHydro_1_1NetworkHydro_1_1NetworkHydro_ae6d42fd79913595315cdfdc2348d8d70}} 
+\index{pyMANGA.TreeModelLib.BelowgroundCompetition.NetworkHydro.NetworkHydro.NetworkHydro@{pyMANGA.TreeModelLib.BelowgroundCompetition.NetworkHydro.NetworkHydro.NetworkHydro}!addTree@{addTree}}
+\index{addTree@{addTree}!pyMANGA.TreeModelLib.BelowgroundCompetition.NetworkHydro.NetworkHydro.NetworkHydro@{pyMANGA.TreeModelLib.BelowgroundCompetition.NetworkHydro.NetworkHydro.NetworkHydro}}
+\doxysubsubsection{\texorpdfstring{addTree()}{addTree()}}
+{\footnotesize\ttfamily def py\+MANGA.\+Tree\+Model\+Lib.\+Belowground\+Competition.\+Network\+Hydro.\+Network\+Hydro.\+Network\+Hydro.\+add\+Tree (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{tree }\end{DoxyParamCaption})}
+
+
+
+Before being able to calculate the resources, all tree entities need to be added with their relevant allometric measures for the next timestep. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em } & tree \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classpyMANGA_1_1TreeModelLib_1_1BelowgroundCompetition_1_1NetworkHydro_1_1NetworkHydro_1_1NetworkHydro_a709cca38045415b07f61b1f5c31ecb10}\label{classpyMANGA_1_1TreeModelLib_1_1BelowgroundCompetition_1_1NetworkHydro_1_1NetworkHydro_1_1NetworkHydro_a709cca38045415b07f61b1f5c31ecb10}} 
+\index{pyMANGA.TreeModelLib.BelowgroundCompetition.NetworkHydro.NetworkHydro.NetworkHydro@{pyMANGA.TreeModelLib.BelowgroundCompetition.NetworkHydro.NetworkHydro.NetworkHydro}!calculateBelowgroundResources@{calculateBelowgroundResources}}
+\index{calculateBelowgroundResources@{calculateBelowgroundResources}!pyMANGA.TreeModelLib.BelowgroundCompetition.NetworkHydro.NetworkHydro.NetworkHydro@{pyMANGA.TreeModelLib.BelowgroundCompetition.NetworkHydro.NetworkHydro.NetworkHydro}}
+\doxysubsubsection{\texorpdfstring{calculateBelowgroundResources()}{calculateBelowgroundResources()}}
+{\footnotesize\ttfamily def py\+MANGA.\+Tree\+Model\+Lib.\+Belowground\+Competition.\+Network\+Hydro.\+Network\+Hydro.\+Network\+Hydro.\+calculate\+Belowground\+Resources (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+This function returns a list of the growth reduction factors of all trees. 
+
+calculated in the subsequent timestep.~\newline
+ \begin{DoxyReturn}{Returns}
+\+: np.\+array with \$\+N\+\_\+tree\$ scalars 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classpyMANGA_1_1TreeModelLib_1_1BelowgroundCompetition_1_1NetworkHydro_1_1NetworkHydro_1_1NetworkHydro_ad370e6395e8ea3c5245c4c5eb1a9e99d}\label{classpyMANGA_1_1TreeModelLib_1_1BelowgroundCompetition_1_1NetworkHydro_1_1NetworkHydro_1_1NetworkHydro_ad370e6395e8ea3c5245c4c5eb1a9e99d}} 
+\index{pyMANGA.TreeModelLib.BelowgroundCompetition.NetworkHydro.NetworkHydro.NetworkHydro@{pyMANGA.TreeModelLib.BelowgroundCompetition.NetworkHydro.NetworkHydro.NetworkHydro}!getInputParameters@{getInputParameters}}
+\index{getInputParameters@{getInputParameters}!pyMANGA.TreeModelLib.BelowgroundCompetition.NetworkHydro.NetworkHydro.NetworkHydro@{pyMANGA.TreeModelLib.BelowgroundCompetition.NetworkHydro.NetworkHydro.NetworkHydro}}
+\doxysubsubsection{\texorpdfstring{getInputParameters()}{getInputParameters()}}
+{\footnotesize\ttfamily def py\+MANGA.\+Tree\+Model\+Lib.\+Belowground\+Competition.\+Network\+Hydro.\+Network\+Hydro.\+Network\+Hydro.\+get\+Input\+Parameters (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{args }\end{DoxyParamCaption})}
+
+
+
+This function reads the input parameters and initialises the mesh. 
+
+~\newline
+\mbox{\Hypertarget{classpyMANGA_1_1TreeModelLib_1_1BelowgroundCompetition_1_1NetworkHydro_1_1NetworkHydro_1_1NetworkHydro_a083d611a504836105ae9f9b6ca9df7b5}\label{classpyMANGA_1_1TreeModelLib_1_1BelowgroundCompetition_1_1NetworkHydro_1_1NetworkHydro_1_1NetworkHydro_a083d611a504836105ae9f9b6ca9df7b5}} 
+\index{pyMANGA.TreeModelLib.BelowgroundCompetition.NetworkHydro.NetworkHydro.NetworkHydro@{pyMANGA.TreeModelLib.BelowgroundCompetition.NetworkHydro.NetworkHydro.NetworkHydro}!prepareNextTimeStep@{prepareNextTimeStep}}
+\index{prepareNextTimeStep@{prepareNextTimeStep}!pyMANGA.TreeModelLib.BelowgroundCompetition.NetworkHydro.NetworkHydro.NetworkHydro@{pyMANGA.TreeModelLib.BelowgroundCompetition.NetworkHydro.NetworkHydro.NetworkHydro}}
+\doxysubsubsection{\texorpdfstring{prepareNextTimeStep()}{prepareNextTimeStep()}}
+{\footnotesize\ttfamily def py\+MANGA.\+Tree\+Model\+Lib.\+Belowground\+Competition.\+Network\+Hydro.\+Network\+Hydro.\+Network\+Hydro.\+prepare\+Next\+Time\+Step (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{t\+\_\+ini,  }\item[{}]{t\+\_\+end }\end{DoxyParamCaption})}
+
+
+
+This functions prepares the computation of water uptake by porewater salinity. 
+
+Only tree height and leaf water potential is needed~\newline
+
+\begin{DoxyParams}{Parameters}
+{\em t\+\_\+ini} & -\/ initial time for next timestep ~\newline
+\\
+\hline
+{\em t\+\_\+end} & -\/ end time for next timestep \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Tree\+Model\+Lib/\+Belowground\+Competition/\+Network\+Hydro/Network\+Hydro.\+py\end{DoxyCompactItemize}

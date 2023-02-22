@@ -1,0 +1,94 @@
+\hypertarget{classpyMANGA_1_1TreeModelLib_1_1TreeModel_1_1TreeModel}{}\doxysection{py\+MANGA.\+Tree\+Model\+Lib.\+Tree\+Model.\+Tree\+Model Class Reference}
+\label{classpyMANGA_1_1TreeModelLib_1_1TreeModel_1_1TreeModel}\index{pyMANGA.TreeModelLib.TreeModel.TreeModel@{pyMANGA.TreeModelLib.TreeModel.TreeModel}}
+Inheritance diagram for py\+MANGA.\+Tree\+Model\+Lib.\+Tree\+Model.\+Tree\+Model\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.848485cm]{classpyMANGA_1_1TreeModelLib_1_1TreeModel_1_1TreeModel}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpyMANGA_1_1TreeModelLib_1_1TreeModel_1_1TreeModel_a3c44ea3194a6b09841f6bd6e30de056e}\label{classpyMANGA_1_1TreeModelLib_1_1TreeModel_1_1TreeModel_a3c44ea3194a6b09841f6bd6e30de056e}} 
+def {\bfseries get\+Aboveground\+Resources} (self)
+\item 
+\mbox{\Hypertarget{classpyMANGA_1_1TreeModelLib_1_1TreeModel_1_1TreeModel_a5e70529376ac3928ef98618b055904d6}\label{classpyMANGA_1_1TreeModelLib_1_1TreeModel_1_1TreeModel_a5e70529376ac3928ef98618b055904d6}} 
+def {\bfseries get\+Belowground\+Resources} (self)
+\item 
+def \mbox{\hyperlink{classpyMANGA_1_1TreeModelLib_1_1TreeModel_1_1TreeModel_a07299e031b2cda2009adaddd7fb5897c}{ini\+Mortality\+Concept}} (self, args)
+\begin{DoxyCompactList}\small\item\em This function initializes and returns the names of all selected mortality concepts. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classpyMANGA_1_1TreeModelLib_1_1TreeModel_1_1TreeModel_a51e20ac748817832402e3eb6556e9c32}\label{classpyMANGA_1_1TreeModelLib_1_1TreeModel_1_1TreeModel_a51e20ac748817832402e3eb6556e9c32}} 
+def {\bfseries get\+Mortality\+Concept\+Names} (self)
+\item 
+def \mbox{\hyperlink{classpyMANGA_1_1TreeModelLib_1_1TreeModel_1_1TreeModel_aec6b77af8d3b556ddd06be4bd4aa1e6d}{set\+Mortality\+Variables}} (self, growth\+\_\+concept\+\_\+information)
+\begin{DoxyCompactList}\small\item\em This function calls \mbox{\hyperlink{classpyMANGA_1_1TreeModelLib_1_1TreeModel_1_1TreeModel_aec6b77af8d3b556ddd06be4bd4aa1e6d}{set\+Mortality\+Variables()}} of all selected mortality concepts and initiates variables that are not yet in available in the selected growth concept but are required for the mortality concept. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classpyMANGA_1_1TreeModelLib_1_1TreeModel_1_1TreeModel_a5814eab206b8917dea73f699177dfe17}{get\+Mortality\+Variables}} (self, growth\+\_\+concept\+\_\+information)
+\begin{DoxyCompactList}\small\item\em This function calls \mbox{\hyperlink{classpyMANGA_1_1TreeModelLib_1_1TreeModel_1_1TreeModel_a5814eab206b8917dea73f699177dfe17}{get\+Mortality\+Variables()}} of all selected mortality concepts and return variables that are not yet in available in the selected growth concept but are required for the mortality concept. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classpyMANGA_1_1TreeModelLib_1_1TreeModel_1_1TreeModel_ada67081b3696edd5b7f70c55bcdfa147}\label{classpyMANGA_1_1TreeModelLib_1_1TreeModel_1_1TreeModel_ada67081b3696edd5b7f70c55bcdfa147}} 
+def \mbox{\hyperlink{classpyMANGA_1_1TreeModelLib_1_1TreeModel_1_1TreeModel_ada67081b3696edd5b7f70c55bcdfa147}{set\+Tree\+Killer}} (self)
+\begin{DoxyCompactList}\small\item\em This function calls set\+Survive() of all selected mortality concepts and checks if the conditions for death are met. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpyMANGA_1_1TreeModelLib_1_1TreeModel_1_1TreeModel_a4f3afde35ac31692315cdf2df58f7cd7}\label{classpyMANGA_1_1TreeModelLib_1_1TreeModel_1_1TreeModel_a4f3afde35ac31692315cdf2df58f7cd7}} 
+{\bfseries mortality\+\_\+concept}
+\item 
+\mbox{\Hypertarget{classpyMANGA_1_1TreeModelLib_1_1TreeModel_1_1TreeModel_aebcac149e278e3217c33f1fe403ffa19}\label{classpyMANGA_1_1TreeModelLib_1_1TreeModel_1_1TreeModel_aebcac149e278e3217c33f1fe403ffa19}} 
+{\bfseries mortality\+\_\+concept\+\_\+names}
+\item 
+\mbox{\Hypertarget{classpyMANGA_1_1TreeModelLib_1_1TreeModel_1_1TreeModel_a6de0ba62547662bf352b7ab968b68925}\label{classpyMANGA_1_1TreeModelLib_1_1TreeModel_1_1TreeModel_a6de0ba62547662bf352b7ab968b68925}} 
+{\bfseries survive}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classpyMANGA_1_1TreeModelLib_1_1TreeModel_1_1TreeModel_a5814eab206b8917dea73f699177dfe17}\label{classpyMANGA_1_1TreeModelLib_1_1TreeModel_1_1TreeModel_a5814eab206b8917dea73f699177dfe17}} 
+\index{pyMANGA.TreeModelLib.TreeModel.TreeModel@{pyMANGA.TreeModelLib.TreeModel.TreeModel}!getMortalityVariables@{getMortalityVariables}}
+\index{getMortalityVariables@{getMortalityVariables}!pyMANGA.TreeModelLib.TreeModel.TreeModel@{pyMANGA.TreeModelLib.TreeModel.TreeModel}}
+\doxysubsubsection{\texorpdfstring{getMortalityVariables()}{getMortalityVariables()}}
+{\footnotesize\ttfamily def py\+MANGA.\+Tree\+Model\+Lib.\+Tree\+Model.\+Tree\+Model.\+get\+Mortality\+Variables (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{growth\+\_\+concept\+\_\+information }\end{DoxyParamCaption})}
+
+
+
+This function calls \mbox{\hyperlink{classpyMANGA_1_1TreeModelLib_1_1TreeModel_1_1TreeModel_a5814eab206b8917dea73f699177dfe17}{get\+Mortality\+Variables()}} of all selected mortality concepts and return variables that are not yet in available in the selected growth concept but are required for the mortality concept. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em growth\+\_\+concept\+\_\+information} & growth\+\_\+concept\+\_\+information dictionary \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classpyMANGA_1_1TreeModelLib_1_1TreeModel_1_1TreeModel_a07299e031b2cda2009adaddd7fb5897c}\label{classpyMANGA_1_1TreeModelLib_1_1TreeModel_1_1TreeModel_a07299e031b2cda2009adaddd7fb5897c}} 
+\index{pyMANGA.TreeModelLib.TreeModel.TreeModel@{pyMANGA.TreeModelLib.TreeModel.TreeModel}!iniMortalityConcept@{iniMortalityConcept}}
+\index{iniMortalityConcept@{iniMortalityConcept}!pyMANGA.TreeModelLib.TreeModel.TreeModel@{pyMANGA.TreeModelLib.TreeModel.TreeModel}}
+\doxysubsubsection{\texorpdfstring{iniMortalityConcept()}{iniMortalityConcept()}}
+{\footnotesize\ttfamily def py\+MANGA.\+Tree\+Model\+Lib.\+Tree\+Model.\+Tree\+Model.\+ini\+Mortality\+Concept (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{args }\end{DoxyParamCaption})}
+
+
+
+This function initializes and returns the names of all selected mortality concepts. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em args} & xml project file \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classpyMANGA_1_1TreeModelLib_1_1TreeModel_1_1TreeModel_aec6b77af8d3b556ddd06be4bd4aa1e6d}\label{classpyMANGA_1_1TreeModelLib_1_1TreeModel_1_1TreeModel_aec6b77af8d3b556ddd06be4bd4aa1e6d}} 
+\index{pyMANGA.TreeModelLib.TreeModel.TreeModel@{pyMANGA.TreeModelLib.TreeModel.TreeModel}!setMortalityVariables@{setMortalityVariables}}
+\index{setMortalityVariables@{setMortalityVariables}!pyMANGA.TreeModelLib.TreeModel.TreeModel@{pyMANGA.TreeModelLib.TreeModel.TreeModel}}
+\doxysubsubsection{\texorpdfstring{setMortalityVariables()}{setMortalityVariables()}}
+{\footnotesize\ttfamily def py\+MANGA.\+Tree\+Model\+Lib.\+Tree\+Model.\+Tree\+Model.\+set\+Mortality\+Variables (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{growth\+\_\+concept\+\_\+information }\end{DoxyParamCaption})}
+
+
+
+This function calls \mbox{\hyperlink{classpyMANGA_1_1TreeModelLib_1_1TreeModel_1_1TreeModel_aec6b77af8d3b556ddd06be4bd4aa1e6d}{set\+Mortality\+Variables()}} of all selected mortality concepts and initiates variables that are not yet in available in the selected growth concept but are required for the mortality concept. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em growth\+\_\+concept\+\_\+information} & growth\+\_\+concept\+\_\+information dictionary \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Tree\+Model\+Lib/Tree\+Model.\+py\end{DoxyCompactItemize}

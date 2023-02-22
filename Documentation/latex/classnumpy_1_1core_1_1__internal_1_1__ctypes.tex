@@ -1,0 +1,119 @@
+\hypertarget{classnumpy_1_1core_1_1__internal_1_1__ctypes}{}\doxysection{numpy.\+core.\+\_\+internal.\+\_\+ctypes Class Reference}
+\label{classnumpy_1_1core_1_1__internal_1_1__ctypes}\index{numpy.core.\_internal.\_ctypes@{numpy.core.\_internal.\_ctypes}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classnumpy_1_1core_1_1__internal_1_1__ctypes_a8db418685bd9235a5882d7ff15fb04b6}\label{classnumpy_1_1core_1_1__internal_1_1__ctypes_a8db418685bd9235a5882d7ff15fb04b6}} 
+def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, array, ptr=None)
+\item 
+def \mbox{\hyperlink{classnumpy_1_1core_1_1__internal_1_1__ctypes_a0fe1e07d0e15c91c5eb499dbfb1faf3e}{data\+\_\+as}} (self, obj)
+\item 
+def \mbox{\hyperlink{classnumpy_1_1core_1_1__internal_1_1__ctypes_a470eb2d89822b0394bd7b3ab8b77ad67}{shape\+\_\+as}} (self, obj)
+\item 
+def \mbox{\hyperlink{classnumpy_1_1core_1_1__internal_1_1__ctypes_a556e6c2bc96210705c6462bfe9f7258b}{strides\+\_\+as}} (self, obj)
+\item 
+def \mbox{\hyperlink{classnumpy_1_1core_1_1__internal_1_1__ctypes_aa1de35e81ef909a4d1fd1f183ab7299c}{data}} (self)
+\item 
+def \mbox{\hyperlink{classnumpy_1_1core_1_1__internal_1_1__ctypes_ad540640e42cdc1a70b1408f75963915d}{shape}} (self)
+\item 
+def \mbox{\hyperlink{classnumpy_1_1core_1_1__internal_1_1__ctypes_a24943eab345390d3f2ccdb19519108b1}{strides}} (self)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classnumpy_1_1core_1_1__internal_1_1__ctypes_ade40550163e713f614b3c86e2c5200c0}\label{classnumpy_1_1core_1_1__internal_1_1__ctypes_ade40550163e713f614b3c86e2c5200c0}} 
+def {\bfseries get\+\_\+data} = data.\+fget
+\item 
+\mbox{\Hypertarget{classnumpy_1_1core_1_1__internal_1_1__ctypes_a238033e50ee3ca02013d06c8277aaaf1}\label{classnumpy_1_1core_1_1__internal_1_1__ctypes_a238033e50ee3ca02013d06c8277aaaf1}} 
+def {\bfseries get\+\_\+shape} = shape.\+fget
+\item 
+\mbox{\Hypertarget{classnumpy_1_1core_1_1__internal_1_1__ctypes_a3b675ffda06b1991b6ba42b53c8e46da}\label{classnumpy_1_1core_1_1__internal_1_1__ctypes_a3b675ffda06b1991b6ba42b53c8e46da}} 
+def {\bfseries get\+\_\+strides} = strides.\+fget
+\item 
+\mbox{\Hypertarget{classnumpy_1_1core_1_1__internal_1_1__ctypes_a93762ad64b01f2b13cd295c4b00f426c}\label{classnumpy_1_1core_1_1__internal_1_1__ctypes_a93762ad64b01f2b13cd295c4b00f426c}} 
+def {\bfseries get\+\_\+as\+\_\+parameter} = \+\_\+as\+\_\+parameter\+\_\+.\+fget
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classnumpy_1_1core_1_1__internal_1_1__ctypes_aa1de35e81ef909a4d1fd1f183ab7299c}\label{classnumpy_1_1core_1_1__internal_1_1__ctypes_aa1de35e81ef909a4d1fd1f183ab7299c}} 
+\index{numpy.core.\_internal.\_ctypes@{numpy.core.\_internal.\_ctypes}!data@{data}}
+\index{data@{data}!numpy.core.\_internal.\_ctypes@{numpy.core.\_internal.\_ctypes}}
+\doxysubsubsection{\texorpdfstring{data()}{data()}}
+{\footnotesize\ttfamily def numpy.\+core.\+\_\+internal.\+\_\+ctypes.\+data (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}A pointer to the memory area of the array as a Python integer.
+This memory area may contain data that is not aligned, or not in correct
+byte-order. The memory area may not even be writeable. The array
+flags and data-type of this array should be respected when passing this
+attribute to arbitrary C-code to avoid trouble that can include Python
+crashing. User Beware! The value of this attribute is exactly the same
+as ``self._array_interface_['data'][0]``.
+
+Note that unlike ``data_as``, a reference will not be kept to the array:
+code like ``ctypes.c_void_p((a + b).ctypes.data)`` will result in a
+pointer to a deallocated array, and should be spelt
+``(a + b).ctypes.data_as(ctypes.c_void_p)``
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classnumpy_1_1core_1_1__internal_1_1__ctypes_a0fe1e07d0e15c91c5eb499dbfb1faf3e}\label{classnumpy_1_1core_1_1__internal_1_1__ctypes_a0fe1e07d0e15c91c5eb499dbfb1faf3e}} 
+\index{numpy.core.\_internal.\_ctypes@{numpy.core.\_internal.\_ctypes}!data\_as@{data\_as}}
+\index{data\_as@{data\_as}!numpy.core.\_internal.\_ctypes@{numpy.core.\_internal.\_ctypes}}
+\doxysubsubsection{\texorpdfstring{data\_as()}{data\_as()}}
+{\footnotesize\ttfamily def numpy.\+core.\+\_\+internal.\+\_\+ctypes.\+data\+\_\+as (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{obj }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return the data pointer cast to a particular c-types object.
+For example, calling ``self._as_parameter_`` is equivalent to
+``self.data_as(ctypes.c_void_p)``. Perhaps you want to use the data as a
+pointer to a ctypes array of floating-point data:
+``self.data_as(ctypes.POINTER(ctypes.c_double))``.
+
+The returned pointer will keep a reference to the array.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classnumpy_1_1core_1_1__internal_1_1__ctypes_ad540640e42cdc1a70b1408f75963915d}\label{classnumpy_1_1core_1_1__internal_1_1__ctypes_ad540640e42cdc1a70b1408f75963915d}} 
+\index{numpy.core.\_internal.\_ctypes@{numpy.core.\_internal.\_ctypes}!shape@{shape}}
+\index{shape@{shape}!numpy.core.\_internal.\_ctypes@{numpy.core.\_internal.\_ctypes}}
+\doxysubsubsection{\texorpdfstring{shape()}{shape()}}
+{\footnotesize\ttfamily def numpy.\+core.\+\_\+internal.\+\_\+ctypes.\+shape (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}(c_intp*self.ndim): A ctypes array of length self.ndim where
+the basetype is the C-integer corresponding to ``dtype('p')`` on this
+platform. This base-type could be `ctypes.c_int`, `ctypes.c_long`, or
+`ctypes.c_longlong` depending on the platform.
+The c_intp type is defined accordingly in `numpy.ctypeslib`.
+The ctypes array contains the shape of the underlying array.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classnumpy_1_1core_1_1__internal_1_1__ctypes_a470eb2d89822b0394bd7b3ab8b77ad67}\label{classnumpy_1_1core_1_1__internal_1_1__ctypes_a470eb2d89822b0394bd7b3ab8b77ad67}} 
+\index{numpy.core.\_internal.\_ctypes@{numpy.core.\_internal.\_ctypes}!shape\_as@{shape\_as}}
+\index{shape\_as@{shape\_as}!numpy.core.\_internal.\_ctypes@{numpy.core.\_internal.\_ctypes}}
+\doxysubsubsection{\texorpdfstring{shape\_as()}{shape\_as()}}
+{\footnotesize\ttfamily def numpy.\+core.\+\_\+internal.\+\_\+ctypes.\+shape\+\_\+as (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{obj }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return the shape tuple as an array of some other c-types
+type. For example: ``self.shape_as(ctypes.c_short)``.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classnumpy_1_1core_1_1__internal_1_1__ctypes_a24943eab345390d3f2ccdb19519108b1}\label{classnumpy_1_1core_1_1__internal_1_1__ctypes_a24943eab345390d3f2ccdb19519108b1}} 
+\index{numpy.core.\_internal.\_ctypes@{numpy.core.\_internal.\_ctypes}!strides@{strides}}
+\index{strides@{strides}!numpy.core.\_internal.\_ctypes@{numpy.core.\_internal.\_ctypes}}
+\doxysubsubsection{\texorpdfstring{strides()}{strides()}}
+{\footnotesize\ttfamily def numpy.\+core.\+\_\+internal.\+\_\+ctypes.\+strides (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}(c_intp*self.ndim): A ctypes array of length self.ndim where
+the basetype is the same as for the shape attribute. This ctypes array
+contains the strides information from the underlying array. This strides
+information is important for showing how many bytes must be jumped to
+get to the next element in the array.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classnumpy_1_1core_1_1__internal_1_1__ctypes_a556e6c2bc96210705c6462bfe9f7258b}\label{classnumpy_1_1core_1_1__internal_1_1__ctypes_a556e6c2bc96210705c6462bfe9f7258b}} 
+\index{numpy.core.\_internal.\_ctypes@{numpy.core.\_internal.\_ctypes}!strides\_as@{strides\_as}}
+\index{strides\_as@{strides\_as}!numpy.core.\_internal.\_ctypes@{numpy.core.\_internal.\_ctypes}}
+\doxysubsubsection{\texorpdfstring{strides\_as()}{strides\_as()}}
+{\footnotesize\ttfamily def numpy.\+core.\+\_\+internal.\+\_\+ctypes.\+strides\+\_\+as (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{obj }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return the strides tuple as an array of some other
+c-types type. For example: ``self.strides_as(ctypes.c_longlong)``.
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/\+Lib/site-\/packages/numpy/core/\+\_\+internal.\+py\end{DoxyCompactItemize}

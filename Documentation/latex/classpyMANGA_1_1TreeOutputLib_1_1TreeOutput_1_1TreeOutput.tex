@@ -1,0 +1,120 @@
+\hypertarget{classpyMANGA_1_1TreeOutputLib_1_1TreeOutput_1_1TreeOutput}{}\doxysection{py\+MANGA.\+Tree\+Output\+Lib.\+Tree\+Output.\+Tree\+Output Class Reference}
+\label{classpyMANGA_1_1TreeOutputLib_1_1TreeOutput_1_1TreeOutput}\index{pyMANGA.TreeOutputLib.TreeOutput.TreeOutput@{pyMANGA.TreeOutputLib.TreeOutput.TreeOutput}}
+
+
+\doxysubsection{Detailed Description}
+Parent class for tree output. Inheritance diagram for py\+MANGA.\+Tree\+Output\+Lib.\+Tree\+Output.\+Tree\+Output\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=0.603448cm]{classpyMANGA_1_1TreeOutputLib_1_1TreeOutput_1_1TreeOutput}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpyMANGA_1_1TreeOutputLib_1_1TreeOutput_1_1TreeOutput_a5d927fe44167b1949e50628f1408ae4e}\label{classpyMANGA_1_1TreeOutputLib_1_1TreeOutput_1_1TreeOutput_a5d927fe44167b1949e50628f1408ae4e}} 
+def \mbox{\hyperlink{classpyMANGA_1_1TreeOutputLib_1_1TreeOutput_1_1TreeOutput_a5d927fe44167b1949e50628f1408ae4e}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, args)
+\begin{DoxyCompactList}\small\item\em Constructor for tree output calling different constructors depending on choosen case. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classpyMANGA_1_1TreeOutputLib_1_1TreeOutput_1_1TreeOutput_a70740409fef1d55b6e239ce29be07cf7}\label{classpyMANGA_1_1TreeOutputLib_1_1TreeOutput_1_1TreeOutput_a70740409fef1d55b6e239ce29be07cf7}} 
+def \mbox{\hyperlink{classpyMANGA_1_1TreeOutputLib_1_1TreeOutput_1_1TreeOutput_a70740409fef1d55b6e239ce29be07cf7}{get\+Output\+Type}} (self)
+\begin{DoxyCompactList}\small\item\em Returns output type\+: \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classpyMANGA_1_1TreeOutputLib_1_1TreeOutput_1_1TreeOutput_a62a9a7bca95a496527c47ae98c5abc02}\label{classpyMANGA_1_1TreeOutputLib_1_1TreeOutput_1_1TreeOutput_a62a9a7bca95a496527c47ae98c5abc02}} 
+def \mbox{\hyperlink{classpyMANGA_1_1TreeOutputLib_1_1TreeOutput_1_1TreeOutput_a62a9a7bca95a496527c47ae98c5abc02}{get\+Output\+Dir}} (self)
+\begin{DoxyCompactList}\small\item\em This function returns the output directory. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classpyMANGA_1_1TreeOutputLib_1_1TreeOutput_1_1TreeOutput_a89872c2bed95169190561f07434d0a6c}\label{classpyMANGA_1_1TreeOutputLib_1_1TreeOutput_1_1TreeOutput_a89872c2bed95169190561f07434d0a6c}} 
+def {\bfseries add\+Selected\+Headings} (self, string, delimiter)
+\item 
+\mbox{\Hypertarget{classpyMANGA_1_1TreeOutputLib_1_1TreeOutput_1_1TreeOutput_a5b82f751452c2b1c6d54be2930134f04}\label{classpyMANGA_1_1TreeOutputLib_1_1TreeOutput_1_1TreeOutput_a5b82f751452c2b1c6d54be2930134f04}} 
+def {\bfseries add\+Selected\+Outputs} (self, tree, string, delimiter, growth\+\_\+information)
+\item 
+def \mbox{\hyperlink{classpyMANGA_1_1TreeOutputLib_1_1TreeOutput_1_1TreeOutput_a93671c3768127478e6d0565564d10e7f}{check\+Required\+Key}} (self, key, args)
+\begin{DoxyCompactList}\small\item\em This function checks if a key exists and if its text content is empty. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classpyMANGA_1_1TreeOutputLib_1_1TreeOutput_1_1TreeOutput_a44bf404ec962e7b71ef3feb336769149}{write\+Output}} (self, tree\+\_\+groups, time)
+\begin{DoxyCompactList}\small\item\em Writes output to predefined folder For each timestep a file is created throughout the simulation. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classpyMANGA_1_1TreeOutputLib_1_1TreeOutput_1_1TreeOutput_a70450b737d3e0eb120bfc1816e8eccee}\label{classpyMANGA_1_1TreeOutputLib_1_1TreeOutput_1_1TreeOutput_a70450b737d3e0eb120bfc1816e8eccee}} 
+def {\bfseries output\+Content} (self, tree\+\_\+groups, time)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpyMANGA_1_1TreeOutputLib_1_1TreeOutput_1_1TreeOutput_a56b50dfd3df35eb3e0eaf3762ed0dee7}{output\+\_\+dir}}
+\begin{DoxyCompactList}\small\item\em Directory, where output is saved. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classpyMANGA_1_1TreeOutputLib_1_1TreeOutput_1_1TreeOutput_a83aa34488ddb01e15f551b9844c645a1}\label{classpyMANGA_1_1TreeOutputLib_1_1TreeOutput_1_1TreeOutput_a83aa34488ddb01e15f551b9844c645a1}} 
+\mbox{\hyperlink{classpyMANGA_1_1TreeOutputLib_1_1TreeOutput_1_1TreeOutput_a83aa34488ddb01e15f551b9844c645a1}{output\+\_\+each\+\_\+nth\+\_\+timestep}}
+\begin{DoxyCompactList}\small\item\em N-\/timesteps between two outputs. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classpyMANGA_1_1TreeOutputLib_1_1TreeOutput_1_1TreeOutput_a9556f836d1b1946b439f536711d28e9f}{output\+\_\+times}}
+\begin{DoxyCompactList}\small\item\em Check if overwrite of previous output is allowed. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classpyMANGA_1_1TreeOutputLib_1_1TreeOutput_1_1TreeOutput_aa2c4e0a885db4fc2fbc0f3012438ecff}\label{classpyMANGA_1_1TreeOutputLib_1_1TreeOutput_1_1TreeOutput_aa2c4e0a885db4fc2fbc0f3012438ecff}} 
+\mbox{\hyperlink{classpyMANGA_1_1TreeOutputLib_1_1TreeOutput_1_1TreeOutput_aa2c4e0a885db4fc2fbc0f3012438ecff}{geometry\+\_\+outputs}}
+\begin{DoxyCompactList}\small\item\em Geometric measures included in output. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classpyMANGA_1_1TreeOutputLib_1_1TreeOutput_1_1TreeOutput_a7fbb0add672f77378a20b71ecf9985b7}\label{classpyMANGA_1_1TreeOutputLib_1_1TreeOutput_1_1TreeOutput_a7fbb0add672f77378a20b71ecf9985b7}} 
+\mbox{\hyperlink{classpyMANGA_1_1TreeOutputLib_1_1TreeOutput_1_1TreeOutput_a7fbb0add672f77378a20b71ecf9985b7}{parameter\+\_\+outputs}}
+\begin{DoxyCompactList}\small\item\em Parameters included in output. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classpyMANGA_1_1TreeOutputLib_1_1TreeOutput_1_1TreeOutput_a060f5d01801da82839d9a8b142a2cda0}\label{classpyMANGA_1_1TreeOutputLib_1_1TreeOutput_1_1TreeOutput_a060f5d01801da82839d9a8b142a2cda0}} 
+\mbox{\hyperlink{classpyMANGA_1_1TreeOutputLib_1_1TreeOutput_1_1TreeOutput_a060f5d01801da82839d9a8b142a2cda0}{growth\+\_\+outputs}}
+\begin{DoxyCompactList}\small\item\em Parameters included in output. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classpyMANGA_1_1TreeOutputLib_1_1TreeOutput_1_1TreeOutput_a4a906e895e5016777e39a98138d20525}\label{classpyMANGA_1_1TreeOutputLib_1_1TreeOutput_1_1TreeOutput_a4a906e895e5016777e39a98138d20525}} 
+\mbox{\hyperlink{classpyMANGA_1_1TreeOutputLib_1_1TreeOutput_1_1TreeOutput_a4a906e895e5016777e39a98138d20525}{network\+\_\+outputs}}
+\begin{DoxyCompactList}\small\item\em Network information included in output. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classpyMANGA_1_1TreeOutputLib_1_1TreeOutput_1_1TreeOutput_a93671c3768127478e6d0565564d10e7f}\label{classpyMANGA_1_1TreeOutputLib_1_1TreeOutput_1_1TreeOutput_a93671c3768127478e6d0565564d10e7f}} 
+\index{pyMANGA.TreeOutputLib.TreeOutput.TreeOutput@{pyMANGA.TreeOutputLib.TreeOutput.TreeOutput}!checkRequiredKey@{checkRequiredKey}}
+\index{checkRequiredKey@{checkRequiredKey}!pyMANGA.TreeOutputLib.TreeOutput.TreeOutput@{pyMANGA.TreeOutputLib.TreeOutput.TreeOutput}}
+\doxysubsubsection{\texorpdfstring{checkRequiredKey()}{checkRequiredKey()}}
+{\footnotesize\ttfamily def py\+MANGA.\+Tree\+Output\+Lib.\+Tree\+Output.\+Tree\+Output.\+check\+Required\+Key (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{key,  }\item[{}]{args }\end{DoxyParamCaption})}
+
+
+
+This function checks if a key exists and if its text content is empty. 
+
+Raises key-\/errors, if the key is not properly defined. 
+\begin{DoxyParams}{Parameters}
+{\em key} & Name of the key to be checked \\
+\hline
+{\em args} & args parsed from project. Xml-\/element \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classpyMANGA_1_1TreeOutputLib_1_1TreeOutput_1_1TreeOutput_a44bf404ec962e7b71ef3feb336769149}\label{classpyMANGA_1_1TreeOutputLib_1_1TreeOutput_1_1TreeOutput_a44bf404ec962e7b71ef3feb336769149}} 
+\index{pyMANGA.TreeOutputLib.TreeOutput.TreeOutput@{pyMANGA.TreeOutputLib.TreeOutput.TreeOutput}!writeOutput@{writeOutput}}
+\index{writeOutput@{writeOutput}!pyMANGA.TreeOutputLib.TreeOutput.TreeOutput@{pyMANGA.TreeOutputLib.TreeOutput.TreeOutput}}
+\doxysubsubsection{\texorpdfstring{writeOutput()}{writeOutput()}}
+{\footnotesize\ttfamily def py\+MANGA.\+Tree\+Output\+Lib.\+Tree\+Output.\+Tree\+Output.\+write\+Output (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{tree\+\_\+groups,  }\item[{}]{time }\end{DoxyParamCaption})}
+
+
+
+Writes output to predefined folder For each timestep a file is created throughout the simulation. 
+
+This function is only able to work, if the output directory exists and is empty at the begin of the model run 
+
+Reimplemented in \mbox{\hyperlink{classpyMANGA_1_1TreeOutputLib_1_1NONE_1_1NONE_1_1NONE_acad811d11de187d64456f5f589f50062}{py\+MANGA.\+Tree\+Output\+Lib.\+NONE.\+NONE.\+NONE}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classpyMANGA_1_1TreeOutputLib_1_1TreeOutput_1_1TreeOutput_a56b50dfd3df35eb3e0eaf3762ed0dee7}\label{classpyMANGA_1_1TreeOutputLib_1_1TreeOutput_1_1TreeOutput_a56b50dfd3df35eb3e0eaf3762ed0dee7}} 
+\index{pyMANGA.TreeOutputLib.TreeOutput.TreeOutput@{pyMANGA.TreeOutputLib.TreeOutput.TreeOutput}!output\_dir@{output\_dir}}
+\index{output\_dir@{output\_dir}!pyMANGA.TreeOutputLib.TreeOutput.TreeOutput@{pyMANGA.TreeOutputLib.TreeOutput.TreeOutput}}
+\doxysubsubsection{\texorpdfstring{output\_dir}{output\_dir}}
+{\footnotesize\ttfamily py\+MANGA.\+Tree\+Output\+Lib.\+Tree\+Output.\+Tree\+Output.\+output\+\_\+dir}
+
+
+
+Directory, where output is saved. 
+
+Please make sure it is empty or set allow\+\_\+previous\+\_\+output to true \mbox{\Hypertarget{classpyMANGA_1_1TreeOutputLib_1_1TreeOutput_1_1TreeOutput_a9556f836d1b1946b439f536711d28e9f}\label{classpyMANGA_1_1TreeOutputLib_1_1TreeOutput_1_1TreeOutput_a9556f836d1b1946b439f536711d28e9f}} 
+\index{pyMANGA.TreeOutputLib.TreeOutput.TreeOutput@{pyMANGA.TreeOutputLib.TreeOutput.TreeOutput}!output\_times@{output\_times}}
+\index{output\_times@{output\_times}!pyMANGA.TreeOutputLib.TreeOutput.TreeOutput@{pyMANGA.TreeOutputLib.TreeOutput.TreeOutput}}
+\doxysubsubsection{\texorpdfstring{output\_times}{output\_times}}
+{\footnotesize\ttfamily py\+MANGA.\+Tree\+Output\+Lib.\+Tree\+Output.\+Tree\+Output.\+output\+\_\+times}
+
+
+
+Check if overwrite of previous output is allowed. 
+
+Check if specific timesteps for output are defined 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Tree\+Output\+Lib/Tree\+Output.\+py\end{DoxyCompactItemize}

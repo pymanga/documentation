@@ -1,0 +1,121 @@
+\hypertarget{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1candidates_1_1ExtrasCandidate}{}\doxysection{pip.\+\_\+internal.\+resolution.\+resolvelib.\+candidates.\+Extras\+Candidate Class Reference}
+\label{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1candidates_1_1ExtrasCandidate}\index{pip.\_internal.resolution.resolvelib.candidates.ExtrasCandidate@{pip.\_internal.resolution.resolvelib.candidates.ExtrasCandidate}}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}A candidate that has 'extras', indicating additional dependencies.
+
+Requirements can be for a project with dependencies, something like
+foo[extra].  The extras don't affect the project/version being installed
+directly, but indicate that we need additional dependencies. We model that
+by having an artificial ExtrasCandidate that wraps the "base" candidate.
+
+The ExtrasCandidate differs from the base in the following ways:
+
+1. It has a unique name, of the form foo[extra]. This causes the resolver
+   to treat it as a separate node in the dependency graph.
+2. When we're getting the candidate's dependencies,
+   a) We specify that we want the extra dependencies as well.
+   b) We add a dependency on the base candidate.
+      See below for why this is needed.
+3. We return None for the underlying InstallRequirement, as the base
+   candidate will provide it, and we don't want to end up with duplicates.
+
+The dependency on the base candidate is needed so that the resolver can't
+decide that it should recommend foo[extra1] version 1.0 and foo[extra2]
+version 2.0. Having those candidates depend on foo=1.0 and foo=2.0
+respectively forces the resolver to recognise that this is a conflict.
+\end{DoxyVerb}
+ Inheritance diagram for pip.\+\_\+internal.\+resolution.\+resolvelib.\+candidates.\+Extras\+Candidate\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1candidates_1_1ExtrasCandidate}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1candidates_1_1ExtrasCandidate_a2dd78f5700c83616b0c87c3a123c4e64}\label{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1candidates_1_1ExtrasCandidate_a2dd78f5700c83616b0c87c3a123c4e64}} 
+def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, base, extras)
+\item 
+\mbox{\Hypertarget{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1candidates_1_1ExtrasCandidate_a7f262c9b10b84386c931c9e8c481fe25}\label{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1candidates_1_1ExtrasCandidate_a7f262c9b10b84386c931c9e8c481fe25}} 
+def {\bfseries \+\_\+\+\_\+str\+\_\+\+\_\+} (self)
+\item 
+\mbox{\Hypertarget{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1candidates_1_1ExtrasCandidate_a76401d9a7c6df2f6538a36eb398101a6}\label{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1candidates_1_1ExtrasCandidate_a76401d9a7c6df2f6538a36eb398101a6}} 
+def {\bfseries \+\_\+\+\_\+repr\+\_\+\+\_\+} (self)
+\item 
+\mbox{\Hypertarget{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1candidates_1_1ExtrasCandidate_a1f4f61ab73c8b3836b9cc8115fe228f3}\label{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1candidates_1_1ExtrasCandidate_a1f4f61ab73c8b3836b9cc8115fe228f3}} 
+def {\bfseries \+\_\+\+\_\+hash\+\_\+\+\_\+} (self)
+\item 
+\mbox{\Hypertarget{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1candidates_1_1ExtrasCandidate_a0de7045fe170b710cc2e6315dc3324d6}\label{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1candidates_1_1ExtrasCandidate_a0de7045fe170b710cc2e6315dc3324d6}} 
+def {\bfseries \+\_\+\+\_\+eq\+\_\+\+\_\+} (self, other)
+\item 
+def \mbox{\hyperlink{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1candidates_1_1ExtrasCandidate_a5a650992814f9ee972a9a8bca2534b56}{project\+\_\+name}} (self)
+\item 
+def \mbox{\hyperlink{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1candidates_1_1ExtrasCandidate_ab104c8ed5e2140f11c0fb3710df3d894}{name}} (self)
+\item 
+\mbox{\Hypertarget{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1candidates_1_1ExtrasCandidate_a022f947eaaa0ed18ed6dc2d295117d01}\label{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1candidates_1_1ExtrasCandidate_a022f947eaaa0ed18ed6dc2d295117d01}} 
+def {\bfseries version} (self)
+\item 
+\mbox{\Hypertarget{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1candidates_1_1ExtrasCandidate_a508343be17f8013a25ab77765ab41e4b}\label{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1candidates_1_1ExtrasCandidate_a508343be17f8013a25ab77765ab41e4b}} 
+def {\bfseries format\+\_\+for\+\_\+error} (self)
+\item 
+\mbox{\Hypertarget{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1candidates_1_1ExtrasCandidate_a3a841705b6f38fe26e6c6a99a478164f}\label{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1candidates_1_1ExtrasCandidate_a3a841705b6f38fe26e6c6a99a478164f}} 
+def {\bfseries is\+\_\+installed} (self)
+\item 
+\mbox{\Hypertarget{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1candidates_1_1ExtrasCandidate_a80ac08714863513996cb338470c97e99}\label{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1candidates_1_1ExtrasCandidate_a80ac08714863513996cb338470c97e99}} 
+def {\bfseries is\+\_\+editable} (self)
+\item 
+\mbox{\Hypertarget{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1candidates_1_1ExtrasCandidate_a45a2ba2ddcbad32bc8a1abf6dfb0498f}\label{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1candidates_1_1ExtrasCandidate_a45a2ba2ddcbad32bc8a1abf6dfb0498f}} 
+def {\bfseries source\+\_\+link} (self)
+\item 
+\mbox{\Hypertarget{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1candidates_1_1ExtrasCandidate_ab3711945ff7fcd0aa53b314fc49d6ac4}\label{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1candidates_1_1ExtrasCandidate_ab3711945ff7fcd0aa53b314fc49d6ac4}} 
+def {\bfseries iter\+\_\+dependencies} (self, with\+\_\+requires)
+\item 
+\mbox{\Hypertarget{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1candidates_1_1ExtrasCandidate_acdd8b81cbb2ff4dc3dad1404dcc9e74e}\label{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1candidates_1_1ExtrasCandidate_acdd8b81cbb2ff4dc3dad1404dcc9e74e}} 
+def {\bfseries get\+\_\+install\+\_\+requirement} (self)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1candidates_1_1ExtrasCandidate_a920a920fda7141419c93f61ab8cb2af0}\label{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1candidates_1_1ExtrasCandidate_a920a920fda7141419c93f61ab8cb2af0}} 
+{\bfseries base}
+\item 
+\mbox{\Hypertarget{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1candidates_1_1ExtrasCandidate_a65769ec830f285b2a706cb5ac2cdd961}\label{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1candidates_1_1ExtrasCandidate_a65769ec830f285b2a706cb5ac2cdd961}} 
+{\bfseries extras}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1candidates_1_1ExtrasCandidate_ab104c8ed5e2140f11c0fb3710df3d894}\label{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1candidates_1_1ExtrasCandidate_ab104c8ed5e2140f11c0fb3710df3d894}} 
+\index{pip.\_internal.resolution.resolvelib.candidates.ExtrasCandidate@{pip.\_internal.resolution.resolvelib.candidates.ExtrasCandidate}!name@{name}}
+\index{name@{name}!pip.\_internal.resolution.resolvelib.candidates.ExtrasCandidate@{pip.\_internal.resolution.resolvelib.candidates.ExtrasCandidate}}
+\doxysubsubsection{\texorpdfstring{name()}{name()}}
+{\footnotesize\ttfamily def pip.\+\_\+internal.\+resolution.\+resolvelib.\+candidates.\+Extras\+Candidate.\+name (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}The normalised name of the project the candidate refers to\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1base_1_1Candidate_a8b39f3d3af882944335121c05d86da76}{pip.\+\_\+internal.\+resolution.\+resolvelib.\+base.\+Candidate}}.
+
+\mbox{\Hypertarget{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1candidates_1_1ExtrasCandidate_a5a650992814f9ee972a9a8bca2534b56}\label{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1candidates_1_1ExtrasCandidate_a5a650992814f9ee972a9a8bca2534b56}} 
+\index{pip.\_internal.resolution.resolvelib.candidates.ExtrasCandidate@{pip.\_internal.resolution.resolvelib.candidates.ExtrasCandidate}!project\_name@{project\_name}}
+\index{project\_name@{project\_name}!pip.\_internal.resolution.resolvelib.candidates.ExtrasCandidate@{pip.\_internal.resolution.resolvelib.candidates.ExtrasCandidate}}
+\doxysubsubsection{\texorpdfstring{project\_name()}{project\_name()}}
+{\footnotesize\ttfamily def pip.\+\_\+internal.\+resolution.\+resolvelib.\+candidates.\+Extras\+Candidate.\+project\+\_\+name (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}The "project name" of the candidate.
+
+This is different from ``name`` if this candidate contains extras,
+in which case ``name`` would contain the ``[...]`` part, while this
+refers to the name of the project.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1base_1_1Candidate_ac57eb483769275262b244cbcd3a66b61}{pip.\+\_\+internal.\+resolution.\+resolvelib.\+base.\+Candidate}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/\+Lib/site-\/packages/pip/\+\_\+internal/resolution/resolvelib/candidates.\+py\end{DoxyCompactItemize}

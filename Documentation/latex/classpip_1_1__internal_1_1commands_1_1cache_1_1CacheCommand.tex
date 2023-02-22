@@ -1,0 +1,87 @@
+\hypertarget{classpip_1_1__internal_1_1commands_1_1cache_1_1CacheCommand}{}\doxysection{pip.\+\_\+internal.\+commands.\+cache.\+Cache\+Command Class Reference}
+\label{classpip_1_1__internal_1_1commands_1_1cache_1_1CacheCommand}\index{pip.\_internal.commands.cache.CacheCommand@{pip.\_internal.commands.cache.CacheCommand}}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Inspect and manage pip's wheel cache.
+
+Subcommands:
+
+- dir: Show the cache directory.
+- info: Show information about the cache.
+- list: List filenames of packages stored in the cache.
+- remove: Remove one or more package from the cache.
+- purge: Remove all items from the cache.
+
+``<pattern>`` can be a glob expression or a package name.
+\end{DoxyVerb}
+ Inheritance diagram for pip.\+\_\+internal.\+commands.\+cache.\+Cache\+Command\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classpip_1_1__internal_1_1commands_1_1cache_1_1CacheCommand}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpip_1_1__internal_1_1commands_1_1cache_1_1CacheCommand_a0e754ef44c08dcd4f8b45fce1341c569}\label{classpip_1_1__internal_1_1commands_1_1cache_1_1CacheCommand_a0e754ef44c08dcd4f8b45fce1341c569}} 
+def {\bfseries add\+\_\+options} (self)
+\item 
+\mbox{\Hypertarget{classpip_1_1__internal_1_1commands_1_1cache_1_1CacheCommand_a856a217181042d51162115acc2cc0039}\label{classpip_1_1__internal_1_1commands_1_1cache_1_1CacheCommand_a856a217181042d51162115acc2cc0039}} 
+def {\bfseries run} (self, options, args)
+\item 
+\mbox{\Hypertarget{classpip_1_1__internal_1_1commands_1_1cache_1_1CacheCommand_a72f84eeda6a4a5113b1715930f65dfe4}\label{classpip_1_1__internal_1_1commands_1_1cache_1_1CacheCommand_a72f84eeda6a4a5113b1715930f65dfe4}} 
+def {\bfseries get\+\_\+cache\+\_\+dir} (self, options, args)
+\item 
+\mbox{\Hypertarget{classpip_1_1__internal_1_1commands_1_1cache_1_1CacheCommand_ad3e8bdce2c459214835ea8d516f78fb9}\label{classpip_1_1__internal_1_1commands_1_1cache_1_1CacheCommand_ad3e8bdce2c459214835ea8d516f78fb9}} 
+def {\bfseries get\+\_\+cache\+\_\+info} (self, options, args)
+\item 
+\mbox{\Hypertarget{classpip_1_1__internal_1_1commands_1_1cache_1_1CacheCommand_a87be1836bbb787947818bb217dad5c5c}\label{classpip_1_1__internal_1_1commands_1_1cache_1_1CacheCommand_a87be1836bbb787947818bb217dad5c5c}} 
+def {\bfseries list\+\_\+cache\+\_\+items} (self, options, args)
+\item 
+\mbox{\Hypertarget{classpip_1_1__internal_1_1commands_1_1cache_1_1CacheCommand_a418b52c258e29e7fd612d1c4d8f710d0}\label{classpip_1_1__internal_1_1commands_1_1cache_1_1CacheCommand_a418b52c258e29e7fd612d1c4d8f710d0}} 
+def {\bfseries format\+\_\+for\+\_\+human} (self, files)
+\item 
+\mbox{\Hypertarget{classpip_1_1__internal_1_1commands_1_1cache_1_1CacheCommand_af7ddb3ca954d0b70bf3e76ceaa64f5af}\label{classpip_1_1__internal_1_1commands_1_1cache_1_1CacheCommand_af7ddb3ca954d0b70bf3e76ceaa64f5af}} 
+def {\bfseries format\+\_\+for\+\_\+abspath} (self, files)
+\item 
+\mbox{\Hypertarget{classpip_1_1__internal_1_1commands_1_1cache_1_1CacheCommand_ac257da74aee1d2b96bd8d999fc74252e}\label{classpip_1_1__internal_1_1commands_1_1cache_1_1CacheCommand_ac257da74aee1d2b96bd8d999fc74252e}} 
+def {\bfseries remove\+\_\+cache\+\_\+items} (self, options, args)
+\item 
+\mbox{\Hypertarget{classpip_1_1__internal_1_1commands_1_1cache_1_1CacheCommand_a9b42e0b66b29525f77a7edca2d8bbcf4}\label{classpip_1_1__internal_1_1commands_1_1cache_1_1CacheCommand_a9b42e0b66b29525f77a7edca2d8bbcf4}} 
+def {\bfseries purge\+\_\+cache} (self, options, args)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpip_1_1__internal_1_1commands_1_1cache_1_1CacheCommand_a060bc67c7cb51bc6f313c9fea17b835d}\label{classpip_1_1__internal_1_1commands_1_1cache_1_1CacheCommand_a060bc67c7cb51bc6f313c9fea17b835d}} 
+bool {\bfseries ignore\+\_\+require\+\_\+venv} = True
+\item 
+string {\bfseries usage}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classpip_1_1__internal_1_1commands_1_1cache_1_1CacheCommand_a416993f3b471ef946ca5e12bb1a6ec14}\label{classpip_1_1__internal_1_1commands_1_1cache_1_1CacheCommand_a416993f3b471ef946ca5e12bb1a6ec14}} 
+\index{pip.\_internal.commands.cache.CacheCommand@{pip.\_internal.commands.cache.CacheCommand}!usage@{usage}}
+\index{usage@{usage}!pip.\_internal.commands.cache.CacheCommand@{pip.\_internal.commands.cache.CacheCommand}}
+\doxysubsubsection{\texorpdfstring{usage}{usage}}
+{\footnotesize\ttfamily string pip.\+\_\+internal.\+commands.\+cache.\+Cache\+Command.\+usage\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=  \textcolor{stringliteral}{"{}"{}"{}}}
+\DoxyCodeLine{\textcolor{stringliteral}{        \%prog dir}}
+\DoxyCodeLine{\textcolor{stringliteral}{        \%prog info}}
+\DoxyCodeLine{\textcolor{stringliteral}{        \%prog list [<pattern>] [-\/-\/format=[human, abspath]]}}
+\DoxyCodeLine{\textcolor{stringliteral}{        \%prog remove <pattern>}}
+\DoxyCodeLine{\textcolor{stringliteral}{        \%prog purge}}
+\DoxyCodeLine{\textcolor{stringliteral}{    "{}"{}"{}}}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/\+Lib/site-\/packages/pip/\+\_\+internal/commands/cache.\+py\end{DoxyCompactItemize}

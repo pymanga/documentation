@@ -1,0 +1,37 @@
+\hypertarget{classpip_1_1__vendor_1_1cachecontrol_1_1filewrapper_1_1CallbackFileWrapper}{}\doxysection{pip.\+\_\+vendor.\+cachecontrol.\+filewrapper.\+Callback\+File\+Wrapper Class Reference}
+\label{classpip_1_1__vendor_1_1cachecontrol_1_1filewrapper_1_1CallbackFileWrapper}\index{pip.\_vendor.cachecontrol.filewrapper.CallbackFileWrapper@{pip.\_vendor.cachecontrol.filewrapper.CallbackFileWrapper}}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Small wrapper around a fp object which will tee everything read into a
+buffer, and when that file is closed it will execute a callback with the
+contents of that buffer.
+
+All attributes are proxied to the underlying file object.
+
+This class uses members with a double underscore (__) leading prefix so as
+not to accidentally shadow an attribute.
+\end{DoxyVerb}
+ Inheritance diagram for pip.\+\_\+vendor.\+cachecontrol.\+filewrapper.\+Callback\+File\+Wrapper\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classpip_1_1__vendor_1_1cachecontrol_1_1filewrapper_1_1CallbackFileWrapper}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpip_1_1__vendor_1_1cachecontrol_1_1filewrapper_1_1CallbackFileWrapper_a49ca3fa44244778ae11183381e0481b0}\label{classpip_1_1__vendor_1_1cachecontrol_1_1filewrapper_1_1CallbackFileWrapper_a49ca3fa44244778ae11183381e0481b0}} 
+def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, fp, callback)
+\item 
+\mbox{\Hypertarget{classpip_1_1__vendor_1_1cachecontrol_1_1filewrapper_1_1CallbackFileWrapper_a01696af37bc6df0e23472e0f0c5b1c4d}\label{classpip_1_1__vendor_1_1cachecontrol_1_1filewrapper_1_1CallbackFileWrapper_a01696af37bc6df0e23472e0f0c5b1c4d}} 
+def {\bfseries \+\_\+\+\_\+getattr\+\_\+\+\_\+} (self, name)
+\item 
+\mbox{\Hypertarget{classpip_1_1__vendor_1_1cachecontrol_1_1filewrapper_1_1CallbackFileWrapper_acde77ec4143104f35f677e9c96a32434}\label{classpip_1_1__vendor_1_1cachecontrol_1_1filewrapper_1_1CallbackFileWrapper_acde77ec4143104f35f677e9c96a32434}} 
+def {\bfseries read} (self, amt=None)
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/\+Lib/site-\/packages/pip/\+\_\+vendor/cachecontrol/filewrapper.\+py\end{DoxyCompactItemize}

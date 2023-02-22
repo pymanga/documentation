@@ -1,0 +1,78 @@
+\hypertarget{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1requirements_1_1ExplicitRequirement}{}\doxysection{pip.\+\_\+internal.\+resolution.\+resolvelib.\+requirements.\+Explicit\+Requirement Class Reference}
+\label{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1requirements_1_1ExplicitRequirement}\index{pip.\_internal.resolution.resolvelib.requirements.ExplicitRequirement@{pip.\_internal.resolution.resolvelib.requirements.ExplicitRequirement}}
+Inheritance diagram for pip.\+\_\+internal.\+resolution.\+resolvelib.\+requirements.\+Explicit\+Requirement\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1requirements_1_1ExplicitRequirement}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1requirements_1_1ExplicitRequirement_a9f578e3fb8353782b3aa69cdb565c6e5}\label{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1requirements_1_1ExplicitRequirement_a9f578e3fb8353782b3aa69cdb565c6e5}} 
+def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, candidate)
+\item 
+\mbox{\Hypertarget{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1requirements_1_1ExplicitRequirement_a61ac7626cb37a2a8b8ab6f41cba9ffa3}\label{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1requirements_1_1ExplicitRequirement_a61ac7626cb37a2a8b8ab6f41cba9ffa3}} 
+def {\bfseries \+\_\+\+\_\+str\+\_\+\+\_\+} (self)
+\item 
+\mbox{\Hypertarget{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1requirements_1_1ExplicitRequirement_abd5723206329d8e6c38fba8e1836da3e}\label{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1requirements_1_1ExplicitRequirement_abd5723206329d8e6c38fba8e1836da3e}} 
+def {\bfseries \+\_\+\+\_\+repr\+\_\+\+\_\+} (self)
+\item 
+def \mbox{\hyperlink{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1requirements_1_1ExplicitRequirement_a69d8322d1bb88250df6b7da112fcb30f}{project\+\_\+name}} (self)
+\item 
+def \mbox{\hyperlink{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1requirements_1_1ExplicitRequirement_a7250c5e2ac7d7b9c99a42010a3dd1672}{name}} (self)
+\item 
+\mbox{\Hypertarget{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1requirements_1_1ExplicitRequirement_ab562f1625be98723e1ff37e121b5c250}\label{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1requirements_1_1ExplicitRequirement_ab562f1625be98723e1ff37e121b5c250}} 
+def {\bfseries format\+\_\+for\+\_\+error} (self)
+\item 
+\mbox{\Hypertarget{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1requirements_1_1ExplicitRequirement_a13a72e9997d569526a845219be3452c3}\label{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1requirements_1_1ExplicitRequirement_a13a72e9997d569526a845219be3452c3}} 
+def {\bfseries get\+\_\+candidate\+\_\+lookup} (self)
+\item 
+\mbox{\Hypertarget{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1requirements_1_1ExplicitRequirement_a8d6d27e92aca75c176d02863a7ea9025}\label{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1requirements_1_1ExplicitRequirement_a8d6d27e92aca75c176d02863a7ea9025}} 
+def {\bfseries is\+\_\+satisfied\+\_\+by} (self, candidate)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1requirements_1_1ExplicitRequirement_a9919e92037563e000e8bf377e0fbcc15}\label{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1requirements_1_1ExplicitRequirement_a9919e92037563e000e8bf377e0fbcc15}} 
+{\bfseries candidate}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1requirements_1_1ExplicitRequirement_a7250c5e2ac7d7b9c99a42010a3dd1672}\label{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1requirements_1_1ExplicitRequirement_a7250c5e2ac7d7b9c99a42010a3dd1672}} 
+\index{pip.\_internal.resolution.resolvelib.requirements.ExplicitRequirement@{pip.\_internal.resolution.resolvelib.requirements.ExplicitRequirement}!name@{name}}
+\index{name@{name}!pip.\_internal.resolution.resolvelib.requirements.ExplicitRequirement@{pip.\_internal.resolution.resolvelib.requirements.ExplicitRequirement}}
+\doxysubsubsection{\texorpdfstring{name()}{name()}}
+{\footnotesize\ttfamily def pip.\+\_\+internal.\+resolution.\+resolvelib.\+requirements.\+Explicit\+Requirement.\+name (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}The name identifying this requirement in the resolver.
+
+This is different from ``project_name`` if this requirement contains
+extras, where ``project_name`` would not contain the ``[...]`` part.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1base_1_1Requirement_a21e4edd1c8aa5ce147a3399bf3c8d7b0}{pip.\+\_\+internal.\+resolution.\+resolvelib.\+base.\+Requirement}}.
+
+\mbox{\Hypertarget{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1requirements_1_1ExplicitRequirement_a69d8322d1bb88250df6b7da112fcb30f}\label{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1requirements_1_1ExplicitRequirement_a69d8322d1bb88250df6b7da112fcb30f}} 
+\index{pip.\_internal.resolution.resolvelib.requirements.ExplicitRequirement@{pip.\_internal.resolution.resolvelib.requirements.ExplicitRequirement}!project\_name@{project\_name}}
+\index{project\_name@{project\_name}!pip.\_internal.resolution.resolvelib.requirements.ExplicitRequirement@{pip.\_internal.resolution.resolvelib.requirements.ExplicitRequirement}}
+\doxysubsubsection{\texorpdfstring{project\_name()}{project\_name()}}
+{\footnotesize\ttfamily def pip.\+\_\+internal.\+resolution.\+resolvelib.\+requirements.\+Explicit\+Requirement.\+project\+\_\+name (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}The "project name" of a requirement.
+
+This is different from ``name`` if this requirement contains extras,
+in which case ``name`` would contain the ``[...]`` part, while this
+refers to the name of the project.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1base_1_1Requirement_aded87c50aa984abf5a73e7868becb448}{pip.\+\_\+internal.\+resolution.\+resolvelib.\+base.\+Requirement}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/\+Lib/site-\/packages/pip/\+\_\+internal/resolution/resolvelib/requirements.\+py\end{DoxyCompactItemize}

@@ -1,0 +1,63 @@
+\hypertarget{classpip_1_1__vendor_1_1pyparsing_1_1Literal}{}\doxysection{pip.\+\_\+vendor.\+pyparsing.\+Literal Class Reference}
+\label{classpip_1_1__vendor_1_1pyparsing_1_1Literal}\index{pip.\_vendor.pyparsing.Literal@{pip.\_vendor.pyparsing.Literal}}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Token to exactly match a specified string.
+
+Example::
+
+    Literal('blah').parseString('blah')  # -> ['blah']
+    Literal('blah').parseString('blahfooblah')  # -> ['blah']
+    Literal('blah').parseString('bla')  # -> Exception: Expected "blah"
+
+For case-insensitive matching, use :class:`CaselessLiteral`.
+
+For keyword matching (force word break before and after the matched string),
+use :class:`Keyword` or :class:`CaselessKeyword`.
+\end{DoxyVerb}
+ Inheritance diagram for pip.\+\_\+vendor.\+pyparsing.\+Literal\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=5.000000cm]{classpip_1_1__vendor_1_1pyparsing_1_1Literal}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpip_1_1__vendor_1_1pyparsing_1_1Literal_ab2a987382f4e63aaab4f5e3377216655}\label{classpip_1_1__vendor_1_1pyparsing_1_1Literal_ab2a987382f4e63aaab4f5e3377216655}} 
+def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, match\+String)
+\item 
+\mbox{\Hypertarget{classpip_1_1__vendor_1_1pyparsing_1_1Literal_a38b0d9903eba5e7a8c8382d220ec8ea7}\label{classpip_1_1__vendor_1_1pyparsing_1_1Literal_a38b0d9903eba5e7a8c8382d220ec8ea7}} 
+def {\bfseries parse\+Impl} (self, instring, loc, do\+Actions=True)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpip_1_1__vendor_1_1pyparsing_1_1Literal_a910348b4961e5f776b88b8578f75d19c}\label{classpip_1_1__vendor_1_1pyparsing_1_1Literal_a910348b4961e5f776b88b8578f75d19c}} 
+{\bfseries match}
+\item 
+\mbox{\Hypertarget{classpip_1_1__vendor_1_1pyparsing_1_1Literal_aca787ecff83a51462336def4f8cd4963}\label{classpip_1_1__vendor_1_1pyparsing_1_1Literal_aca787ecff83a51462336def4f8cd4963}} 
+{\bfseries match\+Len}
+\item 
+\mbox{\Hypertarget{classpip_1_1__vendor_1_1pyparsing_1_1Literal_a5c2bc59f4d0aa419481db197ac3099c3}\label{classpip_1_1__vendor_1_1pyparsing_1_1Literal_a5c2bc59f4d0aa419481db197ac3099c3}} 
+{\bfseries first\+Match\+Char}
+\item 
+\mbox{\Hypertarget{classpip_1_1__vendor_1_1pyparsing_1_1Literal_aee558197ac851636af8daba346d1291b}\label{classpip_1_1__vendor_1_1pyparsing_1_1Literal_aee558197ac851636af8daba346d1291b}} 
+{\bfseries name}
+\item 
+\mbox{\Hypertarget{classpip_1_1__vendor_1_1pyparsing_1_1Literal_a3a9595dd4dc715284f32a438c3439979}\label{classpip_1_1__vendor_1_1pyparsing_1_1Literal_a3a9595dd4dc715284f32a438c3439979}} 
+{\bfseries errmsg}
+\item 
+\mbox{\Hypertarget{classpip_1_1__vendor_1_1pyparsing_1_1Literal_ab7e2a396d3b64b1b872b2c2c38895b54}\label{classpip_1_1__vendor_1_1pyparsing_1_1Literal_ab7e2a396d3b64b1b872b2c2c38895b54}} 
+{\bfseries may\+Return\+Empty}
+\item 
+\mbox{\Hypertarget{classpip_1_1__vendor_1_1pyparsing_1_1Literal_ac7dcd533f4433d0e4963a8d6a01a04fb}\label{classpip_1_1__vendor_1_1pyparsing_1_1Literal_ac7dcd533f4433d0e4963a8d6a01a04fb}} 
+{\bfseries may\+Index\+Error}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/\+Lib/site-\/packages/pip/\+\_\+vendor/pyparsing.\+py\end{DoxyCompactItemize}

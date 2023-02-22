@@ -1,0 +1,80 @@
+\hypertarget{classpip_1_1__vendor_1_1pyparsing_1_1Optional}{}\doxysection{pip.\+\_\+vendor.\+pyparsing.\+Optional Class Reference}
+\label{classpip_1_1__vendor_1_1pyparsing_1_1Optional}\index{pip.\_vendor.pyparsing.Optional@{pip.\_vendor.pyparsing.Optional}}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Optional matching of the given expression.
+
+Parameters:
+ - expr - expression that must match zero or more times
+ - default (optional) - value to be returned if the optional expression is not found.
+
+Example::
+
+    # US postal code can be a 5-digit zip, plus optional 4-digit qualifier
+    zip = Combine(Word(nums, exact=5) + Optional('-' + Word(nums, exact=4)))
+    zip.runTests('''
+        # traditional ZIP code
+        12345
+
+        # ZIP+4 form
+        12101-0001
+
+        # invalid ZIP
+        98765-
+        ''')
+
+prints::
+
+    # traditional ZIP code
+    12345
+    ['12345']
+
+    # ZIP+4 form
+    12101-0001
+    ['12101-0001']
+
+    # invalid ZIP
+    98765-
+         ^
+    FAIL: Expected end of text (at char 5), (line:1, col:6)
+\end{DoxyVerb}
+ Inheritance diagram for pip.\+\_\+vendor.\+pyparsing.\+Optional\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{classpip_1_1__vendor_1_1pyparsing_1_1Optional}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpip_1_1__vendor_1_1pyparsing_1_1Optional_af7743bf78646c9edf865f668e73f5a4a}\label{classpip_1_1__vendor_1_1pyparsing_1_1Optional_af7743bf78646c9edf865f668e73f5a4a}} 
+def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, expr, default=\+\_\+\+\_\+optional\+Not\+Matched)
+\item 
+\mbox{\Hypertarget{classpip_1_1__vendor_1_1pyparsing_1_1Optional_a8295c646c3730e129feac4198aeb1035}\label{classpip_1_1__vendor_1_1pyparsing_1_1Optional_a8295c646c3730e129feac4198aeb1035}} 
+def {\bfseries parse\+Impl} (self, instring, loc, do\+Actions=True)
+\item 
+\mbox{\Hypertarget{classpip_1_1__vendor_1_1pyparsing_1_1Optional_a5aa903625e47739056ebb73a911d4763}\label{classpip_1_1__vendor_1_1pyparsing_1_1Optional_a5aa903625e47739056ebb73a911d4763}} 
+def {\bfseries \+\_\+\+\_\+str\+\_\+\+\_\+} (self)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpip_1_1__vendor_1_1pyparsing_1_1Optional_ad4fe641ffece45cd41716cfeb6389433}\label{classpip_1_1__vendor_1_1pyparsing_1_1Optional_ad4fe641ffece45cd41716cfeb6389433}} 
+{\bfseries save\+As\+List}
+\item 
+\mbox{\Hypertarget{classpip_1_1__vendor_1_1pyparsing_1_1Optional_a8dbd9a3a8e5e2cc870942e6e08f7d314}\label{classpip_1_1__vendor_1_1pyparsing_1_1Optional_a8dbd9a3a8e5e2cc870942e6e08f7d314}} 
+{\bfseries default\+Value}
+\item 
+\mbox{\Hypertarget{classpip_1_1__vendor_1_1pyparsing_1_1Optional_a7e40ff231f8cfc5dcc2c9c0a828af1cc}\label{classpip_1_1__vendor_1_1pyparsing_1_1Optional_a7e40ff231f8cfc5dcc2c9c0a828af1cc}} 
+{\bfseries may\+Return\+Empty}
+\item 
+\mbox{\Hypertarget{classpip_1_1__vendor_1_1pyparsing_1_1Optional_a4c7eaebea3a4d1d2a04c64391f0dd6f0}\label{classpip_1_1__vendor_1_1pyparsing_1_1Optional_a4c7eaebea3a4d1d2a04c64391f0dd6f0}} 
+{\bfseries str\+Repr}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/\+Lib/site-\/packages/pip/\+\_\+vendor/pyparsing.\+py\end{DoxyCompactItemize}

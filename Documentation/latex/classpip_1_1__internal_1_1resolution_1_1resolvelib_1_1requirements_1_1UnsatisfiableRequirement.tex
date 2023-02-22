@@ -1,0 +1,76 @@
+\hypertarget{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1requirements_1_1UnsatisfiableRequirement}{}\doxysection{pip.\+\_\+internal.\+resolution.\+resolvelib.\+requirements.\+Unsatisfiable\+Requirement Class Reference}
+\label{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1requirements_1_1UnsatisfiableRequirement}\index{pip.\_internal.resolution.resolvelib.requirements.UnsatisfiableRequirement@{pip.\_internal.resolution.resolvelib.requirements.UnsatisfiableRequirement}}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}A requirement that cannot be satisfied.\end{DoxyVerb}
+ Inheritance diagram for pip.\+\_\+internal.\+resolution.\+resolvelib.\+requirements.\+Unsatisfiable\+Requirement\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1requirements_1_1UnsatisfiableRequirement}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1requirements_1_1UnsatisfiableRequirement_ac4fc626e3304cb07584e30553cd330bf}\label{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1requirements_1_1UnsatisfiableRequirement_ac4fc626e3304cb07584e30553cd330bf}} 
+def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, \mbox{\hyperlink{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1requirements_1_1UnsatisfiableRequirement_a77f31caeee540862d1b31aa4ba6b0b2b}{name}})
+\item 
+\mbox{\Hypertarget{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1requirements_1_1UnsatisfiableRequirement_a6553e62c81c0da585895d48acd1e9bb2}\label{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1requirements_1_1UnsatisfiableRequirement_a6553e62c81c0da585895d48acd1e9bb2}} 
+def {\bfseries \+\_\+\+\_\+str\+\_\+\+\_\+} (self)
+\item 
+\mbox{\Hypertarget{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1requirements_1_1UnsatisfiableRequirement_abbca9cb387bcea5cb4da61c814f5183f}\label{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1requirements_1_1UnsatisfiableRequirement_abbca9cb387bcea5cb4da61c814f5183f}} 
+def {\bfseries \+\_\+\+\_\+repr\+\_\+\+\_\+} (self)
+\item 
+def \mbox{\hyperlink{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1requirements_1_1UnsatisfiableRequirement_a9985e734d8ed70efb4876b171d028d04}{project\+\_\+name}} (self)
+\item 
+def \mbox{\hyperlink{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1requirements_1_1UnsatisfiableRequirement_a77f31caeee540862d1b31aa4ba6b0b2b}{name}} (self)
+\item 
+\mbox{\Hypertarget{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1requirements_1_1UnsatisfiableRequirement_a330175de93126c80e300ffbe09f782dc}\label{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1requirements_1_1UnsatisfiableRequirement_a330175de93126c80e300ffbe09f782dc}} 
+def {\bfseries format\+\_\+for\+\_\+error} (self)
+\item 
+\mbox{\Hypertarget{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1requirements_1_1UnsatisfiableRequirement_a910a1c5b5b85e3a31c6e88364e76cf62}\label{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1requirements_1_1UnsatisfiableRequirement_a910a1c5b5b85e3a31c6e88364e76cf62}} 
+def {\bfseries get\+\_\+candidate\+\_\+lookup} (self)
+\item 
+\mbox{\Hypertarget{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1requirements_1_1UnsatisfiableRequirement_ab147d95d5516634081da831d7f27f61c}\label{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1requirements_1_1UnsatisfiableRequirement_ab147d95d5516634081da831d7f27f61c}} 
+def {\bfseries is\+\_\+satisfied\+\_\+by} (self, candidate)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1requirements_1_1UnsatisfiableRequirement_a77f31caeee540862d1b31aa4ba6b0b2b}\label{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1requirements_1_1UnsatisfiableRequirement_a77f31caeee540862d1b31aa4ba6b0b2b}} 
+\index{pip.\_internal.resolution.resolvelib.requirements.UnsatisfiableRequirement@{pip.\_internal.resolution.resolvelib.requirements.UnsatisfiableRequirement}!name@{name}}
+\index{name@{name}!pip.\_internal.resolution.resolvelib.requirements.UnsatisfiableRequirement@{pip.\_internal.resolution.resolvelib.requirements.UnsatisfiableRequirement}}
+\doxysubsubsection{\texorpdfstring{name()}{name()}}
+{\footnotesize\ttfamily def pip.\+\_\+internal.\+resolution.\+resolvelib.\+requirements.\+Unsatisfiable\+Requirement.\+name (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}The name identifying this requirement in the resolver.
+
+This is different from ``project_name`` if this requirement contains
+extras, where ``project_name`` would not contain the ``[...]`` part.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1base_1_1Requirement_a21e4edd1c8aa5ce147a3399bf3c8d7b0}{pip.\+\_\+internal.\+resolution.\+resolvelib.\+base.\+Requirement}}.
+
+\mbox{\Hypertarget{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1requirements_1_1UnsatisfiableRequirement_a9985e734d8ed70efb4876b171d028d04}\label{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1requirements_1_1UnsatisfiableRequirement_a9985e734d8ed70efb4876b171d028d04}} 
+\index{pip.\_internal.resolution.resolvelib.requirements.UnsatisfiableRequirement@{pip.\_internal.resolution.resolvelib.requirements.UnsatisfiableRequirement}!project\_name@{project\_name}}
+\index{project\_name@{project\_name}!pip.\_internal.resolution.resolvelib.requirements.UnsatisfiableRequirement@{pip.\_internal.resolution.resolvelib.requirements.UnsatisfiableRequirement}}
+\doxysubsubsection{\texorpdfstring{project\_name()}{project\_name()}}
+{\footnotesize\ttfamily def pip.\+\_\+internal.\+resolution.\+resolvelib.\+requirements.\+Unsatisfiable\+Requirement.\+project\+\_\+name (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}The "project name" of a requirement.
+
+This is different from ``name`` if this requirement contains extras,
+in which case ``name`` would contain the ``[...]`` part, while this
+refers to the name of the project.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1base_1_1Requirement_aded87c50aa984abf5a73e7868becb448}{pip.\+\_\+internal.\+resolution.\+resolvelib.\+base.\+Requirement}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/\+Lib/site-\/packages/pip/\+\_\+internal/resolution/resolvelib/requirements.\+py\end{DoxyCompactItemize}

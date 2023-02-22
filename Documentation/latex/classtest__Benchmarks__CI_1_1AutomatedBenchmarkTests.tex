@@ -1,0 +1,144 @@
+\hypertarget{classtest__Benchmarks__CI_1_1AutomatedBenchmarkTests}{}\doxysection{test\+\_\+\+Benchmarks\+\_\+\+CI.\+Automated\+Benchmark\+Tests Class Reference}
+\label{classtest__Benchmarks__CI_1_1AutomatedBenchmarkTests}\index{test\_Benchmarks\_CI.AutomatedBenchmarkTests@{test\_Benchmarks\_CI.AutomatedBenchmarkTests}}
+
+
+\doxysubsection{Detailed Description}
+Derived from unittest.\+Testcase This class will manage the CI tests for the git repository. Inheritance diagram for test\+\_\+\+Benchmarks\+\_\+\+CI.\+Automated\+Benchmark\+Tests\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classtest__Benchmarks__CI_1_1AutomatedBenchmarkTests}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classtest__Benchmarks__CI_1_1AutomatedBenchmarkTests_a77cc1d532b2bedb184c908096e50e42e}{set\+Up\+Class}} (cls)
+\begin{DoxyCompactList}\small\item\em Here, all setups listed in \char`\"{}\+Benchmarks/\+Benchmark\+List.\+xml\char`\"{} are added to the tests. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classtest__Benchmarks__CI_1_1AutomatedBenchmarkTests_add8368b37121e92ef12a8d93fe59ed7b}{iterate}} (self, parent, existing\+\_\+path, \mbox{\hyperlink{classtest__Benchmarks__CI_1_1AutomatedBenchmarkTests_a22f4ffa7aa2ec5fd86ca43ad37421cdb}{setup\+\_\+list}})
+\begin{DoxyCompactList}\small\item\em Helper to identify listed Benchmarks This function is nested and reads and appends all subtags. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classtest__Benchmarks__CI_1_1AutomatedBenchmarkTests_a3b26a98a5abcdf767234dffb4ae2e035}{test\+\_\+benchmarks}} (self)
+\begin{DoxyCompactList}\small\item\em For each of the listed benchmarks, the tests are run as a subtest. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classtest__Benchmarks__CI_1_1AutomatedBenchmarkTests_aecb24b35de9a5cbad8e84971212cb8f8}{model\+\_\+run}} (self, project)
+\begin{DoxyCompactList}\small\item\em Runtime check. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classtest__Benchmarks__CI_1_1AutomatedBenchmarkTests_a055b438ea2e642e5655df9fa0e7de25d}{compare\+\_\+to\+\_\+reference}} (self, project)
+\begin{DoxyCompactList}\small\item\em Comparison of benchmark results to reference files. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classtest__Benchmarks__CI_1_1AutomatedBenchmarkTests_af6459666df3fdee1a572b17e5d9a28de}{find\+\_\+output\+\_\+dir}} (self, project)
+\begin{DoxyCompactList}\small\item\em Helper to find output directory for cleanup functions. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classtest__Benchmarks__CI_1_1AutomatedBenchmarkTests_a0c33a2171968763fa32a9f4b2a24e792}{clean\+\_\+output\+\_\+dir}} (self, project)
+\begin{DoxyCompactList}\small\item\em Cleanup of benchmark output directory. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classtest__Benchmarks__CI_1_1AutomatedBenchmarkTests_a651b1afcd3bf598d60334bacc59cf3e0}\label{classtest__Benchmarks__CI_1_1AutomatedBenchmarkTests_a651b1afcd3bf598d60334bacc59cf3e0}} 
+\mbox{\hyperlink{classtest__Benchmarks__CI_1_1AutomatedBenchmarkTests_a651b1afcd3bf598d60334bacc59cf3e0}{manga\+\_\+root\+\_\+directory}}
+\begin{DoxyCompactList}\small\item\em py\+MANGA root directory on the local filesystem \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classtest__Benchmarks__CI_1_1AutomatedBenchmarkTests_a22f4ffa7aa2ec5fd86ca43ad37421cdb}\label{classtest__Benchmarks__CI_1_1AutomatedBenchmarkTests_a22f4ffa7aa2ec5fd86ca43ad37421cdb}} 
+\mbox{\hyperlink{classtest__Benchmarks__CI_1_1AutomatedBenchmarkTests_a22f4ffa7aa2ec5fd86ca43ad37421cdb}{setup\+\_\+list}}
+\begin{DoxyCompactList}\small\item\em List of setups to be tested. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classtest__Benchmarks__CI_1_1AutomatedBenchmarkTests_a0c33a2171968763fa32a9f4b2a24e792}\label{classtest__Benchmarks__CI_1_1AutomatedBenchmarkTests_a0c33a2171968763fa32a9f4b2a24e792}} 
+\index{test\_Benchmarks\_CI.AutomatedBenchmarkTests@{test\_Benchmarks\_CI.AutomatedBenchmarkTests}!clean\_output\_dir@{clean\_output\_dir}}
+\index{clean\_output\_dir@{clean\_output\_dir}!test\_Benchmarks\_CI.AutomatedBenchmarkTests@{test\_Benchmarks\_CI.AutomatedBenchmarkTests}}
+\doxysubsubsection{\texorpdfstring{clean\_output\_dir()}{clean\_output\_dir()}}
+{\footnotesize\ttfamily def test\+\_\+\+Benchmarks\+\_\+\+CI.\+Automated\+Benchmark\+Tests.\+clean\+\_\+output\+\_\+dir (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{project }\end{DoxyParamCaption})}
+
+
+
+Cleanup of benchmark output directory. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em project} & -\/ py\+MANGA project file to extract output directory of the project \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classtest__Benchmarks__CI_1_1AutomatedBenchmarkTests_a055b438ea2e642e5655df9fa0e7de25d}\label{classtest__Benchmarks__CI_1_1AutomatedBenchmarkTests_a055b438ea2e642e5655df9fa0e7de25d}} 
+\index{test\_Benchmarks\_CI.AutomatedBenchmarkTests@{test\_Benchmarks\_CI.AutomatedBenchmarkTests}!compare\_to\_reference@{compare\_to\_reference}}
+\index{compare\_to\_reference@{compare\_to\_reference}!test\_Benchmarks\_CI.AutomatedBenchmarkTests@{test\_Benchmarks\_CI.AutomatedBenchmarkTests}}
+\doxysubsubsection{\texorpdfstring{compare\_to\_reference()}{compare\_to\_reference()}}
+{\footnotesize\ttfamily def test\+\_\+\+Benchmarks\+\_\+\+CI.\+Automated\+Benchmark\+Tests.\+compare\+\_\+to\+\_\+reference (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{project }\end{DoxyParamCaption})}
+
+
+
+Comparison of benchmark results to reference files. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em project} & -\/ py\+MANGA project file for the comparison test \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classtest__Benchmarks__CI_1_1AutomatedBenchmarkTests_af6459666df3fdee1a572b17e5d9a28de}\label{classtest__Benchmarks__CI_1_1AutomatedBenchmarkTests_af6459666df3fdee1a572b17e5d9a28de}} 
+\index{test\_Benchmarks\_CI.AutomatedBenchmarkTests@{test\_Benchmarks\_CI.AutomatedBenchmarkTests}!find\_output\_dir@{find\_output\_dir}}
+\index{find\_output\_dir@{find\_output\_dir}!test\_Benchmarks\_CI.AutomatedBenchmarkTests@{test\_Benchmarks\_CI.AutomatedBenchmarkTests}}
+\doxysubsubsection{\texorpdfstring{find\_output\_dir()}{find\_output\_dir()}}
+{\footnotesize\ttfamily def test\+\_\+\+Benchmarks\+\_\+\+CI.\+Automated\+Benchmark\+Tests.\+find\+\_\+output\+\_\+dir (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{project }\end{DoxyParamCaption})}
+
+
+
+Helper to find output directory for cleanup functions. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em project} & -\/ py\+MANGA project file to extract output directory of the project \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classtest__Benchmarks__CI_1_1AutomatedBenchmarkTests_add8368b37121e92ef12a8d93fe59ed7b}\label{classtest__Benchmarks__CI_1_1AutomatedBenchmarkTests_add8368b37121e92ef12a8d93fe59ed7b}} 
+\index{test\_Benchmarks\_CI.AutomatedBenchmarkTests@{test\_Benchmarks\_CI.AutomatedBenchmarkTests}!iterate@{iterate}}
+\index{iterate@{iterate}!test\_Benchmarks\_CI.AutomatedBenchmarkTests@{test\_Benchmarks\_CI.AutomatedBenchmarkTests}}
+\doxysubsubsection{\texorpdfstring{iterate()}{iterate()}}
+{\footnotesize\ttfamily def test\+\_\+\+Benchmarks\+\_\+\+CI.\+Automated\+Benchmark\+Tests.\+iterate (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{parent,  }\item[{}]{existing\+\_\+path,  }\item[{}]{setup\+\_\+list }\end{DoxyParamCaption})}
+
+
+
+Helper to identify listed Benchmarks This function is nested and reads and appends all subtags. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em parent} & -\/ parent xml tag \\
+\hline
+{\em existing\+\_\+path} & -\/ derived path from previous readouts \\
+\hline
+{\em setup\+\_\+list} & -\/ list for all existing setups \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classtest__Benchmarks__CI_1_1AutomatedBenchmarkTests_aecb24b35de9a5cbad8e84971212cb8f8}\label{classtest__Benchmarks__CI_1_1AutomatedBenchmarkTests_aecb24b35de9a5cbad8e84971212cb8f8}} 
+\index{test\_Benchmarks\_CI.AutomatedBenchmarkTests@{test\_Benchmarks\_CI.AutomatedBenchmarkTests}!model\_run@{model\_run}}
+\index{model\_run@{model\_run}!test\_Benchmarks\_CI.AutomatedBenchmarkTests@{test\_Benchmarks\_CI.AutomatedBenchmarkTests}}
+\doxysubsubsection{\texorpdfstring{model\_run()}{model\_run()}}
+{\footnotesize\ttfamily def test\+\_\+\+Benchmarks\+\_\+\+CI.\+Automated\+Benchmark\+Tests.\+model\+\_\+run (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{project }\end{DoxyParamCaption})}
+
+
+
+Runtime check. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em project} & -\/ py\+MANGA project file for the runtime check \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classtest__Benchmarks__CI_1_1AutomatedBenchmarkTests_a77cc1d532b2bedb184c908096e50e42e}\label{classtest__Benchmarks__CI_1_1AutomatedBenchmarkTests_a77cc1d532b2bedb184c908096e50e42e}} 
+\index{test\_Benchmarks\_CI.AutomatedBenchmarkTests@{test\_Benchmarks\_CI.AutomatedBenchmarkTests}!setUpClass@{setUpClass}}
+\index{setUpClass@{setUpClass}!test\_Benchmarks\_CI.AutomatedBenchmarkTests@{test\_Benchmarks\_CI.AutomatedBenchmarkTests}}
+\doxysubsubsection{\texorpdfstring{setUpClass()}{setUpClass()}}
+{\footnotesize\ttfamily def test\+\_\+\+Benchmarks\+\_\+\+CI.\+Automated\+Benchmark\+Tests.\+set\+Up\+Class (\begin{DoxyParamCaption}\item[{}]{cls }\end{DoxyParamCaption})}
+
+
+
+Here, all setups listed in \char`\"{}\+Benchmarks/\+Benchmark\+List.\+xml\char`\"{} are added to the tests. 
+
+For each of the listed setup, a runtime test and one comparison with reference files is performed. Please make sure to save reference files in \char`\"{}\+Path\+To\+Benchmark\+Project/\+Reference\+Files/\+Project\+Name\char`\"{}. \mbox{\Hypertarget{classtest__Benchmarks__CI_1_1AutomatedBenchmarkTests_a3b26a98a5abcdf767234dffb4ae2e035}\label{classtest__Benchmarks__CI_1_1AutomatedBenchmarkTests_a3b26a98a5abcdf767234dffb4ae2e035}} 
+\index{test\_Benchmarks\_CI.AutomatedBenchmarkTests@{test\_Benchmarks\_CI.AutomatedBenchmarkTests}!test\_benchmarks@{test\_benchmarks}}
+\index{test\_benchmarks@{test\_benchmarks}!test\_Benchmarks\_CI.AutomatedBenchmarkTests@{test\_Benchmarks\_CI.AutomatedBenchmarkTests}}
+\doxysubsubsection{\texorpdfstring{test\_benchmarks()}{test\_benchmarks()}}
+{\footnotesize\ttfamily def test\+\_\+\+Benchmarks\+\_\+\+CI.\+Automated\+Benchmark\+Tests.\+test\+\_\+benchmarks (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+For each of the listed benchmarks, the tests are run as a subtest. 
+
+Each subtest consists of \char`\"{}cleanup\char`\"{}, \char`\"{}model\+\_\+run\char`\"{}, \char`\"{}comparison\char`\"{}, \char`\"{}cleanup\char`\"{} 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Benchmarks/test\+\_\+\+Benchmarks\+\_\+\+CI.\+py\end{DoxyCompactItemize}

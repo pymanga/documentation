@@ -1,0 +1,149 @@
+\hypertarget{classpyMANGA_1_1TreeModelLib_1_1BelowgroundCompetition_1_1FixedSalinity_1_1FixedSalinity_1_1FixedSalinity}{}\doxysection{py\+MANGA.\+Tree\+Model\+Lib.\+Belowground\+Competition.\+Fixed\+Salinity.\+Fixed\+Salinity.\+Fixed\+Salinity Class Reference}
+\label{classpyMANGA_1_1TreeModelLib_1_1BelowgroundCompetition_1_1FixedSalinity_1_1FixedSalinity_1_1FixedSalinity}\index{pyMANGA.TreeModelLib.BelowgroundCompetition.FixedSalinity.FixedSalinity.FixedSalinity@{pyMANGA.TreeModelLib.BelowgroundCompetition.FixedSalinity.FixedSalinity.FixedSalinity}}
+Inheritance diagram for py\+MANGA.\+Tree\+Model\+Lib.\+Belowground\+Competition.\+Fixed\+Salinity.\+Fixed\+Salinity.\+Fixed\+Salinity\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.250000cm]{classpyMANGA_1_1TreeModelLib_1_1BelowgroundCompetition_1_1FixedSalinity_1_1FixedSalinity_1_1FixedSalinity}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classpyMANGA_1_1TreeModelLib_1_1BelowgroundCompetition_1_1FixedSalinity_1_1FixedSalinity_1_1FixedSalinity_a6fc3696e3e770056dcb2bfb2bac8d78c}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, args)
+\begin{DoxyCompactList}\small\item\em Fixed salinity in belowground competition concept. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classpyMANGA_1_1TreeModelLib_1_1BelowgroundCompetition_1_1FixedSalinity_1_1FixedSalinity_1_1FixedSalinity_aaf79462790d7039fd5305ac9573d62fc}{calculate\+Belowground\+Resources}} (self)
+\begin{DoxyCompactList}\small\item\em This function returns a list of the growth reduction factors of all trees calculated in the subsequent timestep. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classpyMANGA_1_1TreeModelLib_1_1BelowgroundCompetition_1_1FixedSalinity_1_1FixedSalinity_1_1FixedSalinity_afaa283c1b9542ab5849c96f6526e4919}{get\+Tree\+Salinity}} (self)
+\begin{DoxyCompactList}\small\item\em This function returns a list of salinity values for each tree, obtained by interpolation along a defined gradient. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classpyMANGA_1_1TreeModelLib_1_1BelowgroundCompetition_1_1FixedSalinity_1_1FixedSalinity_1_1FixedSalinity_a7751da28a55038929afa495b0059c472}{Get\+Salinity}} (self, args)
+\begin{DoxyCompactList}\small\item\em This function reads salinity from the control file. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classpyMANGA_1_1TreeModelLib_1_1BelowgroundCompetition_1_1FixedSalinity_1_1FixedSalinity_1_1FixedSalinity_aa2b44cf7daa0c5c7581c30375280bfa4}{add\+Tree}} (self, tree)
+\begin{DoxyCompactList}\small\item\em Before being able to calculate the resources, all tree entities need to be added with their relevant allometric measures for the next timestep. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classpyMANGA_1_1TreeModelLib_1_1BelowgroundCompetition_1_1FixedSalinity_1_1FixedSalinity_1_1FixedSalinity_a72d08c369950800c8c2840379574f8b8}{prepare\+Next\+Time\+Step}} (self, t\+\_\+ini, t\+\_\+end)
+\begin{DoxyCompactList}\small\item\em This functions prepares the computation of water uptake by porewater salinity. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpyMANGA_1_1TreeModelLib_1_1BelowgroundCompetition_1_1FixedSalinity_1_1FixedSalinity_1_1FixedSalinity_a3fa6a8b92734cea2180265461028f7c2}\label{classpyMANGA_1_1TreeModelLib_1_1BelowgroundCompetition_1_1FixedSalinity_1_1FixedSalinity_1_1FixedSalinity_a3fa6a8b92734cea2180265461028f7c2}} 
+{\bfseries belowground\+\_\+resources}
+\item 
+\mbox{\Hypertarget{classpyMANGA_1_1TreeModelLib_1_1BelowgroundCompetition_1_1FixedSalinity_1_1FixedSalinity_1_1FixedSalinity_ae70f8da4ffd47cef99765573caf98296}\label{classpyMANGA_1_1TreeModelLib_1_1BelowgroundCompetition_1_1FixedSalinity_1_1FixedSalinity_1_1FixedSalinity_ae70f8da4ffd47cef99765573caf98296}} 
+{\bfseries t\+\_\+variable}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classpyMANGA_1_1TreeModelLib_1_1BelowgroundCompetition_1_1FixedSalinity_1_1FixedSalinity_1_1FixedSalinity_a6fc3696e3e770056dcb2bfb2bac8d78c}\label{classpyMANGA_1_1TreeModelLib_1_1BelowgroundCompetition_1_1FixedSalinity_1_1FixedSalinity_1_1FixedSalinity_a6fc3696e3e770056dcb2bfb2bac8d78c}} 
+\index{pyMANGA.TreeModelLib.BelowgroundCompetition.FixedSalinity.FixedSalinity.FixedSalinity@{pyMANGA.TreeModelLib.BelowgroundCompetition.FixedSalinity.FixedSalinity.FixedSalinity}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!pyMANGA.TreeModelLib.BelowgroundCompetition.FixedSalinity.FixedSalinity.FixedSalinity@{pyMANGA.TreeModelLib.BelowgroundCompetition.FixedSalinity.FixedSalinity.FixedSalinity}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def py\+MANGA.\+Tree\+Model\+Lib.\+Belowground\+Competition.\+Fixed\+Salinity.\+Fixed\+Salinity.\+Fixed\+Salinity.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{args }\end{DoxyParamCaption})}
+
+
+
+Fixed salinity in belowground competition concept. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em } & Tags to define \mbox{\hyperlink{classpyMANGA_1_1TreeModelLib_1_1BelowgroundCompetition_1_1FixedSalinity_1_1FixedSalinity_1_1FixedSalinity}{Fixed\+Salinity}}\+: type, salinity \\
+\hline
+\end{DoxyParams}
+\begin{DoxyDate}{Date}
+\+: 2020 -\/ Today 
+\end{DoxyDate}
+
+
+Reimplemented in \mbox{\hyperlink{classpyMANGA_1_1TreeModelLib_1_1BelowgroundCompetition_1_1SZoiFixedSalinity_1_1SZoiFixedSalinity_1_1SZoiFixedSalinity_a981070c38bcf31f86d0db3eac4ec3d4d}{py\+MANGA.\+Tree\+Model\+Lib.\+Belowground\+Competition.\+SZoi\+Fixed\+Salinity.\+SZoi\+Fixed\+Salinity.\+SZoi\+Fixed\+Salinity}}, and \mbox{\hyperlink{classpyMANGA_1_1TreeModelLib_1_1BelowgroundCompetition_1_1NetworkFixedSalinity_1_1NetworkFixedSalinity_1_1NetworkFixedSalinity_a5f23a5e846e35a8e3b1fcfe7e454f1b7}{py\+MANGA.\+Tree\+Model\+Lib.\+Belowground\+Competition.\+Network\+Fixed\+Salinity.\+Network\+Fixed\+Salinity.\+Network\+Fixed\+Salinity}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classpyMANGA_1_1TreeModelLib_1_1BelowgroundCompetition_1_1FixedSalinity_1_1FixedSalinity_1_1FixedSalinity_aa2b44cf7daa0c5c7581c30375280bfa4}\label{classpyMANGA_1_1TreeModelLib_1_1BelowgroundCompetition_1_1FixedSalinity_1_1FixedSalinity_1_1FixedSalinity_aa2b44cf7daa0c5c7581c30375280bfa4}} 
+\index{pyMANGA.TreeModelLib.BelowgroundCompetition.FixedSalinity.FixedSalinity.FixedSalinity@{pyMANGA.TreeModelLib.BelowgroundCompetition.FixedSalinity.FixedSalinity.FixedSalinity}!addTree@{addTree}}
+\index{addTree@{addTree}!pyMANGA.TreeModelLib.BelowgroundCompetition.FixedSalinity.FixedSalinity.FixedSalinity@{pyMANGA.TreeModelLib.BelowgroundCompetition.FixedSalinity.FixedSalinity.FixedSalinity}}
+\doxysubsubsection{\texorpdfstring{addTree()}{addTree()}}
+{\footnotesize\ttfamily def py\+MANGA.\+Tree\+Model\+Lib.\+Belowground\+Competition.\+Fixed\+Salinity.\+Fixed\+Salinity.\+Fixed\+Salinity.\+add\+Tree (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{tree }\end{DoxyParamCaption})}
+
+
+
+Before being able to calculate the resources, all tree entities need to be added with their relevant allometric measures for the next timestep. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em } & tree \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented in \mbox{\hyperlink{classpyMANGA_1_1TreeModelLib_1_1BelowgroundCompetition_1_1SZoiFixedSalinity_1_1SZoiFixedSalinity_1_1SZoiFixedSalinity_ac9dafa628d7256edc30007f715a528d2}{py\+MANGA.\+Tree\+Model\+Lib.\+Belowground\+Competition.\+SZoi\+Fixed\+Salinity.\+SZoi\+Fixed\+Salinity.\+SZoi\+Fixed\+Salinity}}, and \mbox{\hyperlink{classpyMANGA_1_1TreeModelLib_1_1BelowgroundCompetition_1_1NetworkFixedSalinity_1_1NetworkFixedSalinity_1_1NetworkFixedSalinity_a2af56d9d66f4e016008fcc582a49632b}{py\+MANGA.\+Tree\+Model\+Lib.\+Belowground\+Competition.\+Network\+Fixed\+Salinity.\+Network\+Fixed\+Salinity.\+Network\+Fixed\+Salinity}}.
+
+\mbox{\Hypertarget{classpyMANGA_1_1TreeModelLib_1_1BelowgroundCompetition_1_1FixedSalinity_1_1FixedSalinity_1_1FixedSalinity_aaf79462790d7039fd5305ac9573d62fc}\label{classpyMANGA_1_1TreeModelLib_1_1BelowgroundCompetition_1_1FixedSalinity_1_1FixedSalinity_1_1FixedSalinity_aaf79462790d7039fd5305ac9573d62fc}} 
+\index{pyMANGA.TreeModelLib.BelowgroundCompetition.FixedSalinity.FixedSalinity.FixedSalinity@{pyMANGA.TreeModelLib.BelowgroundCompetition.FixedSalinity.FixedSalinity.FixedSalinity}!calculateBelowgroundResources@{calculateBelowgroundResources}}
+\index{calculateBelowgroundResources@{calculateBelowgroundResources}!pyMANGA.TreeModelLib.BelowgroundCompetition.FixedSalinity.FixedSalinity.FixedSalinity@{pyMANGA.TreeModelLib.BelowgroundCompetition.FixedSalinity.FixedSalinity.FixedSalinity}}
+\doxysubsubsection{\texorpdfstring{calculateBelowgroundResources()}{calculateBelowgroundResources()}}
+{\footnotesize\ttfamily def py\+MANGA.\+Tree\+Model\+Lib.\+Belowground\+Competition.\+Fixed\+Salinity.\+Fixed\+Salinity.\+Fixed\+Salinity.\+calculate\+Belowground\+Resources (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+This function returns a list of the growth reduction factors of all trees calculated in the subsequent timestep. 
+
+~\newline
+ \begin{DoxyReturn}{Returns}
+\+: np.\+array with \$\+N\+\_\+tree\$ scalars 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{classpyMANGA_1_1TreeModelLib_1_1BelowgroundCompetition_1_1SZoiFixedSalinity_1_1SZoiFixedSalinity_1_1SZoiFixedSalinity_ae2b8e4692e961b863064f45418d3c36a}{py\+MANGA.\+Tree\+Model\+Lib.\+Belowground\+Competition.\+SZoi\+Fixed\+Salinity.\+SZoi\+Fixed\+Salinity.\+SZoi\+Fixed\+Salinity}}, and \mbox{\hyperlink{classpyMANGA_1_1TreeModelLib_1_1BelowgroundCompetition_1_1NetworkFixedSalinity_1_1NetworkFixedSalinity_1_1NetworkFixedSalinity_a8872836ceb0960d886039d7172d2e546}{py\+MANGA.\+Tree\+Model\+Lib.\+Belowground\+Competition.\+Network\+Fixed\+Salinity.\+Network\+Fixed\+Salinity.\+Network\+Fixed\+Salinity}}.
+
+\mbox{\Hypertarget{classpyMANGA_1_1TreeModelLib_1_1BelowgroundCompetition_1_1FixedSalinity_1_1FixedSalinity_1_1FixedSalinity_a7751da28a55038929afa495b0059c472}\label{classpyMANGA_1_1TreeModelLib_1_1BelowgroundCompetition_1_1FixedSalinity_1_1FixedSalinity_1_1FixedSalinity_a7751da28a55038929afa495b0059c472}} 
+\index{pyMANGA.TreeModelLib.BelowgroundCompetition.FixedSalinity.FixedSalinity.FixedSalinity@{pyMANGA.TreeModelLib.BelowgroundCompetition.FixedSalinity.FixedSalinity.FixedSalinity}!GetSalinity@{GetSalinity}}
+\index{GetSalinity@{GetSalinity}!pyMANGA.TreeModelLib.BelowgroundCompetition.FixedSalinity.FixedSalinity.FixedSalinity@{pyMANGA.TreeModelLib.BelowgroundCompetition.FixedSalinity.FixedSalinity.FixedSalinity}}
+\doxysubsubsection{\texorpdfstring{GetSalinity()}{GetSalinity()}}
+{\footnotesize\ttfamily def py\+MANGA.\+Tree\+Model\+Lib.\+Belowground\+Competition.\+Fixed\+Salinity.\+Fixed\+Salinity.\+Fixed\+Salinity.\+Get\+Salinity (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{args }\end{DoxyParamCaption})}
+
+
+
+This function reads salinity from the control file. 
+
+~\newline
+\mbox{\Hypertarget{classpyMANGA_1_1TreeModelLib_1_1BelowgroundCompetition_1_1FixedSalinity_1_1FixedSalinity_1_1FixedSalinity_afaa283c1b9542ab5849c96f6526e4919}\label{classpyMANGA_1_1TreeModelLib_1_1BelowgroundCompetition_1_1FixedSalinity_1_1FixedSalinity_1_1FixedSalinity_afaa283c1b9542ab5849c96f6526e4919}} 
+\index{pyMANGA.TreeModelLib.BelowgroundCompetition.FixedSalinity.FixedSalinity.FixedSalinity@{pyMANGA.TreeModelLib.BelowgroundCompetition.FixedSalinity.FixedSalinity.FixedSalinity}!getTreeSalinity@{getTreeSalinity}}
+\index{getTreeSalinity@{getTreeSalinity}!pyMANGA.TreeModelLib.BelowgroundCompetition.FixedSalinity.FixedSalinity.FixedSalinity@{pyMANGA.TreeModelLib.BelowgroundCompetition.FixedSalinity.FixedSalinity.FixedSalinity}}
+\doxysubsubsection{\texorpdfstring{getTreeSalinity()}{getTreeSalinity()}}
+{\footnotesize\ttfamily def py\+MANGA.\+Tree\+Model\+Lib.\+Belowground\+Competition.\+Fixed\+Salinity.\+Fixed\+Salinity.\+Fixed\+Salinity.\+get\+Tree\+Salinity (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+This function returns a list of salinity values for each tree, obtained by interpolation along a defined gradient. 
+
+\begin{DoxyReturn}{Returns}
+\+: np.\+array with floats of tree salinity 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classpyMANGA_1_1TreeModelLib_1_1BelowgroundCompetition_1_1FixedSalinity_1_1FixedSalinity_1_1FixedSalinity_a72d08c369950800c8c2840379574f8b8}\label{classpyMANGA_1_1TreeModelLib_1_1BelowgroundCompetition_1_1FixedSalinity_1_1FixedSalinity_1_1FixedSalinity_a72d08c369950800c8c2840379574f8b8}} 
+\index{pyMANGA.TreeModelLib.BelowgroundCompetition.FixedSalinity.FixedSalinity.FixedSalinity@{pyMANGA.TreeModelLib.BelowgroundCompetition.FixedSalinity.FixedSalinity.FixedSalinity}!prepareNextTimeStep@{prepareNextTimeStep}}
+\index{prepareNextTimeStep@{prepareNextTimeStep}!pyMANGA.TreeModelLib.BelowgroundCompetition.FixedSalinity.FixedSalinity.FixedSalinity@{pyMANGA.TreeModelLib.BelowgroundCompetition.FixedSalinity.FixedSalinity.FixedSalinity}}
+\doxysubsubsection{\texorpdfstring{prepareNextTimeStep()}{prepareNextTimeStep()}}
+{\footnotesize\ttfamily def py\+MANGA.\+Tree\+Model\+Lib.\+Belowground\+Competition.\+Fixed\+Salinity.\+Fixed\+Salinity.\+Fixed\+Salinity.\+prepare\+Next\+Time\+Step (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{t\+\_\+ini,  }\item[{}]{t\+\_\+end }\end{DoxyParamCaption})}
+
+
+
+This functions prepares the computation of water uptake by porewater salinity. 
+
+Only tree height aund leaf water potential is needed~\newline
+
+\begin{DoxyParams}{Parameters}
+{\em t\+\_\+ini} & -\/ initial time for next timestep ~\newline
+\\
+\hline
+{\em t\+\_\+end} & -\/ end time for next timestep \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented in \mbox{\hyperlink{classpyMANGA_1_1TreeModelLib_1_1BelowgroundCompetition_1_1SZoiFixedSalinity_1_1SZoiFixedSalinity_1_1SZoiFixedSalinity_a35b83250e1b10b4c440a2541aca6f253}{py\+MANGA.\+Tree\+Model\+Lib.\+Belowground\+Competition.\+SZoi\+Fixed\+Salinity.\+SZoi\+Fixed\+Salinity.\+SZoi\+Fixed\+Salinity}}, and \mbox{\hyperlink{classpyMANGA_1_1TreeModelLib_1_1BelowgroundCompetition_1_1NetworkFixedSalinity_1_1NetworkFixedSalinity_1_1NetworkFixedSalinity_aaeff7e030dedc4af0ecb2fb23f45bfde}{py\+MANGA.\+Tree\+Model\+Lib.\+Belowground\+Competition.\+Network\+Fixed\+Salinity.\+Network\+Fixed\+Salinity.\+Network\+Fixed\+Salinity}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Tree\+Model\+Lib/\+Belowground\+Competition/\+Fixed\+Salinity/Fixed\+Salinity.\+py\end{DoxyCompactItemize}

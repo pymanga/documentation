@@ -1,0 +1,100 @@
+\hypertarget{classnumpy_1_1typing_1_1NBitBase}{}\doxysection{numpy.\+typing.\+NBit\+Base Class Reference}
+\label{classnumpy_1_1typing_1_1NBitBase}\index{numpy.typing.NBitBase@{numpy.typing.NBitBase}}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}An object representing `numpy.number` precision during static type checking.
+
+Used exclusively for the purpose static type checking, `NBitBase`
+represents the base of a hierachieral set of subclasses.
+Each subsequent subclass is herein used for representing a lower level
+of precision, *e.g.* ``64Bit > 32Bit > 16Bit``.
+
+Examples
+--------
+Below is a typical usage example: `NBitBase` is herein used for annotating a
+function that takes a float and integer of arbitrary precision as arguments
+and returns a new float of whichever precision is largest
+(*e.g.* ``np.float16 + np.int64 -> np.float64``).
+
+.. code-block:: python
+
+    >>> from typing import TypeVar, TYPE_CHECKING
+    >>> import numpy as np
+    >>> import numpy.typing as npt
+
+    >>> T = TypeVar("T", bound=npt.NBitBase)
+
+    >>> def add(a: "np.floating[T]", b: "np.integer[T]") -> "np.floating[T]":
+    ...     return a + b
+
+    >>> a = np.float16()
+    >>> b = np.int64()
+    >>> out = add(a, b)
+
+    >>> if TYPE_CHECKING:
+    ...     reveal_locals()
+    ...     # note: Revealed local types are:
+    ...     # note:     a: numpy.floating[numpy.typing._16Bit*]
+    ...     # note:     b: numpy.signedinteger[numpy.typing._64Bit*]
+    ...     # note:     out: numpy.floating[numpy.typing._64Bit*]\end{DoxyVerb}
+ Inheritance diagram for numpy.\+typing.\+NBit\+Base\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=9.000000cm]{classnumpy_1_1typing_1_1NBitBase}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classnumpy_1_1typing_1_1NBitBase_ac4281780e7959cc7963c20e0c4a464b5}{\+\_\+\+\_\+init\+\_\+subclass\+\_\+\+\_\+}} (cls)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classnumpy_1_1typing_1_1NBitBase_ac4281780e7959cc7963c20e0c4a464b5}\label{classnumpy_1_1typing_1_1NBitBase_ac4281780e7959cc7963c20e0c4a464b5}} 
+\index{numpy.typing.NBitBase@{numpy.typing.NBitBase}!\_\_init\_subclass\_\_@{\_\_init\_subclass\_\_}}
+\index{\_\_init\_subclass\_\_@{\_\_init\_subclass\_\_}!numpy.typing.NBitBase@{numpy.typing.NBitBase}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_subclass\_\_()}{\_\_init\_subclass\_\_()}}
+{\footnotesize\ttfamily  None numpy.\+typing.\+NBit\+Base.\+\_\+\+\_\+init\+\_\+subclass\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{cls }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}An object representing `numpy.number` precision during static type checking.
+
+Used exclusively for the purpose static type checking, `NBitBase`
+represents the base of a hierachieral set of subclasses.
+Each subsequent subclass is herein used for representing a lower level
+of precision, *e.g.* ``64Bit > 32Bit > 16Bit``.
+
+Examples
+--------
+Below is a typical usage example: `NBitBase` is herein used for annotating a
+function that takes a float and integer of arbitrary precision as arguments
+and returns a new float of whichever precision is largest
+(*e.g.* ``np.float16 + np.int64 -> np.float64``).
+
+.. code-block:: python
+
+    >>> from typing import TypeVar, TYPE_CHECKING
+    >>> import numpy as np
+    >>> import numpy.typing as npt
+
+    >>> T = TypeVar("T", bound=npt.NBitBase)
+
+    >>> def add(a: "np.floating[T]", b: "np.integer[T]") -> "np.floating[T]":
+    ...     return a + b
+
+    >>> a = np.float16()
+    >>> b = np.int64()
+    >>> out = add(a, b)
+
+    >>> if TYPE_CHECKING:
+    ...     reveal_locals()
+    ...     # note: Revealed local types are:
+    ...     # note:     a: numpy.floating[numpy.typing._16Bit*]
+    ...     # note:     b: numpy.signedinteger[numpy.typing._64Bit*]
+    ...     # note:     out: numpy.floating[numpy.typing._64Bit*]\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/\+Lib/site-\/packages/numpy/typing/\+\_\+\+\_\+init\+\_\+\+\_\+.\+py\end{DoxyCompactItemize}

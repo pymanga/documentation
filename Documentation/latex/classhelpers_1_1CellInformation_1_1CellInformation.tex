@@ -1,0 +1,203 @@
+\hypertarget{classhelpers_1_1CellInformation_1_1CellInformation}{}\doxysection{helpers.\+Cell\+Information.\+Cell\+Information Class Reference}
+\label{classhelpers_1_1CellInformation_1_1CellInformation}\index{helpers.CellInformation.CellInformation@{helpers.CellInformation.CellInformation}}
+
+
+\doxysubsection{Detailed Description}
+Helper class providing information on given mesh. 
+
+The mesh needs to contain an array with name \char`\"{}\+Volume\char`\"{} \doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classhelpers_1_1CellInformation_1_1CellInformation_a3adcbf9868bfa00761c1e69a4a33428d}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, source\+\_\+mesh)
+\begin{DoxyCompactList}\small\item\em Constructor reading source\+\_\+mesh and creating id\+\_\+finder for this. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classhelpers_1_1CellInformation_1_1CellInformation_a4933ead64ecc1eba20823cdedaa364ad}{get\+Cell\+Id}} (self, x, y, z)
+\begin{DoxyCompactList}\small\item\em Lookup funktion for cell\+\_\+id. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classhelpers_1_1CellInformation_1_1CellInformation_a4cd83868e9f90c17e33d8e56fa520857}{get\+Cell\+Id\+At\+Int\+Point}} (self, x, y, z, int\+\_\+point)
+\begin{DoxyCompactList}\small\item\em Alternative lookup funktion for cell\+\_\+id. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classhelpers_1_1CellInformation_1_1CellInformation_a7f8c08a08d1fd18972e4b9eb2f1ade0a}{get\+Cell\+IDs\+At\+XY}} (self, x, y, radius)
+\begin{DoxyCompactList}\small\item\em This function returns all the cell ids of the grid at a given x,y-\/ coordinate. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classhelpers_1_1CellInformation_1_1CellInformation_a18fcdaa2f2d2c395cf4cdc10908b9097}{get\+Cell\+Volumes}} (self)
+\begin{DoxyCompactList}\small\item\em Returns cell volumes. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classhelpers_1_1CellInformation_1_1CellInformation_ab891e877a2c80c659a60980cced115bc}{set\+Source\+Counter}} (self, value)
+\begin{DoxyCompactList}\small\item\em Helper for ogs-\/python-\/source terms. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classhelpers_1_1CellInformation_1_1CellInformation_a52d72598b497eff3779f005669f29f90}{get\+Source\+Counter}} (self)
+\begin{DoxyCompactList}\small\item\em Helper for ogs-\/python-\/source terms. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classhelpers_1_1CellInformation_1_1CellInformation_a2f4c168ca1e4fca4edc2c1e0366fd2e1}{set\+Highest\+Node}} (self, value)
+\begin{DoxyCompactList}\small\item\em Helper for ogs-\/python-\/source terms. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classhelpers_1_1CellInformation_1_1CellInformation_aa53dbd387d746df9fc75d0a2387813fe}{get\+Highest\+Node}} (self)
+\begin{DoxyCompactList}\small\item\em Helper for ogs-\/python-\/source terms. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classhelpers_1_1CellInformation_1_1CellInformation_a609809280d4ba0e3f2aed233a45237cb}{get\+NCells}} (self)
+\begin{DoxyCompactList}\small\item\em Helpter for ogs-\/python-\/source terms. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classhelpers_1_1CellInformation_1_1CellInformation_a3adcbf9868bfa00761c1e69a4a33428d}\label{classhelpers_1_1CellInformation_1_1CellInformation_a3adcbf9868bfa00761c1e69a4a33428d}} 
+\index{helpers.CellInformation.CellInformation@{helpers.CellInformation.CellInformation}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!helpers.CellInformation.CellInformation@{helpers.CellInformation.CellInformation}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def helpers.\+Cell\+Information.\+Cell\+Information.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{source\+\_\+mesh }\end{DoxyParamCaption})}
+
+
+
+Constructor reading source\+\_\+mesh and creating id\+\_\+finder for this. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em source\+\_\+mesh} & vtk\+Unstructured\+Grid of interest \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classhelpers_1_1CellInformation_1_1CellInformation_a4933ead64ecc1eba20823cdedaa364ad}\label{classhelpers_1_1CellInformation_1_1CellInformation_a4933ead64ecc1eba20823cdedaa364ad}} 
+\index{helpers.CellInformation.CellInformation@{helpers.CellInformation.CellInformation}!getCellId@{getCellId}}
+\index{getCellId@{getCellId}!helpers.CellInformation.CellInformation@{helpers.CellInformation.CellInformation}}
+\doxysubsubsection{\texorpdfstring{getCellId()}{getCellId()}}
+{\footnotesize\ttfamily def helpers.\+Cell\+Information.\+Cell\+Information.\+get\+Cell\+Id (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{x,  }\item[{}]{y,  }\item[{}]{z }\end{DoxyParamCaption})}
+
+
+
+Lookup funktion for cell\+\_\+id. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & x-\/coordinate \\
+\hline
+{\em y} & y-\/coordinate \\
+\hline
+{\em z} & z-\/coordinate \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int giving cell id 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classhelpers_1_1CellInformation_1_1CellInformation_a4cd83868e9f90c17e33d8e56fa520857}\label{classhelpers_1_1CellInformation_1_1CellInformation_a4cd83868e9f90c17e33d8e56fa520857}} 
+\index{helpers.CellInformation.CellInformation@{helpers.CellInformation.CellInformation}!getCellIdAtIntPoint@{getCellIdAtIntPoint}}
+\index{getCellIdAtIntPoint@{getCellIdAtIntPoint}!helpers.CellInformation.CellInformation@{helpers.CellInformation.CellInformation}}
+\doxysubsubsection{\texorpdfstring{getCellIdAtIntPoint()}{getCellIdAtIntPoint()}}
+{\footnotesize\ttfamily def helpers.\+Cell\+Information.\+Cell\+Information.\+get\+Cell\+Id\+At\+Int\+Point (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{x,  }\item[{}]{y,  }\item[{}]{z,  }\item[{}]{int\+\_\+point }\end{DoxyParamCaption})}
+
+
+
+Alternative lookup funktion for cell\+\_\+id. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & x-\/coordinate \\
+\hline
+{\em y} & y-\/coordinate \\
+\hline
+{\em z} & z-\/coordinate \\
+\hline
+{\em int\+\_\+point} & number of integration point \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int giving cell id 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classhelpers_1_1CellInformation_1_1CellInformation_a7f8c08a08d1fd18972e4b9eb2f1ade0a}\label{classhelpers_1_1CellInformation_1_1CellInformation_a7f8c08a08d1fd18972e4b9eb2f1ade0a}} 
+\index{helpers.CellInformation.CellInformation@{helpers.CellInformation.CellInformation}!getCellIDsAtXY@{getCellIDsAtXY}}
+\index{getCellIDsAtXY@{getCellIDsAtXY}!helpers.CellInformation.CellInformation@{helpers.CellInformation.CellInformation}}
+\doxysubsubsection{\texorpdfstring{getCellIDsAtXY()}{getCellIDsAtXY()}}
+{\footnotesize\ttfamily def helpers.\+Cell\+Information.\+Cell\+Information.\+get\+Cell\+IDs\+At\+XY (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{x,  }\item[{}]{y,  }\item[{}]{radius }\end{DoxyParamCaption})}
+
+
+
+This function returns all the cell ids of the grid at a given x,y-\/ coordinate. 
+
+At the moment, the implementation is a bit weird. Suggestions to improveme the implementation are most welcome. 
+\begin{DoxyParams}{Parameters}
+{\em x} & x-\/coordinate for tree search \\
+\hline
+{\em y} & y-\/coordinate for tree search \\
+\hline
+{\em radius} & search radius around the previously given coordinates within which the cell finder locates cells \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classhelpers_1_1CellInformation_1_1CellInformation_a18fcdaa2f2d2c395cf4cdc10908b9097}\label{classhelpers_1_1CellInformation_1_1CellInformation_a18fcdaa2f2d2c395cf4cdc10908b9097}} 
+\index{helpers.CellInformation.CellInformation@{helpers.CellInformation.CellInformation}!getCellVolumes@{getCellVolumes}}
+\index{getCellVolumes@{getCellVolumes}!helpers.CellInformation.CellInformation@{helpers.CellInformation.CellInformation}}
+\doxysubsubsection{\texorpdfstring{getCellVolumes()}{getCellVolumes()}}
+{\footnotesize\ttfamily def helpers.\+Cell\+Information.\+Cell\+Information.\+get\+Cell\+Volumes (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Returns cell volumes. 
+
+\begin{DoxyReturn}{Returns}
+np.\+array of shape = (len(cells)) 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classhelpers_1_1CellInformation_1_1CellInformation_aa53dbd387d746df9fc75d0a2387813fe}\label{classhelpers_1_1CellInformation_1_1CellInformation_aa53dbd387d746df9fc75d0a2387813fe}} 
+\index{helpers.CellInformation.CellInformation@{helpers.CellInformation.CellInformation}!getHighestNode@{getHighestNode}}
+\index{getHighestNode@{getHighestNode}!helpers.CellInformation.CellInformation@{helpers.CellInformation.CellInformation}}
+\doxysubsubsection{\texorpdfstring{getHighestNode()}{getHighestNode()}}
+{\footnotesize\ttfamily def helpers.\+Cell\+Information.\+Cell\+Information.\+get\+Highest\+Node (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Helper for ogs-\/python-\/source terms. 
+
+\begin{DoxyReturn}{Returns}
+int value of internal counter for highest node 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classhelpers_1_1CellInformation_1_1CellInformation_a609809280d4ba0e3f2aed233a45237cb}\label{classhelpers_1_1CellInformation_1_1CellInformation_a609809280d4ba0e3f2aed233a45237cb}} 
+\index{helpers.CellInformation.CellInformation@{helpers.CellInformation.CellInformation}!getNCells@{getNCells}}
+\index{getNCells@{getNCells}!helpers.CellInformation.CellInformation@{helpers.CellInformation.CellInformation}}
+\doxysubsubsection{\texorpdfstring{getNCells()}{getNCells()}}
+{\footnotesize\ttfamily def helpers.\+Cell\+Information.\+Cell\+Information.\+get\+NCells (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Helpter for ogs-\/python-\/source terms. 
+
+\begin{DoxyReturn}{Returns}
+number of cells in the source mesh 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classhelpers_1_1CellInformation_1_1CellInformation_a52d72598b497eff3779f005669f29f90}\label{classhelpers_1_1CellInformation_1_1CellInformation_a52d72598b497eff3779f005669f29f90}} 
+\index{helpers.CellInformation.CellInformation@{helpers.CellInformation.CellInformation}!getSourceCounter@{getSourceCounter}}
+\index{getSourceCounter@{getSourceCounter}!helpers.CellInformation.CellInformation@{helpers.CellInformation.CellInformation}}
+\doxysubsubsection{\texorpdfstring{getSourceCounter()}{getSourceCounter()}}
+{\footnotesize\ttfamily def helpers.\+Cell\+Information.\+Cell\+Information.\+get\+Source\+Counter (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Helper for ogs-\/python-\/source terms. 
+
+\begin{DoxyReturn}{Returns}
+int value of internal counter for source nodes 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classhelpers_1_1CellInformation_1_1CellInformation_a2f4c168ca1e4fca4edc2c1e0366fd2e1}\label{classhelpers_1_1CellInformation_1_1CellInformation_a2f4c168ca1e4fca4edc2c1e0366fd2e1}} 
+\index{helpers.CellInformation.CellInformation@{helpers.CellInformation.CellInformation}!setHighestNode@{setHighestNode}}
+\index{setHighestNode@{setHighestNode}!helpers.CellInformation.CellInformation@{helpers.CellInformation.CellInformation}}
+\doxysubsubsection{\texorpdfstring{setHighestNode()}{setHighestNode()}}
+{\footnotesize\ttfamily def helpers.\+Cell\+Information.\+Cell\+Information.\+set\+Highest\+Node (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{value }\end{DoxyParamCaption})}
+
+
+
+Helper for ogs-\/python-\/source terms. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & sets a counter to identify highest node \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classhelpers_1_1CellInformation_1_1CellInformation_ab891e877a2c80c659a60980cced115bc}\label{classhelpers_1_1CellInformation_1_1CellInformation_ab891e877a2c80c659a60980cced115bc}} 
+\index{helpers.CellInformation.CellInformation@{helpers.CellInformation.CellInformation}!setSourceCounter@{setSourceCounter}}
+\index{setSourceCounter@{setSourceCounter}!helpers.CellInformation.CellInformation@{helpers.CellInformation.CellInformation}}
+\doxysubsubsection{\texorpdfstring{setSourceCounter()}{setSourceCounter()}}
+{\footnotesize\ttfamily def helpers.\+Cell\+Information.\+Cell\+Information.\+set\+Source\+Counter (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{value }\end{DoxyParamCaption})}
+
+
+
+Helper for ogs-\/python-\/source terms. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & sets a counter for source nodes \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Tree\+Model\+Lib/\+Belowground\+Competition/\+OGS/helpers/Cell\+Information.\+py\end{DoxyCompactItemize}

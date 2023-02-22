@@ -1,0 +1,1025 @@
+\doxysection*{Manga Project configuration.}
+
+In this section, there are three different types of tag specified\+:
+\begin{DoxyItemize}
+\item \mbox{[}input\mbox{]} Required input specification embracing the next child level
+\item \mbox{[}case\mbox{]} The containing specifications need to be done on the sibling level. If no child level is defined, no further specifications have to be made, if this case is choosen.
+\item \mbox{[}tag\mbox{]} Case selector tag
+\item \mbox{[}spec\mbox{]} Simple tag with one value only
+\end{DoxyItemize}
+
+The root of every input file is the \mbox{[}input\mbox{]}-\/tag ~\newline
+ $<$\+Manga\+Project$>$~\newline
+...~\newline
+$<$/\+Manga\+Project$>$ \doxysection*{Required inputs\+:}
+
+
+\begin{DoxyItemize}
+\item \mbox{\hyperlink{project_dox__MangaProject__initial_population__initial_population}{\quad{}\mbox{[}input\mbox{]}initial\+\_\+population}}
+\item \mbox{\hyperlink{project_dox__MangaProject__random_seed__random_seed}{\quad{}\mbox{[}spec\mbox{]}random\+\_\+seed}}
+\item \mbox{\hyperlink{project_dox__MangaProject__tree_dynamics__tree_dynamics}{\quad{}\mbox{[}input\mbox{]}tree\+\_\+dynamics}}
+\item \mbox{\hyperlink{project_dox__MangaProject__tree_output__tree_output}{\quad{}\mbox{[}input\mbox{]}tree\+\_\+output}}
+\item \mbox{\hyperlink{project_dox__MangaProject__tree_time_loop__tree_time_loop}{\quad{}\mbox{[}input\mbox{]}tree\+\_\+time\+\_\+loop}}
+\item \mbox{\hyperlink{project_dox__MangaProject__visualization__visualization}{\quad{}\mbox{[}input\mbox{]}visualization}} 
+\end{DoxyItemize}\hypertarget{project_dox__MangaProject__initial_population__initial_population}{}\doxysection{\quad{}\mbox{[}input\mbox{]}initial\+\_\+population}\label{project_dox__MangaProject__initial_population__initial_population}
+Tag to control the initial population for the MANGA-\/\+Model. Hereby, multiple groups can be specified.
+
+\doxysection*{Required inputs\+:}
+
+
+\begin{DoxyItemize}
+\item \mbox{\hyperlink{project_dox__MangaProject__initial_population__group__group}{\quad{}\mbox{[}input\mbox{]}group}} 
+\end{DoxyItemize}\hypertarget{project_dox__MangaProject__initial_population__group__group}{}\doxysubsection{\quad{}\mbox{[}input\mbox{]}group}\label{project_dox__MangaProject__initial_population__group__group}
+Specification of a group of trees added to the population
+
+\doxysection*{Required inputs\+:}
+
+
+\begin{DoxyItemize}
+\item \mbox{\hyperlink{project_dox__MangaProject__initial_population__group__distribution__distribution}{\quad{}\mbox{[}input\mbox{]}distribution}}
+\item \mbox{\hyperlink{project_dox__MangaProject__initial_population__group__species}{\quad{}\mbox{[}tag\mbox{]}species}}
+\item \mbox{\hyperlink{project_dox__MangaProject__initial_population__group__name}{\quad{}\mbox{[}spec\mbox{]}name}}
+\end{DoxyItemize}
+
+\doxysection*{Possible cases\+:}
+
+
+\begin{DoxyItemize}
+\item \mbox{\hyperlink{project_dox__MangaProject__initial_population__group__Avicennia__Avicennia}{\quad{}\mbox{[}case\mbox{]}Avicennia}} 
+\end{DoxyItemize}\hypertarget{project_dox__MangaProject__initial_population__group__distribution__distribution}{}\doxysubsubsection{\quad{}\mbox{[}input\mbox{]}distribution}\label{project_dox__MangaProject__initial_population__group__distribution__distribution}
+Specification of the tree groups initial distribution. \doxysection*{Required inputs\+:}
+
+
+\begin{DoxyItemize}
+\item \mbox{\hyperlink{project_dox__MangaProject__initial_population__group__distribution__type}{\quad{}\mbox{[}tag\mbox{]}type}}
+\item \mbox{\hyperlink{project_dox__MangaProject__initial_population__group__distribution__n_inidividuals}{\quad{}\mbox{[}spec\mbox{]}n\+\_\+inidividuals}}
+\item \mbox{\hyperlink{project_dox__MangaProject__initial_population__group__distribution__n_recruitment_per_step}{\quad{}\mbox{[}spec\mbox{]}n\+\_\+recruitment\+\_\+per\+\_\+step}}
+\end{DoxyItemize}
+
+\doxysection*{Possible cases\+:}
+
+
+\begin{DoxyItemize}
+\item \mbox{\hyperlink{project_dox__MangaProject__initial_population__group__distribution__GroupFromFile__GroupFromFile}{\quad{}\mbox{[}case\mbox{]}Group\+From\+File}}
+\item \mbox{\hyperlink{project_dox__MangaProject__initial_population__group__distribution__Random__Random}{\quad{}\mbox{[}case\mbox{]}Random}} 
+\end{DoxyItemize}\hypertarget{project_dox__MangaProject__initial_population__group__distribution__type}{}\doxysubsection{\quad{}\mbox{[}tag\mbox{]}type}\label{project_dox__MangaProject__initial_population__group__distribution__type}
+Case selector for different types of initial distributions. \doxysection*{Available cases}
+
+
+\begin{DoxyItemize}
+\item Group\+From\+File
+\item Random 
+\end{DoxyItemize}\hypertarget{project_dox__MangaProject__initial_population__group__distribution__n_inidividuals}{}\doxysubsection{\quad{}\mbox{[}spec\mbox{]}n\+\_\+inidividuals}\label{project_dox__MangaProject__initial_population__group__distribution__n_inidividuals}
+Number of individuals in the corresponding group. \hypertarget{project_dox__MangaProject__initial_population__group__distribution__n_recruitment_per_step}{}\doxysubsection{\quad{}\mbox{[}spec\mbox{]}n\+\_\+recruitment\+\_\+per\+\_\+step}\label{project_dox__MangaProject__initial_population__group__distribution__n_recruitment_per_step}
+Optional input. Number of new recruits for this group in each timestep. \hypertarget{project_dox__MangaProject__initial_population__group__distribution__GroupFromFile__GroupFromFile}{}\doxysubsection{\quad{}\mbox{[}case\mbox{]}Group\+From\+File}\label{project_dox__MangaProject__initial_population__group__distribution__GroupFromFile__GroupFromFile}
+Input population case for initial tree distribution. Here, the initial tree locations and geometries are loaded from a given input file (csv). The file needs to contain rows with the information on\+: tree position (x,y-\/coordinates), r\+\_\+crown, r\+\_\+root, r\+\_\+stem and h\+\_\+stem. Positions must be comma-\/separated. Input files can be py\+MANGA output of the type \char`\"{}\+One\+Timestep\+One\+File\char`\"{} which includes the mentioned information. \hypertarget{project_dox__MangaProject__initial_population__group__distribution__Random__Random}{}\doxysubsection{\quad{}\mbox{[}case\mbox{]}Random}\label{project_dox__MangaProject__initial_population__group__distribution__Random__Random}
+Random case for initial tree distribution. Here, the initial trees are randomly distributed in a rectangular domain, specified by the specification\+\_\+tags.
+
+\doxysection*{Required inputs\+:}
+
+
+\begin{DoxyItemize}
+\item \mbox{\hyperlink{project_dox__MangaProject__initial_population__group__distribution__Random__domain__domain}{\quad{}\mbox{[}input\mbox{]}domain}} 
+\end{DoxyItemize}\hypertarget{project_dox__MangaProject__initial_population__group__distribution__Random__domain__domain}{}\doxysubsection{\quad{}\mbox{[}input\mbox{]}domain}\label{project_dox__MangaProject__initial_population__group__distribution__Random__domain__domain}
+Specification of the domain for the initial tree distribution. \doxysection*{Required inputs\+:}
+
+
+\begin{DoxyItemize}
+\item \mbox{\hyperlink{project_dox__MangaProject__initial_population__group__distribution__Random__domain__x_1}{\quad{}\mbox{[}spec\mbox{]}x\+\_\+1}}
+\item \mbox{\hyperlink{project_dox__MangaProject__initial_population__group__distribution__Random__domain__x_2}{\quad{}\mbox{[}spec\mbox{]}x\+\_\+2}}
+\item \mbox{\hyperlink{project_dox__MangaProject__initial_population__group__distribution__Random__domain__y_1}{\quad{}\mbox{[}spec\mbox{]}y\+\_\+1}}
+\item \mbox{\hyperlink{project_dox__MangaProject__initial_population__group__distribution__Random__domain__y_2}{\quad{}\mbox{[}spec\mbox{]}y\+\_\+2}} 
+\end{DoxyItemize}\hypertarget{project_dox__MangaProject__initial_population__group__distribution__Random__domain__x_1}{}\doxysubsubsection{\quad{}\mbox{[}spec\mbox{]}x\+\_\+1}\label{project_dox__MangaProject__initial_population__group__distribution__Random__domain__x_1}
+Maximal x value, for the domain in which individuals from the group can be placed in meters. \hypertarget{project_dox__MangaProject__initial_population__group__distribution__Random__domain__x_2}{}\doxysubsubsection{\quad{}\mbox{[}spec\mbox{]}x\+\_\+2}\label{project_dox__MangaProject__initial_population__group__distribution__Random__domain__x_2}
+Maximal x value, for the domain in which individuals from the group can be placed in meters. \hypertarget{project_dox__MangaProject__initial_population__group__distribution__Random__domain__y_1}{}\doxysubsubsection{\quad{}\mbox{[}spec\mbox{]}y\+\_\+1}\label{project_dox__MangaProject__initial_population__group__distribution__Random__domain__y_1}
+Minimal y value, for the domain in which individuals from the group can be placed in meters. \hypertarget{project_dox__MangaProject__initial_population__group__distribution__Random__domain__y_2}{}\doxysubsubsection{\quad{}\mbox{[}spec\mbox{]}y\+\_\+2}\label{project_dox__MangaProject__initial_population__group__distribution__Random__domain__y_2}
+Maximal y value, for the domain in which individuals from the group can be placed in meters. \hypertarget{project_dox__MangaProject__initial_population__group__species}{}\doxysubsubsection{\quad{}\mbox{[}tag\mbox{]}species}\label{project_dox__MangaProject__initial_population__group__species}
+Case selector for different tree species. If a file path to a python file is provided, the user can provide custom tree species. Absolute path required!
+
+\doxysection*{Available cases}
+
+
+\begin{DoxyItemize}
+\item Avicennia 
+\end{DoxyItemize}\hypertarget{project_dox__MangaProject__initial_population__group__name}{}\doxysubsubsection{\quad{}\mbox{[}spec\mbox{]}name}\label{project_dox__MangaProject__initial_population__group__name}
+Specification tag. Here, an arbitrary group name can be given. \hypertarget{project_dox__MangaProject__initial_population__group__Avicennia__Avicennia}{}\doxysubsubsection{\quad{}\mbox{[}case\mbox{]}Avicennia}\label{project_dox__MangaProject__initial_population__group__Avicennia__Avicennia}
+Parametrization and functionalities for trees chosen from the Avicennia species specification. \hypertarget{project_dox__MangaProject__random_seed__random_seed}{}\doxysection{\quad{}\mbox{[}spec\mbox{]}random\+\_\+seed}\label{project_dox__MangaProject__random_seed__random_seed}
+Seed for random processes. Optional. \hypertarget{project_dox__MangaProject__tree_dynamics__tree_dynamics}{}\doxysection{\quad{}\mbox{[}input\mbox{]}tree\+\_\+dynamics}\label{project_dox__MangaProject__tree_dynamics__tree_dynamics}
+Tag to control the dynamical concepts of the trees. Hereby, concepts for the Aboveground-\/, and Belowground-\/\+Competition concept need to be specified.
+
+\doxysection*{Required inputs\+:}
+
+
+\begin{DoxyItemize}
+\item \mbox{\hyperlink{project_dox__MangaProject__tree_dynamics__aboveground_competition__aboveground_competition}{\quad{}\mbox{[}input\mbox{]}aboveground\+\_\+competition}}
+\item \mbox{\hyperlink{project_dox__MangaProject__tree_dynamics__belowground_competition__belowground_competition}{\quad{}\mbox{[}input\mbox{]}belowground\+\_\+competition}}
+\item \mbox{\hyperlink{project_dox__MangaProject__tree_dynamics__tree_growth_and_death__tree_growth_and_death}{\quad{}\mbox{[}input\mbox{]}tree\+\_\+growth\+\_\+and\+\_\+death}} 
+\end{DoxyItemize}\hypertarget{project_dox__MangaProject__tree_dynamics__aboveground_competition__aboveground_competition}{}\doxysubsection{\quad{}\mbox{[}input\mbox{]}aboveground\+\_\+competition}\label{project_dox__MangaProject__tree_dynamics__aboveground_competition__aboveground_competition}
+On this level, the Aboveground-\/\+Competition-\/\+Concept can be specified.
+
+\doxysection*{Required inputs\+:}
+
+
+\begin{DoxyItemize}
+\item \mbox{\hyperlink{project_dox__MangaProject__tree_dynamics__aboveground_competition__type}{\quad{}\mbox{[}tag\mbox{]}type}}
+\end{DoxyItemize}
+
+\doxysection*{Possible cases\+:}
+
+
+\begin{DoxyItemize}
+\item \mbox{\hyperlink{project_dox__MangaProject__tree_dynamics__aboveground_competition__SimpleAsymmetricZOI__SimpleAsymmetricZOI}{\quad{}\mbox{[}case\mbox{]}Simple\+Asymmetric\+ZOI}}
+\item \mbox{\hyperlink{project_dox__MangaProject__tree_dynamics__aboveground_competition__SimpleTest__SimpleTest}{\quad{}\mbox{[}case\mbox{]}Simple\+Test}} 
+\end{DoxyItemize}\hypertarget{project_dox__MangaProject__tree_dynamics__aboveground_competition__type}{}\doxysubsubsection{\quad{}\mbox{[}tag\mbox{]}type}\label{project_dox__MangaProject__tree_dynamics__aboveground_competition__type}
+Case selector for different types of aboveground competition.
+
+\doxysection*{Available cases}
+
+
+\begin{DoxyItemize}
+\item Simple\+Asymmetric\+ZOI
+\item Simple\+Test 
+\end{DoxyItemize}\hypertarget{project_dox__MangaProject__tree_dynamics__aboveground_competition__SimpleAsymmetricZOI__SimpleAsymmetricZOI}{}\doxysubsubsection{\quad{}\mbox{[}case\mbox{]}Simple\+Asymmetric\+ZOI}\label{project_dox__MangaProject__tree_dynamics__aboveground_competition__SimpleAsymmetricZOI__SimpleAsymmetricZOI}
+Simple\+Asymmetric\+ZOI aboveground competition concept. This concept returns a factor 0...1 for each tree specifying the unshaded proportion of the crown area.
+
+Please note\+: ~\newline
+
+\begin{DoxyItemize}
+\item Number of individuals ({\itshape n\+\_\+individuals}) in {\itshape initial\+\_\+population} must be $>$= 1.
+\item Cell edge must be larger than the minimum (initial) crown radius
+\begin{DoxyItemize}
+\item Example\+: initial crown radius = 0.\+2 m, cell edge must be larger than 0.\+2 m, i.\+e., length of model domain / resolution $>$ 0.\+2
+\end{DoxyItemize}
+\end{DoxyItemize}
+
+\doxysection*{Required inputs\+:}
+
+
+\begin{DoxyItemize}
+\item \mbox{\hyperlink{project_dox__MangaProject__tree_dynamics__aboveground_competition__SimpleAsymmetricZOI__domain__domain}{\quad{}\mbox{[}input\mbox{]}domain}}
+\item \mbox{\hyperlink{project_dox__MangaProject__tree_dynamics__aboveground_competition__SimpleAsymmetricZOI__x_resolution}{\quad{}\mbox{[}spec\mbox{]}x\+\_\+resolution}}
+\item \mbox{\hyperlink{project_dox__MangaProject__tree_dynamics__aboveground_competition__SimpleAsymmetricZOI__y_resolution}{\quad{}\mbox{[}spec\mbox{]}y\+\_\+resolution}} 
+\end{DoxyItemize}\hypertarget{project_dox__MangaProject__tree_dynamics__aboveground_competition__SimpleAsymmetricZOI__domain__domain}{}\doxysubsection{\quad{}\mbox{[}input\mbox{]}domain}\label{project_dox__MangaProject__tree_dynamics__aboveground_competition__SimpleAsymmetricZOI__domain__domain}
+Spatial description of the domain to which the concept is applied; defined by 4 corner points.
+
+\doxysection*{Required inputs\+:}
+
+
+\begin{DoxyItemize}
+\item \mbox{\hyperlink{project_dox__MangaProject__tree_dynamics__aboveground_competition__SimpleAsymmetricZOI__domain__x_1}{\quad{}\mbox{[}spec\mbox{]}x\+\_\+1}}
+\item \mbox{\hyperlink{project_dox__MangaProject__tree_dynamics__aboveground_competition__SimpleAsymmetricZOI__domain__x_2}{\quad{}\mbox{[}spec\mbox{]}x\+\_\+2}}
+\item \mbox{\hyperlink{project_dox__MangaProject__tree_dynamics__aboveground_competition__SimpleAsymmetricZOI__domain__y_1}{\quad{}\mbox{[}spec\mbox{]}y\+\_\+1}}
+\item \mbox{\hyperlink{project_dox__MangaProject__tree_dynamics__aboveground_competition__SimpleAsymmetricZOI__domain__y_2}{\quad{}\mbox{[}spec\mbox{]}y\+\_\+2}} 
+\end{DoxyItemize}\hypertarget{project_dox__MangaProject__tree_dynamics__aboveground_competition__SimpleAsymmetricZOI__domain__x_1}{}\doxysubsubsection{\quad{}\mbox{[}spec\mbox{]}x\+\_\+1}\label{project_dox__MangaProject__tree_dynamics__aboveground_competition__SimpleAsymmetricZOI__domain__x_1}
+lower x-\/boundary of mesh (left). \hypertarget{project_dox__MangaProject__tree_dynamics__aboveground_competition__SimpleAsymmetricZOI__domain__x_2}{}\doxysubsubsection{\quad{}\mbox{[}spec\mbox{]}x\+\_\+2}\label{project_dox__MangaProject__tree_dynamics__aboveground_competition__SimpleAsymmetricZOI__domain__x_2}
+upper x-\/boundary of mesh (right). \hypertarget{project_dox__MangaProject__tree_dynamics__aboveground_competition__SimpleAsymmetricZOI__domain__y_1}{}\doxysubsubsection{\quad{}\mbox{[}spec\mbox{]}y\+\_\+1}\label{project_dox__MangaProject__tree_dynamics__aboveground_competition__SimpleAsymmetricZOI__domain__y_1}
+lower y-\/boundary of mesh (bottom). \hypertarget{project_dox__MangaProject__tree_dynamics__aboveground_competition__SimpleAsymmetricZOI__domain__y_2}{}\doxysubsubsection{\quad{}\mbox{[}spec\mbox{]}y\+\_\+2}\label{project_dox__MangaProject__tree_dynamics__aboveground_competition__SimpleAsymmetricZOI__domain__y_2}
+upper y-\/boundary of mesh (top). \hypertarget{project_dox__MangaProject__tree_dynamics__aboveground_competition__SimpleAsymmetricZOI__x_resolution}{}\doxysubsection{\quad{}\mbox{[}spec\mbox{]}x\+\_\+resolution}\label{project_dox__MangaProject__tree_dynamics__aboveground_competition__SimpleAsymmetricZOI__x_resolution}
+number of meshpoints in x direction. \hypertarget{project_dox__MangaProject__tree_dynamics__aboveground_competition__SimpleAsymmetricZOI__y_resolution}{}\doxysubsection{\quad{}\mbox{[}spec\mbox{]}y\+\_\+resolution}\label{project_dox__MangaProject__tree_dynamics__aboveground_competition__SimpleAsymmetricZOI__y_resolution}
+number of meshpoints in y direction. \hypertarget{project_dox__MangaProject__tree_dynamics__aboveground_competition__SimpleTest__SimpleTest}{}\doxysubsubsection{\quad{}\mbox{[}case\mbox{]}Simple\+Test}\label{project_dox__MangaProject__tree_dynamics__aboveground_competition__SimpleTest__SimpleTest}
+Simple\+Test aboveground competition concept. This concept returns a 1 for each tree added to it. No further tags required. \hypertarget{project_dox__MangaProject__tree_dynamics__belowground_competition__belowground_competition}{}\doxysubsection{\quad{}\mbox{[}input\mbox{]}belowground\+\_\+competition}\label{project_dox__MangaProject__tree_dynamics__belowground_competition__belowground_competition}
+On this level, the Belowground-\/\+Competition-\/\+Concept can be specified.
+
+\doxysection*{Required inputs\+:}
+
+
+\begin{DoxyItemize}
+\item \mbox{\hyperlink{project_dox__MangaProject__tree_dynamics__belowground_competition__type}{\quad{}\mbox{[}tag\mbox{]}type}}
+\end{DoxyItemize}
+
+\doxysection*{Possible cases\+:}
+
+
+\begin{DoxyItemize}
+\item \mbox{\hyperlink{project_dox__MangaProject__tree_dynamics__belowground_competition__FixedSalinity__FixedSalinity}{\quad{}\mbox{[}case\mbox{]}Fixed\+Salinity}}
+\item \mbox{\hyperlink{project_dox__MangaProject__tree_dynamics__belowground_competition__FON__FON}{\quad{}\mbox{[}case\mbox{]}FON}}
+\item \mbox{\hyperlink{project_dox__MangaProject__tree_dynamics__belowground_competition__NetworkFixedSalinity__NetworkFixedSalinity}{\quad{}\mbox{[}case\mbox{]}Network\+Fixed\+Salinity}}
+\item \mbox{\hyperlink{project_dox__MangaProject__tree_dynamics__belowground_competition__NetworkOGSLargeScale3D__NetworkOGSLargeScale3D}{\quad{}\mbox{[}case\mbox{]}Network\+OGSLarge\+Scale3D}}
+\item \mbox{\hyperlink{project_dox__MangaProject__tree_dynamics__belowground_competition__NetworkOGSLargeScale3DExternal__NetworkOGSLargeScale3DExternal}{\quad{}\mbox{[}case\mbox{]}Network\+OGSLarge\+Scale3\+DExternal}}
+\item \mbox{\hyperlink{project_dox__MangaProject__tree_dynamics__belowground_competition__OGSLargeScale3D__OGSLargeScale3D}{\quad{}\mbox{[}case\mbox{]}OGSLarge\+Scale3D}}
+\item \mbox{\hyperlink{project_dox__MangaProject__tree_dynamics__belowground_competition__OGSLargeScale3DExternal__OGSLargeScale3DExternal}{\quad{}\mbox{[}case\mbox{]}OGSLarge\+Scale3\+DExternal}}
+\item \mbox{\hyperlink{project_dox__MangaProject__tree_dynamics__belowground_competition__OGSWithoutFeedback__OGSWithoutFeedback}{\quad{}\mbox{[}case\mbox{]}OGSWithout\+Feedback}}
+\item \mbox{\hyperlink{project_dox__MangaProject__tree_dynamics__belowground_competition__SimpleNetwork__SimpleNetwork}{\quad{}\mbox{[}case\mbox{]}Simple\+Network}}
+\item \mbox{\hyperlink{project_dox__MangaProject__tree_dynamics__belowground_competition__SimpleTest__SimpleTest}{\quad{}\mbox{[}case\mbox{]}Simple\+Test}}
+\item \mbox{\hyperlink{project_dox__MangaProject__tree_dynamics__belowground_competition__SymmetricZOI__SymmetricZOI}{\quad{}\mbox{[}case\mbox{]}Symmetric\+ZOI}}
+\item \mbox{\hyperlink{project_dox__MangaProject__tree_dynamics__belowground_competition__SZoiFixedSalinity__SZoiFixedSalinity}{\quad{}\mbox{[}case\mbox{]}SZoi\+Fixed\+Salinity}} 
+\end{DoxyItemize}\hypertarget{project_dox__MangaProject__tree_dynamics__belowground_competition__type}{}\doxysubsubsection{\quad{}\mbox{[}tag\mbox{]}type}\label{project_dox__MangaProject__tree_dynamics__belowground_competition__type}
+Case selector for different types of belowground competition.
+
+\doxysection*{Available cases}
+
+
+\begin{DoxyItemize}
+\item Fixed\+Salinity
+\item FON
+\item Network\+Fixed\+Salinity
+\item Network\+OGSLarge\+Scale3D
+\item Network\+OGSLarge\+Scale3\+DExternal
+\item OGSLarge\+Scale3D
+\item OGSLarge\+Scale3\+DExternal
+\item OGSWithout\+Feedback
+\item Simple\+Network
+\item Simple\+Test
+\item Symmetric\+ZOI
+\item SZoi\+Fixed\+Salinity 
+\end{DoxyItemize}\hypertarget{project_dox__MangaProject__tree_dynamics__belowground_competition__FixedSalinity__FixedSalinity}{}\doxysubsubsection{\quad{}\mbox{[}case\mbox{]}Fixed\+Salinity}\label{project_dox__MangaProject__tree_dynamics__belowground_competition__FixedSalinity__FixedSalinity}
+Belowground concept only regarding for fixed salinity (gradient). No competition. Recommended for Species parametrisation. \doxysection*{Required inputs\+:}
+
+
+\begin{DoxyItemize}
+\item \mbox{\hyperlink{project_dox__MangaProject__tree_dynamics__belowground_competition__FixedSalinity__max_x}{\quad{}\mbox{[}spec\mbox{]}max\+\_\+x}}
+\item \mbox{\hyperlink{project_dox__MangaProject__tree_dynamics__belowground_competition__FixedSalinity__min_x}{\quad{}\mbox{[}spec\mbox{]}min\+\_\+x}}
+\item \mbox{\hyperlink{project_dox__MangaProject__tree_dynamics__belowground_competition__FixedSalinity__salinty}{\quad{}\mbox{[}spec\mbox{]}salinty}} 
+\end{DoxyItemize}\hypertarget{project_dox__MangaProject__tree_dynamics__belowground_competition__FixedSalinity__max_x}{}\doxysubsection{\quad{}\mbox{[}spec\mbox{]}max\+\_\+x}\label{project_dox__MangaProject__tree_dynamics__belowground_competition__FixedSalinity__max_x}
+Max and min values define the interpolation range for the salinity.
+
+salinity\+\_\+tree = ((x\+\_\+tree -\/ min\+\_\+x) / (max\+\_\+x -\/ min\+\_\+x) $\ast$ (salinity\+\_\+max -\/ salinity\+\_\+min) + salinity\+\_\+min) \hypertarget{project_dox__MangaProject__tree_dynamics__belowground_competition__FixedSalinity__min_x}{}\doxysubsection{\quad{}\mbox{[}spec\mbox{]}min\+\_\+x}\label{project_dox__MangaProject__tree_dynamics__belowground_competition__FixedSalinity__min_x}
+Max and min values define the interpolation range for the salinity.
+
+salinity\+\_\+tree = ((x\+\_\+tree -\/ min\+\_\+x) / (max\+\_\+x -\/ min\+\_\+x) $\ast$ (salinity\+\_\+max -\/ salinity\+\_\+min) + salinity\+\_\+min) \hypertarget{project_dox__MangaProject__tree_dynamics__belowground_competition__FixedSalinity__salinty}{}\doxysubsection{\quad{}\mbox{[}spec\mbox{]}salinty}\label{project_dox__MangaProject__tree_dynamics__belowground_competition__FixedSalinity__salinty}
+There are two ways to indicate the salinity of the bottom water\+: ~\newline
+ (i) two values, each for the location defined via max\+\_\+x and min\+\_\+x (option 1), or ~\newline
+ (ii) a time series with values for these (option 2).
+
+Option (i)$\ast$$\ast$
+
+Salinity in kg/kg. e.\+g. 35 ppt corresponds to 0.\+035. Two values (min and max) need to be specified.
+
+Example\+: ~\newline
+ $<$salinity$>$ 0.\+005 0.\+095 $<$/salinity$>$$\ast$
+
+~\newline
+ Option (ii)$\ast$$\ast$
+
+Path to file containing salinity in kg/kg. Two values (min and max) need to be specified for each time step you want to define the salinity. For time steps with no defined salinity, values will be linearly interpolated. The input file needs to be a csv file with semicolon as separator and 3 columns, defining the time step (in seconds) and salinity on the left and right boundary (in kg/kg).
+
+Note\+: the first row will be skipped (as we expect the header to be present). ~\newline
+ Example xml-\/file\+:
+
+$<$salinity$>$ test/\+Small\+Tests/input\+Files/salinity\+\_\+\+A.\+csv $<$/salinity$>$$\ast$
+
+Example csv file\+:
+
+t\+\_\+step;salinity\+\_\+1;salinity\+\_\+2~\newline
+ 0;0.\+010;0.\+020~\newline
+ 1000000;0.\+011;0.\+021~\newline
+ 2000000;0.\+012;0.\+022~\newline
+$\ast$ \hypertarget{project_dox__MangaProject__tree_dynamics__belowground_competition__FON__FON}{}\doxysubsubsection{\quad{}\mbox{[}case\mbox{]}FON}\label{project_dox__MangaProject__tree_dynamics__belowground_competition__FON__FON}
+FON belowground competition concept as used in the Kiwi model. For details see (\href{https://doi.org/10.1016/S0304-3800(00)00298-2}{\texttt{ https\+://doi.\+org/10.\+1016/\+S0304-\/3800(00)00298-\/2}}). Returns a multiplier for competition and salinity.
+
+\doxysection*{Required inputs\+:}
+
+
+\begin{DoxyItemize}
+\item \mbox{\hyperlink{project_dox__MangaProject__tree_dynamics__belowground_competition__FON__aa}{\quad{}\mbox{[}spec\mbox{]}aa}}
+\item \mbox{\hyperlink{project_dox__MangaProject__tree_dynamics__belowground_competition__FON__bb}{\quad{}\mbox{[}spec\mbox{]}bb}}
+\item \mbox{\hyperlink{project_dox__MangaProject__tree_dynamics__belowground_competition__FON__fmin}{\quad{}\mbox{[}spec\mbox{]}fmin}}
+\item \mbox{\hyperlink{project_dox__MangaProject__tree_dynamics__belowground_competition__FON__salinity}{\quad{}\mbox{[}spec\mbox{]}salinity}}
+\item \mbox{\hyperlink{project_dox__MangaProject__tree_dynamics__belowground_competition__FON__x_1}{\quad{}\mbox{[}spec\mbox{]}x\+\_\+1}}
+\item \mbox{\hyperlink{project_dox__MangaProject__tree_dynamics__belowground_competition__FON__x_2}{\quad{}\mbox{[}spec\mbox{]}x\+\_\+2}}
+\item \mbox{\hyperlink{project_dox__MangaProject__tree_dynamics__belowground_competition__FON__x_resolution}{\quad{}\mbox{[}spec\mbox{]}x\+\_\+resolution}}
+\item \mbox{\hyperlink{project_dox__MangaProject__tree_dynamics__belowground_competition__FON__y_1}{\quad{}\mbox{[}spec\mbox{]}y\+\_\+1}}
+\item \mbox{\hyperlink{project_dox__MangaProject__tree_dynamics__belowground_competition__FON__y_2}{\quad{}\mbox{[}spec\mbox{]}y\+\_\+2}}
+\item \mbox{\hyperlink{project_dox__MangaProject__tree_dynamics__belowground_competition__FON__y_resolution}{\quad{}\mbox{[}spec\mbox{]}y\+\_\+resolution}} 
+\end{DoxyItemize}\hypertarget{project_dox__MangaProject__tree_dynamics__belowground_competition__FON__aa}{}\doxysubsection{\quad{}\mbox{[}spec\mbox{]}aa}\label{project_dox__MangaProject__tree_dynamics__belowground_competition__FON__aa}
+FON parameter a. \hypertarget{project_dox__MangaProject__tree_dynamics__belowground_competition__FON__bb}{}\doxysubsection{\quad{}\mbox{[}spec\mbox{]}bb}\label{project_dox__MangaProject__tree_dynamics__belowground_competition__FON__bb}
+FON parameter b. \hypertarget{project_dox__MangaProject__tree_dynamics__belowground_competition__FON__fmin}{}\doxysubsection{\quad{}\mbox{[}spec\mbox{]}fmin}\label{project_dox__MangaProject__tree_dynamics__belowground_competition__FON__fmin}
+FON parameter F\+\_\+min. \hypertarget{project_dox__MangaProject__tree_dynamics__belowground_competition__FON__salinity}{}\doxysubsection{\quad{}\mbox{[}spec\mbox{]}salinity}\label{project_dox__MangaProject__tree_dynamics__belowground_competition__FON__salinity}
+salinity in ppt. \hypertarget{project_dox__MangaProject__tree_dynamics__belowground_competition__FON__x_1}{}\doxysubsection{\quad{}\mbox{[}spec\mbox{]}x\+\_\+1}\label{project_dox__MangaProject__tree_dynamics__belowground_competition__FON__x_1}
+lower x-\/boundary of mesh (left). \hypertarget{project_dox__MangaProject__tree_dynamics__belowground_competition__FON__x_2}{}\doxysubsection{\quad{}\mbox{[}spec\mbox{]}x\+\_\+2}\label{project_dox__MangaProject__tree_dynamics__belowground_competition__FON__x_2}
+upper x-\/boundary of mesh (right). \hypertarget{project_dox__MangaProject__tree_dynamics__belowground_competition__FON__x_resolution}{}\doxysubsection{\quad{}\mbox{[}spec\mbox{]}x\+\_\+resolution}\label{project_dox__MangaProject__tree_dynamics__belowground_competition__FON__x_resolution}
+number of meshpoints in x direction. \hypertarget{project_dox__MangaProject__tree_dynamics__belowground_competition__FON__y_1}{}\doxysubsection{\quad{}\mbox{[}spec\mbox{]}y\+\_\+1}\label{project_dox__MangaProject__tree_dynamics__belowground_competition__FON__y_1}
+lower y-\/boundary of mesh (bottom). \hypertarget{project_dox__MangaProject__tree_dynamics__belowground_competition__FON__y_2}{}\doxysubsection{\quad{}\mbox{[}spec\mbox{]}y\+\_\+2}\label{project_dox__MangaProject__tree_dynamics__belowground_competition__FON__y_2}
+upper y-\/boundary of mesh (top). \hypertarget{project_dox__MangaProject__tree_dynamics__belowground_competition__FON__y_resolution}{}\doxysubsection{\quad{}\mbox{[}spec\mbox{]}y\+\_\+resolution}\label{project_dox__MangaProject__tree_dynamics__belowground_competition__FON__y_resolution}
+number of meshpoints in y direction. \hypertarget{project_dox__MangaProject__tree_dynamics__belowground_competition__NetworkFixedSalinity__NetworkFixedSalinity}{}\doxysubsubsection{\quad{}\mbox{[}case\mbox{]}Network\+Fixed\+Salinity}\label{project_dox__MangaProject__tree_dynamics__belowground_competition__NetworkFixedSalinity__NetworkFixedSalinity}
+Belowground concept combining {\itshape Fixed\+Salinity} and {\itshape Simple\+Network}.
+
+All inputs from the corresponding concepts are required.
+
+\doxysection*{Required inputs\+:}
+
+
+\begin{DoxyItemize}
+\item \mbox{\hyperlink{project_dox__MangaProject__tree_dynamics__belowground_competition__NetworkFixedSalinity__f_radius}{\quad{}\mbox{[}spec\mbox{]}f\+\_\+radius}}
+\item \mbox{\hyperlink{project_dox__MangaProject__tree_dynamics__belowground_competition__NetworkFixedSalinity__max_x}{\quad{}\mbox{[}spec\mbox{]}max\+\_\+x}}
+\item \mbox{\hyperlink{project_dox__MangaProject__tree_dynamics__belowground_competition__NetworkFixedSalinity__min_x}{\quad{}\mbox{[}spec\mbox{]}min\+\_\+x}}
+\item \mbox{\hyperlink{project_dox__MangaProject__tree_dynamics__belowground_competition__NetworkFixedSalinity__salinty}{\quad{}\mbox{[}spec\mbox{]}salinty}} 
+\end{DoxyItemize}\hypertarget{project_dox__MangaProject__tree_dynamics__belowground_competition__NetworkFixedSalinity__f_radius}{}\doxysubsection{\quad{}\mbox{[}spec\mbox{]}f\+\_\+radius}\label{project_dox__MangaProject__tree_dynamics__belowground_competition__NetworkFixedSalinity__f_radius}
+Factor determining the radius of the grafted roots\+: r\+\_\+gr = f\+\_\+radius ∗ min(r\+\_\+stem).
+
+Numeric between 0 and 1. \hypertarget{project_dox__MangaProject__tree_dynamics__belowground_competition__NetworkFixedSalinity__max_x}{}\doxysubsection{\quad{}\mbox{[}spec\mbox{]}max\+\_\+x}\label{project_dox__MangaProject__tree_dynamics__belowground_competition__NetworkFixedSalinity__max_x}
+Max and min values define the interpolation range for the salinity.
+
+salinity\+\_\+tree = ((x\+\_\+tree -\/ min\+\_\+x) / (max\+\_\+x -\/ min\+\_\+x) $\ast$ (salinity\+\_\+max -\/ salinity\+\_\+min) + salinity\+\_\+min) \hypertarget{project_dox__MangaProject__tree_dynamics__belowground_competition__NetworkFixedSalinity__min_x}{}\doxysubsection{\quad{}\mbox{[}spec\mbox{]}min\+\_\+x}\label{project_dox__MangaProject__tree_dynamics__belowground_competition__NetworkFixedSalinity__min_x}
+Max and min values define the interpolation range for the salinity.
+
+salinity\+\_\+tree = ((x\+\_\+tree -\/ min\+\_\+x) / (max\+\_\+x -\/ min\+\_\+x) $\ast$ (salinity\+\_\+max -\/ salinity\+\_\+min) + salinity\+\_\+min) \hypertarget{project_dox__MangaProject__tree_dynamics__belowground_competition__NetworkFixedSalinity__salinty}{}\doxysubsection{\quad{}\mbox{[}spec\mbox{]}salinty}\label{project_dox__MangaProject__tree_dynamics__belowground_competition__NetworkFixedSalinity__salinty}
+salinity in kg/kg. e.\+g. 35 ppt corresponds to 0.\+035. Two values (max and min) need to be specified. Example\+: $<$salinity$>$ 0.\+005 0.\+095 $<$/salinity$>$ \hypertarget{project_dox__MangaProject__tree_dynamics__belowground_competition__NetworkOGSLargeScale3D__NetworkOGSLargeScale3D}{}\doxysubsubsection{\quad{}\mbox{[}case\mbox{]}Network\+OGSLarge\+Scale3D}\label{project_dox__MangaProject__tree_dynamics__belowground_competition__NetworkOGSLargeScale3D__NetworkOGSLargeScale3D}
+{\ttfamily Network\+OGSLarge\+Scale3D} below-\/ground competition concept. This concept combines {\ttfamily OGSLarge\+Scale3D} and {\ttfamily Simple\+Network} (for more information see respective concepts). ~\newline
+
+
+The concept returns a value between 0 and 1 for each tree added to it. Hereby, the reduction factor is calculated as the fraction of available water and the hypothetical maximal water uptake at zero salinity. The available water considers soil salinity and water exchange through root grafts. ~\newline
+
+
+All files and parameters required are similar to {\ttfamily OGSLarge\+Scale3D} and {\ttfamily Simple\+Network}.
+
+\doxysection*{Required inputs\+:}
+
+
+\begin{DoxyItemize}
+\item \mbox{\hyperlink{project_dox__MangaProject__tree_dynamics__belowground_competition__NetworkOGSLargeScale3D__abiotic_drivers__abiotic_drivers}{\quad{}\mbox{[}input\mbox{]}abiotic\+\_\+drivers}}
+\item \mbox{\hyperlink{project_dox__MangaProject__tree_dynamics__belowground_competition__NetworkOGSLargeScale3D__bulk_mesh}{\quad{}\mbox{[}spec\mbox{]}bulk\+\_\+mesh}}
+\item \mbox{\hyperlink{project_dox__MangaProject__tree_dynamics__belowground_competition__NetworkOGSLargeScale3D__delta_t_ogs}{\quad{}\mbox{[}spec\mbox{]}delta\+\_\+t\+\_\+ogs}}
+\item \mbox{\hyperlink{project_dox__MangaProject__tree_dynamics__belowground_competition__NetworkOGSLargeScale3D__f_radius}{\quad{}\mbox{[}spec\mbox{]}f\+\_\+radius}}
+\item \mbox{\hyperlink{project_dox__MangaProject__tree_dynamics__belowground_competition__NetworkOGSLargeScale3D__ogs_project_file}{\quad{}\mbox{[}spec\mbox{]}ogs\+\_\+project\+\_\+file}}
+\item \mbox{\hyperlink{project_dox__MangaProject__tree_dynamics__belowground_competition__NetworkOGSLargeScale3D__ogs_project_folder}{\quad{}\mbox{[}spec\mbox{]}ogs\+\_\+project\+\_\+folder}}
+\item \mbox{\hyperlink{project_dox__MangaProject__tree_dynamics__belowground_competition__NetworkOGSLargeScale3D__python_script}{\quad{}\mbox{[}spec\mbox{]}python\+\_\+script}}
+\item \mbox{\hyperlink{project_dox__MangaProject__tree_dynamics__belowground_competition__NetworkOGSLargeScale3D__source_mesh}{\quad{}\mbox{[}spec\mbox{]}source\+\_\+mesh}} 
+\end{DoxyItemize}\hypertarget{project_dox__MangaProject__tree_dynamics__belowground_competition__NetworkOGSLargeScale3D__abiotic_drivers__abiotic_drivers}{}\doxysubsection{\quad{}\mbox{[}input\mbox{]}abiotic\+\_\+drivers}\label{project_dox__MangaProject__tree_dynamics__belowground_competition__NetworkOGSLargeScale3D__abiotic_drivers__abiotic_drivers}
+Optional input to specify abiotic drivers.
+
+\doxysection*{Required inputs\+:}
+
+
+\begin{DoxyItemize}
+\item \mbox{\hyperlink{project_dox__MangaProject__tree_dynamics__belowground_competition__NetworkOGSLargeScale3D__abiotic_drivers__seaward_salinity}{\quad{}\mbox{[}spec\mbox{]}seaward\+\_\+salinity}}
+\item \mbox{\hyperlink{project_dox__MangaProject__tree_dynamics__belowground_competition__NetworkOGSLargeScale3D__abiotic_drivers__tide_daily_amplitude}{\quad{}\mbox{[}spec\mbox{]}tide\+\_\+daily\+\_\+amplitude}}
+\item \mbox{\hyperlink{project_dox__MangaProject__tree_dynamics__belowground_competition__NetworkOGSLargeScale3D__abiotic_drivers__tide_daily_period}{\quad{}\mbox{[}spec\mbox{]}tide\+\_\+daily\+\_\+period}}
+\item \mbox{\hyperlink{project_dox__MangaProject__tree_dynamics__belowground_competition__NetworkOGSLargeScale3D__abiotic_drivers__tide_monthy_amplitude}{\quad{}\mbox{[}spec\mbox{]}tide\+\_\+monthy\+\_\+amplitude}}
+\item \mbox{\hyperlink{project_dox__MangaProject__tree_dynamics__belowground_competition__NetworkOGSLargeScale3D__abiotic_drivers__tide_monthy_period}{\quad{}\mbox{[}spec\mbox{]}tide\+\_\+monthy\+\_\+period}} 
+\end{DoxyItemize}\hypertarget{project_dox__MangaProject__tree_dynamics__belowground_competition__NetworkOGSLargeScale3D__abiotic_drivers__seaward_salinity}{}\doxysubsubsection{\quad{}\mbox{[}spec\mbox{]}seaward\+\_\+salinity}\label{project_dox__MangaProject__tree_dynamics__belowground_competition__NetworkOGSLargeScale3D__abiotic_drivers__seaward_salinity}
+Optional\+: Salinity of seawater. Default value is 0.\+035, i.\+e. 35 ppt. \hypertarget{project_dox__MangaProject__tree_dynamics__belowground_competition__NetworkOGSLargeScale3D__abiotic_drivers__tide_daily_amplitude}{}\doxysubsubsection{\quad{}\mbox{[}spec\mbox{]}tide\+\_\+daily\+\_\+amplitude}\label{project_dox__MangaProject__tree_dynamics__belowground_competition__NetworkOGSLargeScale3D__abiotic_drivers__tide_daily_amplitude}
+Optional\+: Amplitude of daily tide. Default value is 1, i.\+e. the daily tide varies between -\/1 and 1 m around the average. \hypertarget{project_dox__MangaProject__tree_dynamics__belowground_competition__NetworkOGSLargeScale3D__abiotic_drivers__tide_daily_period}{}\doxysubsubsection{\quad{}\mbox{[}spec\mbox{]}tide\+\_\+daily\+\_\+period}\label{project_dox__MangaProject__tree_dynamics__belowground_competition__NetworkOGSLargeScale3D__abiotic_drivers__tide_daily_period}
+Optional\+: Period of daily tide. Default value is 12$\ast$60$\ast$60, i.\+e. the daily tide has a cyclus of half a day. \hypertarget{project_dox__MangaProject__tree_dynamics__belowground_competition__NetworkOGSLargeScale3D__abiotic_drivers__tide_monthy_amplitude}{}\doxysubsubsection{\quad{}\mbox{[}spec\mbox{]}tide\+\_\+monthy\+\_\+amplitude}\label{project_dox__MangaProject__tree_dynamics__belowground_competition__NetworkOGSLargeScale3D__abiotic_drivers__tide_monthy_amplitude}
+Optional\+: Amplitude of monthly tide. Default value is .5, i.\+e. the monthly fluctuation of means varies between -\/.\+5 and .5 m around mean sea level (0m). \hypertarget{project_dox__MangaProject__tree_dynamics__belowground_competition__NetworkOGSLargeScale3D__abiotic_drivers__tide_monthy_period}{}\doxysubsubsection{\quad{}\mbox{[}spec\mbox{]}tide\+\_\+monthy\+\_\+period}\label{project_dox__MangaProject__tree_dynamics__belowground_competition__NetworkOGSLargeScale3D__abiotic_drivers__tide_monthy_period}
+Optional\+: Period of monthly tide. Default value is 24$\ast$60$\ast$60$\ast$15, i.\+e. the monthly tide has a cyclus of 15 days. \hypertarget{project_dox__MangaProject__tree_dynamics__belowground_competition__NetworkOGSLargeScale3D__bulk_mesh}{}\doxysubsection{\quad{}\mbox{[}spec\mbox{]}bulk\+\_\+mesh}\label{project_dox__MangaProject__tree_dynamics__belowground_competition__NetworkOGSLargeScale3D__bulk_mesh}
+Name of bulk mesh which needs to be saved in the ogs project folder. \hypertarget{project_dox__MangaProject__tree_dynamics__belowground_competition__NetworkOGSLargeScale3D__delta_t_ogs}{}\doxysubsection{\quad{}\mbox{[}spec\mbox{]}delta\+\_\+t\+\_\+ogs}\label{project_dox__MangaProject__tree_dynamics__belowground_competition__NetworkOGSLargeScale3D__delta_t_ogs}
+Optional parameter to predefine delta t for ogs calculations. Can be used to minimize computation time. \hypertarget{project_dox__MangaProject__tree_dynamics__belowground_competition__NetworkOGSLargeScale3D__f_radius}{}\doxysubsection{\quad{}\mbox{[}spec\mbox{]}f\+\_\+radius}\label{project_dox__MangaProject__tree_dynamics__belowground_competition__NetworkOGSLargeScale3D__f_radius}
+Factor determining the radius of the grafted roots\+: r\+\_\+gr = f\+\_\+radius ∗ min(r\+\_\+stem).
+
+Numeric between 0 and 1. \hypertarget{project_dox__MangaProject__tree_dynamics__belowground_competition__NetworkOGSLargeScale3D__ogs_project_file}{}\doxysubsection{\quad{}\mbox{[}spec\mbox{]}ogs\+\_\+project\+\_\+file}\label{project_dox__MangaProject__tree_dynamics__belowground_competition__NetworkOGSLargeScale3D__ogs_project_file}
+Name of ogs project file in the corresponding ogs project folder. \hypertarget{project_dox__MangaProject__tree_dynamics__belowground_competition__NetworkOGSLargeScale3D__ogs_project_folder}{}\doxysubsection{\quad{}\mbox{[}spec\mbox{]}ogs\+\_\+project\+\_\+folder}\label{project_dox__MangaProject__tree_dynamics__belowground_competition__NetworkOGSLargeScale3D__ogs_project_folder}
+Folder path to ogs project folder. \hypertarget{project_dox__MangaProject__tree_dynamics__belowground_competition__NetworkOGSLargeScale3D__python_script}{}\doxysubsection{\quad{}\mbox{[}spec\mbox{]}python\+\_\+script}\label{project_dox__MangaProject__tree_dynamics__belowground_competition__NetworkOGSLargeScale3D__python_script}
+Optional parameter to provide non-\/default python script for ogs to calculate boundary conditions and source terms. If choosen, please use python\+\_\+source.\+py as example file. \hypertarget{project_dox__MangaProject__tree_dynamics__belowground_competition__NetworkOGSLargeScale3D__source_mesh}{}\doxysubsection{\quad{}\mbox{[}spec\mbox{]}source\+\_\+mesh}\label{project_dox__MangaProject__tree_dynamics__belowground_competition__NetworkOGSLargeScale3D__source_mesh}
+Name of source mesh, where the tree water uptake is taking place. The mesh needs to be saved in the ogs project folder. \hypertarget{project_dox__MangaProject__tree_dynamics__belowground_competition__NetworkOGSLargeScale3DExternal__NetworkOGSLargeScale3DExternal}{}\doxysubsubsection{\quad{}\mbox{[}case\mbox{]}Network\+OGSLarge\+Scale3\+DExternal}\label{project_dox__MangaProject__tree_dynamics__belowground_competition__NetworkOGSLargeScale3DExternal__NetworkOGSLargeScale3DExternal}
+{\ttfamily Network\+OGSLarge\+Scale3\+DExternal} below-\/ground competition concept. ~\newline
+ The concept allows the usage of MANGA as boundary condition in OGS. Example files to start OGS ({\ttfamily run\+Model.\+py}) and to define MANGA as boundary condition ({\ttfamily python\+\_\+source.\+py}) can be found in the directory of below-\/ground concept {\ttfamily OGSLarge\+Scale3\+DExternal}. ~\newline
+
+
+The concept returns a value between 0 and 1 for each tree added to it. Hereby, the reduction factor is calculated as the fraction of real resource uptake due to salinity dependent reduction of water uptake and the hypothetical maximal water uptake at zero salinity. ~\newline
+
+
+All files and parameters required are similar to {\ttfamily Network\+OGSLarge\+Scale3D}.
+
+\doxysection*{Required inputs\+:}
+
+
+\begin{DoxyItemize}
+\item \mbox{\hyperlink{project_dox__MangaProject__tree_dynamics__belowground_competition__NetworkOGSLargeScale3DExternal__abiotic_drivers__abiotic_drivers}{\quad{}\mbox{[}input\mbox{]}abiotic\+\_\+drivers}}
+\item \mbox{\hyperlink{project_dox__MangaProject__tree_dynamics__belowground_competition__NetworkOGSLargeScale3DExternal__bulk_mesh}{\quad{}\mbox{[}spec\mbox{]}bulk\+\_\+mesh}}
+\item \mbox{\hyperlink{project_dox__MangaProject__tree_dynamics__belowground_competition__NetworkOGSLargeScale3DExternal__ogs_project_file}{\quad{}\mbox{[}spec\mbox{]}ogs\+\_\+project\+\_\+file}}
+\item \mbox{\hyperlink{project_dox__MangaProject__tree_dynamics__belowground_competition__NetworkOGSLargeScale3DExternal__ogs_project_folder}{\quad{}\mbox{[}spec\mbox{]}ogs\+\_\+project\+\_\+folder}}
+\item \mbox{\hyperlink{project_dox__MangaProject__tree_dynamics__belowground_competition__NetworkOGSLargeScale3DExternal__python_script}{\quad{}\mbox{[}spec\mbox{]}python\+\_\+script}}
+\item \mbox{\hyperlink{project_dox__MangaProject__tree_dynamics__belowground_competition__NetworkOGSLargeScale3DExternal__source_mesh}{\quad{}\mbox{[}spec\mbox{]}source\+\_\+mesh}} 
+\end{DoxyItemize}\hypertarget{project_dox__MangaProject__tree_dynamics__belowground_competition__NetworkOGSLargeScale3DExternal__abiotic_drivers__abiotic_drivers}{}\doxysubsection{\quad{}\mbox{[}input\mbox{]}abiotic\+\_\+drivers}\label{project_dox__MangaProject__tree_dynamics__belowground_competition__NetworkOGSLargeScale3DExternal__abiotic_drivers__abiotic_drivers}
+Optional input to specify abiotic drivers.
+
+\doxysection*{Required inputs\+:}
+
+
+\begin{DoxyItemize}
+\item \mbox{\hyperlink{project_dox__MangaProject__tree_dynamics__belowground_competition__NetworkOGSLargeScale3DExternal__abiotic_drivers__seaward_salinity}{\quad{}\mbox{[}spec\mbox{]}seaward\+\_\+salinity}}
+\item \mbox{\hyperlink{project_dox__MangaProject__tree_dynamics__belowground_competition__NetworkOGSLargeScale3DExternal__abiotic_drivers__tide_daily_amplitude}{\quad{}\mbox{[}spec\mbox{]}tide\+\_\+daily\+\_\+amplitude}}
+\item \mbox{\hyperlink{project_dox__MangaProject__tree_dynamics__belowground_competition__NetworkOGSLargeScale3DExternal__abiotic_drivers__tide_daily_period}{\quad{}\mbox{[}spec\mbox{]}tide\+\_\+daily\+\_\+period}}
+\item \mbox{\hyperlink{project_dox__MangaProject__tree_dynamics__belowground_competition__NetworkOGSLargeScale3DExternal__abiotic_drivers__tide_monthy_amplitude}{\quad{}\mbox{[}spec\mbox{]}tide\+\_\+monthy\+\_\+amplitude}}
+\item \mbox{\hyperlink{project_dox__MangaProject__tree_dynamics__belowground_competition__NetworkOGSLargeScale3DExternal__abiotic_drivers__tide_monthy_period}{\quad{}\mbox{[}spec\mbox{]}tide\+\_\+monthy\+\_\+period}} 
+\end{DoxyItemize}\hypertarget{project_dox__MangaProject__tree_dynamics__belowground_competition__NetworkOGSLargeScale3DExternal__abiotic_drivers__seaward_salinity}{}\doxysubsubsection{\quad{}\mbox{[}spec\mbox{]}seaward\+\_\+salinity}\label{project_dox__MangaProject__tree_dynamics__belowground_competition__NetworkOGSLargeScale3DExternal__abiotic_drivers__seaward_salinity}
+Optional\+: Salinity of seawater. Default value is 0.\+035, i.\+e. 35 ppt. \hypertarget{project_dox__MangaProject__tree_dynamics__belowground_competition__NetworkOGSLargeScale3DExternal__abiotic_drivers__tide_daily_amplitude}{}\doxysubsubsection{\quad{}\mbox{[}spec\mbox{]}tide\+\_\+daily\+\_\+amplitude}\label{project_dox__MangaProject__tree_dynamics__belowground_competition__NetworkOGSLargeScale3DExternal__abiotic_drivers__tide_daily_amplitude}
+Optional\+: Amplitude of daily tide. Default value is 1, i.\+e. the daily tide varies between -\/1 and 1 m around the average. \hypertarget{project_dox__MangaProject__tree_dynamics__belowground_competition__NetworkOGSLargeScale3DExternal__abiotic_drivers__tide_daily_period}{}\doxysubsubsection{\quad{}\mbox{[}spec\mbox{]}tide\+\_\+daily\+\_\+period}\label{project_dox__MangaProject__tree_dynamics__belowground_competition__NetworkOGSLargeScale3DExternal__abiotic_drivers__tide_daily_period}
+Optional\+: Period of daily tide. Default value is 12$\ast$60$\ast$60, i.\+e. the daily tide has a cyclus of half a day. \hypertarget{project_dox__MangaProject__tree_dynamics__belowground_competition__NetworkOGSLargeScale3DExternal__abiotic_drivers__tide_monthy_amplitude}{}\doxysubsubsection{\quad{}\mbox{[}spec\mbox{]}tide\+\_\+monthy\+\_\+amplitude}\label{project_dox__MangaProject__tree_dynamics__belowground_competition__NetworkOGSLargeScale3DExternal__abiotic_drivers__tide_monthy_amplitude}
+Optional\+: Amplitude of monthly tide. Default value is .5, i.\+e. the monthly fluctuation of means varies between -\/.\+5 and .5 m around mean sea level (0m). \hypertarget{project_dox__MangaProject__tree_dynamics__belowground_competition__NetworkOGSLargeScale3DExternal__abiotic_drivers__tide_monthy_period}{}\doxysubsubsection{\quad{}\mbox{[}spec\mbox{]}tide\+\_\+monthy\+\_\+period}\label{project_dox__MangaProject__tree_dynamics__belowground_competition__NetworkOGSLargeScale3DExternal__abiotic_drivers__tide_monthy_period}
+Optional\+: Period of monthly tide. Default value is 24$\ast$60$\ast$60$\ast$15, i.\+e. the monthly tide has a cyclus of 15 days. \hypertarget{project_dox__MangaProject__tree_dynamics__belowground_competition__NetworkOGSLargeScale3DExternal__bulk_mesh}{}\doxysubsection{\quad{}\mbox{[}spec\mbox{]}bulk\+\_\+mesh}\label{project_dox__MangaProject__tree_dynamics__belowground_competition__NetworkOGSLargeScale3DExternal__bulk_mesh}
+Name of bulk mesh which needs to be saved in the ogs project folder. \hypertarget{project_dox__MangaProject__tree_dynamics__belowground_competition__NetworkOGSLargeScale3DExternal__ogs_project_file}{}\doxysubsection{\quad{}\mbox{[}spec\mbox{]}ogs\+\_\+project\+\_\+file}\label{project_dox__MangaProject__tree_dynamics__belowground_competition__NetworkOGSLargeScale3DExternal__ogs_project_file}
+Name of ogs project file in the corresponding ogs project folder. \hypertarget{project_dox__MangaProject__tree_dynamics__belowground_competition__NetworkOGSLargeScale3DExternal__ogs_project_folder}{}\doxysubsection{\quad{}\mbox{[}spec\mbox{]}ogs\+\_\+project\+\_\+folder}\label{project_dox__MangaProject__tree_dynamics__belowground_competition__NetworkOGSLargeScale3DExternal__ogs_project_folder}
+Folder path to ogs project folder. \hypertarget{project_dox__MangaProject__tree_dynamics__belowground_competition__NetworkOGSLargeScale3DExternal__python_script}{}\doxysubsection{\quad{}\mbox{[}spec\mbox{]}python\+\_\+script}\label{project_dox__MangaProject__tree_dynamics__belowground_competition__NetworkOGSLargeScale3DExternal__python_script}
+Optional parameter to provide non-\/default python script for ogs to calculate boundary conditions and source terms. If choosen, please use python\+\_\+source.\+py as example file. \hypertarget{project_dox__MangaProject__tree_dynamics__belowground_competition__NetworkOGSLargeScale3DExternal__source_mesh}{}\doxysubsection{\quad{}\mbox{[}spec\mbox{]}source\+\_\+mesh}\label{project_dox__MangaProject__tree_dynamics__belowground_competition__NetworkOGSLargeScale3DExternal__source_mesh}
+Name of source mesh, where the tree water uptake is taking place. The mesh needs to be saved in the ogs project folder. \hypertarget{project_dox__MangaProject__tree_dynamics__belowground_competition__OGSLargeScale3D__OGSLargeScale3D}{}\doxysubsubsection{\quad{}\mbox{[}case\mbox{]}OGSLarge\+Scale3D}\label{project_dox__MangaProject__tree_dynamics__belowground_competition__OGSLargeScale3D__OGSLargeScale3D}
+OGSLarge\+Scale3D belowground competition concept. This concept returns a value between 0 and 1 for each tree added to it. Hereby, the reduction factor is calculated as the fraction of real resource uptake due to salinity dependent reduction of water uptake and the hypothetical maximal water uptake at zero salinity.
+
+\doxysection*{Required inputs\+:}
+
+
+\begin{DoxyItemize}
+\item \mbox{\hyperlink{project_dox__MangaProject__tree_dynamics__belowground_competition__OGSLargeScale3D__abiotic_drivers__abiotic_drivers}{\quad{}\mbox{[}input\mbox{]}abiotic\+\_\+drivers}}
+\item \mbox{\hyperlink{project_dox__MangaProject__tree_dynamics__belowground_competition__OGSLargeScale3D__bulk_mesh}{\quad{}\mbox{[}spec\mbox{]}bulk\+\_\+mesh}}
+\item \mbox{\hyperlink{project_dox__MangaProject__tree_dynamics__belowground_competition__OGSLargeScale3D__delta_t_ogs}{\quad{}\mbox{[}spec\mbox{]}delta\+\_\+t\+\_\+ogs}}
+\item \mbox{\hyperlink{project_dox__MangaProject__tree_dynamics__belowground_competition__OGSLargeScale3D__ogs_project_file}{\quad{}\mbox{[}spec\mbox{]}ogs\+\_\+project\+\_\+file}}
+\item \mbox{\hyperlink{project_dox__MangaProject__tree_dynamics__belowground_competition__OGSLargeScale3D__ogs_project_folder}{\quad{}\mbox{[}spec\mbox{]}ogs\+\_\+project\+\_\+folder}}
+\item \mbox{\hyperlink{project_dox__MangaProject__tree_dynamics__belowground_competition__OGSLargeScale3D__python_script}{\quad{}\mbox{[}spec\mbox{]}python\+\_\+script}}
+\item \mbox{\hyperlink{project_dox__MangaProject__tree_dynamics__belowground_competition__OGSLargeScale3D__source_mesh}{\quad{}\mbox{[}spec\mbox{]}source\+\_\+mesh}} 
+\end{DoxyItemize}\hypertarget{project_dox__MangaProject__tree_dynamics__belowground_competition__OGSLargeScale3D__abiotic_drivers__abiotic_drivers}{}\doxysubsection{\quad{}\mbox{[}input\mbox{]}abiotic\+\_\+drivers}\label{project_dox__MangaProject__tree_dynamics__belowground_competition__OGSLargeScale3D__abiotic_drivers__abiotic_drivers}
+Optional input to specify abiotic drivers.
+
+\doxysection*{Required inputs\+:}
+
+
+\begin{DoxyItemize}
+\item \mbox{\hyperlink{project_dox__MangaProject__tree_dynamics__belowground_competition__OGSLargeScale3D__abiotic_drivers__seaward_salinity}{\quad{}\mbox{[}spec\mbox{]}seaward\+\_\+salinity}}
+\item \mbox{\hyperlink{project_dox__MangaProject__tree_dynamics__belowground_competition__OGSLargeScale3D__abiotic_drivers__tide_daily_amplitude}{\quad{}\mbox{[}spec\mbox{]}tide\+\_\+daily\+\_\+amplitude}}
+\item \mbox{\hyperlink{project_dox__MangaProject__tree_dynamics__belowground_competition__OGSLargeScale3D__abiotic_drivers__tide_daily_period}{\quad{}\mbox{[}spec\mbox{]}tide\+\_\+daily\+\_\+period}}
+\item \mbox{\hyperlink{project_dox__MangaProject__tree_dynamics__belowground_competition__OGSLargeScale3D__abiotic_drivers__tide_monthy_amplitude}{\quad{}\mbox{[}spec\mbox{]}tide\+\_\+monthy\+\_\+amplitude}}
+\item \mbox{\hyperlink{project_dox__MangaProject__tree_dynamics__belowground_competition__OGSLargeScale3D__abiotic_drivers__tide_monthy_period}{\quad{}\mbox{[}spec\mbox{]}tide\+\_\+monthy\+\_\+period}} 
+\end{DoxyItemize}\hypertarget{project_dox__MangaProject__tree_dynamics__belowground_competition__OGSLargeScale3D__abiotic_drivers__seaward_salinity}{}\doxysubsubsection{\quad{}\mbox{[}spec\mbox{]}seaward\+\_\+salinity}\label{project_dox__MangaProject__tree_dynamics__belowground_competition__OGSLargeScale3D__abiotic_drivers__seaward_salinity}
+Optional\+: Salinity of seawater. Default value is 0.\+035, i.\+e. 35 ppt. \hypertarget{project_dox__MangaProject__tree_dynamics__belowground_competition__OGSLargeScale3D__abiotic_drivers__tide_daily_amplitude}{}\doxysubsubsection{\quad{}\mbox{[}spec\mbox{]}tide\+\_\+daily\+\_\+amplitude}\label{project_dox__MangaProject__tree_dynamics__belowground_competition__OGSLargeScale3D__abiotic_drivers__tide_daily_amplitude}
+Optional\+: Amplitude of daily tide. Default value is 1, i.\+e. the daily tide varies between -\/1 and 1 m around the average. \hypertarget{project_dox__MangaProject__tree_dynamics__belowground_competition__OGSLargeScale3D__abiotic_drivers__tide_daily_period}{}\doxysubsubsection{\quad{}\mbox{[}spec\mbox{]}tide\+\_\+daily\+\_\+period}\label{project_dox__MangaProject__tree_dynamics__belowground_competition__OGSLargeScale3D__abiotic_drivers__tide_daily_period}
+Optional\+: Period of daily tide. Default value is 12$\ast$60$\ast$60, i.\+e. the daily tide has a cyclus of half a day. \hypertarget{project_dox__MangaProject__tree_dynamics__belowground_competition__OGSLargeScale3D__abiotic_drivers__tide_monthy_amplitude}{}\doxysubsubsection{\quad{}\mbox{[}spec\mbox{]}tide\+\_\+monthy\+\_\+amplitude}\label{project_dox__MangaProject__tree_dynamics__belowground_competition__OGSLargeScale3D__abiotic_drivers__tide_monthy_amplitude}
+Optional\+: Amplitude of monthly tide. Default value is .5, i.\+e. the monthly fluctuation of means varies between -\/.\+5 and .5 m around mean sea level (0m). \hypertarget{project_dox__MangaProject__tree_dynamics__belowground_competition__OGSLargeScale3D__abiotic_drivers__tide_monthy_period}{}\doxysubsubsection{\quad{}\mbox{[}spec\mbox{]}tide\+\_\+monthy\+\_\+period}\label{project_dox__MangaProject__tree_dynamics__belowground_competition__OGSLargeScale3D__abiotic_drivers__tide_monthy_period}
+Optional\+: Period of monthly tide. Default value is 24$\ast$60$\ast$60$\ast$15, i.\+e. the monthly tide has a cyclus of 15 days. \hypertarget{project_dox__MangaProject__tree_dynamics__belowground_competition__OGSLargeScale3D__bulk_mesh}{}\doxysubsection{\quad{}\mbox{[}spec\mbox{]}bulk\+\_\+mesh}\label{project_dox__MangaProject__tree_dynamics__belowground_competition__OGSLargeScale3D__bulk_mesh}
+Name of bulk mesh which needs to be saved in the ogs project folder. \hypertarget{project_dox__MangaProject__tree_dynamics__belowground_competition__OGSLargeScale3D__delta_t_ogs}{}\doxysubsection{\quad{}\mbox{[}spec\mbox{]}delta\+\_\+t\+\_\+ogs}\label{project_dox__MangaProject__tree_dynamics__belowground_competition__OGSLargeScale3D__delta_t_ogs}
+Optional parameter to predefine delta t for ogs calculations. Can be used to minimize computation time. \hypertarget{project_dox__MangaProject__tree_dynamics__belowground_competition__OGSLargeScale3D__ogs_project_file}{}\doxysubsection{\quad{}\mbox{[}spec\mbox{]}ogs\+\_\+project\+\_\+file}\label{project_dox__MangaProject__tree_dynamics__belowground_competition__OGSLargeScale3D__ogs_project_file}
+Name of ogs project file in the corresponding ogs project folder. \hypertarget{project_dox__MangaProject__tree_dynamics__belowground_competition__OGSLargeScale3D__ogs_project_folder}{}\doxysubsection{\quad{}\mbox{[}spec\mbox{]}ogs\+\_\+project\+\_\+folder}\label{project_dox__MangaProject__tree_dynamics__belowground_competition__OGSLargeScale3D__ogs_project_folder}
+Folder path to ogs project folder. \hypertarget{project_dox__MangaProject__tree_dynamics__belowground_competition__OGSLargeScale3D__python_script}{}\doxysubsection{\quad{}\mbox{[}spec\mbox{]}python\+\_\+script}\label{project_dox__MangaProject__tree_dynamics__belowground_competition__OGSLargeScale3D__python_script}
+Optional parameter to provide non-\/default python script for ogs to calculate boundary conditions and source terms. If choosen, please use python\+\_\+source.\+py as example file. \hypertarget{project_dox__MangaProject__tree_dynamics__belowground_competition__OGSLargeScale3D__source_mesh}{}\doxysubsection{\quad{}\mbox{[}spec\mbox{]}source\+\_\+mesh}\label{project_dox__MangaProject__tree_dynamics__belowground_competition__OGSLargeScale3D__source_mesh}
+Name of source mesh, where the tree water uptake is taking place. The mesh needs to be saved in the ogs project folder. \hypertarget{project_dox__MangaProject__tree_dynamics__belowground_competition__OGSLargeScale3DExternal__OGSLargeScale3DExternal}{}\doxysubsubsection{\quad{}\mbox{[}case\mbox{]}OGSLarge\+Scale3\+DExternal}\label{project_dox__MangaProject__tree_dynamics__belowground_competition__OGSLargeScale3DExternal__OGSLargeScale3DExternal}
+{\ttfamily OGSLarge\+Scale3\+DExternal} below-\/ground competition concept. ~\newline
+ The concept allows the usage of MANGA as boundary condition in OGS. Example files to start OGS ({\ttfamily run\+Model.\+py}) and to define MANGA as boundary condition ({\ttfamily python\+\_\+source.\+py}) can be found in the respective concept directory. ~\newline
+
+
+The concept returns a value between 0 and 1 for each tree added to it. Hereby, the reduction factor is calculated as the fraction of real resource uptake due to salinity dependent reduction of water uptake and the hypothetical maximal water uptake at zero salinity. ~\newline
+
+
+All files and parameters required are similar to {\ttfamily OGSLarge\+Scale3D}.
+
+\doxysection*{Required inputs\+:}
+
+
+\begin{DoxyItemize}
+\item \mbox{\hyperlink{project_dox__MangaProject__tree_dynamics__belowground_competition__OGSLargeScale3DExternal__abiotic_drivers__abiotic_drivers}{\quad{}\mbox{[}input\mbox{]}abiotic\+\_\+drivers}}
+\item \mbox{\hyperlink{project_dox__MangaProject__tree_dynamics__belowground_competition__OGSLargeScale3DExternal__bulk_mesh}{\quad{}\mbox{[}spec\mbox{]}bulk\+\_\+mesh}}
+\item \mbox{\hyperlink{project_dox__MangaProject__tree_dynamics__belowground_competition__OGSLargeScale3DExternal__ogs_project_file}{\quad{}\mbox{[}spec\mbox{]}ogs\+\_\+project\+\_\+file}}
+\item \mbox{\hyperlink{project_dox__MangaProject__tree_dynamics__belowground_competition__OGSLargeScale3DExternal__ogs_project_folder}{\quad{}\mbox{[}spec\mbox{]}ogs\+\_\+project\+\_\+folder}}
+\item \mbox{\hyperlink{project_dox__MangaProject__tree_dynamics__belowground_competition__OGSLargeScale3DExternal__python_script}{\quad{}\mbox{[}spec\mbox{]}python\+\_\+script}}
+\item \mbox{\hyperlink{project_dox__MangaProject__tree_dynamics__belowground_competition__OGSLargeScale3DExternal__source_mesh}{\quad{}\mbox{[}spec\mbox{]}source\+\_\+mesh}} 
+\end{DoxyItemize}\hypertarget{project_dox__MangaProject__tree_dynamics__belowground_competition__OGSLargeScale3DExternal__abiotic_drivers__abiotic_drivers}{}\doxysubsection{\quad{}\mbox{[}input\mbox{]}abiotic\+\_\+drivers}\label{project_dox__MangaProject__tree_dynamics__belowground_competition__OGSLargeScale3DExternal__abiotic_drivers__abiotic_drivers}
+Optional input to specify abiotic drivers.
+
+\doxysection*{Required inputs\+:}
+
+
+\begin{DoxyItemize}
+\item \mbox{\hyperlink{project_dox__MangaProject__tree_dynamics__belowground_competition__OGSLargeScale3DExternal__abiotic_drivers__seaward_salinity}{\quad{}\mbox{[}spec\mbox{]}seaward\+\_\+salinity}}
+\item \mbox{\hyperlink{project_dox__MangaProject__tree_dynamics__belowground_competition__OGSLargeScale3DExternal__abiotic_drivers__tide_daily_amplitude}{\quad{}\mbox{[}spec\mbox{]}tide\+\_\+daily\+\_\+amplitude}}
+\item \mbox{\hyperlink{project_dox__MangaProject__tree_dynamics__belowground_competition__OGSLargeScale3DExternal__abiotic_drivers__tide_daily_period}{\quad{}\mbox{[}spec\mbox{]}tide\+\_\+daily\+\_\+period}}
+\item \mbox{\hyperlink{project_dox__MangaProject__tree_dynamics__belowground_competition__OGSLargeScale3DExternal__abiotic_drivers__tide_monthy_amplitude}{\quad{}\mbox{[}spec\mbox{]}tide\+\_\+monthy\+\_\+amplitude}}
+\item \mbox{\hyperlink{project_dox__MangaProject__tree_dynamics__belowground_competition__OGSLargeScale3DExternal__abiotic_drivers__tide_monthy_period}{\quad{}\mbox{[}spec\mbox{]}tide\+\_\+monthy\+\_\+period}} 
+\end{DoxyItemize}\hypertarget{project_dox__MangaProject__tree_dynamics__belowground_competition__OGSLargeScale3DExternal__abiotic_drivers__seaward_salinity}{}\doxysubsubsection{\quad{}\mbox{[}spec\mbox{]}seaward\+\_\+salinity}\label{project_dox__MangaProject__tree_dynamics__belowground_competition__OGSLargeScale3DExternal__abiotic_drivers__seaward_salinity}
+Optional\+: Salinity of seawater. Default value is 0.\+035, i.\+e. 35 ppt. \hypertarget{project_dox__MangaProject__tree_dynamics__belowground_competition__OGSLargeScale3DExternal__abiotic_drivers__tide_daily_amplitude}{}\doxysubsubsection{\quad{}\mbox{[}spec\mbox{]}tide\+\_\+daily\+\_\+amplitude}\label{project_dox__MangaProject__tree_dynamics__belowground_competition__OGSLargeScale3DExternal__abiotic_drivers__tide_daily_amplitude}
+Optional\+: Amplitude of daily tide. Default value is 1, i.\+e. the daily tide varies between -\/1 and 1 m around the average. \hypertarget{project_dox__MangaProject__tree_dynamics__belowground_competition__OGSLargeScale3DExternal__abiotic_drivers__tide_daily_period}{}\doxysubsubsection{\quad{}\mbox{[}spec\mbox{]}tide\+\_\+daily\+\_\+period}\label{project_dox__MangaProject__tree_dynamics__belowground_competition__OGSLargeScale3DExternal__abiotic_drivers__tide_daily_period}
+Optional\+: Period of daily tide. Default value is 12$\ast$60$\ast$60, i.\+e. the daily tide has a cyclus of half a day. \hypertarget{project_dox__MangaProject__tree_dynamics__belowground_competition__OGSLargeScale3DExternal__abiotic_drivers__tide_monthy_amplitude}{}\doxysubsubsection{\quad{}\mbox{[}spec\mbox{]}tide\+\_\+monthy\+\_\+amplitude}\label{project_dox__MangaProject__tree_dynamics__belowground_competition__OGSLargeScale3DExternal__abiotic_drivers__tide_monthy_amplitude}
+Optional\+: Amplitude of monthly tide. Default value is .5, i.\+e. the monthly fluctuation of means varies between -\/.\+5 and .5 m around mean sea level (0m). \hypertarget{project_dox__MangaProject__tree_dynamics__belowground_competition__OGSLargeScale3DExternal__abiotic_drivers__tide_monthy_period}{}\doxysubsubsection{\quad{}\mbox{[}spec\mbox{]}tide\+\_\+monthy\+\_\+period}\label{project_dox__MangaProject__tree_dynamics__belowground_competition__OGSLargeScale3DExternal__abiotic_drivers__tide_monthy_period}
+Optional\+: Period of monthly tide. Default value is 24$\ast$60$\ast$60$\ast$15, i.\+e. the monthly tide has a cyclus of 15 days. \hypertarget{project_dox__MangaProject__tree_dynamics__belowground_competition__OGSLargeScale3DExternal__bulk_mesh}{}\doxysubsection{\quad{}\mbox{[}spec\mbox{]}bulk\+\_\+mesh}\label{project_dox__MangaProject__tree_dynamics__belowground_competition__OGSLargeScale3DExternal__bulk_mesh}
+Name of bulk mesh which needs to be saved in the ogs project folder. \hypertarget{project_dox__MangaProject__tree_dynamics__belowground_competition__OGSLargeScale3DExternal__ogs_project_file}{}\doxysubsection{\quad{}\mbox{[}spec\mbox{]}ogs\+\_\+project\+\_\+file}\label{project_dox__MangaProject__tree_dynamics__belowground_competition__OGSLargeScale3DExternal__ogs_project_file}
+Name of ogs project file in the corresponding ogs project folder. \hypertarget{project_dox__MangaProject__tree_dynamics__belowground_competition__OGSLargeScale3DExternal__ogs_project_folder}{}\doxysubsection{\quad{}\mbox{[}spec\mbox{]}ogs\+\_\+project\+\_\+folder}\label{project_dox__MangaProject__tree_dynamics__belowground_competition__OGSLargeScale3DExternal__ogs_project_folder}
+Folder path to ogs project folder. \hypertarget{project_dox__MangaProject__tree_dynamics__belowground_competition__OGSLargeScale3DExternal__python_script}{}\doxysubsection{\quad{}\mbox{[}spec\mbox{]}python\+\_\+script}\label{project_dox__MangaProject__tree_dynamics__belowground_competition__OGSLargeScale3DExternal__python_script}
+Optional parameter to provide non-\/default python script for ogs to calculate boundary conditions and source terms. If choosen, please use python\+\_\+source.\+py as example file. \hypertarget{project_dox__MangaProject__tree_dynamics__belowground_competition__OGSLargeScale3DExternal__source_mesh}{}\doxysubsection{\quad{}\mbox{[}spec\mbox{]}source\+\_\+mesh}\label{project_dox__MangaProject__tree_dynamics__belowground_competition__OGSLargeScale3DExternal__source_mesh}
+Name of source mesh, where the tree water uptake is taking place. The mesh needs to be saved in the ogs project folder. \hypertarget{project_dox__MangaProject__tree_dynamics__belowground_competition__OGSWithoutFeedback__OGSWithoutFeedback}{}\doxysubsubsection{\quad{}\mbox{[}case\mbox{]}OGSWithout\+Feedback}\label{project_dox__MangaProject__tree_dynamics__belowground_competition__OGSWithoutFeedback__OGSWithoutFeedback}
+OGSLarge\+Scale3D belowground competition concept. This concept returns a value between 0 and 1 for each tree added to it. Hereby, the reduction factor is calculated as the fraction of real resource uptake due to salinity dependent reduction of water uptake and the hypothetical maximal water uptake at zero salinity.
+
+\doxysection*{Required inputs\+:}
+
+
+\begin{DoxyItemize}
+\item \mbox{\hyperlink{project_dox__MangaProject__tree_dynamics__belowground_competition__OGSWithoutFeedback__abiotic_drivers__abiotic_drivers}{\quad{}\mbox{[}input\mbox{]}abiotic\+\_\+drivers}}
+\item \mbox{\hyperlink{project_dox__MangaProject__tree_dynamics__belowground_competition__OGSWithoutFeedback__bulk_mesh}{\quad{}\mbox{[}spec\mbox{]}bulk\+\_\+mesh}}
+\item \mbox{\hyperlink{project_dox__MangaProject__tree_dynamics__belowground_competition__OGSWithoutFeedback__ogs_project_file}{\quad{}\mbox{[}spec\mbox{]}ogs\+\_\+project\+\_\+file}}
+\item \mbox{\hyperlink{project_dox__MangaProject__tree_dynamics__belowground_competition__OGSWithoutFeedback__ogs_project_folder}{\quad{}\mbox{[}spec\mbox{]}ogs\+\_\+project\+\_\+folder}}
+\item \mbox{\hyperlink{project_dox__MangaProject__tree_dynamics__belowground_competition__OGSWithoutFeedback__python_script}{\quad{}\mbox{[}spec\mbox{]}python\+\_\+script}}
+\item \mbox{\hyperlink{project_dox__MangaProject__tree_dynamics__belowground_competition__OGSWithoutFeedback__source_mesh}{\quad{}\mbox{[}spec\mbox{]}source\+\_\+mesh}}
+\item \mbox{\hyperlink{project_dox__MangaProject__tree_dynamics__belowground_competition__OGSWithoutFeedback__use_old_ogs_results}{\quad{}\mbox{[}spec\mbox{]}use\+\_\+old\+\_\+ogs\+\_\+results}} 
+\end{DoxyItemize}\hypertarget{project_dox__MangaProject__tree_dynamics__belowground_competition__OGSWithoutFeedback__abiotic_drivers__abiotic_drivers}{}\doxysubsection{\quad{}\mbox{[}input\mbox{]}abiotic\+\_\+drivers}\label{project_dox__MangaProject__tree_dynamics__belowground_competition__OGSWithoutFeedback__abiotic_drivers__abiotic_drivers}
+Optional input to specify abiotic drivers.
+
+\doxysection*{Required inputs\+:}
+
+
+\begin{DoxyItemize}
+\item \mbox{\hyperlink{project_dox__MangaProject__tree_dynamics__belowground_competition__OGSWithoutFeedback__abiotic_drivers__seaward_salinity}{\quad{}\mbox{[}spec\mbox{]}seaward\+\_\+salinity}}
+\item \mbox{\hyperlink{project_dox__MangaProject__tree_dynamics__belowground_competition__OGSWithoutFeedback__abiotic_drivers__tide_daily_amplitude}{\quad{}\mbox{[}spec\mbox{]}tide\+\_\+daily\+\_\+amplitude}}
+\item \mbox{\hyperlink{project_dox__MangaProject__tree_dynamics__belowground_competition__OGSWithoutFeedback__abiotic_drivers__tide_daily_period}{\quad{}\mbox{[}spec\mbox{]}tide\+\_\+daily\+\_\+period}}
+\item \mbox{\hyperlink{project_dox__MangaProject__tree_dynamics__belowground_competition__OGSWithoutFeedback__abiotic_drivers__tide_monthy_amplitude}{\quad{}\mbox{[}spec\mbox{]}tide\+\_\+monthy\+\_\+amplitude}}
+\item \mbox{\hyperlink{project_dox__MangaProject__tree_dynamics__belowground_competition__OGSWithoutFeedback__abiotic_drivers__tide_monthy_period}{\quad{}\mbox{[}spec\mbox{]}tide\+\_\+monthy\+\_\+period}} 
+\end{DoxyItemize}\hypertarget{project_dox__MangaProject__tree_dynamics__belowground_competition__OGSWithoutFeedback__abiotic_drivers__seaward_salinity}{}\doxysubsubsection{\quad{}\mbox{[}spec\mbox{]}seaward\+\_\+salinity}\label{project_dox__MangaProject__tree_dynamics__belowground_competition__OGSWithoutFeedback__abiotic_drivers__seaward_salinity}
+Optional\+: Salinity of seawater. Default value is 0.\+035, i.\+e. 35 ppt. \hypertarget{project_dox__MangaProject__tree_dynamics__belowground_competition__OGSWithoutFeedback__abiotic_drivers__tide_daily_amplitude}{}\doxysubsubsection{\quad{}\mbox{[}spec\mbox{]}tide\+\_\+daily\+\_\+amplitude}\label{project_dox__MangaProject__tree_dynamics__belowground_competition__OGSWithoutFeedback__abiotic_drivers__tide_daily_amplitude}
+Optional\+: Amplitude of daily tide. Default value is 1, i.\+e. the daily tide varies between -\/1 and 1 m around the average. \hypertarget{project_dox__MangaProject__tree_dynamics__belowground_competition__OGSWithoutFeedback__abiotic_drivers__tide_daily_period}{}\doxysubsubsection{\quad{}\mbox{[}spec\mbox{]}tide\+\_\+daily\+\_\+period}\label{project_dox__MangaProject__tree_dynamics__belowground_competition__OGSWithoutFeedback__abiotic_drivers__tide_daily_period}
+Optional\+: Period of daily tide. Default value is 12$\ast$60$\ast$60, i.\+e. the daily tide has a cyclus of half a day. \hypertarget{project_dox__MangaProject__tree_dynamics__belowground_competition__OGSWithoutFeedback__abiotic_drivers__tide_monthy_amplitude}{}\doxysubsubsection{\quad{}\mbox{[}spec\mbox{]}tide\+\_\+monthy\+\_\+amplitude}\label{project_dox__MangaProject__tree_dynamics__belowground_competition__OGSWithoutFeedback__abiotic_drivers__tide_monthy_amplitude}
+Optional\+: Amplitude of monthly tide. Default value is .5, i.\+e. the monthly fluctuation of means varies between -\/.\+5 and .5 m around mean sea level (0m). \hypertarget{project_dox__MangaProject__tree_dynamics__belowground_competition__OGSWithoutFeedback__abiotic_drivers__tide_monthy_period}{}\doxysubsubsection{\quad{}\mbox{[}spec\mbox{]}tide\+\_\+monthy\+\_\+period}\label{project_dox__MangaProject__tree_dynamics__belowground_competition__OGSWithoutFeedback__abiotic_drivers__tide_monthy_period}
+Optional\+: Period of monthly tide. Default value is 24$\ast$60$\ast$60$\ast$15, i.\+e. the monthly tide has a cyclus of 15 days. \hypertarget{project_dox__MangaProject__tree_dynamics__belowground_competition__OGSWithoutFeedback__bulk_mesh}{}\doxysubsection{\quad{}\mbox{[}spec\mbox{]}bulk\+\_\+mesh}\label{project_dox__MangaProject__tree_dynamics__belowground_competition__OGSWithoutFeedback__bulk_mesh}
+Name of bulk mesh which needs to be saved in the ogs project folder. \hypertarget{project_dox__MangaProject__tree_dynamics__belowground_competition__OGSWithoutFeedback__ogs_project_file}{}\doxysubsection{\quad{}\mbox{[}spec\mbox{]}ogs\+\_\+project\+\_\+file}\label{project_dox__MangaProject__tree_dynamics__belowground_competition__OGSWithoutFeedback__ogs_project_file}
+Name of ogs project file in the corresponding ogs project folder. \hypertarget{project_dox__MangaProject__tree_dynamics__belowground_competition__OGSWithoutFeedback__ogs_project_folder}{}\doxysubsection{\quad{}\mbox{[}spec\mbox{]}ogs\+\_\+project\+\_\+folder}\label{project_dox__MangaProject__tree_dynamics__belowground_competition__OGSWithoutFeedback__ogs_project_folder}
+Folder path to ogs project folder. \hypertarget{project_dox__MangaProject__tree_dynamics__belowground_competition__OGSWithoutFeedback__python_script}{}\doxysubsection{\quad{}\mbox{[}spec\mbox{]}python\+\_\+script}\label{project_dox__MangaProject__tree_dynamics__belowground_competition__OGSWithoutFeedback__python_script}
+Optional parameter to provide non-\/default python script for ogs to calculate boundary conditions and source terms. If choosen, please use python\+\_\+source.\+py as example file. \hypertarget{project_dox__MangaProject__tree_dynamics__belowground_competition__OGSWithoutFeedback__source_mesh}{}\doxysubsection{\quad{}\mbox{[}spec\mbox{]}source\+\_\+mesh}\label{project_dox__MangaProject__tree_dynamics__belowground_competition__OGSWithoutFeedback__source_mesh}
+Name of source mesh, where the tree water uptake is taking place. The mesh needs to be saved in the ogs project folder. \hypertarget{project_dox__MangaProject__tree_dynamics__belowground_competition__OGSWithoutFeedback__use_old_ogs_results}{}\doxysubsection{\quad{}\mbox{[}spec\mbox{]}use\+\_\+old\+\_\+ogs\+\_\+results}\label{project_dox__MangaProject__tree_dynamics__belowground_competition__OGSWithoutFeedback__use_old_ogs_results}
+Optional bool parameter. If this parameter is set to \char`\"{}\+True\char`\"{}, py\+MANGA is using the results on the porewater salinity distribution from its previous ogs-\/calculations.
+
+Imagine you want to do an parameter estimate for BETTINA model parameters. Here, you could want to have a salinity distribution resulting from certain abiotic conditions. In this case, the procedure would be\+:
+
+
+\begin{DoxyEnumerate}
+\item Run py\+MANGA with use\+\_\+old\+\_\+ogs\+\_\+results = False to calculate the resulting salinity distribution.
+\item For each subsequent run of py\+MANGA, you can use temporarily saved data on the subsurface salinity by setting use\+\_\+old\+\_\+ogs\+\_\+results = True. Using this, the user could avoid redundant ogs calculations, because py\+MANGA is using old results instead of recalculating the same salinity distribution again. 
+\end{DoxyEnumerate}\hypertarget{project_dox__MangaProject__tree_dynamics__belowground_competition__SimpleNetwork__SimpleNetwork}{}\doxysubsubsection{\quad{}\mbox{[}case\mbox{]}Simple\+Network}\label{project_dox__MangaProject__tree_dynamics__belowground_competition__SimpleNetwork__SimpleNetwork}
+Simple\+Network below-\/ground competition concept.
+
+This concept allows the formation of groups of root grafted trees. Within these groups trees can exchange water driven by the water potential gradient between connected trees. The model consists of three \textquotesingle{}sub-\/models\textquotesingle{}
+
+
+\begin{DoxyItemize}
+\item Group formation
+\item Initialization of the root graft formation process
+\item Calculation of below-\/ground resources
+\end{DoxyItemize}
+
+\doxysubsection*{Group formation}
+
+In this sub-\/model the formation of is groups of connected trees in managed. Based on tree variables ({\itshape partners}), a graph dictionary and a link list a generated.
+
+\doxysubsection*{Initialization rgf process}
+
+The formation of root grafts between a pair of trees will be initialized when the following conditions are met
+
+
+\begin{DoxyItemize}
+\item the root plates of trees overlap (i.\+e. distance between trees $<$ sum of root radii)
+\item the contact probability (i.\+e. 1 -\/ distance/r\+\_\+root\+\_\+ij) is smaller than a randomly generated number
+\item the trees are not already connected with one another
+\item the trees are currently not in the process of rgf with one another
+\end{DoxyItemize}
+
+\doxysubsection*{Below-\/ground resources}
+
+In this concept, three volume flows describe the water flow in the tree\+:
+
+
+\begin{DoxyItemize}
+\item {\itshape water\+\_\+absorbed} that is the water absorbed by the tree from the soil column
+\item {\itshape water\+\_\+available} that is the water available for tree growth and maintenance, which corresponds to water uptake in the Simple\+Bettina model
+\item {\itshape water\+\_\+exchanged} that is the water exchanged between connected trees
+\end{DoxyItemize}
+
+The volume flows are calculated utilizing the electronic-\/hydraulic analogy. This allows the application of the Kirchhoff\textquotesingle{}s laws, resulting in a set of linear equations.
+
+~\newline
+
+
+This concept returns a multiplier for water loss or gain. This class is the basis (parent) for further Network concepts such as Network\+Fixed\+Salinity.
+
+\doxysection*{Required inputs\+:}
+
+
+\begin{DoxyItemize}
+\item \mbox{\hyperlink{project_dox__MangaProject__tree_dynamics__belowground_competition__SimpleNetwork__f_radius}{\quad{}\mbox{[}spec\mbox{]}f\+\_\+radius}} 
+\end{DoxyItemize}\hypertarget{project_dox__MangaProject__tree_dynamics__belowground_competition__SimpleNetwork__f_radius}{}\doxysubsection{\quad{}\mbox{[}spec\mbox{]}f\+\_\+radius}\label{project_dox__MangaProject__tree_dynamics__belowground_competition__SimpleNetwork__f_radius}
+Factor determining the radius of the grafted roots\+: r\+\_\+gr = f\+\_\+radius ∗ min(r\+\_\+stem).
+
+Numeric between 0 and 1. \hypertarget{project_dox__MangaProject__tree_dynamics__belowground_competition__SimpleTest__SimpleTest}{}\doxysubsubsection{\quad{}\mbox{[}case\mbox{]}Simple\+Test}\label{project_dox__MangaProject__tree_dynamics__belowground_competition__SimpleTest__SimpleTest}
+Simple\+Test belowground competition concept. This concept returns a 1 for each tree added to it. No further tags required. \hypertarget{project_dox__MangaProject__tree_dynamics__belowground_competition__SymmetricZOI__SymmetricZOI}{}\doxysubsubsection{\quad{}\mbox{[}case\mbox{]}Symmetric\+ZOI}\label{project_dox__MangaProject__tree_dynamics__belowground_competition__SymmetricZOI__SymmetricZOI}
+Symmetric\+ZOI below-\/ground competition concept.
+
+This concept describes competition for water based on the intersection of root plates and returns a factor between 0 and 1 for each tree Resources are shared equally. For more information see ODD of the BETTINA-\/model (appendix of \href{https://doi.org/10.1016/j.ecolmodel.2018.10.005}{\texttt{ https\+://doi.\+org/10.\+1016/j.\+ecolmodel.\+2018.\+10.\+005}}).
+
+Please note\+: ~\newline
+
+\begin{DoxyItemize}
+\item Number of individuals ({\itshape n\+\_\+individuals}) in {\itshape initial\+\_\+population} must be $>$= 1.
+\item Cell edge must be larger than the minimum (initial) root radius
+\begin{DoxyItemize}
+\item Example\+: initial root radius = 0.\+2 m, cell edge must be larger than 0.\+2 m, i.\+e., length of model domain / resolution $>$ 0.\+2
+\end{DoxyItemize}
+\end{DoxyItemize}
+
+\doxysection*{Required inputs\+:}
+
+
+\begin{DoxyItemize}
+\item \mbox{\hyperlink{project_dox__MangaProject__tree_dynamics__belowground_competition__SymmetricZOI__domain__domain}{\quad{}\mbox{[}input\mbox{]}domain}}
+\item \mbox{\hyperlink{project_dox__MangaProject__tree_dynamics__belowground_competition__SymmetricZOI__x_resolution}{\quad{}\mbox{[}spec\mbox{]}x\+\_\+resolution}}
+\item \mbox{\hyperlink{project_dox__MangaProject__tree_dynamics__belowground_competition__SymmetricZOI__y_resolution}{\quad{}\mbox{[}spec\mbox{]}y\+\_\+resolution}} 
+\end{DoxyItemize}\hypertarget{project_dox__MangaProject__tree_dynamics__belowground_competition__SymmetricZOI__domain__domain}{}\doxysubsection{\quad{}\mbox{[}input\mbox{]}domain}\label{project_dox__MangaProject__tree_dynamics__belowground_competition__SymmetricZOI__domain__domain}
+Spatial description of the domain to which the concept is applied; defined by 4 corner points.\# Required inputs\+:
+
+
+\begin{DoxyItemize}
+\item \mbox{\hyperlink{project_dox__MangaProject__tree_dynamics__belowground_competition__SymmetricZOI__domain__x_1}{\quad{}\mbox{[}spec\mbox{]}x\+\_\+1}}
+\item \mbox{\hyperlink{project_dox__MangaProject__tree_dynamics__belowground_competition__SymmetricZOI__domain__x_2}{\quad{}\mbox{[}spec\mbox{]}x\+\_\+2}}
+\item \mbox{\hyperlink{project_dox__MangaProject__tree_dynamics__belowground_competition__SymmetricZOI__domain__y_1}{\quad{}\mbox{[}spec\mbox{]}y\+\_\+1}}
+\item \mbox{\hyperlink{project_dox__MangaProject__tree_dynamics__belowground_competition__SymmetricZOI__domain__y_2}{\quad{}\mbox{[}spec\mbox{]}y\+\_\+2}} 
+\end{DoxyItemize}\hypertarget{project_dox__MangaProject__tree_dynamics__belowground_competition__SymmetricZOI__domain__x_1}{}\doxysubsubsection{\quad{}\mbox{[}spec\mbox{]}x\+\_\+1}\label{project_dox__MangaProject__tree_dynamics__belowground_competition__SymmetricZOI__domain__x_1}
+lower x-\/boundary of mesh (left), in meters. \hypertarget{project_dox__MangaProject__tree_dynamics__belowground_competition__SymmetricZOI__domain__x_2}{}\doxysubsubsection{\quad{}\mbox{[}spec\mbox{]}x\+\_\+2}\label{project_dox__MangaProject__tree_dynamics__belowground_competition__SymmetricZOI__domain__x_2}
+upper x-\/boundary of mesh (right), in meters. \hypertarget{project_dox__MangaProject__tree_dynamics__belowground_competition__SymmetricZOI__domain__y_1}{}\doxysubsubsection{\quad{}\mbox{[}spec\mbox{]}y\+\_\+1}\label{project_dox__MangaProject__tree_dynamics__belowground_competition__SymmetricZOI__domain__y_1}
+lower y-\/boundary of mesh (bottom), in meters. \hypertarget{project_dox__MangaProject__tree_dynamics__belowground_competition__SymmetricZOI__domain__y_2}{}\doxysubsubsection{\quad{}\mbox{[}spec\mbox{]}y\+\_\+2}\label{project_dox__MangaProject__tree_dynamics__belowground_competition__SymmetricZOI__domain__y_2}
+upper y-\/boundary of mesh (top), in meters. \hypertarget{project_dox__MangaProject__tree_dynamics__belowground_competition__SymmetricZOI__x_resolution}{}\doxysubsection{\quad{}\mbox{[}spec\mbox{]}x\+\_\+resolution}\label{project_dox__MangaProject__tree_dynamics__belowground_competition__SymmetricZOI__x_resolution}
+number of mesh points in x direction. \hypertarget{project_dox__MangaProject__tree_dynamics__belowground_competition__SymmetricZOI__y_resolution}{}\doxysubsection{\quad{}\mbox{[}spec\mbox{]}y\+\_\+resolution}\label{project_dox__MangaProject__tree_dynamics__belowground_competition__SymmetricZOI__y_resolution}
+number of mesh points in y direction. \hypertarget{project_dox__MangaProject__tree_dynamics__belowground_competition__SZoiFixedSalinity__SZoiFixedSalinity}{}\doxysubsubsection{\quad{}\mbox{[}case\mbox{]}SZoi\+Fixed\+Salinity}\label{project_dox__MangaProject__tree_dynamics__belowground_competition__SZoiFixedSalinity__SZoiFixedSalinity}
+SZoi\+Fixed\+Salinity below-\/ground competition concept.
+
+This concept combines below-\/ground concepts Fixed\+Salinity and Symmetric\+ZOI by running both concepts and returning the product of both factors (value between 0 and 1).
+
+For specification of inputs see documentation of ~\newline
+
+\begin{DoxyItemize}
+\item Fixed\+Salinity
+\item Symmetric\+ZOI 
+\end{DoxyItemize}\hypertarget{project_dox__MangaProject__tree_dynamics__tree_growth_and_death__tree_growth_and_death}{}\doxysubsection{\quad{}\mbox{[}input\mbox{]}tree\+\_\+growth\+\_\+and\+\_\+death}\label{project_dox__MangaProject__tree_dynamics__tree_growth_and_death__tree_growth_and_death}
+On this level, the trees Growth-\/\+And-\/\+Death-\/\+Concept, i.\+e. the dynamical concept can be specified.
+
+\doxysection*{Required inputs\+:}
+
+
+\begin{DoxyItemize}
+\item \mbox{\hyperlink{project_dox__MangaProject__tree_dynamics__tree_growth_and_death__mortality__mortality}{\quad{}\mbox{[}input\mbox{]}mortality}}
+\item \mbox{\hyperlink{project_dox__MangaProject__tree_dynamics__tree_growth_and_death__type}{\quad{}\mbox{[}tag\mbox{]}type}}
+\end{DoxyItemize}
+
+\doxysection*{Possible cases\+:}
+
+
+\begin{DoxyItemize}
+\item \mbox{\hyperlink{project_dox__MangaProject__tree_dynamics__tree_growth_and_death__NetworkBettina__NetworkBettina}{\quad{}\mbox{[}case\mbox{]}Network\+Bettina}}
+\item \mbox{\hyperlink{project_dox__MangaProject__tree_dynamics__tree_growth_and_death__SimpleBettina__SimpleBettina}{\quad{}\mbox{[}case\mbox{]}Simple\+Bettina}}
+\item \mbox{\hyperlink{project_dox__MangaProject__tree_dynamics__tree_growth_and_death__SimpleKiwi__SimpleKiwi}{\quad{}\mbox{[}case\mbox{]}Simple\+Kiwi}}
+\item \mbox{\hyperlink{project_dox__MangaProject__tree_dynamics__tree_growth_and_death__SimpleTest__SimpleTest}{\quad{}\mbox{[}case\mbox{]}Simple\+Test}} 
+\end{DoxyItemize}\hypertarget{project_dox__MangaProject__tree_dynamics__tree_growth_and_death__mortality__mortality}{}\doxysubsubsection{\quad{}\mbox{[}input\mbox{]}mortality}\label{project_dox__MangaProject__tree_dynamics__tree_growth_and_death__mortality__mortality}
+Mortality concepts define why trees die. ~\newline
+ The following concepts are available for {\ttfamily Simple\+Bettina} and {\ttfamily Network\+Bettina}
+
+
+\begin{DoxyItemize}
+\item {\ttfamily No\+Growth}\+: trees die if growth is $<$= 0
+\item {\ttfamily Random}\+: trees die randomly with a defined probability
+\item {\ttfamily Random\+Growth}\+: trees die randomly with a biomass-\/increment-\/dependent probability, thus, the probability to die increases with tree age ~\newline
+
+\item {\ttfamily Memory}\+: trees die if relative growth falls below a given threshold
+\end{DoxyItemize}
+
+Mortality concepts are defined using the tag {\ttfamily $<$mortality$>$}. The default concept is {\ttfamily No\+Growth} (no specification in the input xml file required). Concepts can be combined by listing them in {\ttfamily $<$mortality$>$}, separated by a whitespace, e.\+g. {\ttfamily $<$mortality$>$ Random Memory $<$/mortality$>$}.
+
+\doxysection*{Possible cases\+:}
+
+
+\begin{DoxyItemize}
+\item \mbox{\hyperlink{project_dox__MangaProject__tree_dynamics__tree_growth_and_death__mortality__Memory__Memory}{\quad{}\mbox{[}case\mbox{]}Memory}}
+\item \mbox{\hyperlink{project_dox__MangaProject__tree_dynamics__tree_growth_and_death__mortality__NoGrowth__NoGrowth}{\quad{}\mbox{[}case\mbox{]}No\+Growth}}
+\item \mbox{\hyperlink{project_dox__MangaProject__tree_dynamics__tree_growth_and_death__mortality__Random__Random}{\quad{}\mbox{[}case\mbox{]}Random}}
+\item \mbox{\hyperlink{project_dox__MangaProject__tree_dynamics__tree_growth_and_death__mortality__RandomGrowth__RandomGrowth}{\quad{}\mbox{[}case\mbox{]}Random\+Growth}} 
+\end{DoxyItemize}\hypertarget{project_dox__MangaProject__tree_dynamics__tree_growth_and_death__mortality__Memory__Memory}{}\doxyparagraph{\quad{}\mbox{[}case\mbox{]}Memory}\label{project_dox__MangaProject__tree_dynamics__tree_growth_and_death__mortality__Memory__Memory}
+{\ttfamily Memory} is a mortality concept.
+
+In {\ttfamily Memory}, a tree remembers its relative growth of the preceding N years (in m³ per memory period). Relative growth is defined as the fraction of growth in tree biomass (in m³ per m³). If the relative growth falls below a certain threshold, a tree dies. ~\newline
+
+
+The default threshold is 0.\+5 \% (i.\+e. {\ttfamily $<$threshold$>$ 0.\+005 $<$/threshold$>$}). ~\newline
+ The default memory period is 1 year (i.\+e. {\ttfamily $<$period$>$ 31557600 $<$/period$>$}).
+
+This concept is based on mechanistic causes, e.\+g. slowing down of growth due external perturbations. A tree can survive a period of resource scarcity but if conditions do not improve, the tree dies. ~\newline
+ No tree dies of random reasons. \doxysection*{Required inputs\+:}
+
+
+\begin{DoxyItemize}
+\item \mbox{\hyperlink{project_dox__MangaProject__tree_dynamics__tree_growth_and_death__mortality__Memory__period}{\quad{}\mbox{[}spec\mbox{]}period}}
+\item \mbox{\hyperlink{project_dox__MangaProject__tree_dynamics__tree_growth_and_death__mortality__Memory__threshold}{\quad{}\mbox{[}spec\mbox{]}threshold}} 
+\end{DoxyItemize}\hypertarget{project_dox__MangaProject__tree_dynamics__tree_growth_and_death__mortality__Memory__period}{}\doxysubparagraph{\quad{}\mbox{[}spec\mbox{]}period}\label{project_dox__MangaProject__tree_dynamics__tree_growth_and_death__mortality__Memory__period}
+{\ttfamily period} defines the duration a tree remembers it growth process in seconds. ~\newline
+ The default is 31,557,600 seconds (= 1 year). \hypertarget{project_dox__MangaProject__tree_dynamics__tree_growth_and_death__mortality__Memory__threshold}{}\doxysubparagraph{\quad{}\mbox{[}spec\mbox{]}threshold}\label{project_dox__MangaProject__tree_dynamics__tree_growth_and_death__mortality__Memory__threshold}
+{\ttfamily Threshold} defines the minimum relative growth of tree over a certain period, e.\+g. 0.\+5 \% (0.\+005) of biomass increment per year. \hypertarget{project_dox__MangaProject__tree_dynamics__tree_growth_and_death__mortality__NoGrowth__NoGrowth}{}\doxyparagraph{\quad{}\mbox{[}case\mbox{]}No\+Growth}\label{project_dox__MangaProject__tree_dynamics__tree_growth_and_death__mortality__NoGrowth__NoGrowth}
+{\ttfamily No\+Growth} is a mortality concept.
+
+In {\ttfamily No\+Growth}, a tree dies if the growth variable is equal or below 0, i.\+e. no growth happens.
+
+This concept is based on mechanistic causes, e.\+g. resource deficit, and no tree dies of random reasons. \hypertarget{project_dox__MangaProject__tree_dynamics__tree_growth_and_death__mortality__Random__Random}{}\doxyparagraph{\quad{}\mbox{[}case\mbox{]}Random}\label{project_dox__MangaProject__tree_dynamics__tree_growth_and_death__mortality__Random__Random}
+{\ttfamily Random} is a mortality concept.
+
+In {\ttfamily Random}, a tree dies with a defined yearly mortality probability. If a random number times the number of time steps per year is below this defined probability the tree dies. The default probability is 0.\+2 \%. Berger \& Hildenbrandt (2000) suggested 0.\+2 and 0.\+16 \% for Rhizophora mangle and Avicennia germinans, respectively. ~\newline
+ Use {\ttfamily $<$probability$>$ 0.\+0016 $<$/probability$>$} to modify concept parameters.
+
+In this concept, a tree does not die of mechanistic reasons. It is useful to combine {\ttfamily Random} with {\ttfamily No\+Growth} or {\ttfamily Memory}. ~\newline
+
+
+\doxysection*{Required inputs\+:}
+
+
+\begin{DoxyItemize}
+\item \mbox{\hyperlink{project_dox__MangaProject__tree_dynamics__tree_growth_and_death__mortality__Random__probability}{\quad{}\mbox{[}spec\mbox{]}probability}} 
+\end{DoxyItemize}\hypertarget{project_dox__MangaProject__tree_dynamics__tree_growth_and_death__mortality__Random__probability}{}\doxysubparagraph{\quad{}\mbox{[}spec\mbox{]}probability}\label{project_dox__MangaProject__tree_dynamics__tree_growth_and_death__mortality__Random__probability}
+{\ttfamily Probability} defines the change of dying per year for each tree. Default is 0.\+0016 (i.\+e. 0.\+16 \%). ~\newline
+ The number is given as decimal ranging between 0 and 1. \hypertarget{project_dox__MangaProject__tree_dynamics__tree_growth_and_death__mortality__RandomGrowth__RandomGrowth}{}\doxyparagraph{\quad{}\mbox{[}case\mbox{]}Random\+Growth}\label{project_dox__MangaProject__tree_dynamics__tree_growth_and_death__mortality__RandomGrowth__RandomGrowth}
+{\ttfamily Random\+Growth} is a mortality concept.
+
+In {\ttfamily Random\+Growth}, a tree dies with a biomass-\/dependent probability. If a random number fall below this defined probability, the tree dies. This probability is a function of relative biomass increment per time step, and a calibration factor {\ttfamily k\+\_\+die}. As relative biomass increment decreases over time, the probability to die increases.
+
+Use {\ttfamily $<$k\+\_\+die$>$ 1e-\/11 $<$/k\+\_\+die$>$} to modify concept parameters.
+
+In this concept, a tree dies of semi-\/mechanistic reasons.
+
+\doxysection*{Required inputs\+:}
+
+
+\begin{DoxyItemize}
+\item \mbox{\hyperlink{project_dox__MangaProject__tree_dynamics__tree_growth_and_death__mortality__RandomGrowth__k_die}{\quad{}\mbox{[}spec\mbox{]}k\+\_\+die}} 
+\end{DoxyItemize}\hypertarget{project_dox__MangaProject__tree_dynamics__tree_growth_and_death__mortality__RandomGrowth__k_die}{}\doxysubparagraph{\quad{}\mbox{[}spec\mbox{]}k\+\_\+die}\label{project_dox__MangaProject__tree_dynamics__tree_growth_and_death__mortality__RandomGrowth__k_die}
+{\ttfamily k\+\_\+die} is a calibration factor for the calculation of the probability to die. Default is 1e-\/12. ~\newline
+ \hypertarget{project_dox__MangaProject__tree_dynamics__tree_growth_and_death__type}{}\doxysubsubsection{\quad{}\mbox{[}tag\mbox{]}type}\label{project_dox__MangaProject__tree_dynamics__tree_growth_and_death__type}
+Case selector for different types of aboveground competition.
+
+\doxysection*{Available cases}
+
+
+\begin{DoxyItemize}
+\item Network\+Bettina
+\item Simple\+Bettina
+\item Simple\+Kiwi
+\item Simple\+Test 
+\end{DoxyItemize}\hypertarget{project_dox__MangaProject__tree_dynamics__tree_growth_and_death__NetworkBettina__NetworkBettina}{}\doxysubsubsection{\quad{}\mbox{[}case\mbox{]}Network\+Bettina}\label{project_dox__MangaProject__tree_dynamics__tree_growth_and_death__NetworkBettina__NetworkBettina}
+Network\+Bettina death and growth concept. This concept allows water exchange between root grafted trees. The concept is based on the Bettina single tree model as described in the ODD (appendix of \href{https://doi.org/10.1016/j.ecolmodel.2018.10.005}{\texttt{ https\+://doi.\+org/10.\+1016/j.\+ecolmodel.\+2018.\+10.\+005}}).
+
+The concept only works with a Network below-\/ground concept.
+
+Available growth information for output ($<$growth\+\_\+output $>$ ... $<$/growth\+\_\+output$>$)\+:
+
+
+\begin{DoxyItemize}
+\item root\+\_\+surface\+\_\+resistance
+\item xylem\+\_\+resistance
+\item ag\+\_\+resources
+\item bg\+\_\+resources
+\item growth
+\item available\+\_\+resources
+\item psi\+\_\+zero
+\item salinity -\/ {\bfseries{NOTE if trees are grafted this output is not correct. Use network output psi\+\_\+osmo instead!}}
+\end{DoxyItemize}
+
+Available network information for output ($<$network\+\_\+output $>$ ... $<$/network\+\_\+output$>$)\+:
+
+
+\begin{DoxyItemize}
+\item partner ... list with tree names of partners; ~\newline
+
+\item potential\+\_\+partner ... list with tree names of potential partners; ~\newline
+
+\item rgf ... counter that describes root graft formation status; ~\newline
+
+\item water\+\_\+available ... available water for growth and maintenance in litre per timestep; ~\newline
+
+\item water\+\_\+absorbed ... water absorbed from the soil in litre per timestep; ~\newline
+
+\item water\+\_\+exchanged ... water exchanged between connected trees in litre per timestep
+\item variant ... variant for root graft formation
+\item psi\+\_\+osmo ... osmotic potential
+\item group\+ID ... unique group ID indicating which trees belong to the same group
+\item node\+\_\+degree ... node degree indicates how many partners a tree has
+\end{DoxyItemize}
+
+\doxysection*{Required inputs\+:}
+
+
+\begin{DoxyItemize}
+\item \mbox{\hyperlink{project_dox__MangaProject__tree_dynamics__tree_growth_and_death__NetworkBettina__f_growth}{\quad{}\mbox{[}spec\mbox{]}f\+\_\+growth}}
+\item \mbox{\hyperlink{project_dox__MangaProject__tree_dynamics__tree_growth_and_death__NetworkBettina__variant}{\quad{}\mbox{[}spec\mbox{]}variant}} 
+\end{DoxyItemize}\hypertarget{project_dox__MangaProject__tree_dynamics__tree_growth_and_death__NetworkBettina__f_growth}{}\doxyparagraph{\quad{}\mbox{[}spec\mbox{]}f\+\_\+growth}\label{project_dox__MangaProject__tree_dynamics__tree_growth_and_death__NetworkBettina__f_growth}
+Growth reduction factor (during root graft formation).
+
+Numeric between 0 and 1. \hypertarget{project_dox__MangaProject__tree_dynamics__tree_growth_and_death__NetworkBettina__variant}{}\doxyparagraph{\quad{}\mbox{[}spec\mbox{]}variant}\label{project_dox__MangaProject__tree_dynamics__tree_growth_and_death__NetworkBettina__variant}
+Variant used to simulate root graft formation (RGF).
+
+Possible inputs are\+: \char`\"{}\+V0\+\_\+instant\char`\"{}, \char`\"{}\+V1\+\_\+fixed\char`\"{} or \char`\"{}\+V2\+\_\+adapted\char`\"{}
+
+The suffix describes the duration of the RGF process, i.\+e.\+:
+
+
+\begin{DoxyItemize}
+\item \textquotesingle{}V0\+\_\+instant\textquotesingle{} ... RGF happens immediately if roots are in contact and thus does not effect tree growth.
+\item \textquotesingle{}V1\+\_\+fixed\textquotesingle{} ... The duration of RGF is fixed (2 years) and tree growth is reduced by the factor f\+\_\+growth.
+\item \textquotesingle{}V2\+\_\+adapted\textquotesingle{} ... The duration of RGF is a function of the minimum radius of the grafted roots and the energy available for graft growth. The minimum radius, in turn, is defined by the factor f\+\_\+radius. The energy for root graft growth is taken from the energy designated to radial growth\+: w\+\_\+gr = f\+\_\+growth ∗ w\+\_\+rstem. 
+\end{DoxyItemize}\hypertarget{project_dox__MangaProject__tree_dynamics__tree_growth_and_death__SimpleBettina__SimpleBettina}{}\doxysubsubsection{\quad{}\mbox{[}case\mbox{]}Simple\+Bettina}\label{project_dox__MangaProject__tree_dynamics__tree_growth_and_death__SimpleBettina__SimpleBettina}
+Simple\+Betina death and growth concept. This concept implements the Bettina single tree model as described in the ODD (appendix of \href{https://doi.org/10.1016/j.ecolmodel.2018.10.005}{\texttt{ https\+://doi.\+org/10.\+1016/j.\+ecolmodel.\+2018.\+10.\+005}}).
+
+Available growth information for output\+: root\+\_\+surface\+\_\+resistance$\ast$$\ast$; {\bfseries{xylem\+\_\+resistance}}; {\bfseries{ag\+\_\+resources}}; {\bfseries{bg\+\_\+resources}}; {\bfseries{growth}}; {\bfseries{available\+\_\+resources}}; {\bfseries{psi\+\_\+zero}}; {\bfseries{salinity}} \hypertarget{project_dox__MangaProject__tree_dynamics__tree_growth_and_death__SimpleKiwi__SimpleKiwi}{}\doxysubsubsection{\quad{}\mbox{[}case\mbox{]}Simple\+Kiwi}\label{project_dox__MangaProject__tree_dynamics__tree_growth_and_death__SimpleKiwi__SimpleKiwi}
+Simple\+Kiwi death and growth concept. This concept implements the Kiwi single tree model as described in \href{https://doi.org/10.1016/S0304-3800(00)00298-2}{\texttt{ https\+://doi.\+org/10.\+1016/\+S0304-\/3800(00)00298-\/2}}.
+
+Available growth information for output\+: None implemented yet$\ast$$\ast$ \hypertarget{project_dox__MangaProject__tree_dynamics__tree_growth_and_death__SimpleTest__SimpleTest}{}\doxysubsubsection{\quad{}\mbox{[}case\mbox{]}Simple\+Test}\label{project_dox__MangaProject__tree_dynamics__tree_growth_and_death__SimpleTest__SimpleTest}
+Simple\+Test death and growth concept. This concept preserves each tree added to it. So it is only a testing tool. No further tags required.
+
+Available growth information for output\+: None implemented yet$\ast$$\ast$ \hypertarget{project_dox__MangaProject__tree_output__tree_output}{}\doxysection{\quad{}\mbox{[}input\mbox{]}tree\+\_\+output}\label{project_dox__MangaProject__tree_output__tree_output}
+Specification of the output scheme applied to trees.
+
+\doxysection*{Required inputs\+:}
+
+
+\begin{DoxyItemize}
+\item \mbox{\hyperlink{project_dox__MangaProject__tree_output__type}{\quad{}\mbox{[}tag\mbox{]}type}}
+\end{DoxyItemize}
+
+\doxysection*{Possible cases\+:}
+
+
+\begin{DoxyItemize}
+\item \mbox{\hyperlink{project_dox__MangaProject__tree_output__NONE__NONE}{\quad{}\mbox{[}case\mbox{]}NONE}}
+\item \mbox{\hyperlink{project_dox__MangaProject__tree_output__OneFile__OneFile}{\quad{}\mbox{[}case\mbox{]}One\+File}}
+\item \mbox{\hyperlink{project_dox__MangaProject__tree_output__OneTimestepOneFile__OneTimestepOneFile}{\quad{}\mbox{[}case\mbox{]}One\+Timestep\+One\+File}}
+\item \mbox{\hyperlink{project_dox__MangaProject__tree_output__OneTimestepOneFilePerGroup__OneTimestepOneFilePerGroup}{\quad{}\mbox{[}case\mbox{]}One\+Timestep\+One\+File\+Per\+Group}}
+\item \mbox{\hyperlink{project_dox__MangaProject__tree_output__OneTreeOneFile__OneTreeOneFile}{\quad{}\mbox{[}case\mbox{]}One\+Tree\+One\+File}} 
+\end{DoxyItemize}\hypertarget{project_dox__MangaProject__tree_output__type}{}\doxysubsection{\quad{}\mbox{[}tag\mbox{]}type}\label{project_dox__MangaProject__tree_output__type}
+Case selector for tree output. \doxysection*{Available cases}
+
+
+\begin{DoxyItemize}
+\item NONE
+\item One\+File
+\item One\+Timestep\+One\+File
+\item One\+Timestep\+One\+File\+Per\+Group
+\item One\+Tree\+One\+File 
+\end{DoxyItemize}\hypertarget{project_dox__MangaProject__tree_output__NONE__NONE}{}\doxysubsection{\quad{}\mbox{[}case\mbox{]}NONE}\label{project_dox__MangaProject__tree_output__NONE__NONE}
+Choose this option if you do not require any output. \hypertarget{project_dox__MangaProject__tree_output__OneFile__OneFile}{}\doxysubsection{\quad{}\mbox{[}case\mbox{]}One\+File}\label{project_dox__MangaProject__tree_output__OneFile__OneFile}
+This case creates one file for the whole simulation (this is a combination of {\ttfamily One\+Tree\+One\+File} and {\ttfamily One\+Timestep\+One\+File}). ~\newline
+ In each line the tree id, the position, the time and predefined parameters and geometric measures are saved.
+
+\begin{quote}
+Note\+: Files can grow very large (due to small time steps and many individuals). \end{quote}
+\# Required inputs\+:
+
+
+\begin{DoxyItemize}
+\item \mbox{\hyperlink{project_dox__MangaProject__tree_output__OneFile__allow_previous_output}{\quad{}\mbox{[}spec\mbox{]}allow\+\_\+previous\+\_\+output}}
+\item \mbox{\hyperlink{project_dox__MangaProject__tree_output__OneFile__geometry_output}{\quad{}\mbox{[}spec\mbox{]}geometry\+\_\+output}}
+\item \mbox{\hyperlink{project_dox__MangaProject__tree_output__OneFile__growth_output}{\quad{}\mbox{[}spec\mbox{]}growth\+\_\+output}}
+\item \mbox{\hyperlink{project_dox__MangaProject__tree_output__OneFile__network_output}{\quad{}\mbox{[}spec\mbox{]}network\+\_\+output}}
+\item \mbox{\hyperlink{project_dox__MangaProject__tree_output__OneFile__output_each_nth_timestep}{\quad{}\mbox{[}spec\mbox{]}output\+\_\+each\+\_\+nth\+\_\+timestep}}
+\item \mbox{\hyperlink{project_dox__MangaProject__tree_output__OneFile__output_times}{\quad{}\mbox{[}spec\mbox{]}output\+\_\+times}}
+\item \mbox{\hyperlink{project_dox__MangaProject__tree_output__OneFile__parameter_output}{\quad{}\mbox{[}spec\mbox{]}parameter\+\_\+output}}
+\item \mbox{\hyperlink{project_dox__MangaProject__tree_output__OneFile__working_directory}{\quad{}\mbox{[}spec\mbox{]}working\+\_\+directory}} 
+\end{DoxyItemize}\hypertarget{project_dox__MangaProject__tree_output__OneFile__allow_previous_output}{}\doxysubsubsection{\quad{}\mbox{[}spec\mbox{]}allow\+\_\+previous\+\_\+output}\label{project_dox__MangaProject__tree_output__OneFile__allow_previous_output}
+Bool to check, if previous output is allowed to exist. Caution\+: py\+MANGA will overwrite previous output if set to True, as it recreates the corresponding files. Default is False \hypertarget{project_dox__MangaProject__tree_output__OneFile__geometry_output}{}\doxysubsubsection{\quad{}\mbox{[}spec\mbox{]}geometry\+\_\+output}\label{project_dox__MangaProject__tree_output__OneFile__geometry_output}
+optional\+: Geomtric measure which should be added to the output. You can add an arbitrary number of geometric measures. \hypertarget{project_dox__MangaProject__tree_output__OneFile__growth_output}{}\doxysubsubsection{\quad{}\mbox{[}spec\mbox{]}growth\+\_\+output}\label{project_dox__MangaProject__tree_output__OneFile__growth_output}
+optional\+: Information from growth concept which should be added to the output. You can add an arbitrary number of information as long as they are available for the growth concept. To check availability in of growth informations in growth concept, please see growth concept tag documentation. \hypertarget{project_dox__MangaProject__tree_output__OneFile__network_output}{}\doxysubsubsection{\quad{}\mbox{[}spec\mbox{]}network\+\_\+output}\label{project_dox__MangaProject__tree_output__OneFile__network_output}
+optional\+: Network-\/parameter which should be added to the output. You can define an arbitrary number of parameters as long as they are available for the network concepts. To check availability of network information, please see network concept tag documentation. \hypertarget{project_dox__MangaProject__tree_output__OneFile__output_each_nth_timestep}{}\doxysubsubsection{\quad{}\mbox{[}spec\mbox{]}output\+\_\+each\+\_\+nth\+\_\+timestep}\label{project_dox__MangaProject__tree_output__OneFile__output_each_nth_timestep}
+This required key defines the distance between two distinct timesteps. \hypertarget{project_dox__MangaProject__tree_output__OneFile__output_times}{}\doxysubsubsection{\quad{}\mbox{[}spec\mbox{]}output\+\_\+times}\label{project_dox__MangaProject__tree_output__OneFile__output_times}
+Array of times for output to be written, defined in seconds. Example\+: $<$output\+\_\+times$>$ \mbox{[}86400, 12960000, 38880000\mbox{]} $<$/output\+\_\+times$>$ or $<$output\+\_\+times$>$ \mbox{[}1e6, 1.\+38e8\mbox{]} $<$/output\+\_\+times$>$
+
+If defined, all other outputs are omitted. Caution\+: Numbers should be a multiple of time step length, otherwise no output is written, i.\+e. output is only written, if the predefined times are hit during simulation. Parameter is optional. \hypertarget{project_dox__MangaProject__tree_output__OneFile__parameter_output}{}\doxysubsubsection{\quad{}\mbox{[}spec\mbox{]}parameter\+\_\+output}\label{project_dox__MangaProject__tree_output__OneFile__parameter_output}
+optional\+: Parameter which should be added to the output. You can define add an arbitrary number of parameters. \hypertarget{project_dox__MangaProject__tree_output__OneFile__working_directory}{}\doxysubsubsection{\quad{}\mbox{[}spec\mbox{]}working\+\_\+directory}\label{project_dox__MangaProject__tree_output__OneFile__working_directory}
+Working directory, where the output is saved. Please make sure that the directory exists and is empty. \hypertarget{project_dox__MangaProject__tree_output__OneTimestepOneFile__OneTimestepOneFile}{}\doxysubsection{\quad{}\mbox{[}case\mbox{]}One\+Timestep\+One\+File}\label{project_dox__MangaProject__tree_output__OneTimestepOneFile__OneTimestepOneFile}
+This case creates one file for each timestep. In each line the tree id, the position and predefined parameters and geometric measures are saved.
+
+\doxysection*{Required inputs\+:}
+
+
+\begin{DoxyItemize}
+\item \mbox{\hyperlink{project_dox__MangaProject__tree_output__OneTimestepOneFile__allow_previous_output}{\quad{}\mbox{[}spec\mbox{]}allow\+\_\+previous\+\_\+output}}
+\item \mbox{\hyperlink{project_dox__MangaProject__tree_output__OneTimestepOneFile__geometry_output}{\quad{}\mbox{[}spec\mbox{]}geometry\+\_\+output}}
+\item \mbox{\hyperlink{project_dox__MangaProject__tree_output__OneTimestepOneFile__growth_output}{\quad{}\mbox{[}spec\mbox{]}growth\+\_\+output}}
+\item \mbox{\hyperlink{project_dox__MangaProject__tree_output__OneTimestepOneFile__network_output}{\quad{}\mbox{[}spec\mbox{]}network\+\_\+output}}
+\item \mbox{\hyperlink{project_dox__MangaProject__tree_output__OneTimestepOneFile__output_each_nth_timestep}{\quad{}\mbox{[}spec\mbox{]}output\+\_\+each\+\_\+nth\+\_\+timestep}}
+\item \mbox{\hyperlink{project_dox__MangaProject__tree_output__OneTimestepOneFile__output_times}{\quad{}\mbox{[}spec\mbox{]}output\+\_\+times}}
+\item \mbox{\hyperlink{project_dox__MangaProject__tree_output__OneTimestepOneFile__parameter_output}{\quad{}\mbox{[}spec\mbox{]}parameter\+\_\+output}}
+\item \mbox{\hyperlink{project_dox__MangaProject__tree_output__OneTimestepOneFile__working_directory}{\quad{}\mbox{[}spec\mbox{]}working\+\_\+directory}} 
+\end{DoxyItemize}\hypertarget{project_dox__MangaProject__tree_output__OneTimestepOneFile__allow_previous_output}{}\doxysubsubsection{\quad{}\mbox{[}spec\mbox{]}allow\+\_\+previous\+\_\+output}\label{project_dox__MangaProject__tree_output__OneTimestepOneFile__allow_previous_output}
+Bool to check, if previous output is allowed to exist. Caution\+: py\+MANGA will overwrite previous output if set to True, as it recreates the corresponding files. Default is False \hypertarget{project_dox__MangaProject__tree_output__OneTimestepOneFile__geometry_output}{}\doxysubsubsection{\quad{}\mbox{[}spec\mbox{]}geometry\+\_\+output}\label{project_dox__MangaProject__tree_output__OneTimestepOneFile__geometry_output}
+optional\+: Geomtric measure which should be added to the output. You can add an arbitrary number of geometric measures. \hypertarget{project_dox__MangaProject__tree_output__OneTimestepOneFile__growth_output}{}\doxysubsubsection{\quad{}\mbox{[}spec\mbox{]}growth\+\_\+output}\label{project_dox__MangaProject__tree_output__OneTimestepOneFile__growth_output}
+optional\+: Information from growth concept which should be added to the output. You can add an arbitrary number of information as long as they are available for the growth concept. To check availability in of growth informations in growth concept, please see growth concept tag documentation. \hypertarget{project_dox__MangaProject__tree_output__OneTimestepOneFile__network_output}{}\doxysubsubsection{\quad{}\mbox{[}spec\mbox{]}network\+\_\+output}\label{project_dox__MangaProject__tree_output__OneTimestepOneFile__network_output}
+optional\+: Network-\/parameter which should be added to the output. You can define an arbitrary number of parameters as long as they are available for the network concepts. To check availability of network information, please see network concept tag documentation. \hypertarget{project_dox__MangaProject__tree_output__OneTimestepOneFile__output_each_nth_timestep}{}\doxysubsubsection{\quad{}\mbox{[}spec\mbox{]}output\+\_\+each\+\_\+nth\+\_\+timestep}\label{project_dox__MangaProject__tree_output__OneTimestepOneFile__output_each_nth_timestep}
+This required key defines the distance between two distinct timesteps. \hypertarget{project_dox__MangaProject__tree_output__OneTimestepOneFile__output_times}{}\doxysubsubsection{\quad{}\mbox{[}spec\mbox{]}output\+\_\+times}\label{project_dox__MangaProject__tree_output__OneTimestepOneFile__output_times}
+Array of times for output to be written. Example\+: $<$output\+\_\+times$>$ \mbox{[}0,1,2,3,4\mbox{]} $<$/output\+\_\+times$>$ If defined, all other outputs are omitted. Caution\+: Output is only written, if the predefined times are hit during simulation. Parameter is optional. \hypertarget{project_dox__MangaProject__tree_output__OneTimestepOneFile__parameter_output}{}\doxysubsubsection{\quad{}\mbox{[}spec\mbox{]}parameter\+\_\+output}\label{project_dox__MangaProject__tree_output__OneTimestepOneFile__parameter_output}
+optional\+: Parameter which should be added to the output. You can define add an arbitrary number of parameters. \hypertarget{project_dox__MangaProject__tree_output__OneTimestepOneFile__working_directory}{}\doxysubsubsection{\quad{}\mbox{[}spec\mbox{]}working\+\_\+directory}\label{project_dox__MangaProject__tree_output__OneTimestepOneFile__working_directory}
+Working directory, where the output is saved. Please make sure that the directory exists and is empty. \hypertarget{project_dox__MangaProject__tree_output__OneTimestepOneFilePerGroup__OneTimestepOneFilePerGroup}{}\doxysubsection{\quad{}\mbox{[}case\mbox{]}One\+Timestep\+One\+File\+Per\+Group}\label{project_dox__MangaProject__tree_output__OneTimestepOneFilePerGroup__OneTimestepOneFilePerGroup}
+This case creates one file for each group per timestep. In each line the tree id, the position and predefined parameters and geometric measures are saved.
+
+\doxysection*{Required inputs\+:}
+
+
+\begin{DoxyItemize}
+\item \mbox{\hyperlink{project_dox__MangaProject__tree_output__OneTimestepOneFilePerGroup__allow_previous_output}{\quad{}\mbox{[}spec\mbox{]}allow\+\_\+previous\+\_\+output}}
+\item \mbox{\hyperlink{project_dox__MangaProject__tree_output__OneTimestepOneFilePerGroup__geometry_output}{\quad{}\mbox{[}spec\mbox{]}geometry\+\_\+output}}
+\item \mbox{\hyperlink{project_dox__MangaProject__tree_output__OneTimestepOneFilePerGroup__growth_output}{\quad{}\mbox{[}spec\mbox{]}growth\+\_\+output}}
+\item \mbox{\hyperlink{project_dox__MangaProject__tree_output__OneTimestepOneFilePerGroup__network_output}{\quad{}\mbox{[}spec\mbox{]}network\+\_\+output}}
+\item \mbox{\hyperlink{project_dox__MangaProject__tree_output__OneTimestepOneFilePerGroup__output_each_nth_timestep}{\quad{}\mbox{[}spec\mbox{]}output\+\_\+each\+\_\+nth\+\_\+timestep}}
+\item \mbox{\hyperlink{project_dox__MangaProject__tree_output__OneTimestepOneFilePerGroup__output_times}{\quad{}\mbox{[}spec\mbox{]}output\+\_\+times}}
+\item \mbox{\hyperlink{project_dox__MangaProject__tree_output__OneTimestepOneFilePerGroup__parameter_output}{\quad{}\mbox{[}spec\mbox{]}parameter\+\_\+output}}
+\item \mbox{\hyperlink{project_dox__MangaProject__tree_output__OneTimestepOneFilePerGroup__working_directory}{\quad{}\mbox{[}spec\mbox{]}working\+\_\+directory}} 
+\end{DoxyItemize}\hypertarget{project_dox__MangaProject__tree_output__OneTimestepOneFilePerGroup__allow_previous_output}{}\doxysubsubsection{\quad{}\mbox{[}spec\mbox{]}allow\+\_\+previous\+\_\+output}\label{project_dox__MangaProject__tree_output__OneTimestepOneFilePerGroup__allow_previous_output}
+Bool to check, if previous output is allowed to exist. Caution\+: py\+MANGA will overwrite previous output if set to True, as it recreates the corresponding files. Default is False \hypertarget{project_dox__MangaProject__tree_output__OneTimestepOneFilePerGroup__geometry_output}{}\doxysubsubsection{\quad{}\mbox{[}spec\mbox{]}geometry\+\_\+output}\label{project_dox__MangaProject__tree_output__OneTimestepOneFilePerGroup__geometry_output}
+optional\+: Geomtric measure which should be added to the output. You can add an arbitrary number of geometric measures. \hypertarget{project_dox__MangaProject__tree_output__OneTimestepOneFilePerGroup__growth_output}{}\doxysubsubsection{\quad{}\mbox{[}spec\mbox{]}growth\+\_\+output}\label{project_dox__MangaProject__tree_output__OneTimestepOneFilePerGroup__growth_output}
+optional\+: Information from growth concept which should be added to the output. You can add an arbitrary number of information as long as they are available for the growth concept. To check availability in of growth informations in growth concept, please see growth concept tag documentation. \hypertarget{project_dox__MangaProject__tree_output__OneTimestepOneFilePerGroup__network_output}{}\doxysubsubsection{\quad{}\mbox{[}spec\mbox{]}network\+\_\+output}\label{project_dox__MangaProject__tree_output__OneTimestepOneFilePerGroup__network_output}
+optional\+: Network-\/parameter which should be added to the output. You can define an arbitrary number of parameters as long as they are available for the network concepts. To check availability of network information, please see network concept tag documentation. \hypertarget{project_dox__MangaProject__tree_output__OneTimestepOneFilePerGroup__output_each_nth_timestep}{}\doxysubsubsection{\quad{}\mbox{[}spec\mbox{]}output\+\_\+each\+\_\+nth\+\_\+timestep}\label{project_dox__MangaProject__tree_output__OneTimestepOneFilePerGroup__output_each_nth_timestep}
+This required key defines the distance between two distinct timesteps. \hypertarget{project_dox__MangaProject__tree_output__OneTimestepOneFilePerGroup__output_times}{}\doxysubsubsection{\quad{}\mbox{[}spec\mbox{]}output\+\_\+times}\label{project_dox__MangaProject__tree_output__OneTimestepOneFilePerGroup__output_times}
+Array of times for output to be written. Example\+: $<$output\+\_\+times$>$ \mbox{[}0,1,2,3,4\mbox{]} $<$/output\+\_\+times$>$ If defined, all other outputs are omitted. Caution\+: Output is only written, if the predefined times are hit during simulation. Parameter is optional. \hypertarget{project_dox__MangaProject__tree_output__OneTimestepOneFilePerGroup__parameter_output}{}\doxysubsubsection{\quad{}\mbox{[}spec\mbox{]}parameter\+\_\+output}\label{project_dox__MangaProject__tree_output__OneTimestepOneFilePerGroup__parameter_output}
+optional\+: Parameter which should be added to the output. You can define add an arbitrary number of parameters. \hypertarget{project_dox__MangaProject__tree_output__OneTimestepOneFilePerGroup__working_directory}{}\doxysubsubsection{\quad{}\mbox{[}spec\mbox{]}working\+\_\+directory}\label{project_dox__MangaProject__tree_output__OneTimestepOneFilePerGroup__working_directory}
+Working directory, where the output is saved. Please make sure that the directory exists and is empty. \hypertarget{project_dox__MangaProject__tree_output__OneTreeOneFile__OneTreeOneFile}{}\doxysubsection{\quad{}\mbox{[}case\mbox{]}One\+Tree\+One\+File}\label{project_dox__MangaProject__tree_output__OneTreeOneFile__OneTreeOneFile}
+This case creates one file for each tree. In each line the current time, the position and predefined parameters and geometric measures are saved.
+
+\doxysection*{Required inputs\+:}
+
+
+\begin{DoxyItemize}
+\item \mbox{\hyperlink{project_dox__MangaProject__tree_output__OneTreeOneFile__allow_previous_output}{\quad{}\mbox{[}spec\mbox{]}allow\+\_\+previous\+\_\+output}}
+\item \mbox{\hyperlink{project_dox__MangaProject__tree_output__OneTreeOneFile__geometry_output}{\quad{}\mbox{[}spec\mbox{]}geometry\+\_\+output}}
+\item \mbox{\hyperlink{project_dox__MangaProject__tree_output__OneTreeOneFile__growth_output}{\quad{}\mbox{[}spec\mbox{]}growth\+\_\+output}}
+\item \mbox{\hyperlink{project_dox__MangaProject__tree_output__OneTreeOneFile__network_output}{\quad{}\mbox{[}spec\mbox{]}network\+\_\+output}}
+\item \mbox{\hyperlink{project_dox__MangaProject__tree_output__OneTreeOneFile__output_each_nth_timestep}{\quad{}\mbox{[}spec\mbox{]}output\+\_\+each\+\_\+nth\+\_\+timestep}}
+\item \mbox{\hyperlink{project_dox__MangaProject__tree_output__OneTreeOneFile__output_times}{\quad{}\mbox{[}spec\mbox{]}output\+\_\+times}}
+\item \mbox{\hyperlink{project_dox__MangaProject__tree_output__OneTreeOneFile__parameter_output}{\quad{}\mbox{[}spec\mbox{]}parameter\+\_\+output}}
+\item \mbox{\hyperlink{project_dox__MangaProject__tree_output__OneTreeOneFile__working_directory}{\quad{}\mbox{[}spec\mbox{]}working\+\_\+directory}} 
+\end{DoxyItemize}\hypertarget{project_dox__MangaProject__tree_output__OneTreeOneFile__allow_previous_output}{}\doxysubsubsection{\quad{}\mbox{[}spec\mbox{]}allow\+\_\+previous\+\_\+output}\label{project_dox__MangaProject__tree_output__OneTreeOneFile__allow_previous_output}
+Bool to check, if previous output is allowed to exist. Caution\+: py\+MANGA will overwrite previous output if set to True, as it recreates the corresponding files. Default is False \hypertarget{project_dox__MangaProject__tree_output__OneTreeOneFile__geometry_output}{}\doxysubsubsection{\quad{}\mbox{[}spec\mbox{]}geometry\+\_\+output}\label{project_dox__MangaProject__tree_output__OneTreeOneFile__geometry_output}
+optional\+: Geomtric measure which should be added to the output. You can add an arbitrary number of geometric measures. \hypertarget{project_dox__MangaProject__tree_output__OneTreeOneFile__growth_output}{}\doxysubsubsection{\quad{}\mbox{[}spec\mbox{]}growth\+\_\+output}\label{project_dox__MangaProject__tree_output__OneTreeOneFile__growth_output}
+optional\+: Information from growth concept which should be added to the output. You can add an arbitrary number of information as long as they are available for the growth concept. To check availability in of growth informations in growth concept, please see growth concept tag documentation. \hypertarget{project_dox__MangaProject__tree_output__OneTreeOneFile__network_output}{}\doxysubsubsection{\quad{}\mbox{[}spec\mbox{]}network\+\_\+output}\label{project_dox__MangaProject__tree_output__OneTreeOneFile__network_output}
+optional\+: Network-\/parameter which should be added to the output. You can define an arbitrary number of parameters as long as they are available for the network concepts. To check availability of network information, please see network concept tag documentation. \hypertarget{project_dox__MangaProject__tree_output__OneTreeOneFile__output_each_nth_timestep}{}\doxysubsubsection{\quad{}\mbox{[}spec\mbox{]}output\+\_\+each\+\_\+nth\+\_\+timestep}\label{project_dox__MangaProject__tree_output__OneTreeOneFile__output_each_nth_timestep}
+This required key defines the distance between two distinct timesteps. \hypertarget{project_dox__MangaProject__tree_output__OneTreeOneFile__output_times}{}\doxysubsubsection{\quad{}\mbox{[}spec\mbox{]}output\+\_\+times}\label{project_dox__MangaProject__tree_output__OneTreeOneFile__output_times}
+Array of times for output to be written. Example\+: $<$output\+\_\+times$>$ \mbox{[}0,1,2,3,4\mbox{]} $<$/output\+\_\+times$>$ If defined, all other outputs are omitted. Caution\+: Output is only written, if the predefined times are hit during simulation. Parameter is optional. \hypertarget{project_dox__MangaProject__tree_output__OneTreeOneFile__parameter_output}{}\doxysubsubsection{\quad{}\mbox{[}spec\mbox{]}parameter\+\_\+output}\label{project_dox__MangaProject__tree_output__OneTreeOneFile__parameter_output}
+optional\+: Parameter which should be added to the output. You can define add an arbitrary number of parameters. \hypertarget{project_dox__MangaProject__tree_output__OneTreeOneFile__working_directory}{}\doxysubsubsection{\quad{}\mbox{[}spec\mbox{]}working\+\_\+directory}\label{project_dox__MangaProject__tree_output__OneTreeOneFile__working_directory}
+Working directory, where the output is saved. Please make sure that the directory exists and is empty. \hypertarget{project_dox__MangaProject__tree_time_loop__tree_time_loop}{}\doxysection{\quad{}\mbox{[}input\mbox{]}tree\+\_\+time\+\_\+loop}\label{project_dox__MangaProject__tree_time_loop__tree_time_loop}
+Specification of the time loop applied for the model run.
+
+\doxysection*{Required inputs\+:}
+
+
+\begin{DoxyItemize}
+\item \mbox{\hyperlink{project_dox__MangaProject__tree_time_loop__type}{\quad{}\mbox{[}tag\mbox{]}type}}
+\end{DoxyItemize}
+
+\doxysection*{Possible cases\+:}
+
+
+\begin{DoxyItemize}
+\item \mbox{\hyperlink{project_dox__MangaProject__tree_time_loop__Simple__Simple}{\quad{}\mbox{[}case\mbox{]}Simple}} 
+\end{DoxyItemize}\hypertarget{project_dox__MangaProject__tree_time_loop__type}{}\doxysubsection{\quad{}\mbox{[}tag\mbox{]}type}\label{project_dox__MangaProject__tree_time_loop__type}
+Case selector for time loop. \doxysection*{Available cases}
+
+
+\begin{DoxyItemize}
+\item Simple 
+\end{DoxyItemize}\hypertarget{project_dox__MangaProject__tree_time_loop__Simple__Simple}{}\doxysubsection{\quad{}\mbox{[}case\mbox{]}Simple}\label{project_dox__MangaProject__tree_time_loop__Simple__Simple}
+Simple time loop with constant stepsize.
+
+\doxysection*{Required inputs\+:}
+
+
+\begin{DoxyItemize}
+\item \mbox{\hyperlink{project_dox__MangaProject__tree_time_loop__Simple__delta_t}{\quad{}\mbox{[}spec\mbox{]}delta\+\_\+t}}
+\item \mbox{\hyperlink{project_dox__MangaProject__tree_time_loop__Simple__n_step_ag}{\quad{}\mbox{[}spec\mbox{]}n\+\_\+step\+\_\+ag}}
+\item \mbox{\hyperlink{project_dox__MangaProject__tree_time_loop__Simple__n_step_bg}{\quad{}\mbox{[}spec\mbox{]}n\+\_\+step\+\_\+bg}}
+\item \mbox{\hyperlink{project_dox__MangaProject__tree_time_loop__Simple__terminal_print}{\quad{}\mbox{[}spec\mbox{]}terminal\+\_\+print}}
+\item \mbox{\hyperlink{project_dox__MangaProject__tree_time_loop__Simple__t_end}{\quad{}\mbox{[}spec\mbox{]}t\+\_\+end}}
+\item \mbox{\hyperlink{project_dox__MangaProject__tree_time_loop__Simple__t_start}{\quad{}\mbox{[}spec\mbox{]}t\+\_\+start}} 
+\end{DoxyItemize}\hypertarget{project_dox__MangaProject__tree_time_loop__Simple__delta_t}{}\doxysubsubsection{\quad{}\mbox{[}spec\mbox{]}delta\+\_\+t}\label{project_dox__MangaProject__tree_time_loop__Simple__delta_t}
+Distance between two timesteps. \hypertarget{project_dox__MangaProject__tree_time_loop__Simple__n_step_ag}{}\doxysubsubsection{\quad{}\mbox{[}spec\mbox{]}n\+\_\+step\+\_\+ag}\label{project_dox__MangaProject__tree_time_loop__Simple__n_step_ag}
+Update above-\/ground competition\+: given as integer ($>$= 1) indicating nth time step to update concept.
+
+Example\+: ~\newline
+
+\begin{DoxyItemize}
+\item Update above-\/ground competition every 5th time step\+: {\ttfamily $<$n\+\_\+step\+\_\+ag$>$ 5 $<$/n\+\_\+step\+\_\+ag$>$} ~\newline
+ 
+\end{DoxyItemize}\hypertarget{project_dox__MangaProject__tree_time_loop__Simple__n_step_bg}{}\doxysubsubsection{\quad{}\mbox{[}spec\mbox{]}n\+\_\+step\+\_\+bg}\label{project_dox__MangaProject__tree_time_loop__Simple__n_step_bg}
+Update below-\/ground competition\+: given as integer ($>$= 1) indicating nth time step to update concept.
+
+Example\+: ~\newline
+
+\begin{DoxyItemize}
+\item Update below-\/ground competition every 5th time step\+: {\ttfamily $<$n\+\_\+step\+\_\+bg$>$ 5 $<$/n\+\_\+step\+\_\+bg$>$} ~\newline
+ 
+\end{DoxyItemize}\hypertarget{project_dox__MangaProject__tree_time_loop__Simple__terminal_print}{}\doxysubsubsection{\quad{}\mbox{[}spec\mbox{]}terminal\+\_\+print}\label{project_dox__MangaProject__tree_time_loop__Simple__terminal_print}
+Time unit in which the model time gets printed after each time step. This tag is not necessary. If it\textquotesingle{}s missing, there will be no prints after each time step at all. The value of this tag has to be set to either \textquotesingle{}days\textquotesingle{} or \textquotesingle{}years\textquotesingle{}. \hypertarget{project_dox__MangaProject__tree_time_loop__Simple__t_end}{}\doxysubsubsection{\quad{}\mbox{[}spec\mbox{]}t\+\_\+end}\label{project_dox__MangaProject__tree_time_loop__Simple__t_end}
+Simulation end time. \hypertarget{project_dox__MangaProject__tree_time_loop__Simple__t_start}{}\doxysubsubsection{\quad{}\mbox{[}spec\mbox{]}t\+\_\+start}\label{project_dox__MangaProject__tree_time_loop__Simple__t_start}
+Simulation start time. \hypertarget{project_dox__MangaProject__visualization__visualization}{}\doxysection{\quad{}\mbox{[}input\mbox{]}visualization}\label{project_dox__MangaProject__visualization__visualization}
+Specification of the visualization applied for the model run.
+
+\doxysection*{Required inputs\+:}
+
+
+\begin{DoxyItemize}
+\item \mbox{\hyperlink{project_dox__MangaProject__visualization__type}{\quad{}\mbox{[}tag\mbox{]}type}}
+\end{DoxyItemize}
+
+\doxysection*{Possible cases\+:}
+
+
+\begin{DoxyItemize}
+\item \mbox{\hyperlink{project_dox__MangaProject__visualization__NONE__NONE}{\quad{}\mbox{[}case\mbox{]}NONE}}
+\item \mbox{\hyperlink{project_dox__MangaProject__visualization__SimplePyplot__SimplePyplot}{\quad{}\mbox{[}case\mbox{]}Simple\+Pyplot}} 
+\end{DoxyItemize}\hypertarget{project_dox__MangaProject__visualization__type}{}\doxysubsection{\quad{}\mbox{[}tag\mbox{]}type}\label{project_dox__MangaProject__visualization__type}
+Case selector for visualization type. \doxysection*{Available cases}
+
+
+\begin{DoxyItemize}
+\item NONE
+\item Simple\+Pyplot 
+\end{DoxyItemize}\hypertarget{project_dox__MangaProject__visualization__NONE__NONE}{}\doxysubsection{\quad{}\mbox{[}case\mbox{]}NONE}\label{project_dox__MangaProject__visualization__NONE__NONE}
+This case has to be selected, if no visualization is wished. \hypertarget{project_dox__MangaProject__visualization__SimplePyplot__SimplePyplot}{}\doxysubsection{\quad{}\mbox{[}case\mbox{]}Simple\+Pyplot}\label{project_dox__MangaProject__visualization__SimplePyplot__SimplePyplot}
+Simple\+Pyplot visualization using the matplotlib python module. This type currently only shows the position and the crown radius of trees.
+
+\doxysection*{Required inputs\+:}
+
+
+\begin{DoxyItemize}
+\item \mbox{\hyperlink{project_dox__MangaProject__visualization__SimplePyplot__max_fps}{\quad{}\mbox{[}spec\mbox{]}max\+\_\+fps}} 
+\end{DoxyItemize}\hypertarget{project_dox__MangaProject__visualization__SimplePyplot__max_fps}{}\doxysubsubsection{\quad{}\mbox{[}spec\mbox{]}max\+\_\+fps}\label{project_dox__MangaProject__visualization__SimplePyplot__max_fps}
+Optional tag specifying the maximum amount of frames per second of the visualization. Default value is 50. 

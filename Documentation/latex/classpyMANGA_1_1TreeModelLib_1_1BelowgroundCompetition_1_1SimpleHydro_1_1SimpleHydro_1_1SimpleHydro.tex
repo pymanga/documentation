@@ -1,0 +1,217 @@
+\hypertarget{classpyMANGA_1_1TreeModelLib_1_1BelowgroundCompetition_1_1SimpleHydro_1_1SimpleHydro_1_1SimpleHydro}{}\doxysection{py\+MANGA.\+Tree\+Model\+Lib.\+Belowground\+Competition.\+Simple\+Hydro.\+Simple\+Hydro.\+Simple\+Hydro Class Reference}
+\label{classpyMANGA_1_1TreeModelLib_1_1BelowgroundCompetition_1_1SimpleHydro_1_1SimpleHydro_1_1SimpleHydro}\index{pyMANGA.TreeModelLib.BelowgroundCompetition.SimpleHydro.SimpleHydro.SimpleHydro@{pyMANGA.TreeModelLib.BelowgroundCompetition.SimpleHydro.SimpleHydro.SimpleHydro}}
+Inheritance diagram for py\+MANGA.\+Tree\+Model\+Lib.\+Belowground\+Competition.\+Simple\+Hydro.\+Simple\+Hydro.\+Simple\+Hydro\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classpyMANGA_1_1TreeModelLib_1_1BelowgroundCompetition_1_1SimpleHydro_1_1SimpleHydro_1_1SimpleHydro}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classpyMANGA_1_1TreeModelLib_1_1BelowgroundCompetition_1_1SimpleHydro_1_1SimpleHydro_1_1SimpleHydro_a252fd8282f73bf64b76a062945311780}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, args)
+\begin{DoxyCompactList}\small\item\em Simple approach to reduce water availability due to osmotic potential. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classpyMANGA_1_1TreeModelLib_1_1BelowgroundCompetition_1_1SimpleHydro_1_1SimpleHydro_1_1SimpleHydro_a7bc32a027a74267edd863177d34abf4b}{calculate\+Belowground\+Resources}} (self)
+\begin{DoxyCompactList}\small\item\em This function returns a list of the growth reduction factors of all trees. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classpyMANGA_1_1TreeModelLib_1_1BelowgroundCompetition_1_1SimpleHydro_1_1SimpleHydro_1_1SimpleHydro_af9b39fde663df460163e73422ddeb147}{transpire}} (self)
+\begin{DoxyCompactList}\small\item\em This function calculates the water balance of each grid cell. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classpyMANGA_1_1TreeModelLib_1_1BelowgroundCompetition_1_1SimpleHydro_1_1SimpleHydro_1_1SimpleHydro_a104d49ce1bc94234583bb1fb95af38a7}\label{classpyMANGA_1_1TreeModelLib_1_1BelowgroundCompetition_1_1SimpleHydro_1_1SimpleHydro_1_1SimpleHydro_a104d49ce1bc94234583bb1fb95af38a7}} 
+def {\bfseries update\+Salinity} (self, rest)
+\item 
+def \mbox{\hyperlink{classpyMANGA_1_1TreeModelLib_1_1BelowgroundCompetition_1_1SimpleHydro_1_1SimpleHydro_1_1SimpleHydro_a0d2ea2c861f29e9b32e0cd3b30f9c409}{make\+Grid}} (self, args)
+\begin{DoxyCompactList}\small\item\em This function initialises the mesh. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classpyMANGA_1_1TreeModelLib_1_1BelowgroundCompetition_1_1SimpleHydro_1_1SimpleHydro_1_1SimpleHydro_a9c9471ee44767515c6b64b3a97afe3fe}{prepare\+Next\+Time\+Step}} (self, t\+\_\+ini, t\+\_\+end)
+\begin{DoxyCompactList}\small\item\em This functions prepares the tree variables for the \mbox{\hyperlink{classpyMANGA_1_1TreeModelLib_1_1BelowgroundCompetition_1_1SimpleHydro_1_1SimpleHydro_1_1SimpleHydro}{Simple\+Hydro}} concept. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classpyMANGA_1_1TreeModelLib_1_1BelowgroundCompetition_1_1SimpleHydro_1_1SimpleHydro_1_1SimpleHydro_a17b3c812000cd29f15da5ed2b8495979}{add\+Tree}} (self, tree)
+\begin{DoxyCompactList}\small\item\em Before being able to calculate the resources, all tree entities need to be added with their relevant allometric measures for the next timestep. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classpyMANGA_1_1TreeModelLib_1_1BelowgroundCompetition_1_1SimpleHydro_1_1SimpleHydro_1_1SimpleHydro_a5db5e1a666b7c4226875bb3a350a6240}{root\+Surface\+Resistance}} (self, lp, k\+\_\+geom, r\+\_\+root, h\+\_\+root)
+\begin{DoxyCompactList}\small\item\em This function calculates the root surface resistance. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classpyMANGA_1_1TreeModelLib_1_1BelowgroundCompetition_1_1SimpleHydro_1_1SimpleHydro_1_1SimpleHydro_a4a6c95d9d38d6dcf29ce0ab340932fab}{xylem\+Resistance}} (self, r\+\_\+crown, h\+\_\+stem, r\+\_\+root, kf\+\_\+sap, r\+\_\+stem)
+\begin{DoxyCompactList}\small\item\em This function calculates the root surface resistance. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpyMANGA_1_1TreeModelLib_1_1BelowgroundCompetition_1_1SimpleHydro_1_1SimpleHydro_1_1SimpleHydro_ab12093724a778b0bc16f762a254ec3da}\label{classpyMANGA_1_1TreeModelLib_1_1BelowgroundCompetition_1_1SimpleHydro_1_1SimpleHydro_1_1SimpleHydro_ab12093724a778b0bc16f762a254ec3da}} 
+{\bfseries belowground\+\_\+resources}
+\item 
+\mbox{\Hypertarget{classpyMANGA_1_1TreeModelLib_1_1BelowgroundCompetition_1_1SimpleHydro_1_1SimpleHydro_1_1SimpleHydro_a779b7dc89aea3ca1fc20b27f16b9350d}\label{classpyMANGA_1_1TreeModelLib_1_1BelowgroundCompetition_1_1SimpleHydro_1_1SimpleHydro_1_1SimpleHydro_a779b7dc89aea3ca1fc20b27f16b9350d}} 
+{\bfseries transpiration}
+\item 
+\mbox{\hyperlink{classpyMANGA_1_1TreeModelLib_1_1BelowgroundCompetition_1_1SimpleHydro_1_1SimpleHydro_1_1SimpleHydro_a64c3fcb714bca9f51638fb02c117219b}{salinity}}
+\begin{DoxyCompactList}\small\item\em dilution the fraction of diluted water gets replaced with sea water \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classpyMANGA_1_1TreeModelLib_1_1BelowgroundCompetition_1_1SimpleHydro_1_1SimpleHydro_1_1SimpleHydro_a07af07c12f4d8844bea61ea265b52f90}\label{classpyMANGA_1_1TreeModelLib_1_1BelowgroundCompetition_1_1SimpleHydro_1_1SimpleHydro_1_1SimpleHydro_a07af07c12f4d8844bea61ea265b52f90}} 
+{\bfseries x\+\_\+resolution}
+\item 
+\mbox{\Hypertarget{classpyMANGA_1_1TreeModelLib_1_1BelowgroundCompetition_1_1SimpleHydro_1_1SimpleHydro_1_1SimpleHydro_a700a40b98684f69887d83107973301b9}\label{classpyMANGA_1_1TreeModelLib_1_1BelowgroundCompetition_1_1SimpleHydro_1_1SimpleHydro_1_1SimpleHydro_a700a40b98684f69887d83107973301b9}} 
+{\bfseries y\+\_\+resolution}
+\item 
+\mbox{\Hypertarget{classpyMANGA_1_1TreeModelLib_1_1BelowgroundCompetition_1_1SimpleHydro_1_1SimpleHydro_1_1SimpleHydro_ae77b55f78cd6892bf8a1a20ebaae09e5}\label{classpyMANGA_1_1TreeModelLib_1_1BelowgroundCompetition_1_1SimpleHydro_1_1SimpleHydro_1_1SimpleHydro_ae77b55f78cd6892bf8a1a20ebaae09e5}} 
+{\bfseries volume}
+\item 
+\mbox{\Hypertarget{classpyMANGA_1_1TreeModelLib_1_1BelowgroundCompetition_1_1SimpleHydro_1_1SimpleHydro_1_1SimpleHydro_aba11a3236b6fa518d9f5dd6ab420ef69}\label{classpyMANGA_1_1TreeModelLib_1_1BelowgroundCompetition_1_1SimpleHydro_1_1SimpleHydro_1_1SimpleHydro_aba11a3236b6fa518d9f5dd6ab420ef69}} 
+{\bfseries q\+\_\+fac}
+\item 
+\mbox{\Hypertarget{classpyMANGA_1_1TreeModelLib_1_1BelowgroundCompetition_1_1SimpleHydro_1_1SimpleHydro_1_1SimpleHydro_a57383b22e4ad52ed437cfdb4ec827e4b}\label{classpyMANGA_1_1TreeModelLib_1_1BelowgroundCompetition_1_1SimpleHydro_1_1SimpleHydro_1_1SimpleHydro_a57383b22e4ad52ed437cfdb4ec827e4b}} 
+{\bfseries dilution\+\_\+frac}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classpyMANGA_1_1TreeModelLib_1_1BelowgroundCompetition_1_1SimpleHydro_1_1SimpleHydro_1_1SimpleHydro_a252fd8282f73bf64b76a062945311780}\label{classpyMANGA_1_1TreeModelLib_1_1BelowgroundCompetition_1_1SimpleHydro_1_1SimpleHydro_1_1SimpleHydro_a252fd8282f73bf64b76a062945311780}} 
+\index{pyMANGA.TreeModelLib.BelowgroundCompetition.SimpleHydro.SimpleHydro.SimpleHydro@{pyMANGA.TreeModelLib.BelowgroundCompetition.SimpleHydro.SimpleHydro.SimpleHydro}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!pyMANGA.TreeModelLib.BelowgroundCompetition.SimpleHydro.SimpleHydro.SimpleHydro@{pyMANGA.TreeModelLib.BelowgroundCompetition.SimpleHydro.SimpleHydro.SimpleHydro}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def py\+MANGA.\+Tree\+Model\+Lib.\+Belowground\+Competition.\+Simple\+Hydro.\+Simple\+Hydro.\+Simple\+Hydro.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{args }\end{DoxyParamCaption})}
+
+
+
+Simple approach to reduce water availability due to osmotic potential. 
+
+Processes are gradient flow, salinisation by plant transpiration, dilution by tides and horizontal mixing (diffusion).~\newline
+
+\begin{DoxyParams}{Parameters}
+{\em } & Tags to define \mbox{\hyperlink{classpyMANGA_1_1TreeModelLib_1_1BelowgroundCompetition_1_1SimpleHydro_1_1SimpleHydro_1_1SimpleHydro}{Simple\+Hydro}}, see tag documentation ~\newline
+ \\
+\hline
+\end{DoxyParams}
+\begin{DoxyDate}{Date}
+\+: 2021 -\/ Today 
+\end{DoxyDate}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classpyMANGA_1_1TreeModelLib_1_1BelowgroundCompetition_1_1SimpleHydro_1_1SimpleHydro_1_1SimpleHydro_a17b3c812000cd29f15da5ed2b8495979}\label{classpyMANGA_1_1TreeModelLib_1_1BelowgroundCompetition_1_1SimpleHydro_1_1SimpleHydro_1_1SimpleHydro_a17b3c812000cd29f15da5ed2b8495979}} 
+\index{pyMANGA.TreeModelLib.BelowgroundCompetition.SimpleHydro.SimpleHydro.SimpleHydro@{pyMANGA.TreeModelLib.BelowgroundCompetition.SimpleHydro.SimpleHydro.SimpleHydro}!addTree@{addTree}}
+\index{addTree@{addTree}!pyMANGA.TreeModelLib.BelowgroundCompetition.SimpleHydro.SimpleHydro.SimpleHydro@{pyMANGA.TreeModelLib.BelowgroundCompetition.SimpleHydro.SimpleHydro.SimpleHydro}}
+\doxysubsubsection{\texorpdfstring{addTree()}{addTree()}}
+{\footnotesize\ttfamily def py\+MANGA.\+Tree\+Model\+Lib.\+Belowground\+Competition.\+Simple\+Hydro.\+Simple\+Hydro.\+Simple\+Hydro.\+add\+Tree (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{tree }\end{DoxyParamCaption})}
+
+
+
+Before being able to calculate the resources, all tree entities need to be added with their relevant allometric measures for the next timestep. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em } & tree \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classpyMANGA_1_1TreeModelLib_1_1BelowgroundCompetition_1_1SimpleHydro_1_1SimpleHydro_1_1SimpleHydro_a7bc32a027a74267edd863177d34abf4b}\label{classpyMANGA_1_1TreeModelLib_1_1BelowgroundCompetition_1_1SimpleHydro_1_1SimpleHydro_1_1SimpleHydro_a7bc32a027a74267edd863177d34abf4b}} 
+\index{pyMANGA.TreeModelLib.BelowgroundCompetition.SimpleHydro.SimpleHydro.SimpleHydro@{pyMANGA.TreeModelLib.BelowgroundCompetition.SimpleHydro.SimpleHydro.SimpleHydro}!calculateBelowgroundResources@{calculateBelowgroundResources}}
+\index{calculateBelowgroundResources@{calculateBelowgroundResources}!pyMANGA.TreeModelLib.BelowgroundCompetition.SimpleHydro.SimpleHydro.SimpleHydro@{pyMANGA.TreeModelLib.BelowgroundCompetition.SimpleHydro.SimpleHydro.SimpleHydro}}
+\doxysubsubsection{\texorpdfstring{calculateBelowgroundResources()}{calculateBelowgroundResources()}}
+{\footnotesize\ttfamily def py\+MANGA.\+Tree\+Model\+Lib.\+Belowground\+Competition.\+Simple\+Hydro.\+Simple\+Hydro.\+Simple\+Hydro.\+calculate\+Belowground\+Resources (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+This function returns a list of the growth reduction factors of all trees. 
+
+calculated in the subsequent timestep.~\newline
+ \begin{DoxyReturn}{Returns}
+\+: np.\+array with \$\+N\+\_\+tree\$ scalars 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classpyMANGA_1_1TreeModelLib_1_1BelowgroundCompetition_1_1SimpleHydro_1_1SimpleHydro_1_1SimpleHydro_a0d2ea2c861f29e9b32e0cd3b30f9c409}\label{classpyMANGA_1_1TreeModelLib_1_1BelowgroundCompetition_1_1SimpleHydro_1_1SimpleHydro_1_1SimpleHydro_a0d2ea2c861f29e9b32e0cd3b30f9c409}} 
+\index{pyMANGA.TreeModelLib.BelowgroundCompetition.SimpleHydro.SimpleHydro.SimpleHydro@{pyMANGA.TreeModelLib.BelowgroundCompetition.SimpleHydro.SimpleHydro.SimpleHydro}!makeGrid@{makeGrid}}
+\index{makeGrid@{makeGrid}!pyMANGA.TreeModelLib.BelowgroundCompetition.SimpleHydro.SimpleHydro.SimpleHydro@{pyMANGA.TreeModelLib.BelowgroundCompetition.SimpleHydro.SimpleHydro.SimpleHydro}}
+\doxysubsubsection{\texorpdfstring{makeGrid()}{makeGrid()}}
+{\footnotesize\ttfamily def py\+MANGA.\+Tree\+Model\+Lib.\+Belowground\+Competition.\+Simple\+Hydro.\+Simple\+Hydro.\+Simple\+Hydro.\+make\+Grid (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{args }\end{DoxyParamCaption})}
+
+
+
+This function initialises the mesh. 
+
+~\newline
+\mbox{\Hypertarget{classpyMANGA_1_1TreeModelLib_1_1BelowgroundCompetition_1_1SimpleHydro_1_1SimpleHydro_1_1SimpleHydro_a9c9471ee44767515c6b64b3a97afe3fe}\label{classpyMANGA_1_1TreeModelLib_1_1BelowgroundCompetition_1_1SimpleHydro_1_1SimpleHydro_1_1SimpleHydro_a9c9471ee44767515c6b64b3a97afe3fe}} 
+\index{pyMANGA.TreeModelLib.BelowgroundCompetition.SimpleHydro.SimpleHydro.SimpleHydro@{pyMANGA.TreeModelLib.BelowgroundCompetition.SimpleHydro.SimpleHydro.SimpleHydro}!prepareNextTimeStep@{prepareNextTimeStep}}
+\index{prepareNextTimeStep@{prepareNextTimeStep}!pyMANGA.TreeModelLib.BelowgroundCompetition.SimpleHydro.SimpleHydro.SimpleHydro@{pyMANGA.TreeModelLib.BelowgroundCompetition.SimpleHydro.SimpleHydro.SimpleHydro}}
+\doxysubsubsection{\texorpdfstring{prepareNextTimeStep()}{prepareNextTimeStep()}}
+{\footnotesize\ttfamily def py\+MANGA.\+Tree\+Model\+Lib.\+Belowground\+Competition.\+Simple\+Hydro.\+Simple\+Hydro.\+Simple\+Hydro.\+prepare\+Next\+Time\+Step (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{t\+\_\+ini,  }\item[{}]{t\+\_\+end }\end{DoxyParamCaption})}
+
+
+
+This functions prepares the tree variables for the \mbox{\hyperlink{classpyMANGA_1_1TreeModelLib_1_1BelowgroundCompetition_1_1SimpleHydro_1_1SimpleHydro_1_1SimpleHydro}{Simple\+Hydro}} concept. 
+
+~\newline
+
+\begin{DoxyParams}{Parameters}
+{\em t\+\_\+ini} & -\/ initial time for next timestep ~\newline
+\\
+\hline
+{\em t\+\_\+end} & -\/ end time for next timestep \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classpyMANGA_1_1TreeModelLib_1_1BelowgroundCompetition_1_1SimpleHydro_1_1SimpleHydro_1_1SimpleHydro_a5db5e1a666b7c4226875bb3a350a6240}\label{classpyMANGA_1_1TreeModelLib_1_1BelowgroundCompetition_1_1SimpleHydro_1_1SimpleHydro_1_1SimpleHydro_a5db5e1a666b7c4226875bb3a350a6240}} 
+\index{pyMANGA.TreeModelLib.BelowgroundCompetition.SimpleHydro.SimpleHydro.SimpleHydro@{pyMANGA.TreeModelLib.BelowgroundCompetition.SimpleHydro.SimpleHydro.SimpleHydro}!rootSurfaceResistance@{rootSurfaceResistance}}
+\index{rootSurfaceResistance@{rootSurfaceResistance}!pyMANGA.TreeModelLib.BelowgroundCompetition.SimpleHydro.SimpleHydro.SimpleHydro@{pyMANGA.TreeModelLib.BelowgroundCompetition.SimpleHydro.SimpleHydro.SimpleHydro}}
+\doxysubsubsection{\texorpdfstring{rootSurfaceResistance()}{rootSurfaceResistance()}}
+{\footnotesize\ttfamily def py\+MANGA.\+Tree\+Model\+Lib.\+Belowground\+Competition.\+Simple\+Hydro.\+Simple\+Hydro.\+Simple\+Hydro.\+root\+Surface\+Resistance (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{lp,  }\item[{}]{k\+\_\+geom,  }\item[{}]{r\+\_\+root,  }\item[{}]{h\+\_\+root }\end{DoxyParamCaption})}
+
+
+
+This function calculates the root surface resistance. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em lp} & lp value must exist in tree parameters \\
+\hline
+{\em k\+\_\+geom} & k\+\_\+geom value must exist in tree parameters \\
+\hline
+{\em r\+\_\+root} & r\+\_\+root value must exist in tree geometry \\
+\hline
+{\em h\+\_\+root} & h\+\_\+root value must exist in tree geometry \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classpyMANGA_1_1TreeModelLib_1_1BelowgroundCompetition_1_1SimpleHydro_1_1SimpleHydro_1_1SimpleHydro_af9b39fde663df460163e73422ddeb147}\label{classpyMANGA_1_1TreeModelLib_1_1BelowgroundCompetition_1_1SimpleHydro_1_1SimpleHydro_1_1SimpleHydro_af9b39fde663df460163e73422ddeb147}} 
+\index{pyMANGA.TreeModelLib.BelowgroundCompetition.SimpleHydro.SimpleHydro.SimpleHydro@{pyMANGA.TreeModelLib.BelowgroundCompetition.SimpleHydro.SimpleHydro.SimpleHydro}!transpire@{transpire}}
+\index{transpire@{transpire}!pyMANGA.TreeModelLib.BelowgroundCompetition.SimpleHydro.SimpleHydro.SimpleHydro@{pyMANGA.TreeModelLib.BelowgroundCompetition.SimpleHydro.SimpleHydro.SimpleHydro}}
+\doxysubsubsection{\texorpdfstring{transpire()}{transpire()}}
+{\footnotesize\ttfamily def py\+MANGA.\+Tree\+Model\+Lib.\+Belowground\+Competition.\+Simple\+Hydro.\+Simple\+Hydro.\+Simple\+Hydro.\+transpire (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+This function calculates the water balance of each grid cell. 
+
+Transpiration, dilution (tidal flooding), exchange between neighbouring grid cells and gradient flow is regarded for. \mbox{\Hypertarget{classpyMANGA_1_1TreeModelLib_1_1BelowgroundCompetition_1_1SimpleHydro_1_1SimpleHydro_1_1SimpleHydro_a4a6c95d9d38d6dcf29ce0ab340932fab}\label{classpyMANGA_1_1TreeModelLib_1_1BelowgroundCompetition_1_1SimpleHydro_1_1SimpleHydro_1_1SimpleHydro_a4a6c95d9d38d6dcf29ce0ab340932fab}} 
+\index{pyMANGA.TreeModelLib.BelowgroundCompetition.SimpleHydro.SimpleHydro.SimpleHydro@{pyMANGA.TreeModelLib.BelowgroundCompetition.SimpleHydro.SimpleHydro.SimpleHydro}!xylemResistance@{xylemResistance}}
+\index{xylemResistance@{xylemResistance}!pyMANGA.TreeModelLib.BelowgroundCompetition.SimpleHydro.SimpleHydro.SimpleHydro@{pyMANGA.TreeModelLib.BelowgroundCompetition.SimpleHydro.SimpleHydro.SimpleHydro}}
+\doxysubsubsection{\texorpdfstring{xylemResistance()}{xylemResistance()}}
+{\footnotesize\ttfamily def py\+MANGA.\+Tree\+Model\+Lib.\+Belowground\+Competition.\+Simple\+Hydro.\+Simple\+Hydro.\+Simple\+Hydro.\+xylem\+Resistance (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{r\+\_\+crown,  }\item[{}]{h\+\_\+stem,  }\item[{}]{r\+\_\+root,  }\item[{}]{kf\+\_\+sap,  }\item[{}]{r\+\_\+stem }\end{DoxyParamCaption})}
+
+
+
+This function calculates the root surface resistance. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em r\+\_\+crown} & r\+\_\+crown value must exist in tree geometry \\
+\hline
+{\em h\+\_\+stem} & r\+\_\+stem value must exist in tree geometry \\
+\hline
+{\em r\+\_\+root} & r\+\_\+root value must exist in tree geometry \\
+\hline
+{\em kf\+\_\+sap} & kf\+\_\+sap value must exist in tree parameters \\
+\hline
+{\em r\+\_\+stem} & r\+\_\+stem value must exist in tree geometry \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classpyMANGA_1_1TreeModelLib_1_1BelowgroundCompetition_1_1SimpleHydro_1_1SimpleHydro_1_1SimpleHydro_a64c3fcb714bca9f51638fb02c117219b}\label{classpyMANGA_1_1TreeModelLib_1_1BelowgroundCompetition_1_1SimpleHydro_1_1SimpleHydro_1_1SimpleHydro_a64c3fcb714bca9f51638fb02c117219b}} 
+\index{pyMANGA.TreeModelLib.BelowgroundCompetition.SimpleHydro.SimpleHydro.SimpleHydro@{pyMANGA.TreeModelLib.BelowgroundCompetition.SimpleHydro.SimpleHydro.SimpleHydro}!salinity@{salinity}}
+\index{salinity@{salinity}!pyMANGA.TreeModelLib.BelowgroundCompetition.SimpleHydro.SimpleHydro.SimpleHydro@{pyMANGA.TreeModelLib.BelowgroundCompetition.SimpleHydro.SimpleHydro.SimpleHydro}}
+\doxysubsubsection{\texorpdfstring{salinity}{salinity}}
+{\footnotesize\ttfamily py\+MANGA.\+Tree\+Model\+Lib.\+Belowground\+Competition.\+Simple\+Hydro.\+Simple\+Hydro.\+Simple\+Hydro.\+salinity}
+
+
+
+dilution the fraction of diluted water gets replaced with sea water 
+
+gradient-\/flow hilldown
+
+diffusion keep water that is not diffusing to neighbouring cells
+
+distribute a quarter of the diffused water to the neighbours or keep it, if at the edge diff in x-\/dir 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Tree\+Model\+Lib/\+Belowground\+Competition/\+Simple\+Hydro/Simple\+Hydro.\+py\end{DoxyCompactItemize}

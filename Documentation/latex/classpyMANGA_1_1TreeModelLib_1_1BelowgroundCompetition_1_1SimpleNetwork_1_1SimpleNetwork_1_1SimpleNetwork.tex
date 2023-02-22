@@ -1,0 +1,500 @@
+\hypertarget{classpyMANGA_1_1TreeModelLib_1_1BelowgroundCompetition_1_1SimpleNetwork_1_1SimpleNetwork_1_1SimpleNetwork}{}\doxysection{py\+MANGA.\+Tree\+Model\+Lib.\+Belowground\+Competition.\+Simple\+Network.\+Simple\+Network.\+Simple\+Network Class Reference}
+\label{classpyMANGA_1_1TreeModelLib_1_1BelowgroundCompetition_1_1SimpleNetwork_1_1SimpleNetwork_1_1SimpleNetwork}\index{pyMANGA.TreeModelLib.BelowgroundCompetition.SimpleNetwork.SimpleNetwork.SimpleNetwork@{pyMANGA.TreeModelLib.BelowgroundCompetition.SimpleNetwork.SimpleNetwork.SimpleNetwork}}
+Inheritance diagram for py\+MANGA.\+Tree\+Model\+Lib.\+Belowground\+Competition.\+Simple\+Network.\+Simple\+Network.\+Simple\+Network\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.975309cm]{classpyMANGA_1_1TreeModelLib_1_1BelowgroundCompetition_1_1SimpleNetwork_1_1SimpleNetwork_1_1SimpleNetwork}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classpyMANGA_1_1TreeModelLib_1_1BelowgroundCompetition_1_1SimpleNetwork_1_1SimpleNetwork_1_1SimpleNetwork_a1de2e8957271989cd1aba5c1708c3d44}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, args)
+\begin{DoxyCompactList}\small\item\em BASIC \#. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classpyMANGA_1_1TreeModelLib_1_1BelowgroundCompetition_1_1SimpleNetwork_1_1SimpleNetwork_1_1SimpleNetwork_a9abe3b551040f92476313664bbb2940b}{prepare\+Next\+Time\+Step}} (self, t\+\_\+ini, t\+\_\+end)
+\begin{DoxyCompactList}\small\item\em This functions prepares the tree variables for the Network\+Hydro concept. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classpyMANGA_1_1TreeModelLib_1_1BelowgroundCompetition_1_1SimpleNetwork_1_1SimpleNetwork_1_1SimpleNetwork_ac9b4fa3b2446dd64c0209b153e236ef7}{add\+Tree}} (self, tree)
+\begin{DoxyCompactList}\small\item\em Before being able to calculate the resources, all tree entities need to be added with their relevant allometric measures for the next timestep. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classpyMANGA_1_1TreeModelLib_1_1BelowgroundCompetition_1_1SimpleNetwork_1_1SimpleNetwork_1_1SimpleNetwork_a9d691db9628280f0a770a1ac9977cc46}\label{classpyMANGA_1_1TreeModelLib_1_1BelowgroundCompetition_1_1SimpleNetwork_1_1SimpleNetwork_1_1SimpleNetwork_a9d691db9628280f0a770a1ac9977cc46}} 
+def \mbox{\hyperlink{classpyMANGA_1_1TreeModelLib_1_1BelowgroundCompetition_1_1SimpleNetwork_1_1SimpleNetwork_1_1SimpleNetwork_a9d691db9628280f0a770a1ac9977cc46}{add\+Psi\+Osmo}} (self)
+\begin{DoxyCompactList}\small\item\em This function creates a (dummy) array to be filled with values of osmotic potential. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classpyMANGA_1_1TreeModelLib_1_1BelowgroundCompetition_1_1SimpleNetwork_1_1SimpleNetwork_1_1SimpleNetwork_a85b159739a1ca0fda6d0caeefe51a567}{calculate\+Belowground\+Resources}} (self)
+\begin{DoxyCompactList}\small\item\em This function returns a list of the growth modification factors of all trees. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classpyMANGA_1_1TreeModelLib_1_1BelowgroundCompetition_1_1SimpleNetwork_1_1SimpleNetwork_1_1SimpleNetwork_ae73dd4a858cbbfd4caed8f3798c139bf}{get\+BGfactor}} (self)
+\begin{DoxyCompactList}\small\item\em This function calculates the below-\/ground resource factor, that is the fraction of water available in base water uptake (i.\+e. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classpyMANGA_1_1TreeModelLib_1_1BelowgroundCompetition_1_1SimpleNetwork_1_1SimpleNetwork_1_1SimpleNetwork_a36017d847c019ff021a1a8d18af2e2d1}\label{classpyMANGA_1_1TreeModelLib_1_1BelowgroundCompetition_1_1SimpleNetwork_1_1SimpleNetwork_1_1SimpleNetwork_a36017d847c019ff021a1a8d18af2e2d1}} 
+def \mbox{\hyperlink{classpyMANGA_1_1TreeModelLib_1_1BelowgroundCompetition_1_1SimpleNetwork_1_1SimpleNetwork_1_1SimpleNetwork_a36017d847c019ff021a1a8d18af2e2d1}{update\+Network\+Parameters\+For\+Growth\+And\+Death}} (self)
+\begin{DoxyCompactList}\small\item\em This function updates the network parameters that are required in the growth-\/and death concept Network\+Bettina. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classpyMANGA_1_1TreeModelLib_1_1BelowgroundCompetition_1_1SimpleNetwork_1_1SimpleNetwork_1_1SimpleNetwork_a1daca4e40c3402b1842fb5ea07558397}{get\+Input\+Parameters}} (self, args)
+\begin{DoxyCompactList}\small\item\em This function reads input parameters, i.\+e. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classpyMANGA_1_1TreeModelLib_1_1BelowgroundCompetition_1_1SimpleNetwork_1_1SimpleNetwork_1_1SimpleNetwork_a6726e9ac91d94cc07b7c50cba07d26f8}\label{classpyMANGA_1_1TreeModelLib_1_1BelowgroundCompetition_1_1SimpleNetwork_1_1SimpleNetwork_1_1SimpleNetwork_a6726e9ac91d94cc07b7c50cba07d26f8}} 
+def \mbox{\hyperlink{classpyMANGA_1_1TreeModelLib_1_1BelowgroundCompetition_1_1SimpleNetwork_1_1SimpleNetwork_1_1SimpleNetwork_a6726e9ac91d94cc07b7c50cba07d26f8}{updated\+Partner\+Names}} (self)
+\begin{DoxyCompactList}\small\item\em This function removes trees from partner list if they died in the previous time step. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classpyMANGA_1_1TreeModelLib_1_1BelowgroundCompetition_1_1SimpleNetwork_1_1SimpleNetwork_1_1SimpleNetwork_a1f36bf432769fc0c9555821380352846}\label{classpyMANGA_1_1TreeModelLib_1_1BelowgroundCompetition_1_1SimpleNetwork_1_1SimpleNetwork_1_1SimpleNetwork_a1f36bf432769fc0c9555821380352846}} 
+def \mbox{\hyperlink{classpyMANGA_1_1TreeModelLib_1_1BelowgroundCompetition_1_1SimpleNetwork_1_1SimpleNetwork_1_1SimpleNetwork_a1f36bf432769fc0c9555821380352846}{updated\+Potential\+Partner\+Names}} (self)
+\begin{DoxyCompactList}\small\item\em This function removes trees from potential partners list if they died in the previous time step. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classpyMANGA_1_1TreeModelLib_1_1BelowgroundCompetition_1_1SimpleNetwork_1_1SimpleNetwork_1_1SimpleNetwork_ae87511e2d3640e7f4205268b4c7838d5}\label{classpyMANGA_1_1TreeModelLib_1_1BelowgroundCompetition_1_1SimpleNetwork_1_1SimpleNetwork_1_1SimpleNetwork_ae87511e2d3640e7f4205268b4c7838d5}} 
+def \mbox{\hyperlink{classpyMANGA_1_1TreeModelLib_1_1BelowgroundCompetition_1_1SimpleNetwork_1_1SimpleNetwork_1_1SimpleNetwork_ae87511e2d3640e7f4205268b4c7838d5}{update\+Partner\+Idices}} (self)
+\begin{DoxyCompactList}\small\item\em This function gets the current indices of partners from their names. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classpyMANGA_1_1TreeModelLib_1_1BelowgroundCompetition_1_1SimpleNetwork_1_1SimpleNetwork_1_1SimpleNetwork_ad1fbde18cf3b82ac1e4869a089014f2d}\label{classpyMANGA_1_1TreeModelLib_1_1BelowgroundCompetition_1_1SimpleNetwork_1_1SimpleNetwork_1_1SimpleNetwork_ad1fbde18cf3b82ac1e4869a089014f2d}} 
+def \mbox{\hyperlink{classpyMANGA_1_1TreeModelLib_1_1BelowgroundCompetition_1_1SimpleNetwork_1_1SimpleNetwork_1_1SimpleNetwork_ad1fbde18cf3b82ac1e4869a089014f2d}{set\+Key\+Dictionary}} (self, dictionary, key, value)
+\begin{DoxyCompactList}\small\item\em Function that adds keys and values to dictionary. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classpyMANGA_1_1TreeModelLib_1_1BelowgroundCompetition_1_1SimpleNetwork_1_1SimpleNetwork_1_1SimpleNetwork_a7928ac26149c9fa750ce1e44874e66ae}{make\+Graph\+Dictionary}} (self)
+\begin{DoxyCompactList}\small\item\em Function that makes a graph dictionary only with functional grafts, i.\+e. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classpyMANGA_1_1TreeModelLib_1_1BelowgroundCompetition_1_1SimpleNetwork_1_1SimpleNetwork_1_1SimpleNetwork_aaf1f0c30971982c606b41323b3ef1a3f}{get\+Components}} (self, graph\+\_\+dictionary)
+\begin{DoxyCompactList}\small\item\em This function finds all subcomponents of a graph, i.\+e. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classpyMANGA_1_1TreeModelLib_1_1BelowgroundCompetition_1_1SimpleNetwork_1_1SimpleNetwork_1_1SimpleNetwork_a1151f8a8fe86eaba8c395e4d644ec881}\label{classpyMANGA_1_1TreeModelLib_1_1BelowgroundCompetition_1_1SimpleNetwork_1_1SimpleNetwork_1_1SimpleNetwork_a1151f8a8fe86eaba8c395e4d644ec881}} 
+def \mbox{\hyperlink{classpyMANGA_1_1TreeModelLib_1_1BelowgroundCompetition_1_1SimpleNetwork_1_1SimpleNetwork_1_1SimpleNetwork_a1151f8a8fe86eaba8c395e4d644ec881}{assign\+Group\+IDs}} (self)
+\begin{DoxyCompactList}\small\item\em This function assigns unique component/ group IDs based on the graph dictionary. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classpyMANGA_1_1TreeModelLib_1_1BelowgroundCompetition_1_1SimpleNetwork_1_1SimpleNetwork_1_1SimpleNetwork_aa265ef65f93db697dfc46f702be4a794}\label{classpyMANGA_1_1TreeModelLib_1_1BelowgroundCompetition_1_1SimpleNetwork_1_1SimpleNetwork_1_1SimpleNetwork_aa265ef65f93db697dfc46f702be4a794}} 
+def \mbox{\hyperlink{classpyMANGA_1_1TreeModelLib_1_1BelowgroundCompetition_1_1SimpleNetwork_1_1SimpleNetwork_1_1SimpleNetwork_aa265ef65f93db697dfc46f702be4a794}{group\+Formation}} (self)
+\begin{DoxyCompactList}\small\item\em This function calls all the sub-\/functions to get the current groups and their unique IDs. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classpyMANGA_1_1TreeModelLib_1_1BelowgroundCompetition_1_1SimpleNetwork_1_1SimpleNetwork_1_1SimpleNetwork_aa800d96363b92c87750a1072cc8f0484}{get\+Distance}} (self, x1, x2, y1, y2)
+\begin{DoxyCompactList}\small\item\em This function calculates the distance between two trees in meter. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classpyMANGA_1_1TreeModelLib_1_1BelowgroundCompetition_1_1SimpleNetwork_1_1SimpleNetwork_1_1SimpleNetwork_a97d269c013b9d497369dfdca384bc154}{get\+Contact\+Matrix}} (self)
+\begin{DoxyCompactList}\small\item\em This function returns a matrix indicating whether roots of trees are in contact or not. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classpyMANGA_1_1TreeModelLib_1_1BelowgroundCompetition_1_1SimpleNetwork_1_1SimpleNetwork_1_1SimpleNetwork_ac02c5ade7d80824686398b706054c932}{get\+Pairs\+From\+Matrix}} (self, contact\+\_\+matrix)
+\begin{DoxyCompactList}\small\item\em Function that returns an array with pairs based on the contact matrix. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classpyMANGA_1_1TreeModelLib_1_1BelowgroundCompetition_1_1SimpleNetwork_1_1SimpleNetwork_1_1SimpleNetwork_a4941b689b70e7535b334b5cdc48f351b}{check\+Rgf\+Ability}} (self, pair)
+\begin{DoxyCompactList}\small\item\em Function to check if a pair of trees fullfiles all the conditions to start root graft formation. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classpyMANGA_1_1TreeModelLib_1_1BelowgroundCompetition_1_1SimpleNetwork_1_1SimpleNetwork_1_1SimpleNetwork_a02f0930d5576c09d8d7a070f90db4b6d}{get\+RGFfor\+Growth\+And\+Death}} (self, pairs)
+\begin{DoxyCompactList}\small\item\em Function that modifies the tree-\/own vairable \textquotesingle{}rgf\+\_\+counter\textquotesingle{}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classpyMANGA_1_1TreeModelLib_1_1BelowgroundCompetition_1_1SimpleNetwork_1_1SimpleNetwork_1_1SimpleNetwork_ac5f43ebb53d24fc5c8e41ffb3c09b12b}\label{classpyMANGA_1_1TreeModelLib_1_1BelowgroundCompetition_1_1SimpleNetwork_1_1SimpleNetwork_1_1SimpleNetwork_ac5f43ebb53d24fc5c8e41ffb3c09b12b}} 
+def \mbox{\hyperlink{classpyMANGA_1_1TreeModelLib_1_1BelowgroundCompetition_1_1SimpleNetwork_1_1SimpleNetwork_1_1SimpleNetwork_ac5f43ebb53d24fc5c8e41ffb3c09b12b}{root\+Graft\+Formation}} (self)
+\begin{DoxyCompactList}\small\item\em Function that calls all the sub procedures to initialize root graft formation. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classpyMANGA_1_1TreeModelLib_1_1BelowgroundCompetition_1_1SimpleNetwork_1_1SimpleNetwork_1_1SimpleNetwork_ae65f2bfd730043c09edb5712bc4103ab}{below\+Graft\+Resistance}} (self, lp, k\+\_\+geom, kf\+\_\+sap, r\+\_\+root, h\+\_\+root, r\+\_\+stem)
+\begin{DoxyCompactList}\small\item\em Function that calculates the below-\/graft resistance (i.\+e. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classpyMANGA_1_1TreeModelLib_1_1BelowgroundCompetition_1_1SimpleNetwork_1_1SimpleNetwork_1_1SimpleNetwork_a2b03220876ee46c46777933fa092b094}{above\+Graft\+Resistance}} (self, kf\+\_\+sap, r\+\_\+crown, h\+\_\+stem, r\+\_\+stem)
+\begin{DoxyCompactList}\small\item\em Function that calculates the above-\/graft resistance (i.\+e. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classpyMANGA_1_1TreeModelLib_1_1BelowgroundCompetition_1_1SimpleNetwork_1_1SimpleNetwork_1_1SimpleNetwork_ac4007074f71f4adbc32943314aac7a93}{get\+Graft\+Resistance}} (self, distance, r\+\_\+graft, kf\+\_\+sap)
+\begin{DoxyCompactList}\small\item\em Function that calculates the xylem resistance in the grafted roots. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classpyMANGA_1_1TreeModelLib_1_1BelowgroundCompetition_1_1SimpleNetwork_1_1SimpleNetwork_1_1SimpleNetwork_a4c8d78a9fe7356d4864ea5c00ca4d13e}{get\+My\+Links}} (self, link\+\_\+list, tree)
+\begin{DoxyCompactList}\small\item\em Function that returns an array with the links of a specific tree. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classpyMANGA_1_1TreeModelLib_1_1BelowgroundCompetition_1_1SimpleNetwork_1_1SimpleNetwork_1_1SimpleNetwork_ad812847a44538828a85d4d008bb068b1}{get\+Link\+List}} (self, \mbox{\hyperlink{classpyMANGA_1_1TreeModelLib_1_1BelowgroundCompetition_1_1SimpleNetwork_1_1SimpleNetwork_1_1SimpleNetwork_ace908199b49d1db2549692aafafd71c2}{graph\+\_\+dict}})
+\begin{DoxyCompactList}\small\item\em Function that creates a 2d array with links (from, to) based of graph-\/dictionary. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classpyMANGA_1_1TreeModelLib_1_1BelowgroundCompetition_1_1SimpleNetwork_1_1SimpleNetwork_1_1SimpleNetwork_abdb0af4a4e790b4088006de62045f69f}{get\+BGresources\+Matrix\+Group}} (self, members, link\+\_\+list)
+\begin{DoxyCompactList}\small\item\em Function that creates the matrix to calculate below-\/ground resources for each group of grafted trees. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classpyMANGA_1_1TreeModelLib_1_1BelowgroundCompetition_1_1SimpleNetwork_1_1SimpleNetwork_1_1SimpleNetwork_a92c431d839212d67d13ff1289778e312}{get\+BGresources\+Individual}} (self, psi\+\_\+top, psi\+\_\+osmo, ag\+\_\+resistance, bg\+\_\+resistance)
+\begin{DoxyCompactList}\small\item\em Function that calculates water uptake of an individual tree in m³ per time step, see Simple\+Bettina. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classpyMANGA_1_1TreeModelLib_1_1BelowgroundCompetition_1_1SimpleNetwork_1_1SimpleNetwork_1_1SimpleNetwork_a2faa5ac042906e6bd9c937f70d748c84}{calculate\+BGresources\+Group}} (self, members, link\+\_\+list\+\_\+group)
+\begin{DoxyCompactList}\small\item\em Function that calculates water absorbed, water available and water exchanged for all trees of a group. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classpyMANGA_1_1TreeModelLib_1_1BelowgroundCompetition_1_1SimpleNetwork_1_1SimpleNetwork_1_1SimpleNetwork_a666eb2cb260d3cc5ecc90cdaf06e89bb}{calculate\+BGresources\+Tree}} (self)
+\begin{DoxyCompactList}\small\item\em Function that calculates water absorbed, available and exchanged for all trees. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpyMANGA_1_1TreeModelLib_1_1BelowgroundCompetition_1_1SimpleNetwork_1_1SimpleNetwork_1_1SimpleNetwork_a8d14d6de1899fe0492f6baad9f3cf855}\label{classpyMANGA_1_1TreeModelLib_1_1BelowgroundCompetition_1_1SimpleNetwork_1_1SimpleNetwork_1_1SimpleNetwork_a8d14d6de1899fe0492f6baad9f3cf855}} 
+{\bfseries trees}
+\item 
+\mbox{\Hypertarget{classpyMANGA_1_1TreeModelLib_1_1BelowgroundCompetition_1_1SimpleNetwork_1_1SimpleNetwork_1_1SimpleNetwork_ac6e4ed3f8f412094a0ba1a748732cf1c}\label{classpyMANGA_1_1TreeModelLib_1_1BelowgroundCompetition_1_1SimpleNetwork_1_1SimpleNetwork_1_1SimpleNetwork_ac6e4ed3f8f412094a0ba1a748732cf1c}} 
+{\bfseries belowground\+\_\+resources}
+\item 
+\mbox{\Hypertarget{classpyMANGA_1_1TreeModelLib_1_1BelowgroundCompetition_1_1SimpleNetwork_1_1SimpleNetwork_1_1SimpleNetwork_abf26738e5dbfc25a80529f781216fa4e}\label{classpyMANGA_1_1TreeModelLib_1_1BelowgroundCompetition_1_1SimpleNetwork_1_1SimpleNetwork_1_1SimpleNetwork_abf26738e5dbfc25a80529f781216fa4e}} 
+{\bfseries time}
+\item 
+\mbox{\hyperlink{classpyMANGA_1_1TreeModelLib_1_1BelowgroundCompetition_1_1SimpleNetwork_1_1SimpleNetwork_1_1SimpleNetwork_ace908199b49d1db2549692aafafd71c2}{graph\+\_\+dict}}
+\begin{DoxyCompactList}\small\item\em Dictionary that represents the network of grafted trees (= nodes). \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classpyMANGA_1_1TreeModelLib_1_1BelowgroundCompetition_1_1SimpleNetwork_1_1SimpleNetwork_1_1SimpleNetwork_a76f1e78b5e91b31f7a767bf516e2376f}\label{classpyMANGA_1_1TreeModelLib_1_1BelowgroundCompetition_1_1SimpleNetwork_1_1SimpleNetwork_1_1SimpleNetwork_a76f1e78b5e91b31f7a767bf516e2376f}} 
+{\bfseries network}
+\item 
+\mbox{\Hypertarget{classpyMANGA_1_1TreeModelLib_1_1BelowgroundCompetition_1_1SimpleNetwork_1_1SimpleNetwork_1_1SimpleNetwork_a50455c822b8423e95ef7fe1e7c409e4c}\label{classpyMANGA_1_1TreeModelLib_1_1BelowgroundCompetition_1_1SimpleNetwork_1_1SimpleNetwork_1_1SimpleNetwork_a50455c822b8423e95ef7fe1e7c409e4c}} 
+{\bfseries no\+\_\+trees}
+\item 
+\mbox{\Hypertarget{classpyMANGA_1_1TreeModelLib_1_1BelowgroundCompetition_1_1SimpleNetwork_1_1SimpleNetwork_1_1SimpleNetwork_a4c79eb9bc91c672ff2cc815c0ac01549}\label{classpyMANGA_1_1TreeModelLib_1_1BelowgroundCompetition_1_1SimpleNetwork_1_1SimpleNetwork_1_1SimpleNetwork_a4c79eb9bc91c672ff2cc815c0ac01549}} 
+{\bfseries f\+\_\+radius}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classpyMANGA_1_1TreeModelLib_1_1BelowgroundCompetition_1_1SimpleNetwork_1_1SimpleNetwork_1_1SimpleNetwork_a1de2e8957271989cd1aba5c1708c3d44}\label{classpyMANGA_1_1TreeModelLib_1_1BelowgroundCompetition_1_1SimpleNetwork_1_1SimpleNetwork_1_1SimpleNetwork_a1de2e8957271989cd1aba5c1708c3d44}} 
+\index{pyMANGA.TreeModelLib.BelowgroundCompetition.SimpleNetwork.SimpleNetwork.SimpleNetwork@{pyMANGA.TreeModelLib.BelowgroundCompetition.SimpleNetwork.SimpleNetwork.SimpleNetwork}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!pyMANGA.TreeModelLib.BelowgroundCompetition.SimpleNetwork.SimpleNetwork.SimpleNetwork@{pyMANGA.TreeModelLib.BelowgroundCompetition.SimpleNetwork.SimpleNetwork.SimpleNetwork}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def py\+MANGA.\+Tree\+Model\+Lib.\+Belowground\+Competition.\+Simple\+Network.\+Simple\+Network.\+Simple\+Network.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{args }\end{DoxyParamCaption})}
+
+
+
+BASIC \#. 
+
+Network approach to alter, i.\+e. increase or decrease, water availability due to water exchange with other trees (root grafting). Processes are partner selection, group formation and water exchange.~\newline
+
+\begin{DoxyParams}{Parameters}
+{\em } & Tags to define \mbox{\hyperlink{classpyMANGA_1_1TreeModelLib_1_1BelowgroundCompetition_1_1SimpleNetwork_1_1SimpleNetwork_1_1SimpleNetwork}{Simple\+Network}}, see tag documentation ~\newline
+ \\
+\hline
+\end{DoxyParams}
+\begin{DoxyDate}{Date}
+\+: 2021 -\/ Today 
+\end{DoxyDate}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classpyMANGA_1_1TreeModelLib_1_1BelowgroundCompetition_1_1SimpleNetwork_1_1SimpleNetwork_1_1SimpleNetwork_a2b03220876ee46c46777933fa092b094}\label{classpyMANGA_1_1TreeModelLib_1_1BelowgroundCompetition_1_1SimpleNetwork_1_1SimpleNetwork_1_1SimpleNetwork_a2b03220876ee46c46777933fa092b094}} 
+\index{pyMANGA.TreeModelLib.BelowgroundCompetition.SimpleNetwork.SimpleNetwork.SimpleNetwork@{pyMANGA.TreeModelLib.BelowgroundCompetition.SimpleNetwork.SimpleNetwork.SimpleNetwork}!aboveGraftResistance@{aboveGraftResistance}}
+\index{aboveGraftResistance@{aboveGraftResistance}!pyMANGA.TreeModelLib.BelowgroundCompetition.SimpleNetwork.SimpleNetwork.SimpleNetwork@{pyMANGA.TreeModelLib.BelowgroundCompetition.SimpleNetwork.SimpleNetwork.SimpleNetwork}}
+\doxysubsubsection{\texorpdfstring{aboveGraftResistance()}{aboveGraftResistance()}}
+{\footnotesize\ttfamily def py\+MANGA.\+Tree\+Model\+Lib.\+Belowground\+Competition.\+Simple\+Network.\+Simple\+Network.\+Simple\+Network.\+above\+Graft\+Resistance (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{kf\+\_\+sap,  }\item[{}]{r\+\_\+crown,  }\item[{}]{h\+\_\+stem,  }\item[{}]{r\+\_\+stem }\end{DoxyParamCaption})}
+
+
+
+Function that calculates the above-\/graft resistance (i.\+e. 
+
+stem and crown xylem resistance). \begin{DoxyReturn}{Returns}
+a scalar 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em kf\+\_\+sap} & -\/ hydraulic conductivity of xylem \\
+\hline
+{\em r\+\_\+crown} & -\/ crown radius \\
+\hline
+{\em h\+\_\+stem} & -\/ stem height \\
+\hline
+{\em r\+\_\+stem} & -\/ stem radius \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classpyMANGA_1_1TreeModelLib_1_1BelowgroundCompetition_1_1SimpleNetwork_1_1SimpleNetwork_1_1SimpleNetwork_ac9b4fa3b2446dd64c0209b153e236ef7}\label{classpyMANGA_1_1TreeModelLib_1_1BelowgroundCompetition_1_1SimpleNetwork_1_1SimpleNetwork_1_1SimpleNetwork_ac9b4fa3b2446dd64c0209b153e236ef7}} 
+\index{pyMANGA.TreeModelLib.BelowgroundCompetition.SimpleNetwork.SimpleNetwork.SimpleNetwork@{pyMANGA.TreeModelLib.BelowgroundCompetition.SimpleNetwork.SimpleNetwork.SimpleNetwork}!addTree@{addTree}}
+\index{addTree@{addTree}!pyMANGA.TreeModelLib.BelowgroundCompetition.SimpleNetwork.SimpleNetwork.SimpleNetwork@{pyMANGA.TreeModelLib.BelowgroundCompetition.SimpleNetwork.SimpleNetwork.SimpleNetwork}}
+\doxysubsubsection{\texorpdfstring{addTree()}{addTree()}}
+{\footnotesize\ttfamily def py\+MANGA.\+Tree\+Model\+Lib.\+Belowground\+Competition.\+Simple\+Network.\+Simple\+Network.\+Simple\+Network.\+add\+Tree (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{tree }\end{DoxyParamCaption})}
+
+
+
+Before being able to calculate the resources, all tree entities need to be added with their relevant allometric measures for the next timestep. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em } & tree \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classpyMANGA_1_1TreeModelLib_1_1BelowgroundCompetition_1_1SimpleNetwork_1_1SimpleNetwork_1_1SimpleNetwork_ae65f2bfd730043c09edb5712bc4103ab}\label{classpyMANGA_1_1TreeModelLib_1_1BelowgroundCompetition_1_1SimpleNetwork_1_1SimpleNetwork_1_1SimpleNetwork_ae65f2bfd730043c09edb5712bc4103ab}} 
+\index{pyMANGA.TreeModelLib.BelowgroundCompetition.SimpleNetwork.SimpleNetwork.SimpleNetwork@{pyMANGA.TreeModelLib.BelowgroundCompetition.SimpleNetwork.SimpleNetwork.SimpleNetwork}!belowGraftResistance@{belowGraftResistance}}
+\index{belowGraftResistance@{belowGraftResistance}!pyMANGA.TreeModelLib.BelowgroundCompetition.SimpleNetwork.SimpleNetwork.SimpleNetwork@{pyMANGA.TreeModelLib.BelowgroundCompetition.SimpleNetwork.SimpleNetwork.SimpleNetwork}}
+\doxysubsubsection{\texorpdfstring{belowGraftResistance()}{belowGraftResistance()}}
+{\footnotesize\ttfamily def py\+MANGA.\+Tree\+Model\+Lib.\+Belowground\+Competition.\+Simple\+Network.\+Simple\+Network.\+Simple\+Network.\+below\+Graft\+Resistance (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{lp,  }\item[{}]{k\+\_\+geom,  }\item[{}]{kf\+\_\+sap,  }\item[{}]{r\+\_\+root,  }\item[{}]{h\+\_\+root,  }\item[{}]{r\+\_\+stem }\end{DoxyParamCaption})}
+
+
+
+Function that calculates the below-\/graft resistance (i.\+e. 
+
+stem and crown xylem resistance). \begin{DoxyReturn}{Returns}
+a scalar 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em lp} & -\/ hydraulic conductivity of root skin \\
+\hline
+{\em k\+\_\+geom} & -\/ root surface per fine root biomass \\
+\hline
+{\em kf\+\_\+sap} & -\/ hydraulic conductivity of xylem \\
+\hline
+{\em r\+\_\+root} & -\/ root radius \\
+\hline
+{\em h\+\_\+root} & -\/ height of fine roots \\
+\hline
+{\em r\+\_\+stem} & -\/ stem radius \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classpyMANGA_1_1TreeModelLib_1_1BelowgroundCompetition_1_1SimpleNetwork_1_1SimpleNetwork_1_1SimpleNetwork_a85b159739a1ca0fda6d0caeefe51a567}\label{classpyMANGA_1_1TreeModelLib_1_1BelowgroundCompetition_1_1SimpleNetwork_1_1SimpleNetwork_1_1SimpleNetwork_a85b159739a1ca0fda6d0caeefe51a567}} 
+\index{pyMANGA.TreeModelLib.BelowgroundCompetition.SimpleNetwork.SimpleNetwork.SimpleNetwork@{pyMANGA.TreeModelLib.BelowgroundCompetition.SimpleNetwork.SimpleNetwork.SimpleNetwork}!calculateBelowgroundResources@{calculateBelowgroundResources}}
+\index{calculateBelowgroundResources@{calculateBelowgroundResources}!pyMANGA.TreeModelLib.BelowgroundCompetition.SimpleNetwork.SimpleNetwork.SimpleNetwork@{pyMANGA.TreeModelLib.BelowgroundCompetition.SimpleNetwork.SimpleNetwork.SimpleNetwork}}
+\doxysubsubsection{\texorpdfstring{calculateBelowgroundResources()}{calculateBelowgroundResources()}}
+{\footnotesize\ttfamily def py\+MANGA.\+Tree\+Model\+Lib.\+Belowground\+Competition.\+Simple\+Network.\+Simple\+Network.\+Simple\+Network.\+calculate\+Belowground\+Resources (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+This function returns a list of the growth modification factors of all trees. 
+
+Calculated in the subsequent timestep.~\newline
+ The factor is $>$ 1, if trees receive water from their adjacent trees; $<$ 1 if the lose water to the adjacent tree; or = 1 if no exchange happens \begin{DoxyReturn}{Returns}
+\+: np.\+array with \$\+N\+\_\+tree\$ scalars 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classpyMANGA_1_1TreeModelLib_1_1BelowgroundCompetition_1_1SimpleNetwork_1_1SimpleNetwork_1_1SimpleNetwork_a2faa5ac042906e6bd9c937f70d748c84}\label{classpyMANGA_1_1TreeModelLib_1_1BelowgroundCompetition_1_1SimpleNetwork_1_1SimpleNetwork_1_1SimpleNetwork_a2faa5ac042906e6bd9c937f70d748c84}} 
+\index{pyMANGA.TreeModelLib.BelowgroundCompetition.SimpleNetwork.SimpleNetwork.SimpleNetwork@{pyMANGA.TreeModelLib.BelowgroundCompetition.SimpleNetwork.SimpleNetwork.SimpleNetwork}!calculateBGresourcesGroup@{calculateBGresourcesGroup}}
+\index{calculateBGresourcesGroup@{calculateBGresourcesGroup}!pyMANGA.TreeModelLib.BelowgroundCompetition.SimpleNetwork.SimpleNetwork.SimpleNetwork@{pyMANGA.TreeModelLib.BelowgroundCompetition.SimpleNetwork.SimpleNetwork.SimpleNetwork}}
+\doxysubsubsection{\texorpdfstring{calculateBGresourcesGroup()}{calculateBGresourcesGroup()}}
+{\footnotesize\ttfamily def py\+MANGA.\+Tree\+Model\+Lib.\+Belowground\+Competition.\+Simple\+Network.\+Simple\+Network.\+Simple\+Network.\+calculate\+BGresources\+Group (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{members,  }\item[{}]{link\+\_\+list\+\_\+group }\end{DoxyParamCaption})}
+
+
+
+Function that calculates water absorbed, water available and water exchanged for all trees of a group. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em members} & -\/ list with indexes of group members \\
+\hline
+{\em link\+\_\+list\+\_\+group} & -\/ list with connected trees of group (format\+: from, to) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classpyMANGA_1_1TreeModelLib_1_1BelowgroundCompetition_1_1SimpleNetwork_1_1SimpleNetwork_1_1SimpleNetwork_a666eb2cb260d3cc5ecc90cdaf06e89bb}\label{classpyMANGA_1_1TreeModelLib_1_1BelowgroundCompetition_1_1SimpleNetwork_1_1SimpleNetwork_1_1SimpleNetwork_a666eb2cb260d3cc5ecc90cdaf06e89bb}} 
+\index{pyMANGA.TreeModelLib.BelowgroundCompetition.SimpleNetwork.SimpleNetwork.SimpleNetwork@{pyMANGA.TreeModelLib.BelowgroundCompetition.SimpleNetwork.SimpleNetwork.SimpleNetwork}!calculateBGresourcesTree@{calculateBGresourcesTree}}
+\index{calculateBGresourcesTree@{calculateBGresourcesTree}!pyMANGA.TreeModelLib.BelowgroundCompetition.SimpleNetwork.SimpleNetwork.SimpleNetwork@{pyMANGA.TreeModelLib.BelowgroundCompetition.SimpleNetwork.SimpleNetwork.SimpleNetwork}}
+\doxysubsubsection{\texorpdfstring{calculateBGresourcesTree()}{calculateBGresourcesTree()}}
+{\footnotesize\ttfamily def py\+MANGA.\+Tree\+Model\+Lib.\+Belowground\+Competition.\+Simple\+Network.\+Simple\+Network.\+Simple\+Network.\+calculate\+BGresources\+Tree (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Function that calculates water absorbed, available and exchanged for all trees. 
+
+Depending on the graft status of a tree, i.\+e. grafted vs. non-\/grafted, this function calls the corresponding BG-\/resource function. \mbox{\Hypertarget{classpyMANGA_1_1TreeModelLib_1_1BelowgroundCompetition_1_1SimpleNetwork_1_1SimpleNetwork_1_1SimpleNetwork_a4941b689b70e7535b334b5cdc48f351b}\label{classpyMANGA_1_1TreeModelLib_1_1BelowgroundCompetition_1_1SimpleNetwork_1_1SimpleNetwork_1_1SimpleNetwork_a4941b689b70e7535b334b5cdc48f351b}} 
+\index{pyMANGA.TreeModelLib.BelowgroundCompetition.SimpleNetwork.SimpleNetwork.SimpleNetwork@{pyMANGA.TreeModelLib.BelowgroundCompetition.SimpleNetwork.SimpleNetwork.SimpleNetwork}!checkRgfAbility@{checkRgfAbility}}
+\index{checkRgfAbility@{checkRgfAbility}!pyMANGA.TreeModelLib.BelowgroundCompetition.SimpleNetwork.SimpleNetwork.SimpleNetwork@{pyMANGA.TreeModelLib.BelowgroundCompetition.SimpleNetwork.SimpleNetwork.SimpleNetwork}}
+\doxysubsubsection{\texorpdfstring{checkRgfAbility()}{checkRgfAbility()}}
+{\footnotesize\ttfamily def py\+MANGA.\+Tree\+Model\+Lib.\+Belowground\+Competition.\+Simple\+Network.\+Simple\+Network.\+Simple\+Network.\+check\+Rgf\+Ability (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{pair }\end{DoxyParamCaption})}
+
+
+
+Function to check if a pair of trees fullfiles all the conditions to start root graft formation. 
+
+\begin{DoxyReturn}{Returns}
+bool that indicate whether a pair of trees fulfils the requirements to start root graft formation 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em pair} & -\/ a 2d array with tree indices of connected trees (format\+: from, to) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classpyMANGA_1_1TreeModelLib_1_1BelowgroundCompetition_1_1SimpleNetwork_1_1SimpleNetwork_1_1SimpleNetwork_ae73dd4a858cbbfd4caed8f3798c139bf}\label{classpyMANGA_1_1TreeModelLib_1_1BelowgroundCompetition_1_1SimpleNetwork_1_1SimpleNetwork_1_1SimpleNetwork_ae73dd4a858cbbfd4caed8f3798c139bf}} 
+\index{pyMANGA.TreeModelLib.BelowgroundCompetition.SimpleNetwork.SimpleNetwork.SimpleNetwork@{pyMANGA.TreeModelLib.BelowgroundCompetition.SimpleNetwork.SimpleNetwork.SimpleNetwork}!getBGfactor@{getBGfactor}}
+\index{getBGfactor@{getBGfactor}!pyMANGA.TreeModelLib.BelowgroundCompetition.SimpleNetwork.SimpleNetwork.SimpleNetwork@{pyMANGA.TreeModelLib.BelowgroundCompetition.SimpleNetwork.SimpleNetwork.SimpleNetwork}}
+\doxysubsubsection{\texorpdfstring{getBGfactor()}{getBGfactor()}}
+{\footnotesize\ttfamily def py\+MANGA.\+Tree\+Model\+Lib.\+Belowground\+Competition.\+Simple\+Network.\+Simple\+Network.\+Simple\+Network.\+get\+BGfactor (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+This function calculates the below-\/ground resource factor, that is the fraction of water available in base water uptake (i.\+e. 
+
+no salinity, no water exchange through root grafts) \mbox{\Hypertarget{classpyMANGA_1_1TreeModelLib_1_1BelowgroundCompetition_1_1SimpleNetwork_1_1SimpleNetwork_1_1SimpleNetwork_a92c431d839212d67d13ff1289778e312}\label{classpyMANGA_1_1TreeModelLib_1_1BelowgroundCompetition_1_1SimpleNetwork_1_1SimpleNetwork_1_1SimpleNetwork_a92c431d839212d67d13ff1289778e312}} 
+\index{pyMANGA.TreeModelLib.BelowgroundCompetition.SimpleNetwork.SimpleNetwork.SimpleNetwork@{pyMANGA.TreeModelLib.BelowgroundCompetition.SimpleNetwork.SimpleNetwork.SimpleNetwork}!getBGresourcesIndividual@{getBGresourcesIndividual}}
+\index{getBGresourcesIndividual@{getBGresourcesIndividual}!pyMANGA.TreeModelLib.BelowgroundCompetition.SimpleNetwork.SimpleNetwork.SimpleNetwork@{pyMANGA.TreeModelLib.BelowgroundCompetition.SimpleNetwork.SimpleNetwork.SimpleNetwork}}
+\doxysubsubsection{\texorpdfstring{getBGresourcesIndividual()}{getBGresourcesIndividual()}}
+{\footnotesize\ttfamily def py\+MANGA.\+Tree\+Model\+Lib.\+Belowground\+Competition.\+Simple\+Network.\+Simple\+Network.\+Simple\+Network.\+get\+BGresources\+Individual (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{psi\+\_\+top,  }\item[{}]{psi\+\_\+osmo,  }\item[{}]{ag\+\_\+resistance,  }\item[{}]{bg\+\_\+resistance }\end{DoxyParamCaption})}
+
+
+
+Function that calculates water uptake of an individual tree in m³ per time step, see Simple\+Bettina. 
+
+\begin{DoxyReturn}{Returns}
+a scalar 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em psi\+\_\+top} & -\/ difference between min. leaf water potential and height potential \\
+\hline
+{\em psi\+\_\+osmo} & -\/ osmotic potential, caused by pore-\/water salinity \\
+\hline
+{\em ag\+\_\+resistance} & -\/ above-\/graft resistance \\
+\hline
+{\em bg\+\_\+resistance} & -\/ below-\/graft resistance \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classpyMANGA_1_1TreeModelLib_1_1BelowgroundCompetition_1_1SimpleNetwork_1_1SimpleNetwork_1_1SimpleNetwork_abdb0af4a4e790b4088006de62045f69f}\label{classpyMANGA_1_1TreeModelLib_1_1BelowgroundCompetition_1_1SimpleNetwork_1_1SimpleNetwork_1_1SimpleNetwork_abdb0af4a4e790b4088006de62045f69f}} 
+\index{pyMANGA.TreeModelLib.BelowgroundCompetition.SimpleNetwork.SimpleNetwork.SimpleNetwork@{pyMANGA.TreeModelLib.BelowgroundCompetition.SimpleNetwork.SimpleNetwork.SimpleNetwork}!getBGresourcesMatrixGroup@{getBGresourcesMatrixGroup}}
+\index{getBGresourcesMatrixGroup@{getBGresourcesMatrixGroup}!pyMANGA.TreeModelLib.BelowgroundCompetition.SimpleNetwork.SimpleNetwork.SimpleNetwork@{pyMANGA.TreeModelLib.BelowgroundCompetition.SimpleNetwork.SimpleNetwork.SimpleNetwork}}
+\doxysubsubsection{\texorpdfstring{getBGresourcesMatrixGroup()}{getBGresourcesMatrixGroup()}}
+{\footnotesize\ttfamily def py\+MANGA.\+Tree\+Model\+Lib.\+Belowground\+Competition.\+Simple\+Network.\+Simple\+Network.\+Simple\+Network.\+get\+BGresources\+Matrix\+Group (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{members,  }\item[{}]{link\+\_\+list }\end{DoxyParamCaption})}
+
+
+
+Function that creates the matrix to calculate below-\/ground resources for each group of grafted trees. 
+
+The matrix contains a set of linear equations (Ax=B) allowing the calculation of water absorbed, available, exchanged for all trees of a group. The equations result from the electronic-\/hydraulic analogy and the utilization of Kirchhoff\textquotesingle{}s laws. 
+\begin{DoxyParams}{Parameters}
+{\em members} & -\/ list with indexes of group members \\
+\hline
+{\em link\+\_\+list} & -\/ list with connected trees of the group \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a matrix of shape size$\ast$size+1 (size = 2$\ast$n-\/trees + n-\/links); the matrix represents linear equations\+: Ax=B, whereby matrix\mbox{[}, 0\+:size\mbox{]} = A and matrix\mbox{[}, size+1\mbox{]} = B 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classpyMANGA_1_1TreeModelLib_1_1BelowgroundCompetition_1_1SimpleNetwork_1_1SimpleNetwork_1_1SimpleNetwork_aaf1f0c30971982c606b41323b3ef1a3f}\label{classpyMANGA_1_1TreeModelLib_1_1BelowgroundCompetition_1_1SimpleNetwork_1_1SimpleNetwork_1_1SimpleNetwork_aaf1f0c30971982c606b41323b3ef1a3f}} 
+\index{pyMANGA.TreeModelLib.BelowgroundCompetition.SimpleNetwork.SimpleNetwork.SimpleNetwork@{pyMANGA.TreeModelLib.BelowgroundCompetition.SimpleNetwork.SimpleNetwork.SimpleNetwork}!getComponents@{getComponents}}
+\index{getComponents@{getComponents}!pyMANGA.TreeModelLib.BelowgroundCompetition.SimpleNetwork.SimpleNetwork.SimpleNetwork@{pyMANGA.TreeModelLib.BelowgroundCompetition.SimpleNetwork.SimpleNetwork.SimpleNetwork}}
+\doxysubsubsection{\texorpdfstring{getComponents()}{getComponents()}}
+{\footnotesize\ttfamily def py\+MANGA.\+Tree\+Model\+Lib.\+Belowground\+Competition.\+Simple\+Network.\+Simple\+Network.\+Simple\+Network.\+get\+Components (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{graph\+\_\+dictionary }\end{DoxyParamCaption})}
+
+
+
+This function finds all subcomponents of a graph, i.\+e. 
+
+groups of grafted trees. The function is based on jimifiki\textquotesingle{}s code (ref\+: \href{https://stackoverflow.com/questions/10301000/python-connected}{\texttt{ https\+://stackoverflow.\+com/questions/10301000/python-\/connected}} -\/components) 
+\begin{DoxyParams}{Parameters}
+{\em graph\+\_\+dictionary} & -\/ a dictionary with tree indices as keys and the adjacent partner trees as values \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a dictionary defining groups by an ID (key) and the indices of the corresponding trees (value) 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classpyMANGA_1_1TreeModelLib_1_1BelowgroundCompetition_1_1SimpleNetwork_1_1SimpleNetwork_1_1SimpleNetwork_a97d269c013b9d497369dfdca384bc154}\label{classpyMANGA_1_1TreeModelLib_1_1BelowgroundCompetition_1_1SimpleNetwork_1_1SimpleNetwork_1_1SimpleNetwork_a97d269c013b9d497369dfdca384bc154}} 
+\index{pyMANGA.TreeModelLib.BelowgroundCompetition.SimpleNetwork.SimpleNetwork.SimpleNetwork@{pyMANGA.TreeModelLib.BelowgroundCompetition.SimpleNetwork.SimpleNetwork.SimpleNetwork}!getContactMatrix@{getContactMatrix}}
+\index{getContactMatrix@{getContactMatrix}!pyMANGA.TreeModelLib.BelowgroundCompetition.SimpleNetwork.SimpleNetwork.SimpleNetwork@{pyMANGA.TreeModelLib.BelowgroundCompetition.SimpleNetwork.SimpleNetwork.SimpleNetwork}}
+\doxysubsubsection{\texorpdfstring{getContactMatrix()}{getContactMatrix()}}
+{\footnotesize\ttfamily def py\+MANGA.\+Tree\+Model\+Lib.\+Belowground\+Competition.\+Simple\+Network.\+Simple\+Network.\+Simple\+Network.\+get\+Contact\+Matrix (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+This function returns a matrix indicating whether roots of trees are in contact or not. 
+
+\begin{DoxyReturn}{Returns}
+a matrix of shape n-\/trees$\ast$n-\/trees with bool to indicate whether tree root are in contact 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classpyMANGA_1_1TreeModelLib_1_1BelowgroundCompetition_1_1SimpleNetwork_1_1SimpleNetwork_1_1SimpleNetwork_aa800d96363b92c87750a1072cc8f0484}\label{classpyMANGA_1_1TreeModelLib_1_1BelowgroundCompetition_1_1SimpleNetwork_1_1SimpleNetwork_1_1SimpleNetwork_aa800d96363b92c87750a1072cc8f0484}} 
+\index{pyMANGA.TreeModelLib.BelowgroundCompetition.SimpleNetwork.SimpleNetwork.SimpleNetwork@{pyMANGA.TreeModelLib.BelowgroundCompetition.SimpleNetwork.SimpleNetwork.SimpleNetwork}!getDistance@{getDistance}}
+\index{getDistance@{getDistance}!pyMANGA.TreeModelLib.BelowgroundCompetition.SimpleNetwork.SimpleNetwork.SimpleNetwork@{pyMANGA.TreeModelLib.BelowgroundCompetition.SimpleNetwork.SimpleNetwork.SimpleNetwork}}
+\doxysubsubsection{\texorpdfstring{getDistance()}{getDistance()}}
+{\footnotesize\ttfamily def py\+MANGA.\+Tree\+Model\+Lib.\+Belowground\+Competition.\+Simple\+Network.\+Simple\+Network.\+Simple\+Network.\+get\+Distance (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{x1,  }\item[{}]{x2,  }\item[{}]{y1,  }\item[{}]{y2 }\end{DoxyParamCaption})}
+
+
+
+This function calculates the distance between two trees in meter. 
+
+\begin{DoxyReturn}{Returns}
+a scalar 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classpyMANGA_1_1TreeModelLib_1_1BelowgroundCompetition_1_1SimpleNetwork_1_1SimpleNetwork_1_1SimpleNetwork_ac4007074f71f4adbc32943314aac7a93}\label{classpyMANGA_1_1TreeModelLib_1_1BelowgroundCompetition_1_1SimpleNetwork_1_1SimpleNetwork_1_1SimpleNetwork_ac4007074f71f4adbc32943314aac7a93}} 
+\index{pyMANGA.TreeModelLib.BelowgroundCompetition.SimpleNetwork.SimpleNetwork.SimpleNetwork@{pyMANGA.TreeModelLib.BelowgroundCompetition.SimpleNetwork.SimpleNetwork.SimpleNetwork}!getGraftResistance@{getGraftResistance}}
+\index{getGraftResistance@{getGraftResistance}!pyMANGA.TreeModelLib.BelowgroundCompetition.SimpleNetwork.SimpleNetwork.SimpleNetwork@{pyMANGA.TreeModelLib.BelowgroundCompetition.SimpleNetwork.SimpleNetwork.SimpleNetwork}}
+\doxysubsubsection{\texorpdfstring{getGraftResistance()}{getGraftResistance()}}
+{\footnotesize\ttfamily def py\+MANGA.\+Tree\+Model\+Lib.\+Belowground\+Competition.\+Simple\+Network.\+Simple\+Network.\+Simple\+Network.\+get\+Graft\+Resistance (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{distance,  }\item[{}]{r\+\_\+graft,  }\item[{}]{kf\+\_\+sap }\end{DoxyParamCaption})}
+
+
+
+Function that calculates the xylem resistance in the grafted roots. 
+
+\begin{DoxyReturn}{Returns}
+a scalar 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em distance} & -\/ distance between connected trees \\
+\hline
+{\em r\+\_\+graft} & -\/ radius of grafted roots \\
+\hline
+{\em kf\+\_\+sap} & -\/ hydraulic conductivity of xylem \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classpyMANGA_1_1TreeModelLib_1_1BelowgroundCompetition_1_1SimpleNetwork_1_1SimpleNetwork_1_1SimpleNetwork_a1daca4e40c3402b1842fb5ea07558397}\label{classpyMANGA_1_1TreeModelLib_1_1BelowgroundCompetition_1_1SimpleNetwork_1_1SimpleNetwork_1_1SimpleNetwork_a1daca4e40c3402b1842fb5ea07558397}} 
+\index{pyMANGA.TreeModelLib.BelowgroundCompetition.SimpleNetwork.SimpleNetwork.SimpleNetwork@{pyMANGA.TreeModelLib.BelowgroundCompetition.SimpleNetwork.SimpleNetwork.SimpleNetwork}!getInputParameters@{getInputParameters}}
+\index{getInputParameters@{getInputParameters}!pyMANGA.TreeModelLib.BelowgroundCompetition.SimpleNetwork.SimpleNetwork.SimpleNetwork@{pyMANGA.TreeModelLib.BelowgroundCompetition.SimpleNetwork.SimpleNetwork.SimpleNetwork}}
+\doxysubsubsection{\texorpdfstring{getInputParameters()}{getInputParameters()}}
+{\footnotesize\ttfamily def py\+MANGA.\+Tree\+Model\+Lib.\+Belowground\+Competition.\+Simple\+Network.\+Simple\+Network.\+Simple\+Network.\+get\+Input\+Parameters (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{args }\end{DoxyParamCaption})}
+
+
+
+This function reads input parameters, i.\+e. 
+
+proportion of grafted root radius of stem radius, from the control file. \mbox{\Hypertarget{classpyMANGA_1_1TreeModelLib_1_1BelowgroundCompetition_1_1SimpleNetwork_1_1SimpleNetwork_1_1SimpleNetwork_ad812847a44538828a85d4d008bb068b1}\label{classpyMANGA_1_1TreeModelLib_1_1BelowgroundCompetition_1_1SimpleNetwork_1_1SimpleNetwork_1_1SimpleNetwork_ad812847a44538828a85d4d008bb068b1}} 
+\index{pyMANGA.TreeModelLib.BelowgroundCompetition.SimpleNetwork.SimpleNetwork.SimpleNetwork@{pyMANGA.TreeModelLib.BelowgroundCompetition.SimpleNetwork.SimpleNetwork.SimpleNetwork}!getLinkList@{getLinkList}}
+\index{getLinkList@{getLinkList}!pyMANGA.TreeModelLib.BelowgroundCompetition.SimpleNetwork.SimpleNetwork.SimpleNetwork@{pyMANGA.TreeModelLib.BelowgroundCompetition.SimpleNetwork.SimpleNetwork.SimpleNetwork}}
+\doxysubsubsection{\texorpdfstring{getLinkList()}{getLinkList()}}
+{\footnotesize\ttfamily def py\+MANGA.\+Tree\+Model\+Lib.\+Belowground\+Competition.\+Simple\+Network.\+Simple\+Network.\+Simple\+Network.\+get\+Link\+List (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{graph\+\_\+dict }\end{DoxyParamCaption})}
+
+
+
+Function that creates a 2d array with links (from, to) based of graph-\/dictionary. 
+
+The function is based on the code of a python course on graphs (ref\+: \href{https://www.python-course.eu/graphs_python.php}{\texttt{ https\+://www.\+python-\/course.\+eu/graphs\+\_\+python.\+php}}) \begin{DoxyReturn}{Returns}
+a 2d array with tree indices of connected trees (format\+: from, to) 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em graph\+\_\+dictionary} & -\/ a dictionary with tree indices as keys and \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classpyMANGA_1_1TreeModelLib_1_1BelowgroundCompetition_1_1SimpleNetwork_1_1SimpleNetwork_1_1SimpleNetwork_a4c8d78a9fe7356d4864ea5c00ca4d13e}\label{classpyMANGA_1_1TreeModelLib_1_1BelowgroundCompetition_1_1SimpleNetwork_1_1SimpleNetwork_1_1SimpleNetwork_a4c8d78a9fe7356d4864ea5c00ca4d13e}} 
+\index{pyMANGA.TreeModelLib.BelowgroundCompetition.SimpleNetwork.SimpleNetwork.SimpleNetwork@{pyMANGA.TreeModelLib.BelowgroundCompetition.SimpleNetwork.SimpleNetwork.SimpleNetwork}!getMyLinks@{getMyLinks}}
+\index{getMyLinks@{getMyLinks}!pyMANGA.TreeModelLib.BelowgroundCompetition.SimpleNetwork.SimpleNetwork.SimpleNetwork@{pyMANGA.TreeModelLib.BelowgroundCompetition.SimpleNetwork.SimpleNetwork.SimpleNetwork}}
+\doxysubsubsection{\texorpdfstring{getMyLinks()}{getMyLinks()}}
+{\footnotesize\ttfamily def py\+MANGA.\+Tree\+Model\+Lib.\+Belowground\+Competition.\+Simple\+Network.\+Simple\+Network.\+Simple\+Network.\+get\+My\+Links (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{link\+\_\+list,  }\item[{}]{tree }\end{DoxyParamCaption})}
+
+
+
+Function that returns an array with the links of a specific tree. 
+
+\begin{DoxyReturn}{Returns}
+a list with tree indices of adjacent trees 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em link\+\_\+list} & -\/ a 2d array with tree indices of connected trees (format\+: from, to) \\
+\hline
+{\em tree} & -\/ index of the tree under consideration \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classpyMANGA_1_1TreeModelLib_1_1BelowgroundCompetition_1_1SimpleNetwork_1_1SimpleNetwork_1_1SimpleNetwork_ac02c5ade7d80824686398b706054c932}\label{classpyMANGA_1_1TreeModelLib_1_1BelowgroundCompetition_1_1SimpleNetwork_1_1SimpleNetwork_1_1SimpleNetwork_ac02c5ade7d80824686398b706054c932}} 
+\index{pyMANGA.TreeModelLib.BelowgroundCompetition.SimpleNetwork.SimpleNetwork.SimpleNetwork@{pyMANGA.TreeModelLib.BelowgroundCompetition.SimpleNetwork.SimpleNetwork.SimpleNetwork}!getPairsFromMatrix@{getPairsFromMatrix}}
+\index{getPairsFromMatrix@{getPairsFromMatrix}!pyMANGA.TreeModelLib.BelowgroundCompetition.SimpleNetwork.SimpleNetwork.SimpleNetwork@{pyMANGA.TreeModelLib.BelowgroundCompetition.SimpleNetwork.SimpleNetwork.SimpleNetwork}}
+\doxysubsubsection{\texorpdfstring{getPairsFromMatrix()}{getPairsFromMatrix()}}
+{\footnotesize\ttfamily def py\+MANGA.\+Tree\+Model\+Lib.\+Belowground\+Competition.\+Simple\+Network.\+Simple\+Network.\+Simple\+Network.\+get\+Pairs\+From\+Matrix (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{contact\+\_\+matrix }\end{DoxyParamCaption})}
+
+
+
+Function that returns an array with pairs based on the contact matrix. 
+
+\begin{DoxyReturn}{Returns}
+a 2d array with tree indices of connected trees (format\+: from, to) 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classpyMANGA_1_1TreeModelLib_1_1BelowgroundCompetition_1_1SimpleNetwork_1_1SimpleNetwork_1_1SimpleNetwork_a02f0930d5576c09d8d7a070f90db4b6d}\label{classpyMANGA_1_1TreeModelLib_1_1BelowgroundCompetition_1_1SimpleNetwork_1_1SimpleNetwork_1_1SimpleNetwork_a02f0930d5576c09d8d7a070f90db4b6d}} 
+\index{pyMANGA.TreeModelLib.BelowgroundCompetition.SimpleNetwork.SimpleNetwork.SimpleNetwork@{pyMANGA.TreeModelLib.BelowgroundCompetition.SimpleNetwork.SimpleNetwork.SimpleNetwork}!getRGFforGrowthAndDeath@{getRGFforGrowthAndDeath}}
+\index{getRGFforGrowthAndDeath@{getRGFforGrowthAndDeath}!pyMANGA.TreeModelLib.BelowgroundCompetition.SimpleNetwork.SimpleNetwork.SimpleNetwork@{pyMANGA.TreeModelLib.BelowgroundCompetition.SimpleNetwork.SimpleNetwork.SimpleNetwork}}
+\doxysubsubsection{\texorpdfstring{getRGFforGrowthAndDeath()}{getRGFforGrowthAndDeath()}}
+{\footnotesize\ttfamily def py\+MANGA.\+Tree\+Model\+Lib.\+Belowground\+Competition.\+Simple\+Network.\+Simple\+Network.\+Simple\+Network.\+get\+RGFfor\+Growth\+And\+Death (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{pairs }\end{DoxyParamCaption})}
+
+
+
+Function that modifies the tree-\/own vairable \textquotesingle{}rgf\+\_\+counter\textquotesingle{}. 
+
+If a pair of trees are ale to start root graft formation the variable is set to 1 and the adjacent tree is added to the list of potential partners. 
+\begin{DoxyParams}{Parameters}
+{\em pair} & -\/ a 2d array with tree indices of connected trees (format\+: from, to) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classpyMANGA_1_1TreeModelLib_1_1BelowgroundCompetition_1_1SimpleNetwork_1_1SimpleNetwork_1_1SimpleNetwork_a7928ac26149c9fa750ce1e44874e66ae}\label{classpyMANGA_1_1TreeModelLib_1_1BelowgroundCompetition_1_1SimpleNetwork_1_1SimpleNetwork_1_1SimpleNetwork_a7928ac26149c9fa750ce1e44874e66ae}} 
+\index{pyMANGA.TreeModelLib.BelowgroundCompetition.SimpleNetwork.SimpleNetwork.SimpleNetwork@{pyMANGA.TreeModelLib.BelowgroundCompetition.SimpleNetwork.SimpleNetwork.SimpleNetwork}!makeGraphDictionary@{makeGraphDictionary}}
+\index{makeGraphDictionary@{makeGraphDictionary}!pyMANGA.TreeModelLib.BelowgroundCompetition.SimpleNetwork.SimpleNetwork.SimpleNetwork@{pyMANGA.TreeModelLib.BelowgroundCompetition.SimpleNetwork.SimpleNetwork.SimpleNetwork}}
+\doxysubsubsection{\texorpdfstring{makeGraphDictionary()}{makeGraphDictionary()}}
+{\footnotesize\ttfamily def py\+MANGA.\+Tree\+Model\+Lib.\+Belowground\+Competition.\+Simple\+Network.\+Simple\+Network.\+Simple\+Network.\+make\+Graph\+Dictionary (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Function that makes a graph dictionary only with functional grafts, i.\+e. 
+
+both involved trees have finished root graft formation \mbox{\Hypertarget{classpyMANGA_1_1TreeModelLib_1_1BelowgroundCompetition_1_1SimpleNetwork_1_1SimpleNetwork_1_1SimpleNetwork_a9abe3b551040f92476313664bbb2940b}\label{classpyMANGA_1_1TreeModelLib_1_1BelowgroundCompetition_1_1SimpleNetwork_1_1SimpleNetwork_1_1SimpleNetwork_a9abe3b551040f92476313664bbb2940b}} 
+\index{pyMANGA.TreeModelLib.BelowgroundCompetition.SimpleNetwork.SimpleNetwork.SimpleNetwork@{pyMANGA.TreeModelLib.BelowgroundCompetition.SimpleNetwork.SimpleNetwork.SimpleNetwork}!prepareNextTimeStep@{prepareNextTimeStep}}
+\index{prepareNextTimeStep@{prepareNextTimeStep}!pyMANGA.TreeModelLib.BelowgroundCompetition.SimpleNetwork.SimpleNetwork.SimpleNetwork@{pyMANGA.TreeModelLib.BelowgroundCompetition.SimpleNetwork.SimpleNetwork.SimpleNetwork}}
+\doxysubsubsection{\texorpdfstring{prepareNextTimeStep()}{prepareNextTimeStep()}}
+{\footnotesize\ttfamily def py\+MANGA.\+Tree\+Model\+Lib.\+Belowground\+Competition.\+Simple\+Network.\+Simple\+Network.\+Simple\+Network.\+prepare\+Next\+Time\+Step (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{t\+\_\+ini,  }\item[{}]{t\+\_\+end }\end{DoxyParamCaption})}
+
+
+
+This functions prepares the tree variables for the Network\+Hydro concept. 
+
+~\newline
+
+\begin{DoxyParams}{Parameters}
+{\em t\+\_\+ini} & -\/ initial time for next timestep ~\newline
+\\
+\hline
+{\em t\+\_\+end} & -\/ end time for next timestep \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classpyMANGA_1_1TreeModelLib_1_1BelowgroundCompetition_1_1SimpleNetwork_1_1SimpleNetwork_1_1SimpleNetwork_ace908199b49d1db2549692aafafd71c2}\label{classpyMANGA_1_1TreeModelLib_1_1BelowgroundCompetition_1_1SimpleNetwork_1_1SimpleNetwork_1_1SimpleNetwork_ace908199b49d1db2549692aafafd71c2}} 
+\index{pyMANGA.TreeModelLib.BelowgroundCompetition.SimpleNetwork.SimpleNetwork.SimpleNetwork@{pyMANGA.TreeModelLib.BelowgroundCompetition.SimpleNetwork.SimpleNetwork.SimpleNetwork}!graph\_dict@{graph\_dict}}
+\index{graph\_dict@{graph\_dict}!pyMANGA.TreeModelLib.BelowgroundCompetition.SimpleNetwork.SimpleNetwork.SimpleNetwork@{pyMANGA.TreeModelLib.BelowgroundCompetition.SimpleNetwork.SimpleNetwork.SimpleNetwork}}
+\doxysubsubsection{\texorpdfstring{graph\_dict}{graph\_dict}}
+{\footnotesize\ttfamily py\+MANGA.\+Tree\+Model\+Lib.\+Belowground\+Competition.\+Simple\+Network.\+Simple\+Network.\+Simple\+Network.\+graph\+\_\+dict}
+
+
+
+Dictionary that represents the network of grafted trees (= nodes). 
+
+Trees are the keys and Links are the adjacent tree(s) 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Tree\+Model\+Lib/\+Belowground\+Competition/\+Simple\+Network/Simple\+Network.\+py\end{DoxyCompactItemize}

@@ -1,0 +1,108 @@
+\hypertarget{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1candidates_1_1__InstallRequirementBackedCandidate}{}\doxysection{pip.\+\_\+internal.\+resolution.\+resolvelib.\+candidates.\+\_\+\+Install\+Requirement\+Backed\+Candidate Class Reference}
+\label{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1candidates_1_1__InstallRequirementBackedCandidate}\index{pip.\_internal.resolution.resolvelib.candidates.\_InstallRequirementBackedCandidate@{pip.\_internal.resolution.resolvelib.candidates.\_InstallRequirementBackedCandidate}}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}A candidate backed by an ``InstallRequirement``.
+
+This represents a package request with the target not being already
+in the environment, and needs to be fetched and installed. The backing
+``InstallRequirement`` is responsible for most of the leg work; this
+class exposes appropriate information to the resolver.
+
+:param link: The link passed to the ``InstallRequirement``. The backing
+    ``InstallRequirement`` will use this link to fetch the distribution.
+:param source_link: The link this candidate "originates" from. This is
+    different from ``link`` when the link is found in the wheel cache.
+    ``link`` would point to the wheel cache, while this points to the
+    found remote link (e.g. from pypi.org).
+\end{DoxyVerb}
+ Inheritance diagram for pip.\+\_\+internal.\+resolution.\+resolvelib.\+candidates.\+\_\+\+Install\+Requirement\+Backed\+Candidate\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.735537cm]{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1candidates_1_1__InstallRequirementBackedCandidate}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1candidates_1_1__InstallRequirementBackedCandidate_aa92238180069f1ed9faf55757a832d2f}\label{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1candidates_1_1__InstallRequirementBackedCandidate_aa92238180069f1ed9faf55757a832d2f}} 
+def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, link, source\+\_\+link, ireq, factory, \mbox{\hyperlink{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1candidates_1_1__InstallRequirementBackedCandidate_a9fe3d0379250da42bc610a688f43ca84}{name}}=None, version=None)
+\item 
+\mbox{\Hypertarget{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1candidates_1_1__InstallRequirementBackedCandidate_a8b401127acce3aced8547fad5e3ad023}\label{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1candidates_1_1__InstallRequirementBackedCandidate_a8b401127acce3aced8547fad5e3ad023}} 
+def {\bfseries \+\_\+\+\_\+str\+\_\+\+\_\+} (self)
+\item 
+\mbox{\Hypertarget{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1candidates_1_1__InstallRequirementBackedCandidate_a7ee7cb7bc9f09cd13d5019e43d99ed5c}\label{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1candidates_1_1__InstallRequirementBackedCandidate_a7ee7cb7bc9f09cd13d5019e43d99ed5c}} 
+def {\bfseries \+\_\+\+\_\+repr\+\_\+\+\_\+} (self)
+\item 
+\mbox{\Hypertarget{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1candidates_1_1__InstallRequirementBackedCandidate_a2a5bbac5fcdb9df0a96dbae00feca916}\label{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1candidates_1_1__InstallRequirementBackedCandidate_a2a5bbac5fcdb9df0a96dbae00feca916}} 
+def {\bfseries \+\_\+\+\_\+hash\+\_\+\+\_\+} (self)
+\item 
+\mbox{\Hypertarget{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1candidates_1_1__InstallRequirementBackedCandidate_a7aacd9a0895dfef8f3dcea75b7c0bba8}\label{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1candidates_1_1__InstallRequirementBackedCandidate_a7aacd9a0895dfef8f3dcea75b7c0bba8}} 
+def {\bfseries \+\_\+\+\_\+eq\+\_\+\+\_\+} (self, other)
+\item 
+\mbox{\Hypertarget{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1candidates_1_1__InstallRequirementBackedCandidate_aa958d3573fdd9b4954b68e72f955c539}\label{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1candidates_1_1__InstallRequirementBackedCandidate_aa958d3573fdd9b4954b68e72f955c539}} 
+def {\bfseries source\+\_\+link} (self)
+\item 
+def \mbox{\hyperlink{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1candidates_1_1__InstallRequirementBackedCandidate_a3d0ae69460f6b3f6e616ed2a9409052f}{project\+\_\+name}} (self)
+\item 
+def \mbox{\hyperlink{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1candidates_1_1__InstallRequirementBackedCandidate_a9fe3d0379250da42bc610a688f43ca84}{name}} (self)
+\item 
+\mbox{\Hypertarget{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1candidates_1_1__InstallRequirementBackedCandidate_a84e4b295977cbe12099db867a3c182dd}\label{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1candidates_1_1__InstallRequirementBackedCandidate_a84e4b295977cbe12099db867a3c182dd}} 
+def {\bfseries version} (self)
+\item 
+\mbox{\Hypertarget{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1candidates_1_1__InstallRequirementBackedCandidate_a56b1f0ed616ece3d39c6cb8b12f12692}\label{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1candidates_1_1__InstallRequirementBackedCandidate_a56b1f0ed616ece3d39c6cb8b12f12692}} 
+def {\bfseries format\+\_\+for\+\_\+error} (self)
+\item 
+\mbox{\Hypertarget{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1candidates_1_1__InstallRequirementBackedCandidate_a6b60557a552757c829f765f2b7cc2c93}\label{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1candidates_1_1__InstallRequirementBackedCandidate_a6b60557a552757c829f765f2b7cc2c93}} 
+def {\bfseries iter\+\_\+dependencies} (self, with\+\_\+requires)
+\item 
+\mbox{\Hypertarget{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1candidates_1_1__InstallRequirementBackedCandidate_a8a0dbdeb49b324332cb0064cc8128002}\label{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1candidates_1_1__InstallRequirementBackedCandidate_a8a0dbdeb49b324332cb0064cc8128002}} 
+def {\bfseries get\+\_\+install\+\_\+requirement} (self)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1candidates_1_1__InstallRequirementBackedCandidate_acda8bf221506d9cb4f22cb13d331acad}\label{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1candidates_1_1__InstallRequirementBackedCandidate_acda8bf221506d9cb4f22cb13d331acad}} 
+{\bfseries dist}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1candidates_1_1__InstallRequirementBackedCandidate_a8721f3126c2978b9dc3eb02315fbe3ba}\label{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1candidates_1_1__InstallRequirementBackedCandidate_a8721f3126c2978b9dc3eb02315fbe3ba}} 
+bool {\bfseries is\+\_\+installed} = False
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1candidates_1_1__InstallRequirementBackedCandidate_a9fe3d0379250da42bc610a688f43ca84}\label{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1candidates_1_1__InstallRequirementBackedCandidate_a9fe3d0379250da42bc610a688f43ca84}} 
+\index{pip.\_internal.resolution.resolvelib.candidates.\_InstallRequirementBackedCandidate@{pip.\_internal.resolution.resolvelib.candidates.\_InstallRequirementBackedCandidate}!name@{name}}
+\index{name@{name}!pip.\_internal.resolution.resolvelib.candidates.\_InstallRequirementBackedCandidate@{pip.\_internal.resolution.resolvelib.candidates.\_InstallRequirementBackedCandidate}}
+\doxysubsubsection{\texorpdfstring{name()}{name()}}
+{\footnotesize\ttfamily def pip.\+\_\+internal.\+resolution.\+resolvelib.\+candidates.\+\_\+\+Install\+Requirement\+Backed\+Candidate.\+name (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}The name identifying this candidate in the resolver.
+
+This is different from ``project_name`` if this candidate contains
+extras, where ``project_name`` would not contain the ``[...]`` part.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1base_1_1Candidate_a8b39f3d3af882944335121c05d86da76}{pip.\+\_\+internal.\+resolution.\+resolvelib.\+base.\+Candidate}}.
+
+\mbox{\Hypertarget{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1candidates_1_1__InstallRequirementBackedCandidate_a3d0ae69460f6b3f6e616ed2a9409052f}\label{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1candidates_1_1__InstallRequirementBackedCandidate_a3d0ae69460f6b3f6e616ed2a9409052f}} 
+\index{pip.\_internal.resolution.resolvelib.candidates.\_InstallRequirementBackedCandidate@{pip.\_internal.resolution.resolvelib.candidates.\_InstallRequirementBackedCandidate}!project\_name@{project\_name}}
+\index{project\_name@{project\_name}!pip.\_internal.resolution.resolvelib.candidates.\_InstallRequirementBackedCandidate@{pip.\_internal.resolution.resolvelib.candidates.\_InstallRequirementBackedCandidate}}
+\doxysubsubsection{\texorpdfstring{project\_name()}{project\_name()}}
+{\footnotesize\ttfamily def pip.\+\_\+internal.\+resolution.\+resolvelib.\+candidates.\+\_\+\+Install\+Requirement\+Backed\+Candidate.\+project\+\_\+name (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}The normalised name of the project the candidate refers to\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1base_1_1Candidate_ac57eb483769275262b244cbcd3a66b61}{pip.\+\_\+internal.\+resolution.\+resolvelib.\+base.\+Candidate}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+venv/\+Lib/site-\/packages/pip/\+\_\+internal/resolution/resolvelib/candidates.\+py\end{DoxyCompactItemize}

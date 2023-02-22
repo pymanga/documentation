@@ -1,0 +1,9 @@
+Optional bool parameter. If this parameter is set to \char`\"{}\+True\char`\"{}, py\+MANGA is using the results on the porewater salinity distribution from its previous ogs-\/calculations.
+
+Imagine you want to do an parameter estimate for BETTINA model parameters. Here, you could want to have a salinity distribution resulting from certain abiotic conditions. In this case, the procedure would be\+:
+
+
+\begin{DoxyEnumerate}
+\item Run py\+MANGA with use\+\_\+old\+\_\+ogs\+\_\+results = False to calculate the resulting salinity distribution.
+\item For each subsequent run of py\+MANGA, you can use temporarily saved data on the subsurface salinity by setting use\+\_\+old\+\_\+ogs\+\_\+results = True. Using this, the user could avoid redundant ogs calculations, because py\+MANGA is using old results instead of recalculating the same salinity distribution again. 
+\end{DoxyEnumerate}

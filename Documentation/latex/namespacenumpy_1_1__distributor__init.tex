@@ -1,0 +1,25 @@
+\hypertarget{namespacenumpy_1_1__distributor__init}{}\doxysection{numpy.\+\_\+distributor\+\_\+init Namespace Reference}
+\label{namespacenumpy_1_1__distributor__init}\index{numpy.\_distributor\_init@{numpy.\_distributor\_init}}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Helper to preload windows dlls to prevent dll not found errors.
+Once a DLL is preloaded, its namespace is made available to any
+subsequent DLL. This file originated in the numpy-wheels repo,
+and is created as part of the scripts that build the wheel.
+\end{DoxyVerb}
+ \doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{namespacenumpy_1_1__distributor__init_a3faa6f2db2aebc72a0df9c756296ea95}\label{namespacenumpy_1_1__distributor__init_a3faa6f2db2aebc72a0df9c756296ea95}} 
+{\bfseries basedir} = os.\+path.\+dirname(\+\_\+\+\_\+file\+\_\+\+\_\+)
+\item 
+\mbox{\Hypertarget{namespacenumpy_1_1__distributor__init_a0003c32a416b41974f4870d8a51e0468}\label{namespacenumpy_1_1__distributor__init_a0003c32a416b41974f4870d8a51e0468}} 
+{\bfseries libs\+\_\+dir} = os.\+path.\+abspath(os.\+path.\+join(basedir, \textquotesingle{}.libs\textquotesingle{}))
+\item 
+\mbox{\Hypertarget{namespacenumpy_1_1__distributor__init_aed4a3a413c096a10bb6469474a9e5af5}\label{namespacenumpy_1_1__distributor__init_aed4a3a413c096a10bb6469474a9e5af5}} 
+list {\bfseries DLL\+\_\+filenames} = \mbox{[}$\,$\mbox{]}
+\item 
+\mbox{\Hypertarget{namespacenumpy_1_1__distributor__init_af47b4ccc50f9d3db7a85f634e119c9e6}\label{namespacenumpy_1_1__distributor__init_af47b4ccc50f9d3db7a85f634e119c9e6}} 
+{\bfseries stacklevel}
+\end{DoxyCompactItemize}
