@@ -25,6 +25,7 @@
 var NAVTREE =
 [
   [ "pyManga", "index.html", [
+    [ "pyMANGA documentation", "index.html", null ],
     [ " [input]MangaProject", "project_dox__MangaProject__MangaProject.html", "project_dox__MangaProject__MangaProject" ]
   ] ]
 ];
